@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_bottom_right_open",
+  "textures": {
+    "bottom": "pizzasoat:block/aluminum_door_bottom",
+    "top": "pizzasoat:block/aluminum_door_top"
+  }
+}

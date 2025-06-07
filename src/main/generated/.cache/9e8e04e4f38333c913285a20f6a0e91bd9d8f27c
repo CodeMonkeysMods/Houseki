@@ -1,0 +1,11 @@
+// 1.21.1	2025-06-06T23:02:49.8652487	Pizza's Ores And Things/Tags for minecraft:block
+ead3d2ba2d36e917c7ba9ed8b5e46eebe0b6c4fd data\minecraft\tags\block\mineable\pickaxe.json
+66ed13870ea30c133afecf037bad0eb0a06fd529 data\minecraft\tags\block\needs_diamond_tool.json
+a71b781e5699eabe0939e701495c45b681a77e85 data\minecraft\tags\block\beacon_base_blocks.json
+eefd6a69876f77e353aecc73753b971dc635ef9a data\minecraft\tags\block\slabs.json
+7b0cd4d895c0e81c9b82fe9706784715fafe743c data\minecraft\tags\block\walls.json
+3ee0bc4f49917150d0edbde7979b2d4e53311a46 data\minecraft\tags\block\dragon_immune.json
+74e0d7c409379db49bd1efbf39d6a5e1eb293403 data\minecraft\tags\block\needs_iron_tool.json
+7bd34959b6826e3e293347002d05891d2a284659 data\minecraft\tags\block\wither_immune.json
+52a6bbbe3218751ee437e33f8500731cc992b9f2 data\minecraft\tags\block\needs_stone_tool.json
+cc2e4b87e03b407c94ced54c83621f3e3bbc44d5 data\minecraft\tags\block\stairs.json

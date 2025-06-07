@@ -1,0 +1,11 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "pizzasoat:block/fuser_bottom",
+    "east": "pizzasoat:block/fuser_side",
+    "north": "pizzasoat:block/fuser_side",
+    "south": "pizzasoat:block/fuser_side",
+    "up": "pizzasoat:block/fuser_top",
+    "west": "pizzasoat:block/fuser_side"
+  }
+}

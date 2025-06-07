@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "pizzasoat:block/limestone_slab"
+    },
+    "type=double": {
+      "model": "pizzasoat:block/limestone"
+    },
+    "type=top": {
+      "model": "pizzasoat:block/limestone_slab_top"
+    }
+  }
+}

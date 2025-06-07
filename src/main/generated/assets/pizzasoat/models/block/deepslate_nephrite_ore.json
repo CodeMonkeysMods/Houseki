@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "pizzasoat:block/deepslate_nephrite_ore"
+  }
+}

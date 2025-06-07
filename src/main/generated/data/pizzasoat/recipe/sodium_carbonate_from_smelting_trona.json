@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.5,
+  "group": "sodium_carbonate",
+  "ingredient": {
+    "item": "pizzasoat:trona"
+  },
+  "result": {
+    "id": "pizzasoat:sodium_carbonate"
+  }
+}

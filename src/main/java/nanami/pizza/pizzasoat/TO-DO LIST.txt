@@ -1,0 +1,3 @@
+Make Pinku Smithing Template spawn in end cities and things like that.
+Possibly make wolf and horse armor for all ores that have armors
+Maybe make deepslate version of Trona

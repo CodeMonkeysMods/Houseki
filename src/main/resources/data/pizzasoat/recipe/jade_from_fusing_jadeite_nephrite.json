@@ -1,0 +1,16 @@
+{
+  "type": "pizzasoat:fusing",
+  "ingredient": [
+    {
+      "item": "pizzasoat:jadeite"
+    }
+  ],
+  "ingredient2": [
+    {
+      "item": "pizzasoat:nephrite"
+    }
+  ],
+  "result": {
+    "id": "pizzasoat:jade"
+  }
+}

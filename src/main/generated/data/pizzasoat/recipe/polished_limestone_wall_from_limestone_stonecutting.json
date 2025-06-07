@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "pizzasoat:limestone"
+  },
+  "result": {
+    "count": 1,
+    "id": "pizzasoat:polished_limestone_wall"
+  }
+}

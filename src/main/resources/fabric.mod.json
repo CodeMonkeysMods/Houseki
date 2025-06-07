@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "pizzasoat",
+	"version": "1.0.0-1.21.1",
+	"name": "Pizza's Ores And Things",
+	"description": "A mod adding new ores and things that try to keep to their real life counterparts.",
+	"authors": [
+		"NanamiPizza"
+	],
+	"contact": {
+		"homepage": "",
+		"sources": "https://github.com/"
+	},
+	"license": "MIT",
+	"icon": "assets/pizzasoat/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"nanami.pizza.pizzasoat.PizzasOAT"
+		],
+		"fabric-datagen": [
+			"nanami.pizza.pizzasoat.PizzasOATDataGenerator"
+		],
+		"client": [
+			"nanami.pizza.pizzasoat.PizzasOATClient"
+		]
+	},
+	"mixins": [
+		"pizzasoat.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.5",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

@@ -1,0 +1,16 @@
+{
+  "type": "pizzasoat:fusing",
+  "ingredient": [
+    {
+      "item": "pizzasoat:sodium_carbonate"
+    }
+  ],
+  "ingredient2": [
+    {
+      "item": "pizzasoat:wolframite"
+    }
+  ],
+  "result": {
+    "id": "pizzasoat:pure_tungsten"
+  }
+}

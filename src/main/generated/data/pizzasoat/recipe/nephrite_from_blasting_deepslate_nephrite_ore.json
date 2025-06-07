@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.5,
+  "group": "nephrite",
+  "ingredient": {
+    "item": "pizzasoat:deepslate_nephrite_ore"
+  },
+  "result": {
+    "id": "pizzasoat:nephrite"
+  }
+}
