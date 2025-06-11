@@ -2,7 +2,7 @@ package nanami.pizza.pizzasoat.datagen;
 
 import nanami.pizza.pizzasoat.block.ModBlocks;
 import nanami.pizza.pizzasoat.item.ModItems;
-import nanami.pizza.pizzasoat.util.ModRecipes;
+import nanami.pizza.pizzasoat.util.ModGenRecipes;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.block.Blocks;
@@ -17,7 +17,7 @@ import net.minecraft.util.Identifier;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
-import static nanami.pizza.pizzasoat.util.ModRecipes.offerPinkuUpgradeRecipe;
+import static nanami.pizza.pizzasoat.util.ModGenRecipes.offerPinkuUpgradeRecipe;
 
 public class ModRecipeProvider extends FabricRecipeProvider {
     public ModRecipeProvider(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
@@ -138,12 +138,12 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_LIMESTONE_WALL, ModBlocks.POLISHED_LIMESTONE);
 
         //Stair Recipes
-        ModRecipes.StairsRecipe(ModBlocks.LIMESTONE_STAIRS, (ModBlocks.LIMESTONE)).offerTo(exporter);
-        ModRecipes.StairsRecipe(ModBlocks.LIMESTONE_BRICK_STAIRS, (ModBlocks.LIMESTONE_BRICKS)).offerTo(exporter);
-        ModRecipes.StairsRecipe(ModBlocks.POLISHED_LIMESTONE_STAIRS, (ModBlocks.POLISHED_LIMESTONE)).offerTo(exporter);
+        ModGenRecipes.StairsRecipe(ModBlocks.LIMESTONE_STAIRS, (ModBlocks.LIMESTONE)).offerTo(exporter);
+        ModGenRecipes.StairsRecipe(ModBlocks.LIMESTONE_BRICK_STAIRS, (ModBlocks.LIMESTONE_BRICKS)).offerTo(exporter);
+        ModGenRecipes.StairsRecipe(ModBlocks.POLISHED_LIMESTONE_STAIRS, (ModBlocks.POLISHED_LIMESTONE)).offerTo(exporter);
 
-        ModRecipes.DoorRecipe(ModBlocks.ALUMINUM_DOOR, (ModItems.ALUMINUM)).offerTo(exporter);
-        ModRecipes.TrapdoorRecipe(ModBlocks.ALUMINUM_TRAPDOOR, (ModItems.ALUMINUM)).offerTo(exporter);
+        ModGenRecipes.DoorRecipe(ModBlocks.ALUMINUM_DOOR, (ModItems.ALUMINUM)).offerTo(exporter);
+        ModGenRecipes.TrapdoorRecipe(ModBlocks.ALUMINUM_TRAPDOOR, (ModItems.ALUMINUM)).offerTo(exporter);
 
         //Tool Recipes
         offerPinkuUpgradeRecipe(exporter, Items.NETHERITE_PICKAXE, RecipeCategory.TOOLS, ModItems.PINKU_PICKAXE);
@@ -151,36 +151,36 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerPinkuUpgradeRecipe(exporter, Items.NETHERITE_SHOVEL, RecipeCategory.TOOLS, ModItems.PINKU_SHOVEL);
         offerPinkuUpgradeRecipe(exporter, Items.NETHERITE_SWORD, RecipeCategory.COMBAT, ModItems.PINKU_SWORD);
         offerPinkuUpgradeRecipe(exporter, Items.NETHERITE_HOE, RecipeCategory.TOOLS, ModItems.PINKU_HOE);
-        ModRecipes.offerPickaxeRecipe(exporter, ModItems.RAINBOW_PYRITE_PICKAXE, ModItems.RAINBOW_PYRITE);
-        ModRecipes.offerAxeRecipe(exporter, ModItems.RAINBOW_PYRITE_AXE, ModItems.RAINBOW_PYRITE);
-        ModRecipes.offerShovelRecipe(exporter, ModItems.RAINBOW_PYRITE_SHOVEL, ModItems.RAINBOW_PYRITE);
-        ModRecipes.offerSwordRecipe(exporter, ModItems.RAINBOW_PYRITE_SWORD, ModItems.RAINBOW_PYRITE);
-        ModRecipes.offerHoeRecipe(exporter, ModItems.RAINBOW_PYRITE_HOE, ModItems.RAINBOW_PYRITE);
-        ModRecipes.offerPickaxeRecipe(exporter, ModItems.TUNGSTEN_PICKAXE, ModItems.TUNGSTEN);
-        ModRecipes.offerAxeRecipe(exporter, ModItems.TUNGSTEN_AXE, ModItems.TUNGSTEN);
-        ModRecipes.offerShovelRecipe(exporter, ModItems.TUNGSTEN_SHOVEL, ModItems.TUNGSTEN);
-        ModRecipes.offerSwordRecipe(exporter, ModItems.TUNGSTEN_SWORD, ModItems.TUNGSTEN);
-        ModRecipes.offerHoeRecipe(exporter, ModItems.TUNGSTEN_HOE, ModItems.TUNGSTEN);
-        ModRecipes.offerPickaxeRecipe(exporter, ModItems.ALUMINUM_PICKAXE, ModItems.ALUMINUM);
-        ModRecipes.offerAxeRecipe(exporter, ModItems.ALUMINUM_AXE, ModItems.ALUMINUM);
-        ModRecipes.offerShovelRecipe(exporter, ModItems.ALUMINUM_SHOVEL, ModItems.ALUMINUM);
-        ModRecipes.offerSwordRecipe(exporter, ModItems.ALUMINUM_SWORD, ModItems.ALUMINUM);
-        ModRecipes.offerHoeRecipe(exporter, ModItems.ALUMINUM_HOE, ModItems.ALUMINUM);
-        ModRecipes.offerPickaxeRecipe(exporter, ModItems.SAPPHIRE_PICKAXE, ModItems.SAPPHIRE);
-        ModRecipes.offerAxeRecipe(exporter, ModItems.SAPPHIRE_AXE, ModItems.SAPPHIRE);
-        ModRecipes.offerShovelRecipe(exporter, ModItems.SAPPHIRE_SHOVEL, ModItems.SAPPHIRE);
-        ModRecipes.offerSwordRecipe(exporter, ModItems.SAPPHIRE_SWORD, ModItems.SAPPHIRE);
-        ModRecipes.offerHoeRecipe(exporter, ModItems.SAPPHIRE_HOE, ModItems.SAPPHIRE);
-        ModRecipes.offerPickaxeRecipe(exporter, ModItems.JADE_PICKAXE, ModItems.JADE);
-        ModRecipes.offerAxeRecipe(exporter, ModItems.JADE_AXE, ModItems.JADE);
-        ModRecipes.offerShovelRecipe(exporter, ModItems.JADE_SHOVEL, ModItems.JADE);
-        ModRecipes.offerSwordRecipe(exporter, ModItems.JADE_SWORD, ModItems.JADE);
-        ModRecipes.offerHoeRecipe(exporter, ModItems.JADE_HOE, ModItems.JADE);
-        ModRecipes.offerPickaxeRecipe(exporter, ModItems.PLATINUM_PICKAXE, ModItems.PLATINUM);
-        ModRecipes.offerAxeRecipe(exporter, ModItems.PLATINUM_AXE, ModItems.PLATINUM);
-        ModRecipes.offerShovelRecipe(exporter, ModItems.PLATINUM_SHOVEL, ModItems.PLATINUM);
-        ModRecipes.offerSwordRecipe(exporter, ModItems.PLATINUM_SWORD, ModItems.PLATINUM);
-        ModRecipes.offerHoeRecipe(exporter, ModItems.PLATINUM_HOE, ModItems.PLATINUM);
+        ModGenRecipes.offerPickaxeRecipe(exporter, ModItems.RAINBOW_PYRITE_PICKAXE, ModItems.RAINBOW_PYRITE);
+        ModGenRecipes.offerAxeRecipe(exporter, ModItems.RAINBOW_PYRITE_AXE, ModItems.RAINBOW_PYRITE);
+        ModGenRecipes.offerShovelRecipe(exporter, ModItems.RAINBOW_PYRITE_SHOVEL, ModItems.RAINBOW_PYRITE);
+        ModGenRecipes.offerSwordRecipe(exporter, ModItems.RAINBOW_PYRITE_SWORD, ModItems.RAINBOW_PYRITE);
+        ModGenRecipes.offerHoeRecipe(exporter, ModItems.RAINBOW_PYRITE_HOE, ModItems.RAINBOW_PYRITE);
+        ModGenRecipes.offerPickaxeRecipe(exporter, ModItems.TUNGSTEN_PICKAXE, ModItems.TUNGSTEN);
+        ModGenRecipes.offerAxeRecipe(exporter, ModItems.TUNGSTEN_AXE, ModItems.TUNGSTEN);
+        ModGenRecipes.offerShovelRecipe(exporter, ModItems.TUNGSTEN_SHOVEL, ModItems.TUNGSTEN);
+        ModGenRecipes.offerSwordRecipe(exporter, ModItems.TUNGSTEN_SWORD, ModItems.TUNGSTEN);
+        ModGenRecipes.offerHoeRecipe(exporter, ModItems.TUNGSTEN_HOE, ModItems.TUNGSTEN);
+        ModGenRecipes.offerPickaxeRecipe(exporter, ModItems.ALUMINUM_PICKAXE, ModItems.ALUMINUM);
+        ModGenRecipes.offerAxeRecipe(exporter, ModItems.ALUMINUM_AXE, ModItems.ALUMINUM);
+        ModGenRecipes.offerShovelRecipe(exporter, ModItems.ALUMINUM_SHOVEL, ModItems.ALUMINUM);
+        ModGenRecipes.offerSwordRecipe(exporter, ModItems.ALUMINUM_SWORD, ModItems.ALUMINUM);
+        ModGenRecipes.offerHoeRecipe(exporter, ModItems.ALUMINUM_HOE, ModItems.ALUMINUM);
+        ModGenRecipes.offerPickaxeRecipe(exporter, ModItems.SAPPHIRE_PICKAXE, ModItems.SAPPHIRE);
+        ModGenRecipes.offerAxeRecipe(exporter, ModItems.SAPPHIRE_AXE, ModItems.SAPPHIRE);
+        ModGenRecipes.offerShovelRecipe(exporter, ModItems.SAPPHIRE_SHOVEL, ModItems.SAPPHIRE);
+        ModGenRecipes.offerSwordRecipe(exporter, ModItems.SAPPHIRE_SWORD, ModItems.SAPPHIRE);
+        ModGenRecipes.offerHoeRecipe(exporter, ModItems.SAPPHIRE_HOE, ModItems.SAPPHIRE);
+        ModGenRecipes.offerPickaxeRecipe(exporter, ModItems.JADE_PICKAXE, ModItems.JADE);
+        ModGenRecipes.offerAxeRecipe(exporter, ModItems.JADE_AXE, ModItems.JADE);
+        ModGenRecipes.offerShovelRecipe(exporter, ModItems.JADE_SHOVEL, ModItems.JADE);
+        ModGenRecipes.offerSwordRecipe(exporter, ModItems.JADE_SWORD, ModItems.JADE);
+        ModGenRecipes.offerHoeRecipe(exporter, ModItems.JADE_HOE, ModItems.JADE);
+        ModGenRecipes.offerPickaxeRecipe(exporter, ModItems.PLATINUM_PICKAXE, ModItems.PLATINUM);
+        ModGenRecipes.offerAxeRecipe(exporter, ModItems.PLATINUM_AXE, ModItems.PLATINUM);
+        ModGenRecipes.offerShovelRecipe(exporter, ModItems.PLATINUM_SHOVEL, ModItems.PLATINUM);
+        ModGenRecipes.offerSwordRecipe(exporter, ModItems.PLATINUM_SWORD, ModItems.PLATINUM);
+        ModGenRecipes.offerHoeRecipe(exporter, ModItems.PLATINUM_HOE, ModItems.PLATINUM);
 
 
         //Armor Recipes
@@ -188,30 +188,30 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerPinkuUpgradeRecipe(exporter, Items.NETHERITE_CHESTPLATE, RecipeCategory.COMBAT, ModItems.PINKU_CHESTPLATE);
         offerPinkuUpgradeRecipe(exporter, Items.NETHERITE_LEGGINGS, RecipeCategory.COMBAT, ModItems.PINKU_LEGGINGS);
         offerPinkuUpgradeRecipe(exporter, Items.NETHERITE_BOOTS, RecipeCategory.COMBAT, ModItems.PINKU_BOOTS);
-        ModRecipes.offerHelmetRecipe(exporter, ModItems.RAINBOW_PYRITE_HELMET, ModItems.RAINBOW_PYRITE);
-        ModRecipes.offerChestplateRecipe(exporter, ModItems.RAINBOW_PYRITE_CHESTPLATE, ModItems.RAINBOW_PYRITE);
-        ModRecipes.offerLeggingsRecipe(exporter, ModItems.RAINBOW_PYRITE_LEGGINGS, ModItems.RAINBOW_PYRITE);
-        ModRecipes.offerBootsRecipe(exporter, ModItems.RAINBOW_PYRITE_BOOTS, ModItems.RAINBOW_PYRITE);
-        ModRecipes.offerHelmetRecipe(exporter, ModItems.TUNGSTEN_HELMET, ModItems.TUNGSTEN);
-        ModRecipes.offerChestplateRecipe(exporter, ModItems.TUNGSTEN_CHESTPLATE, ModItems.TUNGSTEN);
-        ModRecipes.offerLeggingsRecipe(exporter, ModItems.TUNGSTEN_LEGGINGS, ModItems.TUNGSTEN);
-        ModRecipes.offerBootsRecipe(exporter, ModItems.TUNGSTEN_BOOTS, ModItems.TUNGSTEN);
-        ModRecipes.offerHelmetRecipe(exporter, ModItems.ALUMINUM_HELMET, ModItems.ALUMINUM);
-        ModRecipes.offerChestplateRecipe(exporter, ModItems.ALUMINUM_CHESTPLATE, ModItems.ALUMINUM);
-        ModRecipes.offerLeggingsRecipe(exporter, ModItems.ALUMINUM_LEGGINGS, ModItems.ALUMINUM);
-        ModRecipes.offerBootsRecipe(exporter, ModItems.ALUMINUM_BOOTS, ModItems.ALUMINUM);
-        ModRecipes.offerHelmetRecipe(exporter, ModItems.SAPPHIRE_HELMET, ModItems.SAPPHIRE);
-        ModRecipes.offerChestplateRecipe(exporter, ModItems.SAPPHIRE_CHESTPLATE, ModItems.SAPPHIRE);
-        ModRecipes.offerLeggingsRecipe(exporter, ModItems.SAPPHIRE_LEGGINGS, ModItems.SAPPHIRE);
-        ModRecipes.offerBootsRecipe(exporter, ModItems.SAPPHIRE_BOOTS, ModItems.SAPPHIRE);
-        ModRecipes.offerHelmetRecipe(exporter, ModItems.JADE_HELMET, ModItems.JADE);
-        ModRecipes.offerChestplateRecipe(exporter, ModItems.JADE_CHESTPLATE, ModItems.JADE);
-        ModRecipes.offerLeggingsRecipe(exporter, ModItems.JADE_LEGGINGS, ModItems.JADE);
-        ModRecipes.offerBootsRecipe(exporter, ModItems.JADE_BOOTS, ModItems.JADE);
-        ModRecipes.offerHelmetRecipe(exporter, ModItems.PLATINUM_HELMET, ModItems.PLATINUM);
-        ModRecipes.offerChestplateRecipe(exporter, ModItems.PLATINUM_CHESTPLATE, ModItems.PLATINUM);
-        ModRecipes.offerLeggingsRecipe(exporter, ModItems.PLATINUM_LEGGINGS, ModItems.PLATINUM);
-        ModRecipes.offerBootsRecipe(exporter, ModItems.PLATINUM_BOOTS, ModItems.PLATINUM);
+        ModGenRecipes.offerHelmetRecipe(exporter, ModItems.RAINBOW_PYRITE_HELMET, ModItems.RAINBOW_PYRITE);
+        ModGenRecipes.offerChestplateRecipe(exporter, ModItems.RAINBOW_PYRITE_CHESTPLATE, ModItems.RAINBOW_PYRITE);
+        ModGenRecipes.offerLeggingsRecipe(exporter, ModItems.RAINBOW_PYRITE_LEGGINGS, ModItems.RAINBOW_PYRITE);
+        ModGenRecipes.offerBootsRecipe(exporter, ModItems.RAINBOW_PYRITE_BOOTS, ModItems.RAINBOW_PYRITE);
+        ModGenRecipes.offerHelmetRecipe(exporter, ModItems.TUNGSTEN_HELMET, ModItems.TUNGSTEN);
+        ModGenRecipes.offerChestplateRecipe(exporter, ModItems.TUNGSTEN_CHESTPLATE, ModItems.TUNGSTEN);
+        ModGenRecipes.offerLeggingsRecipe(exporter, ModItems.TUNGSTEN_LEGGINGS, ModItems.TUNGSTEN);
+        ModGenRecipes.offerBootsRecipe(exporter, ModItems.TUNGSTEN_BOOTS, ModItems.TUNGSTEN);
+        ModGenRecipes.offerHelmetRecipe(exporter, ModItems.ALUMINUM_HELMET, ModItems.ALUMINUM);
+        ModGenRecipes.offerChestplateRecipe(exporter, ModItems.ALUMINUM_CHESTPLATE, ModItems.ALUMINUM);
+        ModGenRecipes.offerLeggingsRecipe(exporter, ModItems.ALUMINUM_LEGGINGS, ModItems.ALUMINUM);
+        ModGenRecipes.offerBootsRecipe(exporter, ModItems.ALUMINUM_BOOTS, ModItems.ALUMINUM);
+        ModGenRecipes.offerHelmetRecipe(exporter, ModItems.SAPPHIRE_HELMET, ModItems.SAPPHIRE);
+        ModGenRecipes.offerChestplateRecipe(exporter, ModItems.SAPPHIRE_CHESTPLATE, ModItems.SAPPHIRE);
+        ModGenRecipes.offerLeggingsRecipe(exporter, ModItems.SAPPHIRE_LEGGINGS, ModItems.SAPPHIRE);
+        ModGenRecipes.offerBootsRecipe(exporter, ModItems.SAPPHIRE_BOOTS, ModItems.SAPPHIRE);
+        ModGenRecipes.offerHelmetRecipe(exporter, ModItems.JADE_HELMET, ModItems.JADE);
+        ModGenRecipes.offerChestplateRecipe(exporter, ModItems.JADE_CHESTPLATE, ModItems.JADE);
+        ModGenRecipes.offerLeggingsRecipe(exporter, ModItems.JADE_LEGGINGS, ModItems.JADE);
+        ModGenRecipes.offerBootsRecipe(exporter, ModItems.JADE_BOOTS, ModItems.JADE);
+        ModGenRecipes.offerHelmetRecipe(exporter, ModItems.PLATINUM_HELMET, ModItems.PLATINUM);
+        ModGenRecipes.offerChestplateRecipe(exporter, ModItems.PLATINUM_CHESTPLATE, ModItems.PLATINUM);
+        ModGenRecipes.offerLeggingsRecipe(exporter, ModItems.PLATINUM_LEGGINGS, ModItems.PLATINUM);
+        ModGenRecipes.offerBootsRecipe(exporter, ModItems.PLATINUM_BOOTS, ModItems.PLATINUM);
 
         //Random
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ALUMINUM_GLASS,1)
@@ -244,18 +244,15 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.SAND), conditionsFromItem(Items.SAND))
                 .offerTo(exporter);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.FUSER, 1)
+        /*ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.CRUSHER, 1)
                 .pattern("###")
-                .pattern("XSX")
+                .pattern("X X")
                 .pattern("###")
-                .input('#', Items.ECHO_SHARD)
-                .input('X', Items.SCULK)
-                .input('S', Items.SCULK_CATALYST)
-                .criterion(hasItem(Items.ECHO_SHARD), conditionsFromItem(Items.ECHO_SHARD))
-                .criterion(hasItem(Items.SCULK), conditionsFromItem(Items.SCULK))
-                .criterion(hasItem(Items.SCULK), conditionsFromItem(Items.SCULK))
-                .criterion(hasItem(Items.SCULK_CATALYST), conditionsFromItem(Items.SCULK_CATALYST))
+                .input('#', Items.CAST_STEEL)
+                .input('X', Items.IRON_INGOT)
+                .criterion(hasItem(Items.CAST_STEEL), conditionsFromItem(Items.CAST_STEEL))
+                .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
                 .offerTo(exporter);
-
+*/
     }
 }

@@ -32,7 +32,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.BLOCK_OF_PINKU);
         addDrop(ModBlocks.BLOCK_OF_RAINBOW_PYRITE);
         addDrop(ModBlocks.PINKU_ORE);
-        addDrop(ModBlocks.FUSER);
+        addDrop(ModBlocks.CRUSHER);
         addDrop(ModBlocks.BLOCK_OF_TUNGSTEN);
         addDrop(ModBlocks.BLOCK_OF_ALUMINUM);
         addDrop(ModBlocks.ALUMINUM_TRAPDOOR);

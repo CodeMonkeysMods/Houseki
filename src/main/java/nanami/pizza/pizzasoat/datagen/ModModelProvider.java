@@ -7,8 +7,8 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
+import net.minecraft.data.client.TexturedModel;
 import net.minecraft.item.ArmorItem;
-import net.minecraft.util.Arm;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
@@ -31,7 +31,6 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLOCK_OF_ALUMINUM);
         blockStateModelGenerator.registerDoor(ModBlocks.ALUMINUM_DOOR);
         blockStateModelGenerator.registerTrapdoor(ModBlocks.ALUMINUM_TRAPDOOR);
-        blockStateModelGenerator.registerSimpleState(ModBlocks.FUSER);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLOCK_OF_SAPPHIRE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SAPPHIRE_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_SAPPHIRE_ORE);
@@ -48,6 +47,8 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLACKSTONE_SULFUR_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SULFUR_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLOCK_OF_SULFUR);
+
+        blockStateModelGenerator.registerCooker(ModBlocks.CRUSHER, TexturedModel.ORIENTABLE);
 
         limestonePool.stairs(ModBlocks.LIMESTONE_STAIRS);
         limestoneBrickPool.stairs(ModBlocks.LIMESTONE_BRICK_STAIRS);

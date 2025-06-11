@@ -4,9 +4,9 @@ import nanami.pizza.pizzasoat.block.ModBlocks;
 import nanami.pizza.pizzasoat.block.entity.ModBlockEntities;
 import nanami.pizza.pizzasoat.item.ModItemGroups;
 import nanami.pizza.pizzasoat.item.ModItems;
-import nanami.pizza.pizzasoat.recipe.ModRecipes;
 import nanami.pizza.pizzasoat.screen.ModScreenHandlers;
 import nanami.pizza.pizzasoat.world.gen.ModWorldGeneration;
+import nanami.pizza.pizzasoat.recipe.ModRecipes;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.registry.FuelRegistry;

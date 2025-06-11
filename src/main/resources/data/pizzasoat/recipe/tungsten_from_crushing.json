@@ -1,0 +1,9 @@
+{
+  "type": "pizzasoat:crushing",
+  "ingredient": {
+    "item": "pizzasoat:wolframite"
+  },
+  "result": {
+    "id": "pizzasoat:tungsten"
+  }
+}

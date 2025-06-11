@@ -1,12 +1,13 @@
 package nanami.pizza.pizzasoat.block.entity.custom;
 
-
+import nanami.pizza.pizzasoat.block.custom.CrusherBlock;
 import nanami.pizza.pizzasoat.block.entity.ImplementedInventory;
 import nanami.pizza.pizzasoat.block.entity.ModBlockEntities;
-import nanami.pizza.pizzasoat.recipe.FuserRecipe;
-import nanami.pizza.pizzasoat.recipe.FuserRecipeInput;
+import nanami.pizza.pizzasoat.item.ModItems;
+import nanami.pizza.pizzasoat.recipe.CrusherRecipe;
+import nanami.pizza.pizzasoat.recipe.CrusherRecipeInput;
 import nanami.pizza.pizzasoat.recipe.ModRecipes;
-import nanami.pizza.pizzasoat.screen.custom.FuserScreenHandler;
+import nanami.pizza.pizzasoat.screen.custom.CrusherScreenHandler;
 import net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerFactory;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
@@ -31,28 +32,27 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.Optional;
 
-public class FuserBE extends BlockEntity implements ExtendedScreenHandlerFactory<BlockPos>, ImplementedInventory {
-    private final DefaultedList<ItemStack> inventory = DefaultedList.ofSize(4, ItemStack.EMPTY);
+public class CrusherBlockEntity extends BlockEntity implements ExtendedScreenHandlerFactory<BlockPos>, ImplementedInventory {
+    private final DefaultedList<ItemStack> inventory = DefaultedList.ofSize(3, ItemStack.EMPTY);
 
-            private static final int INPUT_SLOT_1 = 0;
-            private static final int INPUT_SLOT_2 = 1;
-            private static final int OUTPUT_SLOT = 2;
-            private static final int FLUID_ITEM_SLOT = 3;
+    private static final int INPUT_SLOT = 0;
+    private static final int FUEL_SLOT = 1;
+    private static final int OUTPUT_SLOT = 2;
 
-            protected final PropertyDelegate propertyDelegate;
-            private int progress = 0;
-            private int maxProgress = 72;
-            private final int DEFAULT_MAX_PROGRESS = 72;
+    protected final PropertyDelegate propertyDelegate;
+    private int progress = 0;
+    private int maxProgress = 72;
+    private final int DEFAULT_MAX_PROGRESS = 72;
 
 
-    public FuserBE(BlockPos pos, BlockState state) {
-        super(ModBlockEntities.FUSER_BE, pos, state);
+    public CrusherBlockEntity(BlockPos pos, BlockState state) {
+        super(ModBlockEntities.CRUSHER_BE, pos, state);
         this.propertyDelegate = new PropertyDelegate() {
             @Override
             public int get(int index) {
                 return switch (index) {
-                    case 0 -> FuserBE.this.progress;
-                    case 1 -> FuserBE.this.maxProgress;
+                    case 0 -> CrusherBlockEntity.this.progress;
+                    case 1 -> CrusherBlockEntity.this.maxProgress;
                     default -> 0;
                 };
             }
@@ -60,8 +60,8 @@ public class FuserBE extends BlockEntity implements ExtendedScreenHandlerFactory
             @Override
             public void set(int index, int value) {
                 switch (index) {
-                    case 0: FuserBE.this.progress = value;
-                    case 1: FuserBE.this.maxProgress = value;
+                    case 0 -> CrusherBlockEntity.this.progress = value;
+                    case 1 -> CrusherBlockEntity.this.maxProgress = value;
                 }
             }
 
@@ -78,47 +78,49 @@ public class FuserBE extends BlockEntity implements ExtendedScreenHandlerFactory
     }
 
     @Override
-    public BlockPos getScreenOpeningData(ServerPlayerEntity player) {
+    public BlockPos getScreenOpeningData(ServerPlayerEntity serverPlayerEntity) {
         return this.pos;
     }
 
     @Override
     public Text getDisplayName() {
-        return Text.translatable("gui.pizzasoat.fuser");
+        return Text.translatable("gui.pizzasoat.crusher");
     }
 
     @Nullable
     @Override
     public ScreenHandler createMenu(int syncId, PlayerInventory playerInventory, PlayerEntity player) {
-        return new FuserScreenHandler(syncId, playerInventory, this, propertyDelegate);
+        return new CrusherScreenHandler(syncId, playerInventory, this, propertyDelegate);
     }
 
     @Override
     protected void writeNbt(NbtCompound nbt, RegistryWrapper.WrapperLookup registryLookup) {
         super.writeNbt(nbt, registryLookup);
         Inventories.writeNbt(nbt, inventory, registryLookup);
-        nbt.putInt("fuser.progress", progress);
-        nbt.putInt("fuser.max_progress", maxProgress);
+        nbt.putInt("crusher.progress", progress);
+        nbt.putInt("crusher.max_progress", maxProgress);
     }
 
     @Override
     protected void readNbt(NbtCompound nbt, RegistryWrapper.WrapperLookup registryLookup) {
         Inventories.readNbt(nbt, inventory, registryLookup);
-        progress = nbt.getInt("fuser.progress");
-        maxProgress = nbt.getInt("fuser.max_progress");
+        progress = nbt.getInt("crusher.progress");
+        maxProgress = nbt.getInt("crusher.max_progress");
         super.readNbt(nbt, registryLookup);
     }
 
     public void tick(World world, BlockPos pos, BlockState state) {
-        if (hasRecipe() && canInsertIntoOutputSlot()) {
-            increaseCraftingProcess();
+        if(hasRecipe() && canInsertIntoOutputSlot()) {
+            increaseCraftingProgress();
+            world.setBlockState(pos, state.with(CrusherBlock.LIT, true));
             markDirty(world, pos, state);
 
-            if (hasCraftingFinished()) {
+            if(hasCraftingFinished()) {
                 craftItem();
                 resetProgress();
             }
         } else {
+            world.setBlockState(pos, state.with(CrusherBlock.LIT, false));
             resetProgress();
         }
     }
@@ -129,19 +131,18 @@ public class FuserBE extends BlockEntity implements ExtendedScreenHandlerFactory
     }
 
     private void craftItem() {
-        Optional<RecipeEntry<FuserRecipe>> recipe = getCurrentRecipe();
+        Optional<RecipeEntry<CrusherRecipe>> recipe = getCurrentRecipe();
 
-        this.removeStack(INPUT_SLOT_1, 1);
-        this.removeStack(INPUT_SLOT_2, 1);
+        this.removeStack(INPUT_SLOT, 1);
         this.setStack(OUTPUT_SLOT, new ItemStack(recipe.get().value().output().getItem(),
-                this.getStack(OUTPUT_SLOT).getCount()+ recipe.get().value().output().getCount()));
+                this.getStack(OUTPUT_SLOT).getCount() + recipe.get().value().output().getCount()));
     }
 
     private boolean hasCraftingFinished() {
         return this.progress >= this.maxProgress;
     }
 
-    private void increaseCraftingProcess() {
+    private void increaseCraftingProgress() {
         this.progress++;
     }
 
@@ -151,7 +152,7 @@ public class FuserBE extends BlockEntity implements ExtendedScreenHandlerFactory
     }
 
     private boolean hasRecipe() {
-        Optional<RecipeEntry<FuserRecipe>> recipe = getCurrentRecipe();
+        Optional<RecipeEntry<CrusherRecipe>> recipe = getCurrentRecipe();
         if (recipe.isEmpty()) {
             return false;
         }
@@ -160,9 +161,9 @@ public class FuserBE extends BlockEntity implements ExtendedScreenHandlerFactory
         return canInsertAmountIntoOutputSlot(output.getCount()) && canInsertItemIntoOutputSlot(output);
     }
 
-    private Optional<RecipeEntry<FuserRecipe>> getCurrentRecipe() {
-        return this.getWorld().getRecipeManager()
-                .getFirstMatch(ModRecipes.FUSER_TYPE, new FuserRecipeInput(inventory.get(INPUT_SLOT_1), inventory.get(INPUT_SLOT_2)), this.getWorld());
+    private Optional<RecipeEntry<CrusherRecipe>> getCurrentRecipe() {
+        return this.getWorld().getRecipeManager().getFirstMatch(ModRecipes.CRUSHER_TYPE, new CrusherRecipeInput(inventory.get(INPUT_SLOT)), this.getWorld());
+
     }
 
     private boolean canInsertItemIntoOutputSlot(ItemStack output) {
@@ -170,10 +171,7 @@ public class FuserBE extends BlockEntity implements ExtendedScreenHandlerFactory
     }
 
     private boolean canInsertAmountIntoOutputSlot(int count) {
-        int maxCount = this.getStack(OUTPUT_SLOT).isEmpty() ? 64 : this.getStack(OUTPUT_SLOT).getMaxCount();
-        int currentCount = this.getStack(OUTPUT_SLOT).getCount();
-
-        return maxCount >= currentCount + count;
+        return this.getStack(OUTPUT_SLOT).getMaxCount() >= this.getStack(OUTPUT_SLOT).getCount() + count;
     }
 
     @Nullable

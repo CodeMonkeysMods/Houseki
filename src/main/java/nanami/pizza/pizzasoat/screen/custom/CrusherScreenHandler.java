@@ -1,6 +1,6 @@
 package nanami.pizza.pizzasoat.screen.custom;
 
-import nanami.pizza.pizzasoat.block.entity.custom.FuserBE;
+import nanami.pizza.pizzasoat.block.entity.custom.CrusherBlockEntity;
 import nanami.pizza.pizzasoat.screen.ModScreenHandlers;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -13,26 +13,26 @@ import net.minecraft.screen.ScreenHandler;
 import net.minecraft.screen.slot.Slot;
 import net.minecraft.util.math.BlockPos;
 
-public class FuserScreenHandler extends ScreenHandler {
+public class CrusherScreenHandler extends ScreenHandler {
     private final Inventory inventory;
     private final PropertyDelegate propertyDelegate;
-    public final FuserBE blockEntity;
+    public final CrusherBlockEntity blockEntity;
 
-    public FuserScreenHandler(int syncId, PlayerInventory inventory, BlockPos pos) {
+    public CrusherScreenHandler(int syncId, PlayerInventory inventory, BlockPos pos) {
         this(syncId, inventory, inventory.player.getWorld().getBlockEntity(pos), new ArrayPropertyDelegate(2));
     }
 
-    public FuserScreenHandler(int syncId, PlayerInventory playerInventory, BlockEntity blockEntity, PropertyDelegate arrayPropertyDelegate) {
-        super(ModScreenHandlers.FUSER_SCREEN_HANDLER, syncId);
-        checkSize((Inventory) blockEntity, 4);
+    public CrusherScreenHandler(int syncId, PlayerInventory playerInventory,
+                                BlockEntity blockEntity, PropertyDelegate arrayPropertyDelegate) {
+        super(ModScreenHandlers.CRUSHER_SCREEN_HANDLER, syncId);
+        checkSize((Inventory) blockEntity, 3);
         this.inventory = (Inventory) blockEntity;
         this.propertyDelegate = arrayPropertyDelegate;
-        this.blockEntity = ((FuserBE) blockEntity);
+        this.blockEntity = ((CrusherBlockEntity) blockEntity);
 
-        this.addSlot(new Slot(inventory, 0, 54, 16));
-        this.addSlot(new Slot(inventory, 1, 54, 52));
-        this.addSlot(new Slot(inventory, 2, 104, 34));
-        this.addSlot(new Slot(inventory, 3, 152, 62));
+        this.addSlot(new Slot(inventory, 0, 56, 17));
+        this.addSlot(new Slot(inventory, 1, 56, 53));
+        this.addSlot(new Slot(inventory, 2, 116, 35));
 
         addPlayerInventory(playerInventory);
         addPlayerHotbar(playerInventory);
@@ -52,15 +52,23 @@ public class FuserScreenHandler extends ScreenHandler {
         return maxProgress != 0 && progress != 0 ? progress * arrowPixelSize / maxProgress : 0;
     }
 
+    public int getScaledCrushingProgress() {
+        int progress = this.propertyDelegate.get(0);
+        int maxProgress = this.propertyDelegate.get(1);
+        int crushingPixelSize = 19;
+
+        return maxProgress != 0 && progress != 0 ? progress * crushingPixelSize / maxProgress : 0;
+    }
+
     @Override
     public ItemStack quickMove(PlayerEntity player, int invSlot) {
         ItemStack newStack = ItemStack.EMPTY;
         Slot slot = this.slots.get(invSlot);
-        if (slot != null && slot.hasStack())  {
+        if (slot != null && slot.hasStack()) {
             ItemStack originalStack = slot.getStack();
             newStack = originalStack.copy();
             if (invSlot < this.inventory.size()) {
-                if (!this.insertItem(originalStack, this.inventory.size(), this.slots.size(), false)) {
+                if (!this.insertItem(originalStack, this.inventory.size(), this.slots.size(), true)) {
                     return ItemStack.EMPTY;
                 }
             } else if (!this.insertItem(originalStack, 0, this.inventory.size(), false)) {

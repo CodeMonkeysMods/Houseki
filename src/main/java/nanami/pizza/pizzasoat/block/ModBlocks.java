@@ -1,7 +1,7 @@
 package nanami.pizza.pizzasoat.block;
 
 import nanami.pizza.pizzasoat.PizzasOAT;
-import nanami.pizza.pizzasoat.block.custom.FuserBlock;
+import nanami.pizza.pizzasoat.block.custom.CrusherBlock;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -138,8 +138,8 @@ public class ModBlocks {
             new TrapdoorBlock(BlockSetType.IRON, AbstractBlock.Settings.copy(Blocks.IRON_TRAPDOOR).requiresTool().nonOpaque()));
 
     //Entity Blocks
-    public static final Block FUSER = registerBlock("fuser",
-            new FuserBlock(AbstractBlock.Settings.copy(Blocks.SCULK_CATALYST).nonOpaque()));
+    public static final Block CRUSHER = registerBlock("crusher",
+            new CrusherBlock(AbstractBlock.Settings.copy(Blocks.BLAST_FURNACE).nonOpaque().requiresTool()));
 
 
 

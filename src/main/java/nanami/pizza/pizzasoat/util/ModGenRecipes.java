@@ -13,7 +13,7 @@ import net.minecraft.recipe.book.RecipeCategory;
 
 import static net.minecraft.data.server.recipe.RecipeProvider.*;
 
-public class ModRecipes {
+public class ModGenRecipes {
 
     //Pinku Smithing Template
     public static void offerPinkuUpgradeRecipe(RecipeExporter exporter, Item input, RecipeCategory category, Item result) {

@@ -27,7 +27,7 @@
   "block.pizzasoat.scheelite_ore": "Scheelite Ore",
   "block.pizzasoat.deepslate_scheelite_ore": "Deepslate Scheelite Ore",
   "block.pizzasoat.trona_ore": "Trona Ore",
-  "block.pizzasoat.fuser": "Fuser",
+  "block.pizzasoat.crusher": "Crusher",
   "block.pizzasoat.block_of_tungsten": "Block of Tungsten",
   "block.pizzasoat.bauxite_ore": "Bauxite Ore",
   "block.pizzasoat.deepslate_bauxite_ore": "Deepslate Bauxite Ore",
@@ -137,5 +137,5 @@
   "itemgroup.pizzasoat.pizzasitems": "Pizza's Items",
   "itemgroup.pizzasoat.pizzasblocks": "Pizza's Blocks",
 
-  "gui.pizzasoat.fuser" : "Fuser"
+  "gui.pizzasoat.crusher": "Crusher"
 }

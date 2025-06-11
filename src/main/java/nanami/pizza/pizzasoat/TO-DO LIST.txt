@@ -1,3 +1,68 @@
+Change Fuser to a Crusher and implement it.
+The Crusher should be made from Cast Steel.
+Use Iron as the "Fuel" to crush things.
+
+Research Steel and add to mod.
+Make it smeltable to be turned into cast steel.
+
+Research Slate and add to mod as a rock.
+
+Research Nickel and add to the game.
+Make it crushable to produce platinum but rare like I mentioned with copper below.
+
 Make Pinku Smithing Template spawn in end cities and things like that.
 Possibly make wolf and horse armor for all ores that have armors
 Maybe make deepslate version of Trona
+
+
+RAINBOW PYRITE:
+1. Make a Sandstone variant.
+2. Maybe make it spawnable next to Bauxite as well/Make a Bauxite variant of it that spawn in Bauxite
+
+WOLFRAMITE:
+1. Make less common than Scheelite.
+2. Once Crusher is added, make crushable and turn into Tungsten
+
+SCHEELITE:
+1. Change texture
+2. Once Crusher is added, make crushable and turn into Tungsten
+
+TRONA, SODIUM CARBONATE AND PURE TUNGSTEN:
+1. Comment out all the code for it. Useless for now.
+2. If re-implemented then change Trona texture.
+
+TUNGSTEN:
+1. Look into adding Poison effect to sword.
+2. Maybe add drills that are made using Tungsten.
+
+BAUXITE:
+1. Make Bauxite into a rock. Copy of Terracotta. Remove the ore variant.
+2. Maybe use granite and darken it for texture. Maybe...
+3. Make the Bauxite block crushable to turn it into Bauxite item which then gets smelted to Aluminum
+
+NEPHRITE:
+1. Make the ore out of Limestone and spawn it in Limestone.
+2. Create Armor and Tools for it making it a darker green.
+3. Should be slightly worse than Jadeite.
+4. Moh scale 6 to 6.5
+5. Give Armor effect the Regeneration effect.
+
+JADEITE:
+1. Remove fusing recipe for Jadeite.
+2. Make Jadeite a Slate ore block.
+3. Use the Jade armor and Tools, make them slightly darker and turn them into Jadeite armor and tools
+4. Should be slightly better than Nephrite.
+5. Moh scale 6.5 to 7
+6. Give Armor effect the Regeneration 2 effect.
+
+JADE:
+1. Remove Jade.
+
+PLATINUM:
+1. Make it rarer
+2. Make copper crushable to make platinum. Maybe make a system to drop other stuff and platinum to be rarer or have it crushed
+to platinum nuggets that can be made into platinum ingots.
+3. Make the Ore crushable into Native Platinum and then smelt Native Platinum into Platinum ingots.
+
+SULFER:
+1. Redo block texture.

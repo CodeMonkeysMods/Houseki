@@ -1,4 +1,4 @@
-// 1.21.1	2025-06-07T00:38:23.107158	Pizza's Ores And Things/Recipes
+// 1.21.1	2025-06-10T23:30:17.856631	Pizza's Ores And Things/Recipes
 de5067b365fbb234d303d882ec002457c55d6571 data\pizzasoat\recipe\limestone_bricks.json
 cc18495f266def042a72496426ee123a947fb8ee data\pizzasoat\advancement\recipes\combat\rainbow_pyrite_helmet.json
 ea6ef2833be95698ba8a1c0d93f0c0332c0928de data\pizzasoat\advancement\recipes\misc\tungsten_from_blasting_pure_tungsten.json
@@ -11,7 +11,6 @@ ac31b103f2d60fb459583ce9e01ace0f0b08cb9d data\pizzasoat\recipe\trona_from_smelti
 d358d9d557c9d020856ef52893ca8e4fc7a2a03d data\pizzasoat\advancement\recipes\decorations\block_of_sulfur.json
 9f07f50545434556aae707bd1c5b21bc494e6315 data\pizzasoat\recipe\rainbow_pyrite_axe.json
 38b07b0d4d5928075fc26cfd37001de16836df0b data\pizzasoat\recipe\platinum_pickaxe.json
-171a8185306b2c9e86b3cda733aebfd8397a08dd data\pizzasoat\recipe\fuser.json
 53e95f6edb58fe8e7be281783f3537187206e787 data\pizzasoat\recipe\polished_limestone_stairs_from_limestone_stonecutting.json
 1b0ed038abaec35d70ee8c4942bba76409346b20 data\pizzasoat\advancement\recipes\tools\platinum_hoe.json
 8dc56b061599a68a7264d21ae7968f58035f8c5b data\pizzasoat\recipe\sapphire.json
@@ -19,7 +18,6 @@ d358d9d557c9d020856ef52893ca8e4fc7a2a03d data\pizzasoat\advancement\recipes\deco
 56b243b0387e32e9f1efead1fd46ac511da17c08 data\pizzasoat\advancement\recipes\combat\aluminum_sword.json
 04514a4ac269258b01e08f55451e1ac083d64f57 data\pizzasoat\recipe\limestone_stairs.json
 d8a30eb662739963f71c54b3373226f4877b83da data\pizzasoat\recipe\tungsten_sword.json
-e00cb3524e212f063d1be44e7fadf6577a2f5e8f data\pizzasoat\advancement\recipes\misc\fuser.json
 a50c8f2cd45347bc44b897c7d6f4f1a9b26df9e5 data\pizzasoat\advancement\recipes\decorations\block_of_jade.json
 5c5f9fadba5057c1ce5b57cbd76ec8ba2d8893ff data\pizzasoat\advancement\recipes\building_blocks\limestone_brick_stairs_from_limestone_stonecutting.json
 eb5a3d9f7267748d4547a72ddba66080804369ff data\pizzasoat\recipe\pinku_chestplate_smithing.json

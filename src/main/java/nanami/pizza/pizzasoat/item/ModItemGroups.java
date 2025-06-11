@@ -157,7 +157,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.DEEPSLATE_PLATINUM_ORE);
                         entries.add(ModBlocks.BLOCK_OF_PLATINUM);
 
-                        entries.add(ModBlocks.FUSER);
+                        entries.add(ModBlocks.CRUSHER);
 
                         entries.add(ModBlocks.LIMESTONE);
                         entries.add(ModBlocks.LIMESTONE_STAIRS);
