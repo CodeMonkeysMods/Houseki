@@ -37,6 +37,7 @@ public class CrusherBlock extends BlockWithEntity {
 
     public CrusherBlock(Settings settings) {
         super(settings);
+        setDefaultState(getDefaultState().with(LIT, false));
     }
 
     @Override

@@ -110,6 +110,10 @@ public class CrusherBlockEntity extends BlockEntity implements ExtendedScreenHan
     }
 
     public void tick(World world, BlockPos pos, BlockState state) {
+        if (world.isClient()) {
+            return;
+        }
+
         if(hasRecipe() && canInsertIntoOutputSlot()) {
             increaseCraftingProgress();
             world.setBlockState(pos, state.with(CrusherBlock.LIT, true));
