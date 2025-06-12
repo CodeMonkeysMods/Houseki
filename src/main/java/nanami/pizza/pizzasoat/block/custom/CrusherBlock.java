@@ -37,7 +37,6 @@ public class CrusherBlock extends BlockWithEntity {
 
     public CrusherBlock(Settings settings) {
         super(settings);
-        setDefaultState(getDefaultState().with(LIT, false));
     }
 
     @Override
@@ -57,15 +56,14 @@ public class CrusherBlock extends BlockWithEntity {
 
     @Override
     public @Nullable BlockState getPlacementState(ItemPlacementContext ctx) {
-        return this.getDefaultState().with(FACING, ctx.getHorizontalPlayerFacing().getOpposite());
+        return this.getDefaultState().with(FACING, ctx.getHorizontalPlayerFacing().getOpposite())
+                .with(LIT, false);
     }
 
     @Override
     protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
         builder.add(FACING, LIT);
     }
-
-
 
     @Override
     public @Nullable BlockEntity createBlockEntity(BlockPos pos, BlockState state) {
