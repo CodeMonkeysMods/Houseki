@@ -1,6 +1,4 @@
-Change Fuser to a Crusher and implement it.
 The Crusher should be made from Cast Steel.
-Use Iron as the "Fuel" to crush things.
 
 Research Steel and add to mod.
 Make it smeltable to be turned into cast steel.

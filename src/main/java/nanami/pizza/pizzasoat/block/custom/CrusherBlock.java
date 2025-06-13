@@ -115,7 +115,10 @@ public class CrusherBlock extends BlockWithEntity {
         double yPos = pos.getY();
         double zPos = (double)pos.getZ() + 0.5;
         if (random.nextDouble() < 0.15) {
-            world.playSound(xPos, yPos, zPos, SoundEvents.BLOCK_DRIPSTONE_BLOCK_BREAK, SoundCategory.BLOCKS, 1.0f, 1.0f, false);
+            world.playSound(xPos, yPos, zPos, SoundEvents.BLOCK_DRIPSTONE_BLOCK_BREAK, SoundCategory.BLOCKS, 1.0f, 5.0f, false);
+        }
+        if (random.nextDouble() < 0.05) {
+            world.playSound(xPos, yPos, zPos, SoundEvents.BLOCK_GRINDSTONE_USE, SoundCategory.BLOCKS, 0.7f, 0.5f, false);
         }
 
         Direction direction = state.get(FACING);
