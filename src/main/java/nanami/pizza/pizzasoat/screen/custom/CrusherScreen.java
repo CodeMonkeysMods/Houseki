@@ -40,6 +40,7 @@ public class CrusherScreen extends HandledScreen<CrusherScreenHandler> {
         context.drawTexture(GUI_TEXTURE, x, y, 0, 0, backgroundWidth, backgroundHeight);
         renderProgressArrow(context, x, y);
         renderProgressCrushing(context, x, y);
+
     }
 
     private void renderProgressArrow(DrawContext context, int x, int y) {
@@ -51,8 +52,9 @@ public class CrusherScreen extends HandledScreen<CrusherScreenHandler> {
 
     private void renderProgressCrushing(DrawContext context, int x, int y) {
         if (handler.isCrafting()) {
-            context.drawTexture(CRUSHING_TEXTURE, x + 56, y + 34 + 18 - handler.getScaledCrushingProgress(), 0,
-                    18 - handler.getScaledCrushingProgress(), 16, handler.getScaledCrushingProgress(), 16, 18);
+            int progress = handler.getScaledFuelProgress();
+            context.drawTexture(CRUSHING_TEXTURE, x + 56, y + 34 + (18 - progress), 0,
+                    18 - progress, 16, progress, 16, 18);
         }
     }
 

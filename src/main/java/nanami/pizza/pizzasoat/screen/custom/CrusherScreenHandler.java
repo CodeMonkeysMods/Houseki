@@ -19,7 +19,7 @@ public class CrusherScreenHandler extends ScreenHandler {
     public final CrusherBlockEntity blockEntity;
 
     public CrusherScreenHandler(int syncId, PlayerInventory inventory, BlockPos pos) {
-        this(syncId, inventory, inventory.player.getWorld().getBlockEntity(pos), new ArrayPropertyDelegate(2));
+        this(syncId, inventory, inventory.player.getWorld().getBlockEntity(pos), new ArrayPropertyDelegate(5));
     }
 
     public CrusherScreenHandler(int syncId, PlayerInventory playerInventory,
@@ -28,6 +28,7 @@ public class CrusherScreenHandler extends ScreenHandler {
         checkSize((Inventory) blockEntity, 3);
         this.inventory = (Inventory) blockEntity;
         this.propertyDelegate = arrayPropertyDelegate;
+        addProperties(propertyDelegate);
         this.blockEntity = ((CrusherBlockEntity) blockEntity);
 
         this.addSlot(new Slot(inventory, 0, 56, 17));
@@ -40,8 +41,12 @@ public class CrusherScreenHandler extends ScreenHandler {
         addProperties(arrayPropertyDelegate);
     }
 
+    public boolean isBurning() {
+        return propertyDelegate.get(2) > 0;
+    }
+
     public boolean isCrafting() {
-        return propertyDelegate.get(0) > 0;
+        return propertyDelegate.get(4) > 0;
     }
 
     public int getScaledArrowProgress() {
@@ -52,12 +57,12 @@ public class CrusherScreenHandler extends ScreenHandler {
         return maxProgress != 0 && progress != 0 ? progress * arrowPixelSize / maxProgress : 0;
     }
 
-    public int getScaledCrushingProgress() {
-        int progress = this.propertyDelegate.get(0);
-        int maxProgress = this.propertyDelegate.get(1);
-        int crushingPixelSize = 19;
+    public int getScaledFuelProgress() {
+        int fuelTime = this.propertyDelegate.get(2);
+        int maxFuelTime = this.propertyDelegate.get(3);
+        int crushingPixelSize = 18;
 
-        return maxProgress != 0 && progress != 0 ? progress * crushingPixelSize / maxProgress : 0;
+        return maxFuelTime != 2 && fuelTime != 2 ? fuelTime * crushingPixelSize / maxFuelTime : 2;
     }
 
     @Override

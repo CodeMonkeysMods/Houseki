@@ -14,7 +14,9 @@ import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.Inventories;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.network.listener.ClientPlayPacketListener;
 import net.minecraft.network.packet.Packet;
@@ -41,9 +43,12 @@ public class CrusherBlockEntity extends BlockEntity implements ExtendedScreenHan
 
     protected final PropertyDelegate propertyDelegate;
     private int progress = 0;
-    private int maxProgress = 72;
-    private final int DEFAULT_MAX_PROGRESS = 72;
+    private int maxProgress = CrusherRecipe.DEFAULT_CRUSHING_TIME;
+    private int fuelTime = 0;
+    private int maxFuelTime = 0;
 
+    private int lastValidFuelTime = 0;
+    private boolean wasCrafting = false;
 
     public CrusherBlockEntity(BlockPos pos, BlockState state) {
         super(ModBlockEntities.CRUSHER_BE, pos, state);
@@ -53,6 +58,9 @@ public class CrusherBlockEntity extends BlockEntity implements ExtendedScreenHan
                 return switch (index) {
                     case 0 -> CrusherBlockEntity.this.progress;
                     case 1 -> CrusherBlockEntity.this.maxProgress;
+                    case 2 -> CrusherBlockEntity.this.getStableFuelTime();
+                    case 3 -> CrusherBlockEntity.this.maxFuelTime;
+                    case 4 -> CrusherBlockEntity.this.wasCrafting ? 1 : 0;
                     default -> 0;
                 };
             }
@@ -62,14 +70,23 @@ public class CrusherBlockEntity extends BlockEntity implements ExtendedScreenHan
                 switch (index) {
                     case 0 -> CrusherBlockEntity.this.progress = value;
                     case 1 -> CrusherBlockEntity.this.maxProgress = value;
+                    case 2 -> CrusherBlockEntity.this.fuelTime = value;
+                    case 3 -> CrusherBlockEntity.this.maxFuelTime = value;
                 }
             }
 
             @Override
             public int size() {
-                return 2;
+                return 5;
             }
         };
+    }
+
+    private int getFuelTime(ItemStack fuel) {
+        if (fuel.getItem() == Items.IRON_INGOT) {
+            return 1600; //How long a single ingots should "burn" in ticks
+        }
+        return 0;
     }
 
     @Override
@@ -99,6 +116,8 @@ public class CrusherBlockEntity extends BlockEntity implements ExtendedScreenHan
         Inventories.writeNbt(nbt, inventory, registryLookup);
         nbt.putInt("crusher.progress", progress);
         nbt.putInt("crusher.max_progress", maxProgress);
+        nbt.putInt("crusher.fuel_time", fuelTime);
+        nbt.putInt("crusher.max_fuel_time", maxFuelTime);
     }
 
     @Override
@@ -106,18 +125,47 @@ public class CrusherBlockEntity extends BlockEntity implements ExtendedScreenHan
         Inventories.readNbt(nbt, inventory, registryLookup);
         progress = nbt.getInt("crusher.progress");
         maxProgress = nbt.getInt("crusher.max_progress");
+        fuelTime = nbt.getInt("crusher.fuel_time");
+        maxFuelTime = nbt.getInt("crusher.max_fuel_time");
         super.readNbt(nbt, registryLookup);
     }
+
 
     public void tick(World world, BlockPos pos, BlockState state) {
         if (world.isClient()) {
             return;
         }
 
-        if(hasRecipe() && canInsertIntoOutputSlot()) {
+        Optional<RecipeEntry<CrusherRecipe>> recipe = getCurrentRecipe();
+        if (recipe.isPresent()) {
+            maxProgress = recipe.get().value().crushingTime();
+        } else {
+            maxProgress = CrusherRecipe.DEFAULT_CRUSHING_TIME;
+        }
+
+        boolean isCurrentlyCrafting = fuelTime > 0 && hasRecipe() && canInsertIntoOutputSlot();
+        wasCrafting = isCurrentlyCrafting || (progress > 0);
+
+        if (fuelTime > 0) {
+            fuelTime--;
+        }
+
+        if (fuelTime == 0 && canCraft()) {
+            ItemStack fuelStack = this.getStack(FUEL_SLOT);
+            int fuelVal = getFuelTime(fuelStack);
+            if (fuelVal > 0) {
+                fuelTime = fuelVal;
+                maxFuelTime = fuelVal;
+                fuelStack.decrement(1);
+                markDirty();
+            }
+        }
+
+        boolean canCraftNow = fuelTime > 0 && hasRecipe() && canInsertIntoOutputSlot();
+
+        if(canCraftNow) {
             increaseCraftingProgress();
             world.setBlockState(pos, state.with(CrusherBlock.LIT, true));
-            markDirty(world, pos, state);
 
             if(hasCraftingFinished()) {
                 craftItem();
@@ -125,17 +173,38 @@ public class CrusherBlockEntity extends BlockEntity implements ExtendedScreenHan
             }
         } else {
             world.setBlockState(pos, state.with(CrusherBlock.LIT, false));
-            resetProgress();
+            if (fuelTime <= 0) {
+                resetProgress();
+            }
         }
+
+        markDirty(world, pos, state);
+    }
+
+    public int getStableFuelTime() {
+        if (fuelTime > 0) {
+            lastValidFuelTime = fuelTime;
+            return fuelTime;
+        }
+
+        if (hasRecipe() && canInsertIntoOutputSlot()) {
+            return lastValidFuelTime;
+        }
+
+        return 0;
+    }
+
+    private boolean canCraft() {
+        return hasRecipe() && canInsertIntoOutputSlot();
     }
 
     private void resetProgress() {
         this.progress = 0;
-        this.maxProgress = DEFAULT_MAX_PROGRESS;
     }
 
     private void craftItem() {
         Optional<RecipeEntry<CrusherRecipe>> recipe = getCurrentRecipe();
+        if (recipe.isEmpty()) return;
 
         this.removeStack(INPUT_SLOT, 1);
         this.setStack(OUTPUT_SLOT, new ItemStack(recipe.get().value().output().getItem(),
