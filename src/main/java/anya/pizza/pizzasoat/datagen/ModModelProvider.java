@@ -147,5 +147,12 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.PLATINUM_LEGGINGS));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.PLATINUM_BOOTS));
 
+        itemModelGenerator.register(ModItems.PINKU_HORSE_ARMOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RAINBOW_PYRITE_HORSE_ARMOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.TUNGSTEN_HORSE_ARMOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ALUMINUM_HORSE_ARMOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SAPPHIRE_HORSE_ARMOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PLATINUM_HORSE_ARMOR, Models.GENERATED);
+
     }
 }

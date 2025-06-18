@@ -1,11 +1,9 @@
-Research Slate and add to mod as a rock.
-
-Research Nickel and add to the game.
-Make it crushable to produce platinum but rare like I mentioned with copper below.
-
-Make Pinku Smithing Template spawn in end cities and things like that.
-Possibly make wolf and horse armor for all ores that have armors
+Make wolf armor for all ores that have armors
 Maybe make deepslate version of Trona
+
+SLATE:
+1. Make bricks, stairs, slabs, and walls for it
+2. 4 on Moh Scale
 
 STEEL:
 1. Make a recipe to smelt Iron Ingots in a Blast Furnace and turn them into Crude Iron.

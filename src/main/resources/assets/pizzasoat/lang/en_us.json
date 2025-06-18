@@ -128,6 +128,13 @@
   "item.pizzasoat.jade_leggings": "Jade Leggings",
   "item.pizzasoat.jade_boots": "Jade Boots",
 
+  "item.pizzasoat.pinku_horse_armor": "Pinku Horse Armor",
+  "item.pizzasoat.rainbow_pyrite_horse_armor": "Rainbow Pyrite Horse Armor",
+  "item.pizzasoat.tungsten_horse_armor": "Tungsten Horse Armor",
+  "item.pizzasoat.aluminum_horse_armor": "Aluminum Horse Armor",
+  "item.pizzasoat.sapphire_horse_armor": "Sapphire Horse Armor",
+  "item.pizzasoat.platinum_horse_armor": "Platinum Horse Armor",
+
   "item.pizzasoat.smithing_template.pinku_upgrade.applies_to": "Netherite Equipment",
   "item.pizzasoat.smithing_template.pinku_upgrade.ingredients": "Pinku",
   "item.pizzasoat.smithing_template.pinku_upgrade.base_slot_description": "Add netherite armor, weapon, or tool",

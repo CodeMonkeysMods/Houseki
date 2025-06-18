@@ -173,6 +173,20 @@ public class ModItems {
     public static final Item PLATINUM_BOOTS = registerItem("platinum_boots",
             new ArmorItem(ModArmorMaterials.PLATINUM_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(34))));
 
+    //Horse Armor
+    public static final Item PINKU_HORSE_ARMOR = registerItem("pinku_horse_armor",
+            new AnimalArmorItem(ModArmorMaterials.PINKU_MATERIAL, AnimalArmorItem.Type.EQUESTRIAN, false, new Item.Settings()));
+    public static final Item RAINBOW_PYRITE_HORSE_ARMOR = registerItem("rainbow_pyrite_horse_armor",
+            new AnimalArmorItem(ModArmorMaterials.RAINBOW_MATERIAL, AnimalArmorItem.Type.EQUESTRIAN, false, new Item.Settings()));
+    public static final Item TUNGSTEN_HORSE_ARMOR = registerItem("tungsten_horse_armor",
+            new AnimalArmorItem(ModArmorMaterials.TUNGSTEN_MATERIAL, AnimalArmorItem.Type.EQUESTRIAN, false, new Item.Settings()));
+    public static final Item ALUMINUM_HORSE_ARMOR = registerItem("aluminum_horse_armor",
+            new AnimalArmorItem(ModArmorMaterials.ALUMINUM_MATERIAL, AnimalArmorItem.Type.EQUESTRIAN, false, new Item.Settings()));
+    public static final Item SAPPHIRE_HORSE_ARMOR = registerItem("sapphire_horse_armor",
+            new AnimalArmorItem(ModArmorMaterials.SAPPHIRE_MATERIAL, AnimalArmorItem.Type.EQUESTRIAN, false, new Item.Settings()));
+    public static final Item PLATINUM_HORSE_ARMOR = registerItem("platinum_horse_armor",
+            new AnimalArmorItem(ModArmorMaterials.PLATINUM_MATERIAL, AnimalArmorItem.Type.EQUESTRIAN, false, new Item.Settings()));
+
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(PizzasOAT.MOD_ID, name), item);

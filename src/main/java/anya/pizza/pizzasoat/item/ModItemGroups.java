@@ -86,6 +86,13 @@ public class ModItemGroups {
                         entries.add(ModItems.PLATINUM_SWORD);
                         entries.add(ModItems.PLATINUM_HOE);
 
+                        entries.add(ModItems.PINKU_HORSE_ARMOR);
+                        entries.add(ModItems.RAINBOW_PYRITE_HORSE_ARMOR);
+                        entries.add(ModItems.TUNGSTEN_HORSE_ARMOR);
+                        entries.add(ModItems.ALUMINUM_HORSE_ARMOR);
+                        entries.add(ModItems.SAPPHIRE_HORSE_ARMOR);
+                        entries.add(ModItems.PLATINUM_HORSE_ARMOR);
+
                         entries.add(ModItems.PINKU);
                         entries.add(ModItems.PINKU_SHARD);
                         entries.add(ModItems.PINKU_UPGRADE_SMITHING_TEMPLATE);

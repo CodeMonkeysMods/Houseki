@@ -5,6 +5,7 @@ import anya.pizza.pizzasoat.block.entity.ModBlockEntities;
 import anya.pizza.pizzasoat.item.ModItemGroups;
 import anya.pizza.pizzasoat.item.ModItems;
 import anya.pizza.pizzasoat.screen.ModScreenHandlers;
+import anya.pizza.pizzasoat.util.ModLootTableModifiers;
 import anya.pizza.pizzasoat.world.gen.ModWorldGeneration;
 import anya.pizza.pizzasoat.recipe.ModRecipes;
 import net.fabricmc.api.ModInitializer;
@@ -25,6 +26,7 @@ public class PizzasOAT implements ModInitializer {
 		ModBlockEntities.registerBlockEntities();
 		ModScreenHandlers.registerScreenHandlers();
 		ModRecipes.registerRecipes();
+		ModLootTableModifiers.modifyLootTables();
 
 		ModWorldGeneration.generateModWorldGeneration();
 
