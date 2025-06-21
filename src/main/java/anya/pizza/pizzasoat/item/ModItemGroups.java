@@ -180,6 +180,20 @@ public class ModItemGroups {
                         entries.add(ModBlocks.POLISHED_LIMESTONE_WALL);
                         entries.add(ModBlocks.CHISELED_LIMESTONE);
 
+                        entries.add(ModBlocks.SLATE);
+                        entries.add(ModBlocks.SLATE_STAIRS);
+                        entries.add(ModBlocks.SLATE_SLAB);
+                        entries.add(ModBlocks.SLATE_WALL);
+                        entries.add(ModBlocks.SLATE_TILES);
+                        entries.add(ModBlocks.SLATE_TILE_STAIRS);
+                        entries.add(ModBlocks.SLATE_TILE_SLAB);
+                        entries.add(ModBlocks.SLATE_TILE_WALL);
+                        entries.add(ModBlocks.POLISHED_SLATE);
+                        entries.add(ModBlocks.POLISHED_SLATE_STAIRS);
+                        entries.add(ModBlocks.POLISHED_SLATE_SLAB);
+                        entries.add(ModBlocks.POLISHED_SLATE_WALL);
+                        entries.add(ModBlocks.CHISELED_SLATE);
+
                         entries.add(ModBlocks.SULFUR_ORE);
                         entries.add(ModBlocks.BLACKSTONE_SULFUR_ORE);
                         entries.add(ModBlocks.BLOCK_OF_SULFUR);

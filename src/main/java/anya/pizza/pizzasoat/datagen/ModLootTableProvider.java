@@ -51,6 +51,19 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.LIMESTONE_SLAB, slabDrops(ModBlocks.LIMESTONE_SLAB));
         addDrop(ModBlocks.POLISHED_LIMESTONE_SLAB, slabDrops(ModBlocks.POLISHED_LIMESTONE_SLAB));
         addDrop(ModBlocks.LIMESTONE_BRICK_SLAB, slabDrops(ModBlocks.LIMESTONE_BRICK_SLAB));
+        addDrop(ModBlocks.SLATE);
+        addDrop(ModBlocks.POLISHED_SLATE);
+        addDrop(ModBlocks.CHISELED_SLATE);
+        addDrop(ModBlocks.SLATE_TILES);
+        addDrop(ModBlocks.SLATE_TILE_STAIRS);
+        addDrop(ModBlocks.SLATE_STAIRS);
+        addDrop(ModBlocks.POLISHED_SLATE_STAIRS);
+        addDrop(ModBlocks.POLISHED_SLATE_WALL);
+        addDrop(ModBlocks.SLATE_WALL);
+        addDrop(ModBlocks.SLATE_TILE_WALL);
+        addDrop(ModBlocks.SLATE_SLAB, slabDrops(ModBlocks.SLATE_SLAB));
+        addDrop(ModBlocks.POLISHED_SLATE_SLAB, slabDrops(ModBlocks.POLISHED_SLATE_SLAB));
+        addDrop(ModBlocks.SLATE_TILE_SLAB, slabDrops(ModBlocks.SLATE_TILE_SLAB));
         addDrop(ModBlocks.BLOCK_OF_SULFUR);
 
         //Block drops other stuff.

@@ -44,6 +44,9 @@ public class ModOreGeneration {
                         BiomeKeys.SWAMP, BiomeKeys.WARM_OCEAN, BiomeKeys.LUSH_CAVES),
                 GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.ORE_LIMESTONE_PLACED_KEY);
 
+        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(),
+                GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.ORE_SLATE_PLACED_KEY);
+
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.BASALT_DELTAS),
                 GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.BLACKSTONE_SULFUR_ORE_PLACED_KEY);
 

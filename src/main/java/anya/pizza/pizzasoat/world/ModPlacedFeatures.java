@@ -30,6 +30,7 @@ public class ModPlacedFeatures {
     public static final RegistryKey<PlacedFeature> BLACKSTONE_SULFUR_ORE_PLACED_KEY = registerKey("blackstone_sulfur_ore_placed");
 
     public static final RegistryKey<PlacedFeature> ORE_LIMESTONE_PLACED_KEY = registerKey("ore_limestone_placed");
+    public static final RegistryKey<PlacedFeature> ORE_SLATE_PLACED_KEY = registerKey("ore_slate_placed");
 
 
     public static void bootstrap(Registerable<PlacedFeature> context) {
@@ -71,7 +72,9 @@ public class ModPlacedFeatures {
 
 
         register(context, ORE_LIMESTONE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.ORE_LIMESTONE_KEY),
-                ModOrePlacement. modifiersWithCount(2, HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.fixed(256))));
+                ModOrePlacement.modifiersWithCount(2, HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.fixed(256))));
+        register(context, ORE_SLATE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.ORE_SLATE_KEY),
+                ModOrePlacement.modifiersWithCount(2, HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.fixed(256))));
     }
 
     public static RegistryKey<PlacedFeature> registerKey(String name) {

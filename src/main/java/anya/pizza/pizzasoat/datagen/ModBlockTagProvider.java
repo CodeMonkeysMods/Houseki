@@ -47,10 +47,25 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.LIMESTONE_BRICKS)
                 .add(ModBlocks.LIMESTONE_BRICK_SLAB)
                 .add(ModBlocks.LIMESTONE_BRICK_STAIRS)
+                .add(ModBlocks.LIMESTONE_BRICK_WALL)
                 .add(ModBlocks.POLISHED_LIMESTONE)
                 .add(ModBlocks.POLISHED_LIMESTONE_SLAB)
                 .add(ModBlocks.POLISHED_LIMESTONE_STAIRS)
+                .add(ModBlocks.POLISHED_LIMESTONE_WALL)
                 .add(ModBlocks.CHISELED_LIMESTONE)
+                .add(ModBlocks.SLATE)
+                .add(ModBlocks.SLATE_SLAB)
+                .add(ModBlocks.SLATE_STAIRS)
+                .add(ModBlocks.SLATE_WALL)
+                .add(ModBlocks.SLATE_TILES)
+                .add(ModBlocks.SLATE_TILE_SLAB)
+                .add(ModBlocks.SLATE_TILE_STAIRS)
+                .add(ModBlocks.SLATE_TILE_WALL)
+                .add(ModBlocks.POLISHED_SLATE)
+                .add(ModBlocks.POLISHED_SLATE_SLAB)
+                .add(ModBlocks.POLISHED_SLATE_STAIRS)
+                .add(ModBlocks.POLISHED_SLATE_WALL)
+                .add(ModBlocks.CHISELED_SLATE)
                 .add(ModBlocks.BLOCK_OF_SULFUR)
                 .add(ModBlocks.BLACKSTONE_SULFUR_ORE)
                 .add(ModBlocks.SULFUR_ORE);
@@ -109,16 +124,25 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.WALLS)
                 .add(ModBlocks.LIMESTONE_WALL)
                 .add(ModBlocks.LIMESTONE_BRICK_WALL)
-                .add(ModBlocks.POLISHED_LIMESTONE_WALL);
+                .add(ModBlocks.POLISHED_LIMESTONE_WALL)
+                .add(ModBlocks.SLATE_WALL)
+                .add(ModBlocks.SLATE_TILE_WALL)
+                .add(ModBlocks.POLISHED_SLATE_WALL);
 
         getOrCreateTagBuilder(BlockTags.STAIRS)
                 .add(ModBlocks.LIMESTONE_STAIRS)
                 .add(ModBlocks.POLISHED_LIMESTONE_STAIRS)
-                .add(ModBlocks.LIMESTONE_BRICK_STAIRS);
+                .add(ModBlocks.LIMESTONE_BRICK_STAIRS)
+                .add(ModBlocks.SLATE_STAIRS)
+                .add(ModBlocks.POLISHED_SLATE_STAIRS)
+                .add(ModBlocks.SLATE_TILE_STAIRS);
 
         getOrCreateTagBuilder(BlockTags.SLABS)
                 .add(ModBlocks.LIMESTONE_SLAB)
                 .add(ModBlocks.POLISHED_LIMESTONE_SLAB)
-                .add(ModBlocks.LIMESTONE_BRICK_SLAB);
+                .add(ModBlocks.LIMESTONE_BRICK_SLAB)
+                .add(ModBlocks.SLATE_SLAB)
+                .add(ModBlocks.POLISHED_SLATE_SLAB)
+                .add(ModBlocks.SLATE_TILE_SLAB);
     }
 }

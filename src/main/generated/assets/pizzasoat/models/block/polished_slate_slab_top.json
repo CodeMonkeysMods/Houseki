@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "pizzasoat:block/polished_slate",
+    "side": "pizzasoat:block/polished_slate",
+    "top": "pizzasoat:block/polished_slate"
+  }
+}

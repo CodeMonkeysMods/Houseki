@@ -2,6 +2,9 @@
   "values": [
     "pizzasoat:limestone_wall",
     "pizzasoat:limestone_brick_wall",
-    "pizzasoat:polished_limestone_wall"
+    "pizzasoat:polished_limestone_wall",
+    "pizzasoat:slate_wall",
+    "pizzasoat:slate_tile_wall",
+    "pizzasoat:polished_slate_wall"
   ]
 }

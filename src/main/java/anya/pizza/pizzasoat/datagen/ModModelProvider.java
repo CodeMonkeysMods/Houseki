@@ -44,6 +44,10 @@ public class ModModelProvider extends FabricModelProvider {
         BlockStateModelGenerator.BlockTexturePool limestonePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.LIMESTONE);
         BlockStateModelGenerator.BlockTexturePool polishedLimestonePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.POLISHED_LIMESTONE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CHISELED_LIMESTONE);
+        BlockStateModelGenerator.BlockTexturePool slateTilesPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.SLATE_TILES);
+        BlockStateModelGenerator.BlockTexturePool slatePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.SLATE);
+        BlockStateModelGenerator.BlockTexturePool polishedSlatePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.POLISHED_SLATE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CHISELED_SLATE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLACKSTONE_SULFUR_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SULFUR_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLOCK_OF_SULFUR);
@@ -59,6 +63,15 @@ public class ModModelProvider extends FabricModelProvider {
         limestonePool.wall(ModBlocks.LIMESTONE_WALL);
         limestoneBrickPool.wall(ModBlocks.LIMESTONE_BRICK_WALL);
         polishedLimestonePool.wall(ModBlocks.POLISHED_LIMESTONE_WALL);
+        slatePool.stairs(ModBlocks.SLATE_STAIRS);
+        slateTilesPool.stairs(ModBlocks.SLATE_TILE_STAIRS);
+        polishedSlatePool.stairs(ModBlocks.POLISHED_SLATE_STAIRS);
+        slatePool.slab(ModBlocks.SLATE_SLAB);
+        slateTilesPool.slab(ModBlocks.SLATE_TILE_SLAB);
+        polishedSlatePool.slab(ModBlocks.POLISHED_SLATE_SLAB);
+        slatePool.wall(ModBlocks.SLATE_WALL);
+        slateTilesPool.wall(ModBlocks.SLATE_TILE_WALL);
+        polishedSlatePool.wall(ModBlocks.POLISHED_SLATE_WALL);
     }
 
     @Override

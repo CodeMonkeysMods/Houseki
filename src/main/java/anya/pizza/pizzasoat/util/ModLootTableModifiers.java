@@ -47,6 +47,8 @@ public class ModLootTableModifiers {
             Identifier.of("minecraft", "chests/trial_chambers/reward_unique");
     private static final Identifier TRIAL_REWARD_OMINOUS_UNIQUE_ID =
             Identifier.of("minecraft", "chests/trial_chambers/reward_unique");
+    private static final Identifier VILLAGE_MASON_ID =
+            Identifier.of("minecraft", "chests/village/village_mason");
     private static final Identifier VILLAGE_TOOLSMITH_ID =
             Identifier.of("minecraft", "chests/village/village_toolsmith");
     private static final Identifier VILLAGE_WEAPONSMITH_ID =
@@ -636,6 +638,33 @@ public class ModLootTableModifiers {
                                 .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f))))
 
                         .with(ItemEntry.builder(ModItems.PINKU_SHARD).weight(2)
+                                .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f))));
+
+                tableBuilder.pool(poolBuilder.build());
+            }
+
+            if (VILLAGE_MASON_ID.equals(key.getValue())) {
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(UniformLootNumberProvider.create(1f, 5f))
+                        .with(ItemEntry.builder(ModItems.RAINBOW_PYRITE).weight(1)
+                                .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f))))
+
+                        .with(ItemEntry.builder(ModItems.ALUMINUM).weight(1)
+                                .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f))))
+
+                        .with(ItemEntry.builder(ModItems.BAUXITE).weight(1)
+                                .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f))))
+
+                        .with(ItemEntry.builder(ModBlocks.LIMESTONE).weight(2)
+                                .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f))))
+
+                        .with(ItemEntry.builder(ModBlocks.LIMESTONE_BRICKS).weight(2)
+                                .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f))))
+
+                        .with(ItemEntry.builder(ModBlocks.SLATE).weight(2)
+                                .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f))))
+
+                        .with(ItemEntry.builder(ModBlocks.SLATE_TILES).weight(2)
                                 .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f))));
 
                 tableBuilder.pool(poolBuilder.build());

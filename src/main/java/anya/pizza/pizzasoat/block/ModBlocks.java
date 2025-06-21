@@ -60,6 +60,18 @@ public class ModBlocks {
     public static final Block BLOCK_OF_SULFUR = registerBlock("block_of_sulfur",
             new Block(AbstractBlock.Settings.copy(Blocks.COAL_BLOCK).requiresTool().luminance(s -> 7)));
 
+    public static final Block SLATE = registerBlock("slate",
+            new Block(AbstractBlock.Settings.copy(Blocks.STONE).requiresTool()));
+
+    public static final Block SLATE_TILES = registerBlock("slate_tiles",
+            new Block(AbstractBlock.Settings.copy(Blocks.STONE_BRICKS).requiresTool()));
+
+    public static final Block POLISHED_SLATE = registerBlock("polished_slate",
+            new Block(AbstractBlock.Settings.copy(Blocks.POLISHED_ANDESITE).requiresTool()));
+
+    public static final Block CHISELED_SLATE = registerBlock("chiseled_slate",
+            new Block(AbstractBlock.Settings.copy(Blocks.CHISELED_STONE_BRICKS).requiresTool()));
+
     //Adds Ore
     public static final Block PINKU_ORE = registerBlock("pinku_ore",
             new Block(AbstractBlock.Settings.copy(Blocks.IRON_ORE).sounds(BlockSoundGroup.NETHERITE).strength(15f, 9f).luminance(s -> 1).requiresTool())); //10 Moh Scale
@@ -113,6 +125,12 @@ public class ModBlocks {
             new StairsBlock(ModBlocks.LIMESTONE.getDefaultState(),AbstractBlock.Settings.copy(Blocks.POLISHED_ANDESITE_STAIRS).requiresTool()));
     public static final Block LIMESTONE_BRICK_STAIRS = registerBlock("limestone_brick_stairs",
             new StairsBlock(ModBlocks.LIMESTONE.getDefaultState(),AbstractBlock.Settings.copy(Blocks.BRICK_STAIRS).requiresTool()));
+    public static final Block SLATE_STAIRS = registerBlock("slate_stairs",
+            new StairsBlock(ModBlocks.LIMESTONE.getDefaultState(),AbstractBlock.Settings.copy(Blocks.STONE_STAIRS).requiresTool()));
+    public static final Block POLISHED_SLATE_STAIRS = registerBlock("polished_slate_stairs",
+            new StairsBlock(ModBlocks.LIMESTONE.getDefaultState(),AbstractBlock.Settings.copy(Blocks.POLISHED_ANDESITE_STAIRS).requiresTool()));
+    public static final Block SLATE_TILE_STAIRS = registerBlock("slate_tile_stairs",
+            new StairsBlock(ModBlocks.LIMESTONE.getDefaultState(),AbstractBlock.Settings.copy(Blocks.BRICK_STAIRS).requiresTool()));
 
     //Slabs
     public static final Block LIMESTONE_SLAB = registerBlock("limestone_slab",
@@ -121,6 +139,12 @@ public class ModBlocks {
             new SlabBlock(AbstractBlock.Settings.copy(Blocks.POLISHED_ANDESITE_SLAB).requiresTool()));
     public static final Block LIMESTONE_BRICK_SLAB = registerBlock("limestone_brick_slab",
             new SlabBlock(AbstractBlock.Settings.copy(Blocks.BRICK_SLAB).requiresTool()));
+    public static final Block SLATE_SLAB = registerBlock("slate_slab",
+            new SlabBlock(AbstractBlock.Settings.copy(Blocks.STONE_SLAB).requiresTool()));
+    public static final Block POLISHED_SLATE_SLAB = registerBlock("polished_slate_slab",
+            new SlabBlock(AbstractBlock.Settings.copy(Blocks.POLISHED_ANDESITE_SLAB).requiresTool()));
+    public static final Block SLATE_TILE_SLAB = registerBlock("slate_tile_slab",
+            new SlabBlock(AbstractBlock.Settings.copy(Blocks.BRICK_SLAB).requiresTool()));
 
     //Walls
     public static final Block LIMESTONE_WALL = registerBlock("limestone_wall",
@@ -128,6 +152,12 @@ public class ModBlocks {
     public static final Block POLISHED_LIMESTONE_WALL = registerBlock("polished_limestone_wall",
             new WallBlock(AbstractBlock.Settings.copy(Blocks.POLISHED_BLACKSTONE_WALL).requiresTool()));
     public static final Block LIMESTONE_BRICK_WALL = registerBlock("limestone_brick_wall",
+            new WallBlock(AbstractBlock.Settings.copy(Blocks.STONE_BRICK_WALL).requiresTool()));
+    public static final Block SLATE_WALL = registerBlock("slate_wall",
+            new WallBlock(AbstractBlock.Settings.copy(Blocks.ANDESITE_WALL).requiresTool()));
+    public static final Block POLISHED_SLATE_WALL = registerBlock("polished_slate_wall",
+            new WallBlock(AbstractBlock.Settings.copy(Blocks.POLISHED_BLACKSTONE_WALL).requiresTool()));
+    public static final Block SLATE_TILE_WALL = registerBlock("slate_tile_wall",
             new WallBlock(AbstractBlock.Settings.copy(Blocks.STONE_BRICK_WALL).requiresTool()));
 
     //Doors

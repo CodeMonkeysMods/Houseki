@@ -29,6 +29,7 @@ public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> BLACKSTONE_SULFUR_ORE_KEY = registerKey("blackstone_sulfur_ore");
 
     public static final RegistryKey<ConfiguredFeature<?, ?>> ORE_LIMESTONE_KEY = registerKey("ore_limestone");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> ORE_SLATE_KEY = registerKey("ore_slate");
 
 
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
@@ -84,6 +85,10 @@ public class ModConfiguredFeatures {
                 List.of(OreFeatureConfig.createTarget(stoneReplaceables,ModBlocks.LIMESTONE.getDefaultState()),
                         OreFeatureConfig.createTarget(deepslateReplaceables,ModBlocks.LIMESTONE.getDefaultState()));
 
+        List<OreFeatureConfig.Target> overworldSlateOre =
+                List.of(OreFeatureConfig.createTarget(stoneReplaceables,ModBlocks.SLATE.getDefaultState()),
+                        OreFeatureConfig.createTarget(deepslateReplaceables,ModBlocks.SLATE.getDefaultState()));
+
 
         register(context, PINKU_ORE_KEY, Feature.ORE, new OreFeatureConfig(endPinkuOres, 3));
         register(context, RAINBOW_PYRITE_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldRainbowPyriteOres, 20));
@@ -98,6 +103,7 @@ public class ModConfiguredFeatures {
         register(context, BLACKSTONE_SULFUR_ORE_KEY, Feature.ORE, new OreFeatureConfig(blackstoneSulfurOres, 10));
 
         register(context, ORE_LIMESTONE_KEY, Feature.ORE, new OreFeatureConfig(overworldLimestoneOre, 64));
+        register(context, ORE_SLATE_KEY, Feature.ORE, new OreFeatureConfig(overworldSlateOre, 64));
     }
 
     public static RegistryKey<ConfiguredFeature<?, ?>> registerKey(String name) {
