@@ -39,6 +39,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         List<ItemConvertible> NEPHRITE_SMELTABLES = List.of(ModBlocks.NEPHRITE_ORE, ModBlocks.DEEPSLATE_NEPHRITE_ORE);
         List<ItemConvertible> PLATINUM_SMELTABLES = List.of(ModBlocks.PLATINUM_ORE, ModBlocks.DEEPSLATE_PLATINUM_ORE);
         List<ItemConvertible> SULFUR_SMELTABLES = List.of(ModBlocks.SULFUR_ORE, ModBlocks.BLACKSTONE_SULFUR_ORE);
+        List<ItemConvertible> CRUDE_IRON_SMELTABLES = List.of(Items.IRON_INGOT);
 
         //Creates recipes for blocks to make a block of something and back to 9 items
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.PINKU, RecipeCategory.DECORATIONS, ModBlocks.BLOCK_OF_PINKU);
@@ -107,6 +108,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 0.5f, 100, "platinum");
         offerBlasting(exporter, SULFUR_SMELTABLES, RecipeCategory.MISC, ModItems.SULFUR,
                 0.5f, 100, "sulfur");
+        offerBlasting(exporter, CRUDE_IRON_SMELTABLES, RecipeCategory.MISC, ModItems.CRUDE_IRON,
+        0.5f, 100, "crude_iron");
 
         //Stonecutting Recipes
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHISELED_LIMESTONE, ModBlocks.LIMESTONE, 1);

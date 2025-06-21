@@ -15,20 +15,21 @@ public class ModItems {
     public static final Item RAINBOW_PYRITE = registerItem("rainbow_pyrite", new Item(new Item.Settings()));
     public static final Item PINKU = registerItem("pinku", new Item(new Item.Settings()));
     public static final Item PINKU_SHARD = registerItem("pinku_shard", new Item(new Item.Settings()));
-    public static final Item WOLFRAMITE = registerItem("wolframite", new Item( new Item.Settings()));
-    public static final Item SCHEELITE = registerItem("scheelite", new Item( new Item.Settings()));
-    public static final Item TRONA = registerItem("trona", new Item( new Item.Settings()));
-    public static final Item SODIUM_CARBONATE = registerItem("sodium_carbonate", new Item( new Item.Settings()));
-    public static final Item PURE_TUNGSTEN = registerItem("pure_tungsten", new Item( new Item.Settings()));
-    public static final Item TUNGSTEN = registerItem("tungsten", new Item( new Item.Settings()));
-    public static final Item BAUXITE = registerItem("bauxite", new Item( new Item.Settings()));
-    public static final Item ALUMINUM = registerItem("aluminum", new Item( new Item.Settings()));
-    public static final Item SAPPHIRE = registerItem("sapphire", new Item( new Item.Settings()));
-    public static final Item NEPHRITE = registerItem("nephrite", new Item( new Item.Settings()));
-    public static final Item JADEITE = registerItem("jadeite", new Item( new Item.Settings()));
-    public static final Item JADE = registerItem("jade", new Item( new Item.Settings()));
-    public static final Item PLATINUM = registerItem("platinum", new Item( new Item.Settings()));
-    public static final Item SULFUR = registerItem("sulfur", new Item( new Item.Settings()));
+    public static final Item WOLFRAMITE = registerItem("wolframite", new Item(new Item.Settings()));
+    public static final Item SCHEELITE = registerItem("scheelite", new Item(new Item.Settings()));
+    public static final Item TRONA = registerItem("trona", new Item(new Item.Settings()));
+    public static final Item SODIUM_CARBONATE = registerItem("sodium_carbonate", new Item(new Item.Settings()));
+    public static final Item PURE_TUNGSTEN = registerItem("pure_tungsten", new Item(new Item.Settings()));
+    public static final Item TUNGSTEN = registerItem("tungsten", new Item(new Item.Settings()));
+    public static final Item BAUXITE = registerItem("bauxite", new Item(new Item.Settings()));
+    public static final Item ALUMINUM = registerItem("aluminum", new Item(new Item.Settings()));
+    public static final Item SAPPHIRE = registerItem("sapphire", new Item(new Item.Settings()));
+    public static final Item NEPHRITE = registerItem("nephrite", new Item(new Item.Settings()));
+    public static final Item JADEITE = registerItem("jadeite", new Item(new Item.Settings()));
+    public static final Item JADE = registerItem("jade", new Item(new Item.Settings()));
+    public static final Item PLATINUM = registerItem("platinum", new Item(new Item.Settings()));
+    public static final Item SULFUR = registerItem("sulfur", new Item(new Item.Settings()));
+    public static final Item CRUDE_IRON = registerItem("crude_iron", new Item(new Item.Settings()));
     public static final Item PINKU_UPGRADE_SMITHING_TEMPLATE = registerItem("pinku_upgrade_smithing_template", PinkuTemplateItem.createPinkuUpgrade());
 
     //Tools
@@ -209,6 +210,7 @@ public class ModItems {
         entries.add(JADEITE);
         entries.add(JADE);
         entries.add(SULFUR);
+        entries.add(CRUDE_IRON);
     }
 
     public static void registerModItems() {

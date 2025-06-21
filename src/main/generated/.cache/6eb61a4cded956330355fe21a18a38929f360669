@@ -1,4 +1,4 @@
-// 1.21.1	2025-06-21T07:39:59.1440223	Pizza's Ores And Things/Recipes
+// 1.21.1	2025-06-21T08:42:01.9378672	Pizza's Ores And Things/Recipes
 de5067b365fbb234d303d882ec002457c55d6571 data\pizzasoat\recipe\limestone_bricks.json
 cc18495f266def042a72496426ee123a947fb8ee data\pizzasoat\advancement\recipes\combat\rainbow_pyrite_helmet.json
 ea6ef2833be95698ba8a1c0d93f0c0332c0928de data\pizzasoat\advancement\recipes\misc\tungsten_from_blasting_pure_tungsten.json
@@ -39,6 +39,7 @@ c11eb8709d9ee56f8b2d4592a7dfcfaa74706e24 data\pizzasoat\recipe\pinku_axe_smithin
 b1861de9d32f212a153c2225ec8d2bff196561c6 data\pizzasoat\recipe\platinum_hoe.json
 e9a91f1601d7b7e5391170d22b67583ce8c128d4 data\pizzasoat\recipe\pinku_helmet_smithing.json
 f74ffc94c3696b6ba446a95ca12ab3df6c710232 data\pizzasoat\recipe\platinum_boots.json
+46264fd681690874e6bd86b5ef6a337387cec5c6 data\pizzasoat\recipe\crude_iron_from_blasting_iron_ingot.json
 63bd76f0313434550036682c77e3f925d9392c63 data\pizzasoat\recipe\polished_slate_wall.json
 d39512a01c47f3a577c84764ae7e0c70f78bedac data\pizzasoat\recipe\jade_leggings.json
 574361404fadd6e89fbdf95790624c79ba294bfe data\pizzasoat\advancement\recipes\building_blocks\rainbow_pyrite.json
@@ -270,6 +271,7 @@ eb9fbfde58f90e1c3c298aa0e6aab7a8d1db1ff7 data\pizzasoat\advancement\recipes\misc
 21736e0f5e125894b8792906966e898a17cbfb10 data\pizzasoat\recipe\sapphire_chestplate.json
 8f027481067ea8a5d2c15c677cfbc8e0ab60c67b data\pizzasoat\advancement\recipes\combat\rainbow_pyrite_boots.json
 ecbc688aa10190919d40917dfae6654eee33e2a1 data\pizzasoat\advancement\recipes\building_blocks\tungsten.json
+c1bae2391df5104fe3d43fece49ef8cb12a233f9 data\pizzasoat\advancement\recipes\misc\crude_iron_from_blasting_iron_ingot.json
 36068578858484b95fa0d1a5a898643e5363b971 data\pizzasoat\recipe\limestone_brick_wall_from_limestone_stonecutting.json
 ef998dd5212bfdd915c030f45e27247fb99214a0 data\pizzasoat\advancement\recipes\building_blocks\polished_slate_wall_from_slate_stonecutting.json
 d50f4b4d7a1fd2d3d5b39305b79825b93fd667dc data\pizzasoat\recipe\polished_slate_stairs_from_slate_stonecutting.json

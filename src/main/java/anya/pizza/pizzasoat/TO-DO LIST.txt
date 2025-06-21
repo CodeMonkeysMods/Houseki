@@ -1,7 +1,3 @@
-SLATE:
-1. Make bricks, stairs, slabs, and walls for it
-2. 4 on Moh Scale
-
 STEEL:
 1. Make a recipe to smelt Iron Ingots in a Blast Furnace and turn them into Crude Iron.
 2. Smelt Crude Iron in the Blast furnace to make Steel.

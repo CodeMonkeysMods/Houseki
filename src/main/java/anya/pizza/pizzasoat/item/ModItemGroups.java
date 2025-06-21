@@ -92,37 +92,28 @@ public class ModItemGroups {
                         entries.add(ModItems.ALUMINUM_HORSE_ARMOR);
                         entries.add(ModItems.SAPPHIRE_HORSE_ARMOR);
                         entries.add(ModItems.PLATINUM_HORSE_ARMOR);
-
                         entries.add(ModItems.PINKU);
                         entries.add(ModItems.PINKU_SHARD);
                         entries.add(ModItems.PINKU_UPGRADE_SMITHING_TEMPLATE);
 
                         entries.add(ModItems.RAINBOW_PYRITE);
-
                         entries.add(ModItems.WOLFRAMITE);
-
                         entries.add(ModItems.SCHEELITE);
-
                         entries.add(ModItems.TRONA);
-
                         entries.add(ModItems.SODIUM_CARBONATE);
-
                         entries.add(ModItems.PURE_TUNGSTEN);
                         entries.add(ModItems.TUNGSTEN);
-
                         entries.add(ModItems.BAUXITE);
-
                         entries.add(ModItems.ALUMINUM);
 
                         entries.add(ModItems.SAPPHIRE);
-
                         entries.add(ModItems.NEPHRITE);
                         entries.add(ModItems.JADEITE);
                         entries.add(ModItems.JADE);
-
                         entries.add(ModItems.PLATINUM);
-
                         entries.add(ModItems.SULFUR);
+                        entries.add(ModItems.CRUDE_IRON);
+
                     }).build());
 
     public static final ItemGroup PIZZAS_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,

@@ -93,6 +93,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.JADE, Models.GENERATED);
         itemModelGenerator.register(ModItems.PLATINUM, Models.GENERATED);
         itemModelGenerator.register(ModItems.SULFUR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CRUDE_IRON, Models.GENERATED);
+
         itemModelGenerator.register(ModItems.PINKU_UPGRADE_SMITHING_TEMPLATE, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.PINKU_PICKAXE, Models.HANDHELD);

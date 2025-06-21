@@ -96,7 +96,10 @@ public class ModLootTableModifiers {
                                 .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f))))
 
                         .with(ItemEntry.builder(ModItems.TUNGSTEN_HORSE_ARMOR).weight(1)
-                                .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f))));
+                                .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f))))
+
+                        .with(ItemEntry.builder(ModItems.CRUDE_IRON).weight(1)
+                                .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 3.0f))));
 
                 tableBuilder.pool(poolBuilder.build());
             }
@@ -264,6 +267,9 @@ public class ModLootTableModifiers {
 
                         .with(ItemEntry.builder(ModBlocks.BLOCK_OF_SULFUR).weight(2)
                                 .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 2.0f))))
+
+                        .with(ItemEntry.builder(ModItems.CRUDE_IRON).weight(1)
+                                .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 3.0f))))
 
                         .with(ItemEntry.builder(ModItems.ALUMINUM).weight(1)
                                 .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(2.0f, 6.0f))))
