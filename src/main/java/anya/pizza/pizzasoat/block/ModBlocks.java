@@ -176,20 +176,6 @@ public class ModBlocks {
     public static final Block CRUSHER = registerBlock("crusher",
             new CrusherBlock(AbstractBlock.Settings.copy(Blocks.BLAST_FURNACE).nonOpaque().requiresTool()));
 
-    //Rails
-    /*public static final Block STEEL_RAIL = registerBlock("steel_rail",
-            new RailBlock(AbstractRailBlock.Settings.copy(Blocks.RAIL).nonOpaque()));
-
-    public static final Block STEEL_POWERED_RAIL = registerBlock("steel_powered_rail",
-            new PoweredRailBlock(AbstractRailBlock.Settings.copy(Blocks.POWERED_RAIL).nonOpaque()));
-
-    public static final Block STEEL_ACTIVATOR_RAIL = registerBlock("steel_activator_rail",
-            new PoweredRailBlock(AbstractRailBlock.Settings.copy(Blocks.ACTIVATOR_RAIL).nonOpaque()));
-
-    public static final Block STEEL_DETECTOR_RAIL = registerBlock("steel_detector_rail",
-            new DetectorRailBlock(AbstractRailBlock.Settings.copy(Blocks.DETECTOR_RAIL).nonOpaque()));
-*/
-
 
 
     private static Block registerBlock(String name, Block block) {

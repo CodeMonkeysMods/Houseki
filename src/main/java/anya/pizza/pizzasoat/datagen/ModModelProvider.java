@@ -73,11 +73,6 @@ public class ModModelProvider extends FabricModelProvider {
         slatePool.wall(ModBlocks.SLATE_WALL);
         slateTilesPool.wall(ModBlocks.SLATE_TILE_WALL);
         polishedSlatePool.wall(ModBlocks.POLISHED_SLATE_WALL);
-
-        /*blockStateModelGenerator.registerTurnableRail(ModBlocks.STEEL_RAIL);
-        blockStateModelGenerator.registerStraightRail(ModBlocks.STEEL_POWERED_RAIL);
-        blockStateModelGenerator.registerStraightRail(ModBlocks.STEEL_ACTIVATOR_RAIL);
-        blockStateModelGenerator.registerStraightRail(ModBlocks.STEEL_DETECTOR_RAIL);*/
     }
 
     @Override

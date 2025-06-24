@@ -147,13 +147,5 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.SLATE_SLAB)
                 .add(ModBlocks.POLISHED_SLATE_SLAB)
                 .add(ModBlocks.SLATE_TILE_SLAB);
-
-        /*getOrCreateTagBuilder(BlockTags.RAILS)
-                .add(ModBlocks.STEEL_RAIL)
-                .add(ModBlocks.STEEL_POWERED_RAIL)
-                .add(ModBlocks.STEEL_DETECTOR_RAIL)
-                .add(ModBlocks.STEEL_ACTIVATOR_RAIL);
-
-         */
     }
 }

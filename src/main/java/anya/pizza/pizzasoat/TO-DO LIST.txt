@@ -1,9 +1,3 @@
-STEEL:
-2. Smelt Crude Iron in the Blast furnace to make Steel.
-3. Make rail variants for steel. Maybe make them faster than iron.
-4. Make tools and armor for it.
-5. 4 Moh scale, slightly worse than platinum.
-
 CAST STEEL:
 1. Made from smelting Steel
 2. The Crusher should be made from Cast Steel.

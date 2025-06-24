@@ -306,55 +306,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.CAST_STEEL), conditionsFromItem(Items.CAST_STEEL))
                 .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
                 .offerTo(exporter);
-
-        ShapedRecipeJsonBuilder.create(RecipeCategory.REDSTONE, ModBlocks.STEEL_RAIL, 16)
-                .pattern("X X")
-                .pattern("X#X")
-                .pattern("X X")
-                .input('X', ModItems.STEEL)
-                .input('#', Items.STICK)
-                .criterion(hasItem(ModItems.STEEL), conditionsFromItem(ModItems.STEEL))
-                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
-                .offerTo(exporter);
-
-        ShapedRecipeJsonBuilder.create(RecipeCategory.REDSTONE, ModBlocks.STEEL_POWERED_RAIL, 6)
-                .pattern("X X")
-                .pattern("G#G")
-                .pattern("XRX")
-                .input('X', ModItems.STEEL)
-                .input('#', Items.STICK)
-                .input('G', Items.GOLD_INGOT)
-                .input('R', Items.REDSTONE)
-                .criterion(hasItem(ModItems.STEEL), conditionsFromItem(ModItems.STEEL))
-                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
-                .criterion(hasItem(Items.GOLD_INGOT), conditionsFromItem(Items.GOLD_INGOT))
-                .criterion(hasItem(Items.REDSTONE), conditionsFromItem(Items.REDSTONE))
-                .offerTo(exporter);
-
-        ShapedRecipeJsonBuilder.create(RecipeCategory.REDSTONE, ModBlocks.STEEL_DETECTOR_RAIL, 6)
-                .pattern("X X")
-                .pattern("X#X")
-                .pattern("XRX")
-                .input('X', ModItems.STEEL)
-                .input('#', Items.STONE_PRESSURE_PLATE)
-                .input('R', Items.REDSTONE)
-                .criterion(hasItem(ModItems.STEEL), conditionsFromItem(ModItems.STEEL))
-                .criterion(hasItem(Items.STONE_PRESSURE_PLATE), conditionsFromItem(Items.STONE_PRESSURE_PLATE))
-                .criterion(hasItem(Items.REDSTONE), conditionsFromItem(Items.REDSTONE))
-                .offerTo(exporter);
-
-        ShapedRecipeJsonBuilder.create(RecipeCategory.REDSTONE, ModBlocks.STEEL_ACTIVATOR_RAIL, 6)
-                .pattern("X#X")
-                .pattern("XRX")
-                .pattern("X#X")
-                .input('X', ModItems.STEEL)
-                .input('#', Items.STICK)
-                .input('R', Items.REDSTONE_TORCH)
-                .criterion(hasItem(ModItems.STEEL), conditionsFromItem(ModItems.STEEL))
-                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
-                .criterion(hasItem(Items.REDSTONE_TORCH), conditionsFromItem(Items.REDSTONE_TORCH))
-                .offerTo(exporter);
-
-         */
+        */
     }
 }

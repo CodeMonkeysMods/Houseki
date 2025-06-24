@@ -101,8 +101,6 @@ public class ModLootTableModifiers {
                         .with(ItemEntry.builder(ModItems.CRUDE_IRON).weight(1)
                                 .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 3.0f))));
 
-                        //.with(ItemEntry.builder(ModBlocks.STEEL_RAIL).weight(1)
-                         //       .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 2.0f))));
 
                 tableBuilder.pool(poolBuilder.build());
             }
