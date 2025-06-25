@@ -13,33 +13,32 @@ SCHEELITE:
 TRONA, SODIUM CARBONATE AND PURE TUNGSTEN:
 1. Comment out all the code for it. Useless for now.
 2. If re-implemented then change Trona texture.
-3. Maybe make deepslate version of Trona
+3. Maybe make a deepslate version of Trona
 
 TUNGSTEN:
-1. Look into adding Poison effect to sword.
+1. Look into adding Poison effect to the sword.
 2. Maybe add drills that are made using Tungsten.
 3. Give Netherite properties where it doesn't burn in lava.
 
 BAUXITE:
 1. Make Bauxite into a rock. Copy of Terracotta. Remove the ore variant.
 2. Maybe use granite and darken it for texture. Maybe...
-3. Make the Bauxite block crushable to turn it into Bauxite item which then gets smelted to Aluminum
+3. Make the Bauxite block crushable to turn it into Bauxite item, which then gets smelted to Aluminum
 
 ALUMINUM:
 1. Make Aluminum Glass Panes
 
 NEPHRITE:
 1. Make the ore out of Limestone and spawn it in Limestone.
-2. Create Armor and Tools for it making it a darker green.
-3. Should be slightly worse than Jadeite.
+2. Create Armor and Tools for it, making it a darker green.
+3. It should be slightly worse than Jadeite.
 4. Moh scale 6 to 6.5
 5. Give Armor effect the Regeneration effect.
 
 JADEITE:
-1. Remove fusing recipe for Jadeite.
 2. Make Jadeite a Slate ore block.
 3. Use the Jade armor and Tools, make them slightly darker and turn them into Jadeite armor and tools
-4. Should be slightly better than Nephrite.
+4. It should be slightly better than Nephrite.
 5. Moh scale 6.5 to 7
 6. Give Armor effect the Regeneration 2 effect.
 
