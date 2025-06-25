@@ -66,6 +66,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.SLATE_TILE_SLAB, slabDrops(ModBlocks.SLATE_TILE_SLAB));
         addDrop(ModBlocks.BLOCK_OF_SULFUR);
         addDrop(ModBlocks.BLOCK_OF_STEEL);
+        addDrop(ModBlocks.BLOCK_OF_CAST_STEEL);
 
         //Block drops other stuff.
         addDrop(ModBlocks.WOLFRAMITE_ORE, LightOreDrops(ModBlocks.WOLFRAMITE_ORE, ModItems.WOLFRAMITE));

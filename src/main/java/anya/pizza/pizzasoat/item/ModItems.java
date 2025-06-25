@@ -31,6 +31,7 @@ public class ModItems {
     public static final Item SULFUR = registerItem("sulfur", new Item(new Item.Settings()));
     public static final Item CRUDE_IRON = registerItem("crude_iron", new Item(new Item.Settings()));
     public static final Item STEEL = registerItem("steel", new Item(new Item.Settings()));
+    public static final Item CAST_STEEL = registerItem("cast_steel", new Item(new Item.Settings()));
 
     public static final Item PINKU_UPGRADE_SMITHING_TEMPLATE = registerItem("pinku_upgrade_smithing_template", PinkuTemplateItem.createPinkuUpgrade());
 
@@ -58,7 +59,7 @@ public class ModItems {
             new HoeItem(ModToolMaterials.RAINBOW_PYRITE, new Item.Settings().attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.RAINBOW_PYRITE, -4, 4.0f))));
 
     public static final Item TUNGSTEN_PICKAXE = registerItem("tungsten_pickaxe",
-            new PickaxeItem(ModToolMaterials.TUNGSTEN, new Item.Settings().attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.TUNGSTEN, 1, 1.4f ))));
+            new PickaxeItem(ModToolMaterials.TUNGSTEN, new Item.Settings().attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.TUNGSTEN, 1, 1.4f))));
     public static final Item TUNGSTEN_AXE = registerItem("tungsten_axe",
             new AxeItem(ModToolMaterials.TUNGSTEN, new Item.Settings().attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterials.TUNGSTEN, 4.5f, 1.1f))));
     public static final Item TUNGSTEN_SHOVEL = registerItem("tungsten_shovel",
@@ -69,7 +70,7 @@ public class ModItems {
             new HoeItem(ModToolMaterials.TUNGSTEN, new Item.Settings().attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.TUNGSTEN, -4, 4.1f))));
 
     public static final Item ALUMINUM_PICKAXE = registerItem("aluminum_pickaxe",
-            new PickaxeItem(ModToolMaterials.ALUMINUM, new Item.Settings().attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.ALUMINUM, 0, 1.3f ))));
+            new PickaxeItem(ModToolMaterials.ALUMINUM, new Item.Settings().attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.ALUMINUM, 0, 1.3f))));
     public static final Item ALUMINUM_AXE = registerItem("aluminum_axe",
             new AxeItem(ModToolMaterials.ALUMINUM, new Item.Settings().attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterials.ALUMINUM, 4, 1))));
     public static final Item ALUMINUM_SHOVEL = registerItem("aluminum_shovel",
@@ -91,7 +92,7 @@ public class ModItems {
             new HoeItem(ModToolMaterials.SAPPHIRE, new Item.Settings().attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.SAPPHIRE, -4, 5.1f))));
 
     public static final Item JADE_PICKAXE = registerItem("jade_pickaxe",
-            new PickaxeItem(ModToolMaterials.JADE, new Item.Settings().attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.JADE, 0, 1.3f ))));
+            new PickaxeItem(ModToolMaterials.JADE, new Item.Settings().attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.JADE, 0, 1.3f))));
     public static final Item JADE_AXE = registerItem("jade_axe",
             new AxeItem(ModToolMaterials.JADE, new Item.Settings().attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterials.JADE, 4, 1))));
     public static final Item JADE_SHOVEL = registerItem("jade_shovel",
@@ -102,7 +103,7 @@ public class ModItems {
             new HoeItem(ModToolMaterials.JADE, new Item.Settings().attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.JADE, -4, 4))));
 
     public static final Item PLATINUM_PICKAXE = registerItem("platinum_pickaxe",
-            new PickaxeItem(ModToolMaterials.PLATINUM, new Item.Settings().attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.PLATINUM, 1, 1.4f ))));
+            new PickaxeItem(ModToolMaterials.PLATINUM, new Item.Settings().attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.PLATINUM, 1, 1.4f))));
     public static final Item PLATINUM_AXE = registerItem("platinum_axe",
             new AxeItem(ModToolMaterials.PLATINUM, new Item.Settings().attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterials.PLATINUM, 4.5f, 1.1f))));
     public static final Item PLATINUM_SHOVEL = registerItem("platinum_shovel",
@@ -113,7 +114,7 @@ public class ModItems {
             new HoeItem(ModToolMaterials.PLATINUM, new Item.Settings().attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.PLATINUM, -4, 4.1f))));
 
     public static final Item STEEL_PICKAXE = registerItem("steel_pickaxe",
-            new PickaxeItem(ModToolMaterials.STEEL, new Item.Settings().attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.STEEL, 0.5f, 1.0f ))));
+            new PickaxeItem(ModToolMaterials.STEEL, new Item.Settings().attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.STEEL, 0.5f, 1.0f))));
     public static final Item STEEL_AXE = registerItem("steel_axe",
             new AxeItem(ModToolMaterials.STEEL, new Item.Settings().attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterials.STEEL, 4.0f, 1.0f))));
     public static final Item STEEL_SHOVEL = registerItem("steel_shovel",
@@ -122,6 +123,17 @@ public class ModItems {
             new SwordItem(ModToolMaterials.STEEL, new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.STEEL, 2, 1.0f))));
     public static final Item STEEL_HOE = registerItem("steel_hoe",
             new HoeItem(ModToolMaterials.STEEL, new Item.Settings().attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.STEEL, -5.5f, 4.0f))));
+
+    public static final Item CAST_STEEL_PICKAXE = registerItem("cast_steel_pickaxe",
+            new PickaxeItem(ModToolMaterials.CAST_STEEL, new Item.Settings().attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.CAST_STEEL, 1, 1.0f))));
+    public static final Item CAST_STEEL_AXE = registerItem("cast_steel_axe",
+            new AxeItem(ModToolMaterials.CAST_STEEL, new Item.Settings().attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterials.CAST_STEEL, 4.5f, 1.0f))));
+    public static final Item CAST_STEEL_SHOVEL = registerItem("cast_steel_shovel",
+            new ShovelItem(ModToolMaterials.CAST_STEEL, new Item.Settings().attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterials.CAST_STEEL, 0.3f, 1.0f))));
+    public static final Item CAST_STEEL_SWORD = registerItem("cast_steel_sword",
+            new SwordItem(ModToolMaterials.CAST_STEEL, new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.CAST_STEEL, 3, 1.0f))));
+    public static final Item CAST_STEEL_HOE = registerItem("cast_steel_hoe",
+            new HoeItem(ModToolMaterials.CAST_STEEL, new Item.Settings().attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.CAST_STEEL, -4.5f, 4.0f))));
 
     //Armor
     public static final Item PINKU_HELMET = registerItem("pinku_helmet",
@@ -196,6 +208,15 @@ public class ModItems {
     public static final Item STEEL_BOOTS = registerItem("steel_boots",
             new ArmorItem(ModArmorMaterials.STEEL_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(32))));
 
+    public static final Item CAST_STEEL_HELMET = registerItem("cast_steel_helmet",
+            new ArmorItem(ModArmorMaterials.CAST_STEEL_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(33))));
+    public static final Item CAST_STEEL_CHESTPLATE = registerItem("cast_steel_chestplate",
+            new ArmorItem(ModArmorMaterials.CAST_STEEL_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Settings().maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(33))));
+    public static final Item CAST_STEEL_LEGGINGS = registerItem("cast_steel_leggings",
+            new ArmorItem(ModArmorMaterials.CAST_STEEL_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Settings().maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(33))));
+    public static final Item CAST_STEEL_BOOTS = registerItem("cast_steel_boots",
+            new ArmorItem(ModArmorMaterials.CAST_STEEL_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(33))));
+
     //Horse Armor
     public static final Item PINKU_HORSE_ARMOR = registerItem("pinku_horse_armor",
             new AnimalArmorItem(ModArmorMaterials.PINKU_MATERIAL, AnimalArmorItem.Type.EQUESTRIAN, false, new Item.Settings()));
@@ -211,6 +232,8 @@ public class ModItems {
             new AnimalArmorItem(ModArmorMaterials.PLATINUM_MATERIAL, AnimalArmorItem.Type.EQUESTRIAN, false, new Item.Settings()));
     public static final Item STEEL_HORSE_ARMOR = registerItem("steel_horse_armor",
             new AnimalArmorItem(ModArmorMaterials.STEEL_MATERIAL, AnimalArmorItem.Type.EQUESTRIAN, false, new Item.Settings()));
+    public static final Item CAST_STEEL_HORSE_ARMOR = registerItem("cast_steel_horse_armor",
+            new AnimalArmorItem(ModArmorMaterials.CAST_STEEL_MATERIAL, AnimalArmorItem.Type.EQUESTRIAN, false, new Item.Settings()));
 
 
     private static Item registerItem(String name, Item item) {
@@ -230,13 +253,14 @@ public class ModItems {
         entries.add(BAUXITE);
         entries.add(ALUMINUM);
         entries.add(SAPPHIRE);
+        entries.add(PLATINUM);
         entries.add(NEPHRITE);
         entries.add(JADEITE);
         entries.add(JADE);
         entries.add(SULFUR);
         entries.add(CRUDE_IRON);
         entries.add(STEEL);
-        entries.add(PLATINUM);
+        entries.add(CAST_STEEL);
     }
 
     public static void registerModItems() {

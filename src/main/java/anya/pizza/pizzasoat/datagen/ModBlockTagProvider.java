@@ -69,7 +69,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.BLOCK_OF_SULFUR)
                 .add(ModBlocks.BLACKSTONE_SULFUR_ORE)
                 .add(ModBlocks.SULFUR_ORE)
-                .add(ModBlocks.BLOCK_OF_STEEL);
+                .add(ModBlocks.BLOCK_OF_STEEL)
+                .add(ModBlocks.BLOCK_OF_CAST_STEEL);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
                 .add(ModBlocks.TRONA_ORE)
@@ -98,7 +99,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.BLOCK_OF_PLATINUM)
                 .add(ModBlocks.PLATINUM_ORE)
                 .add(ModBlocks.DEEPSLATE_PLATINUM_ORE)
-                .add(ModBlocks.BLOCK_OF_STEEL);
+                .add(ModBlocks.BLOCK_OF_STEEL)
+                .add(ModBlocks.BLOCK_OF_CAST_STEEL);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.PINKU_ORE)
@@ -113,7 +115,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.BLOCK_OF_SAPPHIRE)
                 .add(ModBlocks.BLOCK_OF_JADE)
                 .add(ModBlocks.BLOCK_OF_PLATINUM)
-                .add(ModBlocks.BLOCK_OF_STEEL);
+                .add(ModBlocks.BLOCK_OF_STEEL)
+                .add(ModBlocks.BLOCK_OF_CAST_STEEL);
 
         getOrCreateTagBuilder(BlockTags.WITHER_IMMUNE)
                 .add(ModBlocks.BLOCK_OF_PINKU)

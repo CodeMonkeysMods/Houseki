@@ -96,6 +96,16 @@ public class ModArmorMaterials {
             }), 15, SoundEvents.ITEM_ARMOR_EQUIP_IRON, () -> Ingredient.ofItems(ModItems.STEEL),
                     List.of(new ArmorMaterial.Layer(Identifier.of(PizzasOAT.MOD_ID, "steel"))), 3.5f, 0.2f));
 
+    public static final RegistryEntry<ArmorMaterial> CAST_STEEL_MATERIAL = registerArmorMaterial("cast_steel",
+            () -> new ArmorMaterial(Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
+                map.put(ArmorItem.Type.HELMET, 4);
+                map.put(ArmorItem.Type.CHESTPLATE, 9);
+                map.put(ArmorItem.Type.LEGGINGS, 7);
+                map.put(ArmorItem.Type.BOOTS, 4);
+                map.put(ArmorItem.Type.BODY, 12);
+            }), 15, SoundEvents.ITEM_ARMOR_EQUIP_IRON, () -> Ingredient.ofItems(ModItems.CAST_STEEL),
+                    List.of(new ArmorMaterial.Layer(Identifier.of(PizzasOAT.MOD_ID, "cast_steel"))), 4.5f, 0.3f));
+
 
     public static RegistryEntry<ArmorMaterial> registerArmorMaterial(String name, Supplier<ArmorMaterial> material) {
         return Registry.registerReference(Registries.ARMOR_MATERIAL, Identifier.of(PizzasOAT.MOD_ID, name), material.get());

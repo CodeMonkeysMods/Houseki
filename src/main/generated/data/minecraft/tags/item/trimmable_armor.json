@@ -31,6 +31,10 @@
     "pizzasoat:steel_helmet",
     "pizzasoat:steel_chestplate",
     "pizzasoat:steel_leggings",
-    "pizzasoat:steel_boots"
+    "pizzasoat:steel_boots",
+    "pizzasoat:cast_steel_helmet",
+    "pizzasoat:cast_steel_chestplate",
+    "pizzasoat:cast_steel_leggings",
+    "pizzasoat:cast_steel_boots"
   ]
 }

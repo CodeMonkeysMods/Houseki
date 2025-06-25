@@ -52,6 +52,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SULFUR_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLOCK_OF_SULFUR);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLOCK_OF_STEEL);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLOCK_OF_CAST_STEEL);
 
         blockStateModelGenerator.registerCooker(ModBlocks.CRUSHER, TexturedModel.ORIENTABLE);
 
@@ -96,6 +97,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.SULFUR, Models.GENERATED);
         itemModelGenerator.register(ModItems.CRUDE_IRON, Models.GENERATED);
         itemModelGenerator.register(ModItems.STEEL, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CAST_STEEL, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.PINKU_UPGRADE_SMITHING_TEMPLATE, Models.GENERATED);
 
@@ -139,6 +141,11 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.STEEL_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.STEEL_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ModItems.STEEL_HOE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.CAST_STEEL_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.CAST_STEEL_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.CAST_STEEL_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.CAST_STEEL_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.CAST_STEEL_HOE, Models.HANDHELD);
 
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.PINKU_HELMET));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.PINKU_CHESTPLATE));
@@ -172,6 +179,10 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.STEEL_CHESTPLATE));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.STEEL_LEGGINGS));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.STEEL_BOOTS));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.CAST_STEEL_HELMET));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.CAST_STEEL_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.CAST_STEEL_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.CAST_STEEL_BOOTS));
 
         itemModelGenerator.register(ModItems.PINKU_HORSE_ARMOR, Models.GENERATED);
         itemModelGenerator.register(ModItems.RAINBOW_PYRITE_HORSE_ARMOR, Models.GENERATED);
@@ -180,6 +191,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.SAPPHIRE_HORSE_ARMOR, Models.GENERATED);
         itemModelGenerator.register(ModItems.PLATINUM_HORSE_ARMOR, Models.GENERATED);
         itemModelGenerator.register(ModItems.STEEL_HORSE_ARMOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CAST_STEEL_HORSE_ARMOR, Models.GENERATED);
 
     }
 }

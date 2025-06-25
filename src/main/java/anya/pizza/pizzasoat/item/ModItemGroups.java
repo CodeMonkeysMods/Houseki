@@ -96,6 +96,16 @@ public class ModItemGroups {
                         entries.add(ModItems.STEEL_SWORD);
                         entries.add(ModItems.STEEL_HOE);
 
+                        entries.add(ModItems.CAST_STEEL_HELMET);
+                        entries.add(ModItems.CAST_STEEL_CHESTPLATE);
+                        entries.add(ModItems.CAST_STEEL_LEGGINGS);
+                        entries.add(ModItems.CAST_STEEL_BOOTS);
+                        entries.add(ModItems.CAST_STEEL_PICKAXE);
+                        entries.add(ModItems.CAST_STEEL_AXE);
+                        entries.add(ModItems.CAST_STEEL_SHOVEL);
+                        entries.add(ModItems.CAST_STEEL_SWORD);
+                        entries.add(ModItems.CAST_STEEL_HOE);
+
                         entries.add(ModItems.PINKU_HORSE_ARMOR);
                         entries.add(ModItems.RAINBOW_PYRITE_HORSE_ARMOR);
                         entries.add(ModItems.TUNGSTEN_HORSE_ARMOR);
@@ -103,9 +113,10 @@ public class ModItemGroups {
                         entries.add(ModItems.SAPPHIRE_HORSE_ARMOR);
                         entries.add(ModItems.PLATINUM_HORSE_ARMOR);
                         entries.add(ModItems.STEEL_HORSE_ARMOR);
+                        entries.add(ModItems.CAST_STEEL_HORSE_ARMOR);
                         entries.add(ModItems.PINKU);
-                        entries.add(ModItems.PINKU_SHARD);
 
+                        entries.add(ModItems.PINKU_SHARD);
                         entries.add(ModItems.PINKU_UPGRADE_SMITHING_TEMPLATE);
                         entries.add(ModItems.RAINBOW_PYRITE);
                         entries.add(ModItems.WOLFRAMITE);
@@ -114,8 +125,8 @@ public class ModItemGroups {
                         entries.add(ModItems.SODIUM_CARBONATE);
                         entries.add(ModItems.PURE_TUNGSTEN);
                         entries.add(ModItems.TUNGSTEN);
-                        entries.add(ModItems.BAUXITE);
 
+                        entries.add(ModItems.BAUXITE);
                         entries.add(ModItems.ALUMINUM);
                         entries.add(ModItems.SAPPHIRE);
                         entries.add(ModItems.NEPHRITE);
@@ -124,7 +135,9 @@ public class ModItemGroups {
                         entries.add(ModItems.PLATINUM);
                         entries.add(ModItems.SULFUR);
                         entries.add(ModItems.CRUDE_IRON);
+
                         entries.add(ModItems.STEEL);
+                        entries.add(ModItems.CAST_STEEL);
 
                     }).build());
 
@@ -202,12 +215,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.BLOCK_OF_SULFUR);
 
                         entries.add(ModBlocks.BLOCK_OF_STEEL);
-                        /*entries.add(ModBlocks.STEEL_RAIL);
-                        entries.add(ModBlocks.STEEL_POWERED_RAIL);
-                        entries.add(ModBlocks.STEEL_DETECTOR_RAIL);
-                        entries.add(ModBlocks.STEEL_ACTIVATOR_RAIL);
-
-                         */
+                        entries.add(ModBlocks.BLOCK_OF_CAST_STEEL);
                     }).build());
 
 

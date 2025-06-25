@@ -18,6 +18,7 @@
   "item.pizzasoat.sulfur": "Sulfur",
   "item.pizzasoat.crude_iron": "Crude Iron",
   "item.pizzasoat.steel": "Steel",
+  "item.pizzasoat.cast_steel": "Cast Steel",
 
   "item.pizzasoat.pinku_upgrade_smithing_template": "Smithing Template",
 
@@ -56,6 +57,7 @@
   "block.pizzasoat.blackstone_sulfur_ore": "Blackstone Sulfur Ore",
   "block.pizzasoat.sulfur_ore": "Sulfur Ore",
   "block.pizzasoat.block_of_steel": "Block of Steel",
+  "block.pizzasoat.block_of_cast_steel": "Block of Cast Steel",
 
   "block.pizzasoat.limestone_stairs": "Limestone Stairs",
   "block.pizzasoat.limestone_slab": "Limestone Slab",
@@ -119,6 +121,11 @@
   "item.pizzasoat.steel_shovel": "Steel Shovel",
   "item.pizzasoat.steel_sword": "Steel Sword",
   "item.pizzasoat.steel_hoe": "Steel Hoe",
+  "item.pizzasoat.cast_steel_pickaxe": "Cast Steel Pickaxe",
+  "item.pizzasoat.cast_steel_axe": "Cast Steel Axe",
+  "item.pizzasoat.cast_steel_shovel": "Cast Steel Shovel",
+  "item.pizzasoat.cast_steel_sword": "Cast Steel Sword",
+  "item.pizzasoat.cast_steel_hoe": "Cast Steel Hoe",
 
   "item.pizzasoat.pinku_helmet": "Pinku Helmet",
   "item.pizzasoat.pinku_chestplate": "Pinku Chestplate",
@@ -152,6 +159,10 @@
   "item.pizzasoat.steel_chestplate": "Steel Chestplate",
   "item.pizzasoat.steel_leggings": "Steel Leggings",
   "item.pizzasoat.steel_boots": "Steel Boots",
+  "item.pizzasoat.cast_steel_helmet": "Cast Steel Helmet",
+  "item.pizzasoat.cast_steel_chestplate": "Cast Steel Chestplate",
+  "item.pizzasoat.cast_steel_leggings": "Cast Steel Leggings",
+  "item.pizzasoat.cast_steel_boots": "Cast Steel Boots",
 
   "item.pizzasoat.pinku_horse_armor": "Pinku Horse Armor",
   "item.pizzasoat.rainbow_pyrite_horse_armor": "Rainbow Pyrite Horse Armor",
@@ -160,6 +171,7 @@
   "item.pizzasoat.sapphire_horse_armor": "Sapphire Horse Armor",
   "item.pizzasoat.platinum_horse_armor": "Platinum Horse Armor",
   "item.pizzasoat.steel_horse_armor": "Steel Horse Armor",
+  "item.pizzasoat.cast_steel_horse_armor": "Cast Steel Horse Armor",
 
   "item.pizzasoat.smithing_template.pinku_upgrade.applies_to": "Netherite Equipment",
   "item.pizzasoat.smithing_template.pinku_upgrade.ingredients": "Pinku",

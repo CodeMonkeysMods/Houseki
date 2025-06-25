@@ -17,7 +17,8 @@ public enum ModToolMaterials implements ToolMaterial {
     SAPPHIRE(ModTags.Blocks.INCORRECT_FOR_SAPPHIRE_TOOL, 3000, 9, 5, 12, () -> Ingredient.ofItems(ModItems.SAPPHIRE)),
     JADE(ModTags.Blocks.INCORRECT_FOR_JADE_TOOL, 2000, 8, 4, 12, () -> Ingredient.ofItems(ModItems.JADE)),
     PLATINUM(ModTags.Blocks.INCORRECT_FOR_PLATINUM_TOOL, 3000, 9, 4.5f, 15, () -> Ingredient.ofItems(ModItems.PLATINUM)),
-    STEEL(ModTags.Blocks.INCORRECT_FOR_STEEL_TOOL, 2500, 8.5f, 4, 15, () -> Ingredient.ofItems(ModItems.STEEL));
+    STEEL(ModTags.Blocks.INCORRECT_FOR_STEEL_TOOL, 2500, 8.5f, 4, 15, () -> Ingredient.ofItems(ModItems.STEEL)),
+    CAST_STEEL(ModTags.Blocks.INCORRECT_FOR_CAST_STEEL_TOOL, 3000, 9, 4.5f, 15, () -> Ingredient.ofItems(ModItems.CAST_STEEL));
 
     private final TagKey<Block> inverseTag;
     private final int itemDurability;

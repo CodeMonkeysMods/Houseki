@@ -25,6 +25,8 @@ public class ModTags {
         public static final TagKey<Block> INCORRECT_FOR_PLATINUM_TOOL = createTag("incorrect_for_platinum_tool");
         public static final TagKey<Block> NEEDS_STEEL_TOOL = createTag("needs_steel_tool");
         public static final TagKey<Block> INCORRECT_FOR_STEEL_TOOL = createTag("incorrect_for_steel_tool");
+        public static final TagKey<Block> NEEDS_CAST_STEEL_TOOL = createTag("needs_cast_steel_tool");
+        public static final TagKey<Block> INCORRECT_FOR_CAST_STEEL_TOOL = createTag("incorrect_for_cast_steel_tool");
 
         private static TagKey<Block> createTag(String name) {
             return TagKey.of(RegistryKeys.BLOCK, Identifier.of(PizzasOAT.MOD_ID, name));

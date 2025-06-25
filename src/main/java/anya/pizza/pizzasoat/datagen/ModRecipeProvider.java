@@ -41,6 +41,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         List<ItemConvertible> SULFUR_SMELTABLES = List.of(ModBlocks.SULFUR_ORE, ModBlocks.BLACKSTONE_SULFUR_ORE);
         List<ItemConvertible> CRUDE_IRON_SMELTABLES = List.of(Items.IRON_INGOT);
         List<ItemConvertible> STEEL_SMELTABLES = List.of(ModItems.CRUDE_IRON);
+        List<ItemConvertible> CAST_STEEL_SMELTABLES = List.of(ModItems.STEEL);
 
         //Creates recipes for blocks to make a block of something and back to 9 items
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.PINKU, RecipeCategory.DECORATIONS, ModBlocks.BLOCK_OF_PINKU);
@@ -52,6 +53,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.PLATINUM, RecipeCategory.DECORATIONS, ModBlocks.BLOCK_OF_PLATINUM);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.SULFUR, RecipeCategory.DECORATIONS, ModBlocks.BLOCK_OF_SULFUR);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.STEEL, RecipeCategory.DECORATIONS, ModBlocks.BLOCK_OF_STEEL);
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.CAST_STEEL, RecipeCategory.DECORATIONS, ModBlocks.BLOCK_OF_CAST_STEEL);
 
 
         //Smelting Recipes
@@ -114,6 +116,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 0.5f, 100, "crude_iron");
         offerBlasting(exporter, STEEL_SMELTABLES, RecipeCategory.MISC, ModItems.STEEL,
                 0.5f, 120, "steel");
+        offerBlasting(exporter, CAST_STEEL_SMELTABLES, RecipeCategory.MISC, ModItems.CAST_STEEL,
+                0.5f, 120, "cast_steel");
 
         //Stonecutting Recipes
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHISELED_LIMESTONE, ModBlocks.LIMESTONE, 1);
@@ -219,6 +223,11 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         ModGenRecipes.offerShovelRecipe(exporter, ModItems.STEEL_SHOVEL, ModItems.STEEL);
         ModGenRecipes.offerSwordRecipe(exporter, ModItems.STEEL_SWORD, ModItems.STEEL);
         ModGenRecipes.offerHoeRecipe(exporter, ModItems.STEEL_HOE, ModItems.STEEL);
+        ModGenRecipes.offerPickaxeRecipe(exporter, ModItems.CAST_STEEL_PICKAXE, ModItems.CAST_STEEL);
+        ModGenRecipes.offerAxeRecipe(exporter, ModItems.CAST_STEEL_AXE, ModItems.CAST_STEEL);
+        ModGenRecipes.offerShovelRecipe(exporter, ModItems.CAST_STEEL_SHOVEL, ModItems.CAST_STEEL);
+        ModGenRecipes.offerSwordRecipe(exporter, ModItems.CAST_STEEL_SWORD, ModItems.CAST_STEEL);
+        ModGenRecipes.offerHoeRecipe(exporter, ModItems.CAST_STEEL_HOE, ModItems.CAST_STEEL);
 
 
         //Armor Recipes
@@ -254,6 +263,10 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         ModGenRecipes.offerChestplateRecipe(exporter, ModItems.STEEL_CHESTPLATE, ModItems.STEEL);
         ModGenRecipes.offerLeggingsRecipe(exporter, ModItems.STEEL_LEGGINGS, ModItems.STEEL);
         ModGenRecipes.offerBootsRecipe(exporter, ModItems.STEEL_BOOTS, ModItems.STEEL);
+        ModGenRecipes.offerHelmetRecipe(exporter, ModItems.CAST_STEEL_HELMET, ModItems.CAST_STEEL);
+        ModGenRecipes.offerChestplateRecipe(exporter, ModItems.CAST_STEEL_CHESTPLATE, ModItems.CAST_STEEL);
+        ModGenRecipes.offerLeggingsRecipe(exporter, ModItems.CAST_STEEL_LEGGINGS, ModItems.CAST_STEEL);
+        ModGenRecipes.offerBootsRecipe(exporter, ModItems.CAST_STEEL_BOOTS, ModItems.CAST_STEEL);
 
 
 
@@ -297,15 +310,14 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
                 .offerTo(exporter);
 
-        /*ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.CRUSHER, 1)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.CRUSHER, 1)
                 .pattern("###")
                 .pattern("X X")
                 .pattern("###")
-                .input('#', Items.CAST_STEEL)
+                .input('#', ModItems.CAST_STEEL)
                 .input('X', Items.IRON_INGOT)
-                .criterion(hasItem(Items.CAST_STEEL), conditionsFromItem(Items.CAST_STEEL))
+                .criterion(hasItem(ModItems.CAST_STEEL), conditionsFromItem(ModItems.CAST_STEEL))
                 .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
                 .offerTo(exporter);
-        */
     }
 }

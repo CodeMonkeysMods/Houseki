@@ -75,6 +75,9 @@ public class ModBlocks {
     public static final Block BLOCK_OF_STEEL = registerBlock("block_of_steel",
             new Block(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK).strength(4.5f, 5.5f).requiresTool()));
 
+    public static final Block BLOCK_OF_CAST_STEEL = registerBlock("block_of_cast_steel",
+            new Block(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK).strength(5.5f, 6.5f).requiresTool()));
+
 
 
     //Adds Ore

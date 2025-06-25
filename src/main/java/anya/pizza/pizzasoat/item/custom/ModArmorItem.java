@@ -27,6 +27,8 @@ public class ModArmorItem extends ArmorItem {
                             StatusEffects.RESISTANCE, 20, 4, false, false, true)))
                     .put(ModArmorMaterials.TUNGSTEN_MATERIAL, List.of(new StatusEffectInstance(
                             StatusEffects.FIRE_RESISTANCE, 20, 4, false, false, true)))
+                    .put(ModArmorMaterials.CAST_STEEL_MATERIAL, List.of(new StatusEffectInstance(
+                            StatusEffects.STRENGTH, 20, 1, false, false, true)))
                     .build();
 
 
