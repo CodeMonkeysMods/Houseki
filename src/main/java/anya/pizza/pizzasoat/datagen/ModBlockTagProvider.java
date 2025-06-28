@@ -23,7 +23,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.SANDSTONE_RAINBOW_PYRITE_ORE)
                 .add(ModBlocks.WOLFRAMITE_ORE)
                 .add(ModBlocks.SCHEELITE_ORE)
-                .add(ModBlocks.TRONA_ORE)
+                //.add(ModBlocks.TRONA_ORE)
                 .add(ModBlocks.CRUSHER)
                 .add(ModBlocks.BLOCK_OF_TUNGSTEN)
                 .add(ModBlocks.BAUXITE_ORE)
@@ -74,7 +74,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.BLOCK_OF_CAST_STEEL);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
-                .add(ModBlocks.TRONA_ORE)
+                //.add(ModBlocks.TRONA_ORE)
                 .add(ModBlocks.BAUXITE_ORE)
                 .add(ModBlocks.SULFUR_ORE)
                 .add(ModBlocks.BLACKSTONE_SULFUR_ORE)

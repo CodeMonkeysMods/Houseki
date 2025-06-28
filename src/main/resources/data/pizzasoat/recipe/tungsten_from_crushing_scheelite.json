@@ -1,0 +1,10 @@
+{
+  "type": "pizzasoat:crushing",
+  "ingredient": {
+    "item": "pizzasoat:scheelite"
+  },
+  "result": {
+    "id": "pizzasoat:tungsten"
+  },
+  "crushingTime": 250
+}

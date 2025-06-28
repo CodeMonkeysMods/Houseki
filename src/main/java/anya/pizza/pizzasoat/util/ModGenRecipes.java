@@ -1,6 +1,8 @@
 package anya.pizza.pizzasoat.util;
 
 import anya.pizza.pizzasoat.item.ModItems;
+import anya.pizza.pizzasoat.recipe.CrusherRecipe;
+import anya.pizza.pizzasoat.recipe.ModRecipes;
 import net.minecraft.data.server.recipe.CraftingRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
@@ -9,7 +11,11 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
+import net.minecraft.recipe.RecipeSerializer;
+import net.minecraft.recipe.SmeltingRecipe;
 import net.minecraft.recipe.book.RecipeCategory;
+
+import java.util.List;
 
 import static net.minecraft.data.server.recipe.RecipeProvider.*;
 

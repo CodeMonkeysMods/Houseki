@@ -17,9 +17,9 @@ public class ModItems {
     public static final Item PINKU_SHARD = registerItem("pinku_shard", new Item(new Item.Settings()));
     public static final Item WOLFRAMITE = registerItem("wolframite", new Item(new Item.Settings()));
     public static final Item SCHEELITE = registerItem("scheelite", new Item(new Item.Settings()));
-    public static final Item TRONA = registerItem("trona", new Item(new Item.Settings()));
-    public static final Item SODIUM_CARBONATE = registerItem("sodium_carbonate", new Item(new Item.Settings()));
-    public static final Item PURE_TUNGSTEN = registerItem("pure_tungsten", new Item(new Item.Settings()));
+    //public static final Item TRONA = registerItem("trona", new Item(new Item.Settings()));
+    //public static final Item SODIUM_CARBONATE = registerItem("sodium_carbonate", new Item(new Item.Settings()));
+    //public static final Item PURE_TUNGSTEN = registerItem("pure_tungsten", new Item(new Item.Settings()));
     public static final Item TUNGSTEN = registerItem("tungsten", new Item(new Item.Settings()));
     public static final Item BAUXITE = registerItem("bauxite", new Item(new Item.Settings()));
     public static final Item ALUMINUM = registerItem("aluminum", new Item(new Item.Settings()));
@@ -246,9 +246,9 @@ public class ModItems {
         entries.add(RAINBOW_PYRITE);
         entries.add(WOLFRAMITE);
         entries.add(SCHEELITE);
-        entries.add(TRONA);
-        entries.add(SODIUM_CARBONATE);
-        entries.add(PURE_TUNGSTEN);
+        //entries.add(TRONA);
+        //entries.add(SODIUM_CARBONATE);
+        //entries.add(PURE_TUNGSTEN);
         entries.add(TUNGSTEN);
         entries.add(BAUXITE);
         entries.add(ALUMINUM);

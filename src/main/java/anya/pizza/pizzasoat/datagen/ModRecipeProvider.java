@@ -31,9 +31,9 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         List<ItemConvertible> ALUMINUM_SMELTABLES = List.of(ModItems.BAUXITE);
         List<ItemConvertible> BAUXITE_SMELTABLES = List.of(ModBlocks.BAUXITE_ORE, ModBlocks.DEEPSLATE_BAUXITE_ORE);
         List<ItemConvertible> SCHEELITE_SMELTABLES = List.of(ModBlocks.SCHEELITE_ORE);
-        List<ItemConvertible> SODIUM_CARBONATE_SMELTABLES = List.of(ModItems.TRONA);
-        List<ItemConvertible> TRONA_SMELTABLES = List.of(ModBlocks.TRONA_ORE);
-        List<ItemConvertible> TUNGSTEN_SMELTABLES = List.of(ModItems.PURE_TUNGSTEN);
+        //List<ItemConvertible> SODIUM_CARBONATE_SMELTABLES = List.of(ModItems.TRONA);
+        //List<ItemConvertible> TRONA_SMELTABLES = List.of(ModBlocks.TRONA_ORE);
+        //List<ItemConvertible> TUNGSTEN_SMELTABLES = List.of(ModItems.PURE_TUNGSTEN);
         List<ItemConvertible> WOLFRAMITE_SMELTABLES = List.of(ModBlocks.WOLFRAMITE_ORE);
         List<ItemConvertible> SAPPHIRE_SMELTABLES = List.of(ModBlocks.SAPPHIRE_ORE, ModBlocks.DEEPSLATE_SAPPHIRE_ORE);
         List<ItemConvertible> NEPHRITE_SMELTABLES = List.of(ModBlocks.NEPHRITE_ORE, ModBlocks.DEEPSLATE_NEPHRITE_ORE);
@@ -42,6 +42,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         List<ItemConvertible> CRUDE_IRON_SMELTABLES = List.of(Items.IRON_INGOT);
         List<ItemConvertible> STEEL_SMELTABLES = List.of(ModItems.CRUDE_IRON);
         List<ItemConvertible> CAST_STEEL_SMELTABLES = List.of(ModItems.STEEL);
+
 
         //Creates recipes for blocks to make a block of something and back to 9 items
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.PINKU, RecipeCategory.DECORATIONS, ModBlocks.BLOCK_OF_PINKU);
@@ -67,12 +68,12 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 0.5f, 200, "rainbow_pyrite");
         offerSmelting(exporter, SCHEELITE_SMELTABLES, RecipeCategory.MISC, ModItems.SCHEELITE,
                 0.5f, 200, "scheelite");
-        offerSmelting(exporter, SODIUM_CARBONATE_SMELTABLES, RecipeCategory.MISC, ModItems.SODIUM_CARBONATE,
-                0.5f, 200, "sodium_carbonate");
-        offerSmelting(exporter, TRONA_SMELTABLES, RecipeCategory.MISC, ModItems.TRONA,
-                0.5f, 200, "trona");
-        offerSmelting(exporter, TUNGSTEN_SMELTABLES, RecipeCategory.MISC, ModItems.TUNGSTEN,
-                0.5f, 200, "tungsten");
+        //offerSmelting(exporter, SODIUM_CARBONATE_SMELTABLES, RecipeCategory.MISC, ModItems.SODIUM_CARBONATE,
+        //        0.5f, 200, "sodium_carbonate");
+        //offerSmelting(exporter, TRONA_SMELTABLES, RecipeCategory.MISC, ModItems.TRONA,
+        //        0.5f, 200, "trona");
+        //offerSmelting(exporter, TUNGSTEN_SMELTABLES, RecipeCategory.MISC, ModItems.TUNGSTEN,
+        //        0.5f, 200, "tungsten");
         offerSmelting(exporter, WOLFRAMITE_SMELTABLES, RecipeCategory.MISC, ModItems.WOLFRAMITE,
                 0.5f, 200, "wolframite");
         offerSmelting(exporter, SAPPHIRE_SMELTABLES, RecipeCategory.MISC, ModItems.SAPPHIRE,
@@ -96,12 +97,12 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 0.5f, 100, "rainbow_pyrite");
         offerBlasting(exporter, SCHEELITE_SMELTABLES, RecipeCategory.MISC, ModItems.SCHEELITE,
                 0.5f, 100, "scheelite");
-        offerBlasting(exporter, SODIUM_CARBONATE_SMELTABLES, RecipeCategory.MISC, ModItems.SODIUM_CARBONATE,
-                0.5f, 100, "sodium_carbonate");
-        offerBlasting(exporter, TRONA_SMELTABLES, RecipeCategory.MISC, ModItems.TRONA,
-                0.5f, 100, "trona");
-        offerBlasting(exporter, TUNGSTEN_SMELTABLES, RecipeCategory.MISC, ModItems.TUNGSTEN,
-                0.5f, 100, "tungsten");
+        //offerBlasting(exporter, SODIUM_CARBONATE_SMELTABLES, RecipeCategory.MISC, ModItems.SODIUM_CARBONATE,
+        //        0.5f, 100, "sodium_carbonate");
+        //offerBlasting(exporter, TRONA_SMELTABLES, RecipeCategory.MISC, ModItems.TRONA,
+        //        0.5f, 100, "trona");
+        //offerBlasting(exporter, TUNGSTEN_SMELTABLES, RecipeCategory.MISC, ModItems.TUNGSTEN,
+        //        0.5f, 100, "tungsten");
         offerBlasting(exporter, WOLFRAMITE_SMELTABLES, RecipeCategory.MISC, ModItems.WOLFRAMITE,
                 0.5f, 100, "wolframite");
         offerBlasting(exporter, SAPPHIRE_SMELTABLES, RecipeCategory.MISC, ModItems.SAPPHIRE,

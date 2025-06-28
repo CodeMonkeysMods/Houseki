@@ -121,21 +121,20 @@ public class ModItemGroups {
                         entries.add(ModItems.RAINBOW_PYRITE);
                         entries.add(ModItems.WOLFRAMITE);
                         entries.add(ModItems.SCHEELITE);
-                        entries.add(ModItems.TRONA);
-                        entries.add(ModItems.SODIUM_CARBONATE);
-                        entries.add(ModItems.PURE_TUNGSTEN);
+                        //entries.add(ModItems.TRONA);
+                        //entries.add(ModItems.SODIUM_CARBONATE);
+                        //entries.add(ModItems.PURE_TUNGSTEN);
                         entries.add(ModItems.TUNGSTEN);
-
                         entries.add(ModItems.BAUXITE);
                         entries.add(ModItems.ALUMINUM);
                         entries.add(ModItems.SAPPHIRE);
+
                         entries.add(ModItems.NEPHRITE);
                         entries.add(ModItems.JADEITE);
                         entries.add(ModItems.JADE);
                         entries.add(ModItems.PLATINUM);
                         entries.add(ModItems.SULFUR);
                         entries.add(ModItems.CRUDE_IRON);
-
                         entries.add(ModItems.STEEL);
                         entries.add(ModItems.CAST_STEEL);
 
@@ -157,7 +156,7 @@ public class ModItemGroups {
 
                         entries.add(ModBlocks.SCHEELITE_ORE);
 
-                        entries.add(ModBlocks.TRONA_ORE);
+                        //entries.add(ModBlocks.TRONA_ORE);
 
                         entries.add(ModBlocks.BLOCK_OF_TUNGSTEN);
 
