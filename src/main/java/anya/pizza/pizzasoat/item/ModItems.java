@@ -3,6 +3,7 @@ package anya.pizza.pizzasoat.item;
 import anya.pizza.pizzasoat.PizzasOAT;
 import anya.pizza.pizzasoat.item.custom.ModArmorItem;
 import anya.pizza.pizzasoat.item.custom.PinkuTemplateItem;
+import anya.pizza.pizzasoat.item.custom.TungstenSwordItem;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.*;
@@ -65,7 +66,7 @@ public class ModItems {
     public static final Item TUNGSTEN_SHOVEL = registerItem("tungsten_shovel",
             new ShovelItem(ModToolMaterials.TUNGSTEN, new Item.Settings().attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterials.TUNGSTEN, 0.5f, 1.1f))));
     public static final Item TUNGSTEN_SWORD = registerItem("tungsten_sword",
-            new SwordItem(ModToolMaterials.TUNGSTEN, new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.TUNGSTEN, 2, 1.7f))));
+            new TungstenSwordItem(ModToolMaterials.TUNGSTEN, new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.TUNGSTEN, 2, 1.7f))));
     public static final Item TUNGSTEN_HOE = registerItem("tungsten_hoe",
             new HoeItem(ModToolMaterials.TUNGSTEN, new Item.Settings().attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.TUNGSTEN, -4, 4.1f))));
 

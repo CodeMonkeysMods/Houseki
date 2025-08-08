@@ -1,5 +1,7 @@
+Investigate needs netherite error
+
 TUNGSTEN:
-1. Look into adding Poison effect to the sword.
+1. Test to see if tungesten sword effects players
 2. Maybe add drills that are made using Tungsten.
 3. Give Netherite properties where it doesn't burn in lava.
 
@@ -9,7 +11,7 @@ BAUXITE:
 3. Make the Bauxite block crushable to turn it into Bauxite item, which then gets smelted to Aluminum
 
 RAINBOW PYRITE:
-2. Maybe make it spawnable next to Bauxite as well/Make a Bauxite variant of it that spawn in Bauxite
+2. Maybe make it spawnable next to Bauxite as well/Make a Bauxite variant of it that spawns in Bauxite
 
 ALUMINUM:
 1. Make Aluminum Glass Panes
