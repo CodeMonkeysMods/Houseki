@@ -125,7 +125,7 @@ public class ModItemGroups {
                         //entries.add(ModItems.SODIUM_CARBONATE);
                         //entries.add(ModItems.PURE_TUNGSTEN);
                         entries.add(ModItems.TUNGSTEN);
-                        entries.add(ModItems.BAUXITE);
+                        entries.add(ModItems.CRUSHED_BAUXITE);
                         entries.add(ModItems.ALUMINUM);
                         entries.add(ModItems.SAPPHIRE);
 
@@ -160,8 +160,8 @@ public class ModItemGroups {
 
                         entries.add(ModBlocks.BLOCK_OF_TUNGSTEN);
 
-                        entries.add(ModBlocks.BAUXITE_ORE);
-                        entries.add(ModBlocks.DEEPSLATE_BAUXITE_ORE);
+                        entries.add(ModBlocks.BAUXITE);
+                        //entries.add(ModBlocks.DEEPSLATE_BAUXITE_ORE);
 
                         entries.add(ModBlocks.BLOCK_OF_ALUMINUM);
                         entries.add(ModBlocks.ALUMINUM_GLASS);

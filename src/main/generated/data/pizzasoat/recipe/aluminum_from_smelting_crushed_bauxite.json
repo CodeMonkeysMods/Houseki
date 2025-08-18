@@ -3,11 +3,11 @@
   "category": "misc",
   "cookingtime": 200,
   "experience": 0.5,
-  "group": "bauxite",
+  "group": "aluminum",
   "ingredient": {
-    "item": "pizzasoat:bauxite_ore"
+    "item": "pizzasoat:crushed_bauxite"
   },
   "result": {
-    "id": "pizzasoat:bauxite"
+    "id": "pizzasoat:aluminum"
   }
 }

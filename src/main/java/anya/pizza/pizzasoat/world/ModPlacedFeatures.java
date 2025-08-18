@@ -22,7 +22,6 @@ public class ModPlacedFeatures {
     public static final RegistryKey<PlacedFeature> SANDSTONE_RAINBOW_PYRITE_ORE_PLACED_KEY = registerKey("sandstone_rainbow_pyrite_ore_placed");
     public static final RegistryKey<PlacedFeature> WOLFRAMITE_ORE_PLACED_KEY = registerKey("wolframite_ore_placed");
     public static final RegistryKey<PlacedFeature> SCHEELITE_ORE_PLACED_KEY = registerKey("scheelite_ore_placed");
-    public static final RegistryKey<PlacedFeature> BAUXITE_ORE_PLACED_KEY = registerKey("bauxite_ore_placed");
     public static final RegistryKey<PlacedFeature> SAPPHIRE_ORE_PLACED_KEY = registerKey("sapphire_ore_placed");
     public static final RegistryKey<PlacedFeature> NEPHRITE_ORE_PLACED_KEY = registerKey("nephrite_ore_placed");
     //public static final RegistryKey<PlacedFeature> TRONA_ORE_PLACED_KEY = registerKey("trona_ore_placed");
@@ -32,6 +31,7 @@ public class ModPlacedFeatures {
 
     public static final RegistryKey<PlacedFeature> ORE_LIMESTONE_PLACED_KEY = registerKey("ore_limestone_placed");
     public static final RegistryKey<PlacedFeature> ORE_SLATE_PLACED_KEY = registerKey("ore_slate_placed");
+    public static final RegistryKey<PlacedFeature> ORE_BAUXITE_PLACED_KEY = registerKey("ore_bauxite_placed");
 
 
     public static void bootstrap(Registerable<PlacedFeature> context) {
@@ -57,10 +57,6 @@ public class ModPlacedFeatures {
                 ModOrePlacement.modifiersWithCount(6,
                         HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.fixed(64))));
 
-        register(context, BAUXITE_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.BAUXITE_ORE_KEY),
-                ModOrePlacement.modifiersWithCount(6,
-                        HeightRangePlacementModifier.uniform(YOffset.fixed(-64), YOffset.fixed(50))));
-
         register(context, SAPPHIRE_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.SAPPHIRE_ORE_KEY),
                 ModOrePlacement.modifiersWithCount(5,
                         HeightRangePlacementModifier.uniform(YOffset.fixed(-64), YOffset.fixed(30))));
@@ -69,9 +65,7 @@ public class ModPlacedFeatures {
                 ModOrePlacement.modifiersWithCount(7,
                         HeightRangePlacementModifier.uniform(YOffset.fixed(-64), YOffset.fixed(256))));
 
-        //register(context, TRONA_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.TRONA_ORE_KEY),
-        //        ModOrePlacement.modifiersWithCount(7,
-        //                HeightRangePlacementModifier.uniform(YOffset.fixed(0), YOffset.fixed(256))));
+        //register(context, TRONA_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.TRONA_ORE_KEY), ModOrePlacement.modifiersWithCount(7, HeightRangePlacementModifier.uniform(YOffset.fixed(0), YOffset.fixed(256))));
 
         register(context, PLATINUM_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.PLATINUM_ORE_KEY),
                 ModOrePlacement.modifiersWithCount(30,
@@ -89,6 +83,8 @@ public class ModPlacedFeatures {
         register(context, ORE_LIMESTONE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.ORE_LIMESTONE_KEY),
                 ModOrePlacement.modifiersWithCount(2, HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.fixed(256))));
         register(context, ORE_SLATE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.ORE_SLATE_KEY),
+                ModOrePlacement.modifiersWithCount(2, HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.fixed(256))));
+        register(context, ORE_BAUXITE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.ORE_BAUXITE_KEY),
                 ModOrePlacement.modifiersWithCount(2, HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.fixed(256))));
     }
 

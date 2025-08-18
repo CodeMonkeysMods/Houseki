@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_deepslate_bauxite_ore": {
+    "has_crushed_bauxite": {
       "conditions": {
         "items": [
           {
-            "items": "pizzasoat:deepslate_bauxite_ore"
+            "items": "pizzasoat:crushed_bauxite"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "pizzasoat:bauxite_from_blasting_deepslate_bauxite_ore"
+        "recipe": "pizzasoat:bauxite"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_deepslate_bauxite_ore"
+      "has_crushed_bauxite"
     ]
   ],
   "rewards": {
     "recipes": [
-      "pizzasoat:bauxite_from_blasting_deepslate_bauxite_ore"
+      "pizzasoat:bauxite"
     ]
   }
 }

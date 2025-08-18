@@ -1,4 +1,4 @@
-// 1.21.1	2025-08-10T10:25:05.5595783	Pizza's Ores And Things/Block Loot Tables
+// 1.21.1	2025-08-16T18:39:25.2077942	Pizza's Ores And Things/Block Loot Tables
 d41f3cad63bd1048cd5af3c8439fb799a5e25a15 data\pizzasoat\loot_table\blocks\aluminum_trapdoor.json
 e6fdb101c5cb5b4e74f39b1c66f26a7f0a75341f data\pizzasoat\loot_table\blocks\limestone_bricks.json
 173db29ee574681a05fba25f9c558f0375a332f3 data\pizzasoat\loot_table\blocks\pinku_ore.json
@@ -15,13 +15,13 @@ d1095de1d959408633a84603b9651ad60eef9bc7 data\pizzasoat\loot_table\blocks\limest
 4f84b71e39c455e44e86d3ee8cc4f1bd71877de9 data\pizzasoat\loot_table\blocks\block_of_rainbow_pyrite.json
 723c57789d4fe5d51f1d6a26564f029612b136bb data\pizzasoat\loot_table\blocks\platinum_ore.json
 071cff5832494c4602cb5631855562c9b29844af data\pizzasoat\loot_table\blocks\slate_tile_wall.json
+952816cbe1e0da35c6ab9b23380380d4e5c34c6e data\pizzasoat\loot_table\blocks\bauxite.json
 139588dd003f00bb301c9ecf706d0a93faf5fe1e data\pizzasoat\loot_table\blocks\slate_wall.json
 b776d68aa9c9e643214f5dda79ced8539e81dfc3 data\pizzasoat\loot_table\blocks\block_of_steel.json
 83a5bed75d33d367900e54c7422c73c0a32f5e54 data\pizzasoat\loot_table\blocks\limestone.json
 fe9c3df19496de18c87cb74767661502cc0cc1cf data\pizzasoat\loot_table\blocks\deepslate_platinum_ore.json
 71806a9170d95f84714575b5bd93db31215cc282 data\pizzasoat\loot_table\blocks\slate.json
 6bb70fb8e0c12baa608176b7b6354c18d1e12f18 data\pizzasoat\loot_table\blocks\limestone_brick_slab.json
-8ac258f6d1364190c2e068a7597ff3df7905e039 data\pizzasoat\loot_table\blocks\bauxite_ore.json
 5618bb356530249d7b0b7b6f8bc70e826f62f9d0 data\pizzasoat\loot_table\blocks\polished_limestone_slab.json
 07c4782c2eeaebd57386d3c2e7042648ada5ba78 data\pizzasoat\loot_table\blocks\slate_tile_slab.json
 aa34ba8e55af5ceb9c6133bda2cbc0d139ac5a26 data\pizzasoat\loot_table\blocks\chiseled_limestone.json
@@ -37,7 +37,6 @@ f58bfb829c67d52c5f2642e3cfd09305d90b3fb0 data\pizzasoat\loot_table\blocks\limest
 f76c29ce4ae4faa592db88fbeef1b8aec3b9ac42 data\pizzasoat\loot_table\blocks\block_of_sapphire.json
 78a4165d9d8cc8643753c8e63fab32af1a2ac67a data\pizzasoat\loot_table\blocks\limestone_slab.json
 a7b208f8450b479d3bc8b43f56d1f005ed926711 data\pizzasoat\loot_table\blocks\wolframite_ore.json
-8ac258f6d1364190c2e068a7597ff3df7905e039 data\pizzasoat\loot_table\blocks\deepslate_bauxite_ore.json
 54645f429ebd8ad71993d798e9c12f33c9bd1abc data\pizzasoat\loot_table\blocks\block_of_sulfur.json
 a8ab9522c205bb24606a5e118db355805247e173 data\pizzasoat\loot_table\blocks\polished_slate_stairs.json
 952ec70c222eebadd4990802168dd56436dbd70a data\pizzasoat\loot_table\blocks\deepslate_sapphire_ore.json

@@ -21,8 +21,8 @@ public class ModItems {
     //public static final Item TRONA = registerItem("trona", new Item(new Item.Settings()));
     //public static final Item SODIUM_CARBONATE = registerItem("sodium_carbonate", new Item(new Item.Settings()));
     //public static final Item PURE_TUNGSTEN = registerItem("pure_tungsten", new Item(new Item.Settings()));
-    public static final Item TUNGSTEN = registerItem("tungsten", new Item(new Item.Settings()));
-    public static final Item BAUXITE = registerItem("bauxite", new Item(new Item.Settings()));
+    public static final Item TUNGSTEN = registerItem("tungsten", new Item(new Item.Settings().fireproof()));
+    public static final Item CRUSHED_BAUXITE = registerItem("crushed_bauxite", new Item(new Item.Settings()));
     public static final Item ALUMINUM = registerItem("aluminum", new Item(new Item.Settings()));
     public static final Item SAPPHIRE = registerItem("sapphire", new Item(new Item.Settings()));
     public static final Item NEPHRITE = registerItem("nephrite", new Item(new Item.Settings()));
@@ -60,15 +60,15 @@ public class ModItems {
             new HoeItem(ModToolMaterials.RAINBOW_PYRITE, new Item.Settings().attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.RAINBOW_PYRITE, -4, 4.0f))));
 
     public static final Item TUNGSTEN_PICKAXE = registerItem("tungsten_pickaxe",
-            new PickaxeItem(ModToolMaterials.TUNGSTEN, new Item.Settings().attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.TUNGSTEN, 1, 1.4f))));
+            new PickaxeItem(ModToolMaterials.TUNGSTEN, new Item.Settings().fireproof().attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.TUNGSTEN, 1, 1.4f))));
     public static final Item TUNGSTEN_AXE = registerItem("tungsten_axe",
-            new AxeItem(ModToolMaterials.TUNGSTEN, new Item.Settings().attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterials.TUNGSTEN, 4.5f, 1.1f))));
+            new AxeItem(ModToolMaterials.TUNGSTEN, new Item.Settings().fireproof().attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterials.TUNGSTEN, 4.5f, 1.1f))));
     public static final Item TUNGSTEN_SHOVEL = registerItem("tungsten_shovel",
-            new ShovelItem(ModToolMaterials.TUNGSTEN, new Item.Settings().attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterials.TUNGSTEN, 0.5f, 1.1f))));
+            new ShovelItem(ModToolMaterials.TUNGSTEN, new Item.Settings().fireproof().attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterials.TUNGSTEN, 0.5f, 1.1f))));
     public static final Item TUNGSTEN_SWORD = registerItem("tungsten_sword",
-            new TungstenSwordItem(ModToolMaterials.TUNGSTEN, new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.TUNGSTEN, 2, 1.7f))));
+            new TungstenSwordItem(ModToolMaterials.TUNGSTEN, new Item.Settings().fireproof().attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.TUNGSTEN, 2, 1.7f))));
     public static final Item TUNGSTEN_HOE = registerItem("tungsten_hoe",
-            new HoeItem(ModToolMaterials.TUNGSTEN, new Item.Settings().attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.TUNGSTEN, -4, 4.1f))));
+            new HoeItem(ModToolMaterials.TUNGSTEN, new Item.Settings().fireproof().attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.TUNGSTEN, -4, 4.1f))));
 
     public static final Item ALUMINUM_PICKAXE = registerItem("aluminum_pickaxe",
             new PickaxeItem(ModToolMaterials.ALUMINUM, new Item.Settings().attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.ALUMINUM, 0, 1.3f))));
@@ -156,13 +156,13 @@ public class ModItems {
             new ArmorItem(ModArmorMaterials.RAINBOW_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(33))));
 
     public static final Item TUNGSTEN_HELMET = registerItem("tungsten_helmet",
-            new ArmorItem(ModArmorMaterials.TUNGSTEN_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(50))));
+            new ArmorItem(ModArmorMaterials.TUNGSTEN_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings().fireproof().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(50))));
     public static final Item TUNGSTEN_CHESTPLATE = registerItem("tungsten_chestplate",
-            new ArmorItem(ModArmorMaterials.TUNGSTEN_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Settings().maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(50))));
+            new ArmorItem(ModArmorMaterials.TUNGSTEN_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Settings().fireproof().maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(50))));
     public static final Item TUNGSTEN_LEGGINGS = registerItem("tungsten_leggings",
-            new ArmorItem(ModArmorMaterials.TUNGSTEN_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Settings().maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(50))));
+            new ArmorItem(ModArmorMaterials.TUNGSTEN_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Settings().fireproof().maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(50))));
     public static final Item TUNGSTEN_BOOTS = registerItem("tungsten_boots",
-            new ArmorItem(ModArmorMaterials.TUNGSTEN_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(50))));
+            new ArmorItem(ModArmorMaterials.TUNGSTEN_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings().fireproof().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(50))));
 
     public static final Item ALUMINUM_HELMET = registerItem("aluminum_helmet",
             new ArmorItem(ModArmorMaterials.ALUMINUM_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(30))));
@@ -224,7 +224,7 @@ public class ModItems {
     public static final Item RAINBOW_PYRITE_HORSE_ARMOR = registerItem("rainbow_pyrite_horse_armor",
             new AnimalArmorItem(ModArmorMaterials.RAINBOW_MATERIAL, AnimalArmorItem.Type.EQUESTRIAN, false, new Item.Settings()));
     public static final Item TUNGSTEN_HORSE_ARMOR = registerItem("tungsten_horse_armor",
-            new AnimalArmorItem(ModArmorMaterials.TUNGSTEN_MATERIAL, AnimalArmorItem.Type.EQUESTRIAN, false, new Item.Settings()));
+            new AnimalArmorItem(ModArmorMaterials.TUNGSTEN_MATERIAL, AnimalArmorItem.Type.EQUESTRIAN, false, new Item.Settings().fireproof()));
     public static final Item ALUMINUM_HORSE_ARMOR = registerItem("aluminum_horse_armor",
             new AnimalArmorItem(ModArmorMaterials.ALUMINUM_MATERIAL, AnimalArmorItem.Type.EQUESTRIAN, false, new Item.Settings()));
     public static final Item SAPPHIRE_HORSE_ARMOR = registerItem("sapphire_horse_armor",
@@ -251,7 +251,7 @@ public class ModItems {
         //entries.add(SODIUM_CARBONATE);
         //entries.add(PURE_TUNGSTEN);
         entries.add(TUNGSTEN);
-        entries.add(BAUXITE);
+        entries.add(CRUSHED_BAUXITE);
         entries.add(ALUMINUM);
         entries.add(SAPPHIRE);
         entries.add(PLATINUM);

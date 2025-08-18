@@ -28,8 +28,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     public void generate(RecipeExporter exporter) {
         List<ItemConvertible> PINKU_SMELTABLES = List.of(ModBlocks.PINKU_ORE);
         List<ItemConvertible> RAINBOW_PYRITE_SMELTABLES = List.of(ModBlocks.RAINBOW_PYRITE_ORE, ModBlocks.SANDSTONE_RAINBOW_PYRITE_ORE);
-        List<ItemConvertible> ALUMINUM_SMELTABLES = List.of(ModItems.BAUXITE);
-        List<ItemConvertible> BAUXITE_SMELTABLES = List.of(ModBlocks.BAUXITE_ORE, ModBlocks.DEEPSLATE_BAUXITE_ORE);
+        List<ItemConvertible> ALUMINUM_SMELTABLES = List.of(ModItems.CRUSHED_BAUXITE);
+        //List<ItemConvertible> BAUXITE_SMELTABLES = List.of(ModBlocks.BAUXITE_ORE, ModBlocks.DEEPSLATE_BAUXITE_ORE);
         List<ItemConvertible> SCHEELITE_SMELTABLES = List.of(ModBlocks.SCHEELITE_ORE);
         //List<ItemConvertible> SODIUM_CARBONATE_SMELTABLES = List.of(ModItems.TRONA);
         //List<ItemConvertible> TRONA_SMELTABLES = List.of(ModBlocks.TRONA_ORE);
@@ -60,20 +60,16 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         //Smelting Recipes
         offerSmelting(exporter, ALUMINUM_SMELTABLES, RecipeCategory.MISC, ModItems.ALUMINUM,
                 0.5f, 200, "aluminum");
-        offerSmelting(exporter, BAUXITE_SMELTABLES, RecipeCategory.MISC, ModItems.BAUXITE,
-                0.5f, 200, "bauxite");
+        //offerSmelting(exporter, BAUXITE_SMELTABLES, RecipeCategory.MISC, ModItems.BAUXITE, 0.5f, 200, "bauxite");
         offerSmelting(exporter, PINKU_SMELTABLES, RecipeCategory.MISC, ModItems.PINKU_SHARD,
                 0.5f, 250, "pinku");
         offerSmelting(exporter, RAINBOW_PYRITE_SMELTABLES, RecipeCategory.MISC, ModItems.RAINBOW_PYRITE,
                 0.5f, 200, "rainbow_pyrite");
         offerSmelting(exporter, SCHEELITE_SMELTABLES, RecipeCategory.MISC, ModItems.SCHEELITE,
                 0.5f, 200, "scheelite");
-        //offerSmelting(exporter, SODIUM_CARBONATE_SMELTABLES, RecipeCategory.MISC, ModItems.SODIUM_CARBONATE,
-        //        0.5f, 200, "sodium_carbonate");
-        //offerSmelting(exporter, TRONA_SMELTABLES, RecipeCategory.MISC, ModItems.TRONA,
-        //        0.5f, 200, "trona");
-        //offerSmelting(exporter, TUNGSTEN_SMELTABLES, RecipeCategory.MISC, ModItems.TUNGSTEN,
-        //        0.5f, 200, "tungsten");
+        //offerSmelting(exporter, SODIUM_CARBONATE_SMELTABLES, RecipeCategory.MISC, ModItems.SODIUM_CARBONATE, 0.5f, 200, "sodium_carbonate");
+        //offerSmelting(exporter, TRONA_SMELTABLES, RecipeCategory.MISC, ModItems.TRONA, 0.5f, 200, "trona");
+        //offerSmelting(exporter, TUNGSTEN_SMELTABLES, RecipeCategory.MISC, ModItems.TUNGSTEN, 0.5f, 200, "tungsten");
         offerSmelting(exporter, WOLFRAMITE_SMELTABLES, RecipeCategory.MISC, ModItems.WOLFRAMITE,
                 0.5f, 200, "wolframite");
         offerSmelting(exporter, SAPPHIRE_SMELTABLES, RecipeCategory.MISC, ModItems.SAPPHIRE,
@@ -89,20 +85,16 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         //Blasting Recipes
         offerBlasting(exporter, ALUMINUM_SMELTABLES, RecipeCategory.MISC, ModItems.ALUMINUM,
                 0.5f, 100, "aluminum");
-        offerBlasting(exporter, BAUXITE_SMELTABLES, RecipeCategory.MISC, ModItems.BAUXITE,
-                0.5f, 100, "bauxite");
+        //offerBlasting(exporter, BAUXITE_SMELTABLES, RecipeCategory.MISC, ModItems.BAUXITE, 0.5f, 100, "bauxite");
         offerBlasting(exporter, PINKU_SMELTABLES, RecipeCategory.MISC, ModItems.PINKU_SHARD,
                 0.5f, 150, "pinku");
         offerBlasting(exporter, RAINBOW_PYRITE_SMELTABLES, RecipeCategory.MISC, ModItems.RAINBOW_PYRITE,
                 0.5f, 100, "rainbow_pyrite");
         offerBlasting(exporter, SCHEELITE_SMELTABLES, RecipeCategory.MISC, ModItems.SCHEELITE,
                 0.5f, 100, "scheelite");
-        //offerBlasting(exporter, SODIUM_CARBONATE_SMELTABLES, RecipeCategory.MISC, ModItems.SODIUM_CARBONATE,
-        //        0.5f, 100, "sodium_carbonate");
-        //offerBlasting(exporter, TRONA_SMELTABLES, RecipeCategory.MISC, ModItems.TRONA,
-        //        0.5f, 100, "trona");
-        //offerBlasting(exporter, TUNGSTEN_SMELTABLES, RecipeCategory.MISC, ModItems.TUNGSTEN,
-        //        0.5f, 100, "tungsten");
+        //offerBlasting(exporter, SODIUM_CARBONATE_SMELTABLES, RecipeCategory.MISC, ModItems.SODIUM_CARBONATE, 0.5f, 100, "sodium_carbonate");
+        //offerBlasting(exporter, TRONA_SMELTABLES, RecipeCategory.MISC, ModItems.TRONA, 0.5f, 100, "trona");
+        //offerBlasting(exporter, TUNGSTEN_SMELTABLES, RecipeCategory.MISC, ModItems.TUNGSTEN, 0.5f, 100, "tungsten");
         offerBlasting(exporter, WOLFRAMITE_SMELTABLES, RecipeCategory.MISC, ModItems.WOLFRAMITE,
                 0.5f, 100, "wolframite");
         offerBlasting(exporter, SAPPHIRE_SMELTABLES, RecipeCategory.MISC, ModItems.SAPPHIRE,
@@ -154,6 +146,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerChiseledBlockRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHISELED_SLATE, ModBlocks.SLATE_SLAB);
         offer2x2CompactingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.SLATE_TILES, ModBlocks.SLATE);
         offerPolishedStoneRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_SLATE, ModBlocks.SLATE_TILES);
+        offer2x2CompactingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.BAUXITE, ModItems.CRUSHED_BAUXITE);
 
         //Slab Recipes
         offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIMESTONE_SLAB, ModBlocks.LIMESTONE);

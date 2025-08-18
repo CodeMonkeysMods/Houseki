@@ -25,8 +25,8 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SCHEELITE_ORE);
         //blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.TRONA_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLOCK_OF_TUNGSTEN);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BAUXITE_ORE);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_BAUXITE_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BAUXITE);
+        //blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_BAUXITE_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ALUMINUM_GLASS);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLOCK_OF_ALUMINUM);
         blockStateModelGenerator.registerDoor(ModBlocks.ALUMINUM_DOOR);
@@ -96,7 +96,7 @@ public class ModModelProvider extends FabricModelProvider {
         //itemModelGenerator.register(ModItems.SODIUM_CARBONATE, Models.GENERATED);
         //itemModelGenerator.register(ModItems.PURE_TUNGSTEN, Models.GENERATED);
         itemModelGenerator.register(ModItems.TUNGSTEN, Models.GENERATED);
-        itemModelGenerator.register(ModItems.BAUXITE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CRUSHED_BAUXITE, Models.GENERATED);
         itemModelGenerator.register(ModItems.ALUMINUM, Models.GENERATED);
         itemModelGenerator.register(ModItems.SAPPHIRE, Models.GENERATED);
         itemModelGenerator.register(ModItems.NEPHRITE, Models.GENERATED);

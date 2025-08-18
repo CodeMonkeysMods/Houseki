@@ -1,6 +1,3 @@
 {
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "pizzasoat:item/bauxite"
-  }
+  "parent": "pizzasoat:block/bauxite"
 }

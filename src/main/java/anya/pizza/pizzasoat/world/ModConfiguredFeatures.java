@@ -21,7 +21,6 @@ public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> SANDSTONE_RAINBOW_PYRITE_ORE_KEY = registerKey("sandstone_rainbow_pyrite_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> WOLFRAMITE_ORE_KEY = registerKey("wolframite_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> SCHEELITE_ORE_KEY = registerKey("scheelite_ore");
-    public static final RegistryKey<ConfiguredFeature<?, ?>> BAUXITE_ORE_KEY = registerKey("bauxite_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> SAPPHIRE_ORE_KEY = registerKey("sapphire_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> NEPHRITE_ORE_KEY = registerKey("nephrite_ore");
     //public static final RegistryKey<ConfiguredFeature<?, ?>> TRONA_ORE_KEY = registerKey("trona_ore");
@@ -31,6 +30,7 @@ public class ModConfiguredFeatures {
 
     public static final RegistryKey<ConfiguredFeature<?, ?>> ORE_LIMESTONE_KEY = registerKey("ore_limestone");
     public static final RegistryKey<ConfiguredFeature<?, ?>> ORE_SLATE_KEY = registerKey("ore_slate");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> ORE_BAUXITE_KEY = registerKey("ore_bauxite");
 
 
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
@@ -60,9 +60,9 @@ public class ModConfiguredFeatures {
         List<OreFeatureConfig.Target> netherScheeliteOres =
                 List.of(OreFeatureConfig.createTarget(netherReplaceables, ModBlocks.SCHEELITE_ORE.getDefaultState()));
 
-        List<OreFeatureConfig.Target> overworldBauxiteOres =
-                List.of(OreFeatureConfig.createTarget(stoneReplaceables, ModBlocks.BAUXITE_ORE.getDefaultState()),
-                        OreFeatureConfig.createTarget(deepslateReplaceables, ModBlocks.DEEPSLATE_BAUXITE_ORE.getDefaultState()));
+        List<OreFeatureConfig.Target> overworldBauxiteOre =
+                List.of(OreFeatureConfig.createTarget(stoneReplaceables, ModBlocks.BAUXITE.getDefaultState()));
+                        //, OreFeatureConfig.createTarget(deepslateReplaceables, ModBlocks.DEEPSLATE_BAUXITE_ORE.getDefaultState()));
 
         List<OreFeatureConfig.Target> overworldSapphireOres =
                 List.of(OreFeatureConfig.createTarget(stoneReplaceables, ModBlocks.SAPPHIRE_ORE.getDefaultState()),
@@ -72,8 +72,7 @@ public class ModConfiguredFeatures {
                 List.of(OreFeatureConfig.createTarget(stoneReplaceables, ModBlocks.NEPHRITE_ORE.getDefaultState()),
                         OreFeatureConfig.createTarget(deepslateReplaceables, ModBlocks.DEEPSLATE_NEPHRITE_ORE.getDefaultState()));
 
-        //List<OreFeatureConfig.Target> overworldTronaOres =
-        //        List.of(OreFeatureConfig.createTarget(stoneReplaceables, ModBlocks.TRONA_ORE.getDefaultState()));
+        //List<OreFeatureConfig.Target> overworldTronaOres = List.of(OreFeatureConfig.createTarget(stoneReplaceables, ModBlocks.TRONA_ORE.getDefaultState()));
 
         List<OreFeatureConfig.Target> overworldPlatinumOres =
                 List.of(OreFeatureConfig.createTarget(copperReplaceables, ModBlocks.PLATINUM_ORE.getDefaultState()),
@@ -100,7 +99,6 @@ public class ModConfiguredFeatures {
         register(context, SANDSTONE_RAINBOW_PYRITE_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldSandstoneRainbowPyriteOres, 5));
         register(context, WOLFRAMITE_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldWolframiteOres, 4));
         register(context, SCHEELITE_ORE_KEY, Feature.ORE, new OreFeatureConfig(netherScheeliteOres, 6));
-        register(context, BAUXITE_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldBauxiteOres, 6));
         register(context, SAPPHIRE_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldSapphireOres, 3));
         register(context, NEPHRITE_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldNephriteOres, 6));
         //register(context, TRONA_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldTronaOres, 3));
@@ -110,6 +108,7 @@ public class ModConfiguredFeatures {
 
         register(context, ORE_LIMESTONE_KEY, Feature.ORE, new OreFeatureConfig(overworldLimestoneOre, 64));
         register(context, ORE_SLATE_KEY, Feature.ORE, new OreFeatureConfig(overworldSlateOre, 64));
+        register(context, ORE_BAUXITE_KEY, Feature.ORE, new OreFeatureConfig(overworldBauxiteOre, 64));
     }
 
     public static RegistryKey<ConfiguredFeature<?, ?>> registerKey(String name) {

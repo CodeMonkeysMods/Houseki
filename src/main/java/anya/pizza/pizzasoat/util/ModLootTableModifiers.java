@@ -74,7 +74,7 @@ public class ModLootTableModifiers {
                         .with(ItemEntry.builder(ModItems.SCHEELITE).weight(10)
                                 .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 3.0f))))
 
-                        .with(ItemEntry.builder(ModItems.BAUXITE).weight(10)
+                        .with(ItemEntry.builder(ModItems.CRUSHED_BAUXITE).weight(10)
                                 .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 3.0f))))
 
                         .with(ItemEntry.builder(ModItems.SULFUR).weight(10)
@@ -131,7 +131,7 @@ public class ModLootTableModifiers {
                         .with(ItemEntry.builder(ModItems.SCHEELITE).weight(3)
                                 .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 3.0f))))
 
-                        .with(ItemEntry.builder(ModItems.BAUXITE).weight(3)
+                        .with(ItemEntry.builder(ModItems.CRUSHED_BAUXITE).weight(3)
                                 .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 3.0f))))
 
                         .with(ItemEntry.builder(ModItems.ALUMINUM_LEGGINGS).weight(3)
@@ -289,7 +289,7 @@ public class ModLootTableModifiers {
                         .with(ItemEntry.builder(ModItems.SCHEELITE).weight(1)
                                 .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 3.0f))))
 
-                        .with(ItemEntry.builder(ModItems.BAUXITE).weight(1)
+                        .with(ItemEntry.builder(ModItems.CRUSHED_BAUXITE).weight(1)
                                 .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 3.0f))))
 
                         .with(ItemEntry.builder(ModItems.NEPHRITE).weight(1)
@@ -347,7 +347,7 @@ public class ModLootTableModifiers {
                         .with(ItemEntry.builder(ModItems.SCHEELITE).weight(15)
                                 .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 4.0f))))
 
-                        .with(ItemEntry.builder(ModItems.BAUXITE).weight(15)
+                        .with(ItemEntry.builder(ModItems.CRUSHED_BAUXITE).weight(15)
                                 .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 4.0f))))
 
                         .with(ItemEntry.builder(ModItems.NEPHRITE).weight(14)
@@ -392,7 +392,7 @@ public class ModLootTableModifiers {
                         .with(ItemEntry.builder(ModItems.SCHEELITE).weight(10)
                                 .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 3.0f))))
 
-                        .with(ItemEntry.builder(ModItems.BAUXITE).weight(10)
+                        .with(ItemEntry.builder(ModItems.CRUSHED_BAUXITE).weight(10)
                                 .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 3.0f))))
 
                         .with(ItemEntry.builder(ModItems.NEPHRITE).weight(10)
@@ -467,7 +467,7 @@ public class ModLootTableModifiers {
                         .with(ItemEntry.builder(ModItems.SCHEELITE).weight(10)
                                 .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 4.0f))))
 
-                        .with(ItemEntry.builder(ModItems.BAUXITE).weight(10)
+                        .with(ItemEntry.builder(ModItems.CRUSHED_BAUXITE).weight(10)
                                 .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 4.0f))))
 
                         .with(ItemEntry.builder(ModItems.NEPHRITE).weight(10)
@@ -494,7 +494,7 @@ public class ModLootTableModifiers {
                         .with(ItemEntry.builder(ModItems.SCHEELITE).weight(3)
                                 .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 3.0f))))
 
-                        .with(ItemEntry.builder(ModItems.BAUXITE).weight(3)
+                        .with(ItemEntry.builder(ModItems.CRUSHED_BAUXITE).weight(3)
                                 .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 3.0f))))
 
                         .with(ItemEntry.builder(ModItems.NEPHRITE).weight(2)
@@ -542,7 +542,7 @@ public class ModLootTableModifiers {
                         .with(ItemEntry.builder(ModItems.SCHEELITE).weight(10)
                                 .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 3.0f))))
 
-                        .with(ItemEntry.builder(ModItems.BAUXITE).weight(10)
+                        .with(ItemEntry.builder(ModItems.CRUSHED_BAUXITE).weight(10)
                                 .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 3.0f))))
 
                         .with(ItemEntry.builder(ModItems.SULFUR).weight(10)
@@ -685,7 +685,7 @@ public class ModLootTableModifiers {
                         .with(ItemEntry.builder(ModItems.ALUMINUM).weight(1)
                                 .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f))))
 
-                        .with(ItemEntry.builder(ModItems.BAUXITE).weight(1)
+                        .with(ItemEntry.builder(ModItems.CRUSHED_BAUXITE).weight(1)
                                 .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f))))
 
                         .with(ItemEntry.builder(ModBlocks.LIMESTONE).weight(2)
@@ -724,7 +724,7 @@ public class ModLootTableModifiers {
                         .with(ItemEntry.builder(ModItems.WOLFRAMITE).weight(5)
                                 .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 4.0f))))
 
-                        .with(ItemEntry.builder(ModItems.BAUXITE).weight(5)
+                        .with(ItemEntry.builder(ModItems.CRUSHED_BAUXITE).weight(5)
                                 .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 4.0f))))
 
                         .with(ItemEntry.builder(ModItems.RAINBOW_PYRITE_SHOVEL).weight(5)
@@ -760,7 +760,7 @@ public class ModLootTableModifiers {
                         .with(ItemEntry.builder(ModItems.WOLFRAMITE).weight(10)
                                 .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 4.0f))))
 
-                        .with(ItemEntry.builder(ModItems.BAUXITE).weight(10)
+                        .with(ItemEntry.builder(ModItems.CRUSHED_BAUXITE).weight(10)
                                 .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 4.0f))))
 
                         .with(ItemEntry.builder(ModItems.RAINBOW_PYRITE_PICKAXE).weight(5)
@@ -838,7 +838,7 @@ public class ModLootTableModifiers {
                         .with(ItemEntry.builder(ModItems.SCHEELITE).weight(10)
                                 .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 3.0f))))
 
-                        .with(ItemEntry.builder(ModItems.BAUXITE).weight(10)
+                        .with(ItemEntry.builder(ModItems.CRUSHED_BAUXITE).weight(10)
                                 .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 3.0f))))
 
                         .with(ItemEntry.builder(ModItems.TUNGSTEN_CHESTPLATE).weight(5)

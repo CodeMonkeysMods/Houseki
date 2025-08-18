@@ -67,6 +67,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.BLOCK_OF_SULFUR);
         addDrop(ModBlocks.BLOCK_OF_STEEL);
         addDrop(ModBlocks.BLOCK_OF_CAST_STEEL);
+        addDrop(ModBlocks.BAUXITE);
 
         //Block drops other stuff.
         addDrop(ModBlocks.WOLFRAMITE_ORE, LightOreDrops(ModBlocks.WOLFRAMITE_ORE, ModItems.WOLFRAMITE));
@@ -78,8 +79,8 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
         //addDrop(ModBlocks.TRONA_ORE, AverageOreDrops(ModBlocks.TRONA_ORE, ModItems.TRONA));
 
-        addDrop(ModBlocks.BAUXITE_ORE, AverageOreDrops(ModBlocks.BAUXITE_ORE, ModItems.BAUXITE));
-        addDrop(ModBlocks.DEEPSLATE_BAUXITE_ORE, AverageOreDrops(ModBlocks.BAUXITE_ORE, ModItems.BAUXITE));
+        //addDrop(ModBlocks.BAUXITE_ORE, AverageOreDrops(ModBlocks.BAUXITE_ORE, ModItems.BAUXITE));
+        //addDrop(ModBlocks.DEEPSLATE_BAUXITE_ORE, AverageOreDrops(ModBlocks.BAUXITE_ORE, ModItems.BAUXITE));
 
         addDropWithSilkTouch(ModBlocks.ALUMINUM_GLASS);
 

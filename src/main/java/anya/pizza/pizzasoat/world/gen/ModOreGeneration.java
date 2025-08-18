@@ -24,8 +24,9 @@ public class ModOreGeneration {
                 GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.SCHEELITE_ORE_PLACED_KEY);
 
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.BEACH, BiomeKeys.DEEP_OCEAN, BiomeKeys.DEEP_LUKEWARM_OCEAN,
-                        BiomeKeys.LUKEWARM_OCEAN, BiomeKeys.JUNGLE, BiomeKeys.SAVANNA, BiomeKeys.WARM_OCEAN),
-                GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.BAUXITE_ORE_PLACED_KEY);
+                        BiomeKeys.LUKEWARM_OCEAN, BiomeKeys.JUNGLE, BiomeKeys.SAVANNA, BiomeKeys.WARM_OCEAN, BiomeKeys.FOREST, BiomeKeys.SWAMP,
+                        BiomeKeys.MANGROVE_SWAMP),
+                GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.ORE_BAUXITE_PLACED_KEY);
 
         BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(),
                 GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.SAPPHIRE_ORE_PLACED_KEY);
@@ -35,8 +36,7 @@ public class ModOreGeneration {
                         BiomeKeys.SNOWY_BEACH, BiomeKeys.SNOWY_PLAINS, BiomeKeys.SNOWY_SLOPES, BiomeKeys.SNOWY_TAIGA),
                 GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.NEPHRITE_ORE_PLACED_KEY);
 
-        //BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(),
-        //        GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.TRONA_ORE_PLACED_KEY);
+        //BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.TRONA_ORE_PLACED_KEY);
 
         BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(),
                 GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.PLATINUM_ORE_PLACED_KEY);
