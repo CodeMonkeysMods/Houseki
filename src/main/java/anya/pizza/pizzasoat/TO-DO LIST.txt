@@ -1,7 +1,7 @@
 Investigate needs netherite error
 
 Drills:
-1. Made with Tungsten, steel, maybe some Redstone.
+1. Made with Tungsten, cast steel(maybe blocks), maybe some Redstone.
 2. Maybe look into other metals that are used for drills and makes them too.
 3. Maybe make a 3d model for it but prob not.
 
