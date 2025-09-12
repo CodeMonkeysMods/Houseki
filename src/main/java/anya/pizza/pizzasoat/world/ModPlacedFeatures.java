@@ -20,6 +20,7 @@ public class ModPlacedFeatures {
     public static final RegistryKey<PlacedFeature> PINKU_ORE_PLACED_KEY = registerKey("pinku_ore_placed");
     public static final RegistryKey<PlacedFeature> RAINBOW_PYRITE_ORE_PLACED_KEY = registerKey("rainbow_pyrite_ore_placed");
     public static final RegistryKey<PlacedFeature> SANDSTONE_RAINBOW_PYRITE_ORE_PLACED_KEY = registerKey("sandstone_rainbow_pyrite_ore_placed");
+    public static final RegistryKey<PlacedFeature> BAUXITE_RAINBOW_PYRITE_ORE_PLACED_KEY = registerKey("bauxite_rainbow_pyrite_ore_placed");
     public static final RegistryKey<PlacedFeature> WOLFRAMITE_ORE_PLACED_KEY = registerKey("wolframite_ore_placed");
     public static final RegistryKey<PlacedFeature> SCHEELITE_ORE_PLACED_KEY = registerKey("scheelite_ore_placed");
     public static final RegistryKey<PlacedFeature> SAPPHIRE_ORE_PLACED_KEY = registerKey("sapphire_ore_placed");
@@ -47,6 +48,10 @@ public class ModPlacedFeatures {
 
         register(context, SANDSTONE_RAINBOW_PYRITE_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.SANDSTONE_RAINBOW_PYRITE_ORE_KEY),
                 ModOrePlacement.modifiersWithCount(5,
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(10), YOffset.fixed(256))));
+
+        register(context, BAUXITE_RAINBOW_PYRITE_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.BAUXITE_RAINBOW_PYRITE_ORE_KEY),
+                ModOrePlacement.modifiersWithCount(30,
                         HeightRangePlacementModifier.uniform(YOffset.fixed(10), YOffset.fixed(256))));
 
         register(context, WOLFRAMITE_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.WOLFRAMITE_ORE_KEY),

@@ -196,6 +196,9 @@ public class ModLootTableModifiers {
                                 .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f))))
 
                         .with(ItemEntry.builder(ModItems.ENHANCED_DRILL_HEAD).weight(1)
+                                .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f))))
+
+                        .with(ItemEntry.builder(ModItems.DIAMOND_DRILL_BIT).weight(1)
                                 .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f))));
 
                 tableBuilder.pool(poolBuilder.build());
@@ -314,6 +317,9 @@ public class ModLootTableModifiers {
                                 .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f))))
 
                         .with(ItemEntry.builder(ModItems.ENHANCED_DRILL_HEAD).weight(1)
+                                .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f))))
+
+                        .with(ItemEntry.builder(ModItems.DIAMOND_DRILL_BIT).weight(1)
                                 .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f))));
 
                 tableBuilder.pool(poolBuilder.build());
@@ -470,6 +476,9 @@ public class ModLootTableModifiers {
                                 .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f))))
 
                         .with(ItemEntry.builder(ModItems.ENHANCED_DRILL_HEAD).weight(1)
+                                .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f))))
+
+                        .with(ItemEntry.builder(ModItems.DIAMOND_DRILL_BIT).weight(1)
                                 .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f))));
 
                 tableBuilder.pool(poolBuilder.build());
@@ -658,6 +667,9 @@ public class ModLootTableModifiers {
                                 .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f))))
 
                         .with(ItemEntry.builder(ModItems.DRILL_UPGRADE_SMITHING_TEMPLATE).weight(1)
+                                .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f))))
+
+                        .with(ItemEntry.builder(ModItems.DIAMOND_DRILL_BIT).weight(1)
                                 .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f))));
 
                 tableBuilder.pool(poolBuilder.build());
@@ -685,6 +697,9 @@ public class ModLootTableModifiers {
                                 .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 2.0f))))
 
                         .with(ItemEntry.builder(ModItems.ENHANCED_DRILL_HEAD).weight(1)
+                                .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f))))
+
+                        .with(ItemEntry.builder(ModItems.DIAMOND_DRILL_BIT).weight(1)
                                 .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f))));
 
                 tableBuilder.pool(poolBuilder.build());
@@ -892,6 +907,9 @@ public class ModLootTableModifiers {
                                 .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f))))
 
                         .with(ItemEntry.builder(ModItems.DRILL_UPGRADE_SMITHING_TEMPLATE).weight(1)
+                                .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f))))
+
+                        .with(ItemEntry.builder(ModItems.DIAMOND_DRILL_BIT).weight(1)
                                 .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f))));
 
                 tableBuilder.pool(poolBuilder.build());

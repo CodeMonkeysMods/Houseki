@@ -21,6 +21,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLOCK_OF_PINKU);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.WOLFRAMITE_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAINBOW_PYRITE_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BAUXITE_RAINBOW_PYRITE_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLOCK_OF_RAINBOW_PYRITE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SCHEELITE_ORE);
         //blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.TRONA_ORE);

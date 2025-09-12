@@ -1,6 +1,3 @@
-RAINBOW PYRITE:
-2. Make a Bauxite variant of it that spawns in Bauxite.
-
 ALUMINUM:
 1. Make Aluminum Glass Panes.
 2. Maybe make colored versions of the glass and panes

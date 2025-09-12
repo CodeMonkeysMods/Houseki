@@ -19,6 +19,7 @@ public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> PINKU_ORE_KEY = registerKey("pinku_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> RAINBOW_PYRITE_ORE_KEY = registerKey("rainbow_pyrite_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> SANDSTONE_RAINBOW_PYRITE_ORE_KEY = registerKey("sandstone_rainbow_pyrite_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> BAUXITE_RAINBOW_PYRITE_ORE_KEY = registerKey("bauxite_rainbow_pyrite_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> WOLFRAMITE_ORE_KEY = registerKey("wolframite_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> SCHEELITE_ORE_KEY = registerKey("scheelite_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> SAPPHIRE_ORE_KEY = registerKey("sapphire_ore");
@@ -44,6 +45,7 @@ public class ModConfiguredFeatures {
         RuleTest deepCopperReplaceables = new BlockMatchRuleTest(Blocks.DEEPSLATE_COPPER_ORE);
         RuleTest blackstoneReplaceables = new BlockMatchRuleTest(Blocks.BLACKSTONE);
         RuleTest sandstoneReplaceables = new BlockMatchRuleTest(Blocks.SANDSTONE);
+        RuleTest bauxiteReplaceables = new BlockMatchRuleTest(ModBlocks.BAUXITE);
 
         List<OreFeatureConfig.Target> endPinkuOres =
                 List.of(OreFeatureConfig.createTarget(endReplaceables, ModBlocks.PINKU_ORE.getDefaultState()));
@@ -53,6 +55,9 @@ public class ModConfiguredFeatures {
 
         List<OreFeatureConfig.Target> overworldSandstoneRainbowPyriteOres =
                 List.of(OreFeatureConfig.createTarget(sandstoneReplaceables, ModBlocks.SANDSTONE_RAINBOW_PYRITE_ORE.getDefaultState()));
+
+        List<OreFeatureConfig.Target> overworldBauxiteRainbowPyriteOres =
+                List.of(OreFeatureConfig.createTarget(bauxiteReplaceables, ModBlocks.BAUXITE_RAINBOW_PYRITE_ORE.getDefaultState()));
 
         List<OreFeatureConfig.Target> overworldWolframiteOres =
                 List.of(OreFeatureConfig.createTarget(graniteReplaceables, ModBlocks.WOLFRAMITE_ORE.getDefaultState()));
@@ -96,6 +101,7 @@ public class ModConfiguredFeatures {
         register(context, PINKU_ORE_KEY, Feature.ORE, new OreFeatureConfig(endPinkuOres, 3));
         register(context, RAINBOW_PYRITE_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldRainbowPyriteOres, 20));
         register(context, SANDSTONE_RAINBOW_PYRITE_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldSandstoneRainbowPyriteOres, 5));
+        register(context, BAUXITE_RAINBOW_PYRITE_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldBauxiteRainbowPyriteOres, 8));
         register(context, WOLFRAMITE_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldWolframiteOres, 4));
         register(context, SCHEELITE_ORE_KEY, Feature.ORE, new OreFeatureConfig(netherScheeliteOres, 6));
         register(context, SAPPHIRE_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldSapphireOres, 3));

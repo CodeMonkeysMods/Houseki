@@ -167,6 +167,7 @@ public class ModItemGroups {
 
                         entries.add(ModBlocks.RAINBOW_PYRITE_ORE);
                         entries.add(ModBlocks.SANDSTONE_RAINBOW_PYRITE_ORE);
+                        entries.add(ModBlocks.BAUXITE_RAINBOW_PYRITE_ORE);
                         entries.add(ModBlocks.BLOCK_OF_RAINBOW_PYRITE);
 
                         entries.add(ModBlocks.WOLFRAMITE_ORE);
