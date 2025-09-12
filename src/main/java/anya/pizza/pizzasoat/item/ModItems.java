@@ -5,7 +5,6 @@ import anya.pizza.pizzasoat.block.ModBlocks;
 import anya.pizza.pizzasoat.item.custom.*;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.block.Blocks;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -18,16 +17,12 @@ public class ModItems {
     public static final Item PINKU_SHARD = registerItem("pinku_shard", new Item(new Item.Settings()));
     public static final Item WOLFRAMITE = registerItem("wolframite", new Item(new Item.Settings()));
     public static final Item SCHEELITE = registerItem("scheelite", new Item(new Item.Settings()));
-    //public static final Item TRONA = registerItem("trona", new Item(new Item.Settings()));
-    //public static final Item SODIUM_CARBONATE = registerItem("sodium_carbonate", new Item(new Item.Settings()));
-    //public static final Item PURE_TUNGSTEN = registerItem("pure_tungsten", new Item(new Item.Settings()));
     public static final Item TUNGSTEN = registerItem("tungsten", new Item(new Item.Settings().fireproof()));
     public static final Item CRUSHED_BAUXITE = registerItem("crushed_bauxite", new Item(new Item.Settings()));
     public static final Item ALUMINUM = registerItem("aluminum", new Item(new Item.Settings()));
     public static final Item SAPPHIRE = registerItem("sapphire", new Item(new Item.Settings()));
     public static final Item NEPHRITE = registerItem("nephrite", new Item(new Item.Settings()));
     public static final Item JADEITE = registerItem("jadeite", new Item(new Item.Settings()));
-    public static final Item JADE = registerItem("jade", new Item(new Item.Settings()));
     public static final Item PLATINUM = registerItem("platinum", new Item(new Item.Settings()));
     public static final Item SULFUR = registerItem("sulfur", new Item(new Item.Settings()));
     public static final Item CRUDE_IRON = registerItem("crude_iron", new Item(new Item.Settings()));
@@ -109,16 +104,27 @@ public class ModItems {
     public static final Item SAPPHIRE_HOE = registerItem("sapphire_hoe",
             new HoeItem(ModToolMaterials.SAPPHIRE, new Item.Settings().attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.SAPPHIRE, -4, 5.1f))));
 
-    public static final Item JADE_PICKAXE = registerItem("jade_pickaxe",
-            new PickaxeItem(ModToolMaterials.JADE, new Item.Settings().attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.JADE, 0, 1.3f))));
-    public static final Item JADE_AXE = registerItem("jade_axe",
-            new AxeItem(ModToolMaterials.JADE, new Item.Settings().attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterials.JADE, 4, 1))));
-    public static final Item JADE_SHOVEL = registerItem("jade_shovel",
-            new ShovelItem(ModToolMaterials.JADE, new Item.Settings().attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterials.JADE, 1, 1))));
-    public static final Item JADE_SWORD = registerItem("jade_sword",
-            new SwordItem(ModToolMaterials.JADE, new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.JADE, 2, 1.5f))));
-    public static final Item JADE_HOE = registerItem("jade_hoe",
-            new HoeItem(ModToolMaterials.JADE, new Item.Settings().attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.JADE, -4, 4))));
+    public static final Item NEPHRITE_PICKAXE = registerItem("nephrite_pickaxe",
+            new PickaxeItem(ModToolMaterials.NEPHRITE, new Item.Settings().attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.NEPHRITE, 0, 1.3f))));
+    public static final Item NEPHRITE_AXE = registerItem("nephrite_axe",
+            new AxeItem(ModToolMaterials.NEPHRITE, new Item.Settings().attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterials.NEPHRITE, 4, 1))));
+    public static final Item NEPHRITE_SHOVEL = registerItem("nephrite_shovel",
+            new ShovelItem(ModToolMaterials.NEPHRITE, new Item.Settings().attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterials.NEPHRITE, 1, 1))));
+    public static final Item NEPHRITE_SWORD = registerItem("nephrite_sword",
+            new SwordItem(ModToolMaterials.NEPHRITE, new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.NEPHRITE, 2, 1.5f))));
+    public static final Item NEPHRITE_HOE = registerItem("nephrite_hoe",
+            new HoeItem(ModToolMaterials.NEPHRITE, new Item.Settings().attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.NEPHRITE, -4, 4))));
+
+    public static final Item JADEITE_PICKAXE = registerItem("jadeite_pickaxe",
+            new PickaxeItem(ModToolMaterials.JADEITE, new Item.Settings().attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.JADEITE, 0.5f, 1.3f))));
+    public static final Item JADEITE_AXE = registerItem("jadeite_axe",
+            new AxeItem(ModToolMaterials.JADEITE, new Item.Settings().attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterials.JADEITE, 4.5f, 1))));
+    public static final Item JADEITE_SHOVEL = registerItem("jadeite_shovel",
+            new ShovelItem(ModToolMaterials.JADEITE, new Item.Settings().attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterials.JADEITE, 1.5f, 1))));
+    public static final Item JADEITE_SWORD = registerItem("jadeite_sword",
+            new SwordItem(ModToolMaterials.JADEITE, new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.JADEITE, 2, 1.5f))));
+    public static final Item JADEITE_HOE = registerItem("jadeite_hoe",
+            new HoeItem(ModToolMaterials.JADEITE, new Item.Settings().attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.JADEITE, -3.5f, 4))));
 
     public static final Item PLATINUM_PICKAXE = registerItem("platinum_pickaxe",
             new PickaxeItem(ModToolMaterials.PLATINUM, new Item.Settings().attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.PLATINUM, 1, 1.4f))));
@@ -208,14 +214,23 @@ public class ModItems {
     public static final Item SAPPHIRE_BOOTS = registerItem("sapphire_boots",
             new ArmorItem(ModArmorMaterials.SAPPHIRE_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(50))));
 
-    public static final Item JADE_HELMET = registerItem("jade_helmet",
-            new ArmorItem(ModArmorMaterials.JADE_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(34))));
-    public static final Item JADE_CHESTPLATE = registerItem("jade_chestplate",
-            new ArmorItem(ModArmorMaterials.JADE_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Settings().maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(34))));
-    public static final Item JADE_LEGGINGS = registerItem("jade_leggings",
-            new ArmorItem(ModArmorMaterials.JADE_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Settings().maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(34))));
-    public static final Item JADE_BOOTS = registerItem("jade_boots",
-            new ArmorItem(ModArmorMaterials.JADE_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(34))));
+    public static final Item NEPHRITE_HELMET = registerItem("nephrite_helmet",
+            new ArmorItem(ModArmorMaterials.NEPHRITE_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(34))));
+    public static final Item NEPHRITE_CHESTPLATE = registerItem("nephrite_chestplate",
+            new ArmorItem(ModArmorMaterials.NEPHRITE_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Settings().maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(34))));
+    public static final Item NEPHRITE_LEGGINGS = registerItem("nephrite_leggings",
+            new ArmorItem(ModArmorMaterials.NEPHRITE_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Settings().maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(34))));
+    public static final Item NEPHRITE_BOOTS = registerItem("nephrite_boots",
+            new ArmorItem(ModArmorMaterials.NEPHRITE_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(34))));
+
+    public static final Item JADEITE_HELMET = registerItem("jadeite_helmet",
+            new ArmorItem(ModArmorMaterials.JADEITE_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(43))));
+    public static final Item JADEITE_CHESTPLATE = registerItem("jadeite_chestplate",
+            new ArmorItem(ModArmorMaterials.JADEITE_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Settings().maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(43))));
+    public static final Item JADEITE_LEGGINGS = registerItem("jadeite_leggings",
+            new ArmorItem(ModArmorMaterials.JADEITE_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Settings().maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(43))));
+    public static final Item JADEITE_BOOTS = registerItem("jadeite_boots",
+            new ArmorItem(ModArmorMaterials.JADEITE_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(43))));
 
     public static final Item PLATINUM_HELMET = registerItem("platinum_helmet",
             new ArmorItem(ModArmorMaterials.PLATINUM_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(34))));
@@ -261,6 +276,10 @@ public class ModItems {
             new AnimalArmorItem(ModArmorMaterials.STEEL_MATERIAL, AnimalArmorItem.Type.EQUESTRIAN, false, new Item.Settings()));
     public static final Item CAST_STEEL_HORSE_ARMOR = registerItem("cast_steel_horse_armor",
             new AnimalArmorItem(ModArmorMaterials.CAST_STEEL_MATERIAL, AnimalArmorItem.Type.EQUESTRIAN, false, new Item.Settings()));
+    public static final Item NEPHRITE_HORSE_ARMOR = registerItem("nephrite_horse_armor",
+            new AnimalArmorItem(ModArmorMaterials.NEPHRITE_MATERIAL, AnimalArmorItem.Type.EQUESTRIAN, false, new Item.Settings()));
+    public static final Item JADEITE_HORSE_ARMOR = registerItem("jadeite_horse_armor",
+            new AnimalArmorItem(ModArmorMaterials.JADEITE_MATERIAL, AnimalArmorItem.Type.EQUESTRIAN, false, new Item.Settings()));
 
 
     private static Item registerItem(String name, Item item) {
@@ -273,9 +292,6 @@ public class ModItems {
         entries.add(RAINBOW_PYRITE);
         entries.add(WOLFRAMITE);
         entries.add(SCHEELITE);
-        //entries.add(TRONA);
-        //entries.add(SODIUM_CARBONATE);
-        //entries.add(PURE_TUNGSTEN);
         entries.add(TUNGSTEN);
         entries.add(CRUSHED_BAUXITE);
         entries.add(ALUMINUM);
@@ -283,7 +299,6 @@ public class ModItems {
         entries.add(PLATINUM);
         entries.add(NEPHRITE);
         entries.add(JADEITE);
-        entries.add(JADE);
         entries.add(SULFUR);
         entries.add(CRUDE_IRON);
         entries.add(STEEL);

@@ -1,20 +1,3 @@
-NEPHRITE:
-1. Make the ore out of Limestone and spawn it in Limestone.
-2. Create Armor and Tools for it, making it a darker green.
-3. It should be slightly worse than Jadeite.
-4. Moh scale 6 to 6.5
-5. Give Armor effect the Regeneration effect.
-
-JADEITE:
-2. Make Jadeite a Slate ore block.
-3. Use the Jade armor and Tools, make them slightly darker and turn them into Jadeite armor and tools
-4. It should be slightly better than Nephrite.
-5. Moh scale 6.5 to 7
-6. Give Armor effect the Regeneration 2 effect.
-
-JADE:
-1. Remove Jade.
-
 PLATINUM:
 1. Make it rarer
 2. Make copper crushable to make platinum. Maybe make a system to drop other stuff and platinum to be rarer or have it crushed
@@ -24,10 +7,6 @@ to platinum nuggets that can be made into platinum ingots.
 
 SULFER:
 1. Redo block texture.
-
-TRONA, SODIUM CARBONATE AND PURE TUNGSTEN:
-2. If re-implemented then change Trona texture.
-3. Maybe make a deepslate version of Trona
 
 Create achievements for getting the armor sets.
 

@@ -24,7 +24,7 @@ public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> SCHEELITE_ORE_KEY = registerKey("scheelite_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> SAPPHIRE_ORE_KEY = registerKey("sapphire_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> NEPHRITE_ORE_KEY = registerKey("nephrite_ore");
-    //public static final RegistryKey<ConfiguredFeature<?, ?>> TRONA_ORE_KEY = registerKey("trona_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> JADEITE_ORE_KEY = registerKey("jadeite_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> PLATINUM_ORE_KEY = registerKey("platinum_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> SULFUR_ORE_KEY = registerKey("sulfur_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> BLACKSTONE_SULFUR_ORE_KEY = registerKey("blackstone_sulfur_ore");
@@ -46,6 +46,8 @@ public class ModConfiguredFeatures {
         RuleTest blackstoneReplaceables = new BlockMatchRuleTest(Blocks.BLACKSTONE);
         RuleTest sandstoneReplaceables = new BlockMatchRuleTest(Blocks.SANDSTONE);
         RuleTest bauxiteReplaceables = new BlockMatchRuleTest(ModBlocks.BAUXITE);
+        RuleTest limestoneReplaceables = new BlockMatchRuleTest(ModBlocks.LIMESTONE);
+        RuleTest slateReplaceables = new BlockMatchRuleTest(ModBlocks.SLATE);
 
         List<OreFeatureConfig.Target> endPinkuOres =
                 List.of(OreFeatureConfig.createTarget(endReplaceables, ModBlocks.PINKU_ORE.getDefaultState()));
@@ -73,10 +75,10 @@ public class ModConfiguredFeatures {
                         OreFeatureConfig.createTarget(deepslateReplaceables, ModBlocks.DEEPSLATE_SAPPHIRE_ORE.getDefaultState()));
 
         List<OreFeatureConfig.Target> overworldNephriteOres =
-                List.of(OreFeatureConfig.createTarget(stoneReplaceables, ModBlocks.NEPHRITE_ORE.getDefaultState()),
-                        OreFeatureConfig.createTarget(deepslateReplaceables, ModBlocks.DEEPSLATE_NEPHRITE_ORE.getDefaultState()));
+                List.of(OreFeatureConfig.createTarget(limestoneReplaceables, ModBlocks.NEPHRITE_ORE.getDefaultState()));
 
-        //List<OreFeatureConfig.Target> overworldTronaOres = List.of(OreFeatureConfig.createTarget(stoneReplaceables, ModBlocks.TRONA_ORE.getDefaultState()));
+        List<OreFeatureConfig.Target> overworldJadeiteOres =
+                List.of(OreFeatureConfig.createTarget(slateReplaceables, ModBlocks.JADEITE_ORE.getDefaultState()));
 
         List<OreFeatureConfig.Target> overworldPlatinumOres =
                 List.of(OreFeatureConfig.createTarget(copperReplaceables, ModBlocks.PLATINUM_ORE.getDefaultState()),
@@ -99,14 +101,14 @@ public class ModConfiguredFeatures {
 
 
         register(context, PINKU_ORE_KEY, Feature.ORE, new OreFeatureConfig(endPinkuOres, 3));
-        register(context, RAINBOW_PYRITE_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldRainbowPyriteOres, 20));
+        register(context, RAINBOW_PYRITE_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldRainbowPyriteOres, 10));
         register(context, SANDSTONE_RAINBOW_PYRITE_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldSandstoneRainbowPyriteOres, 5));
         register(context, BAUXITE_RAINBOW_PYRITE_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldBauxiteRainbowPyriteOres, 8));
         register(context, WOLFRAMITE_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldWolframiteOres, 4));
         register(context, SCHEELITE_ORE_KEY, Feature.ORE, new OreFeatureConfig(netherScheeliteOres, 6));
         register(context, SAPPHIRE_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldSapphireOres, 3));
-        register(context, NEPHRITE_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldNephriteOres, 6));
-        //register(context, TRONA_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldTronaOres, 3));
+        register(context, NEPHRITE_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldNephriteOres, 8));
+        register(context, JADEITE_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldJadeiteOres, 8));
         register(context, PLATINUM_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldPlatinumOres, 3));
         register(context, SULFUR_ORE_KEY, Feature.ORE, new OreFeatureConfig(netherSulfurOres, 2));
         register(context, BLACKSTONE_SULFUR_ORE_KEY, Feature.ORE, new OreFeatureConfig(blackstoneSulfurOres, 10));

@@ -66,15 +66,25 @@ public class ModArmorMaterials {
             }), 12, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, () -> Ingredient.ofItems(ModItems.SAPPHIRE),
                     List.of(new ArmorMaterial.Layer(Identifier.of(PizzasOAT.MOD_ID, "sapphire"))), 4.5f, 0.3f));
 
-    public static final RegistryEntry<ArmorMaterial> JADE_MATERIAL = registerArmorMaterial("jade",
+    public static final RegistryEntry<ArmorMaterial> NEPHRITE_MATERIAL = registerArmorMaterial("nephrite",
             () -> new ArmorMaterial(Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
                 map.put(ArmorItem.Type.HELMET, 3);
-                map.put(ArmorItem.Type.CHESTPLATE,8);
+                map.put(ArmorItem.Type.CHESTPLATE, 9);
                 map.put(ArmorItem.Type.LEGGINGS, 6);
-                map.put(ArmorItem.Type.BOOTS, 3);
+                map.put(ArmorItem.Type.BOOTS, 5);
                 map.put(ArmorItem.Type.BODY, 11);
-            }), 11, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, () -> Ingredient.ofItems(ModItems.JADE),
-                    List.of(new ArmorMaterial.Layer(Identifier.of(PizzasOAT.MOD_ID, "jade"))), 3, 0.2f));
+            }), 11, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, () -> Ingredient.ofItems(ModItems.NEPHRITE),
+                    List.of(new ArmorMaterial.Layer(Identifier.of(PizzasOAT.MOD_ID, "nephrite"))), 3.5f, 0.3f));
+
+    public static final RegistryEntry<ArmorMaterial> JADEITE_MATERIAL = registerArmorMaterial("jadeite",
+            () -> new ArmorMaterial(Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
+                map.put(ArmorItem.Type.HELMET, 4);
+                map.put(ArmorItem.Type.CHESTPLATE, 10);
+                map.put(ArmorItem.Type.LEGGINGS, 7);
+                map.put(ArmorItem.Type.BOOTS, 6);
+                map.put(ArmorItem.Type.BODY, 12);
+            }), 11, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, () -> Ingredient.ofItems(ModItems.JADEITE),
+                    List.of(new ArmorMaterial.Layer(Identifier.of(PizzasOAT.MOD_ID, "jadeite"))), 4, 0.4f));
 
     public static final RegistryEntry<ArmorMaterial> PLATINUM_MATERIAL = registerArmorMaterial("platinum",
             () -> new ArmorMaterial(Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {

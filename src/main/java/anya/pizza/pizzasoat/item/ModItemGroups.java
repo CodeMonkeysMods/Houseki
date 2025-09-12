@@ -66,15 +66,25 @@ public class ModItemGroups {
                         entries.add(ModItems.SAPPHIRE_SWORD);
                         entries.add(ModItems.SAPPHIRE_HOE);
 
-                        entries.add(ModItems.JADE_HELMET);
-                        entries.add(ModItems.JADE_CHESTPLATE);
-                        entries.add(ModItems.JADE_LEGGINGS);
-                        entries.add(ModItems.JADE_BOOTS);
-                        entries.add(ModItems.JADE_PICKAXE);
-                        entries.add(ModItems.JADE_AXE);
-                        entries.add(ModItems.JADE_SHOVEL);
-                        entries.add(ModItems.JADE_SWORD);
-                        entries.add(ModItems.JADE_HOE);
+                        entries.add(ModItems.NEPHRITE_HELMET);
+                        entries.add(ModItems.NEPHRITE_CHESTPLATE);
+                        entries.add(ModItems.NEPHRITE_LEGGINGS);
+                        entries.add(ModItems.NEPHRITE_BOOTS);
+                        entries.add(ModItems.NEPHRITE_PICKAXE);
+                        entries.add(ModItems.NEPHRITE_AXE);
+                        entries.add(ModItems.NEPHRITE_SHOVEL);
+                        entries.add(ModItems.NEPHRITE_SWORD);
+                        entries.add(ModItems.NEPHRITE_HOE);
+
+                        entries.add(ModItems.JADEITE_HELMET);
+                        entries.add(ModItems.JADEITE_CHESTPLATE);
+                        entries.add(ModItems.JADEITE_LEGGINGS);
+                        entries.add(ModItems.JADEITE_BOOTS);
+                        entries.add(ModItems.JADEITE_PICKAXE);
+                        entries.add(ModItems.JADEITE_AXE);
+                        entries.add(ModItems.JADEITE_SHOVEL);
+                        entries.add(ModItems.JADEITE_SWORD);
+                        entries.add(ModItems.JADEITE_HOE);
 
                         entries.add(ModItems.PLATINUM_HELMET);
                         entries.add(ModItems.PLATINUM_CHESTPLATE);
@@ -114,31 +124,29 @@ public class ModItemGroups {
                         entries.add(ModItems.PLATINUM_HORSE_ARMOR);
                         entries.add(ModItems.STEEL_HORSE_ARMOR);
                         entries.add(ModItems.CAST_STEEL_HORSE_ARMOR);
-                        entries.add(ModItems.PINKU);
+                        entries.add(ModItems.NEPHRITE_HORSE_ARMOR);
 
+                        entries.add(ModItems.JADEITE_HORSE_ARMOR);
+                        entries.add(ModItems.PINKU);
                         entries.add(ModItems.PINKU_SHARD);
                         entries.add(ModItems.PINKU_UPGRADE_SMITHING_TEMPLATE);
                         entries.add(ModItems.RAINBOW_PYRITE);
                         entries.add(ModItems.WOLFRAMITE);
                         entries.add(ModItems.SCHEELITE);
-                        //entries.add(ModItems.TRONA);
-                        //entries.add(ModItems.SODIUM_CARBONATE);
-                        //entries.add(ModItems.PURE_TUNGSTEN);
                         entries.add(ModItems.TUNGSTEN);
                         entries.add(ModItems.CRUSHED_BAUXITE);
+
                         entries.add(ModItems.ALUMINUM);
                         entries.add(ModItems.SAPPHIRE);
-
                         entries.add(ModItems.NEPHRITE);
                         entries.add(ModItems.JADEITE);
-                        entries.add(ModItems.JADE);
                         entries.add(ModItems.PLATINUM);
                         entries.add(ModItems.SULFUR);
                         entries.add(ModItems.CRUDE_IRON);
                         entries.add(ModItems.STEEL);
                         entries.add(ModItems.CAST_STEEL);
-                        entries.add(ModItems.DRILL_UPGRADE_SMITHING_TEMPLATE);
 
+                        entries.add(ModItems.DRILL_UPGRADE_SMITHING_TEMPLATE);
                         entries.add(ModItems.TUNGSTEN_DRILL_BIT);
                         entries.add(ModItems.DIAMOND_DRILL_BIT);
                         entries.add(ModItems.SIMPLE_DRILL_HEAD);
@@ -147,9 +155,9 @@ public class ModItemGroups {
                         entries.add(ModItems.PREMIUM_DRILL_HEAD);
                         entries.add(ModItems.SIMPLE_TUNGSTEN_DRILL);
                         entries.add(ModItems.ENHANCED_TUNGSTEN_DRILL);
+
                         entries.add(ModItems.ADVANCED_TUNGSTEN_DRILL);
                         entries.add(ModItems.PREMIUM_TUNGSTEN_DRILL);
-
                         entries.add(ModItems.SIMPLE_DIAMOND_DRILL);
                         entries.add(ModItems.ENHANCED_DIAMOND_DRILL);
                         entries.add(ModItems.ADVANCED_DIAMOND_DRILL);
@@ -174,8 +182,6 @@ public class ModItemGroups {
 
                         entries.add(ModBlocks.SCHEELITE_ORE);
 
-                        //entries.add(ModBlocks.TRONA_ORE);
-
                         entries.add(ModBlocks.BLOCK_OF_TUNGSTEN);
 
                         entries.add(ModBlocks.BAUXITE);
@@ -190,9 +196,9 @@ public class ModItemGroups {
                         entries.add(ModBlocks.DEEPSLATE_SAPPHIRE_ORE);
                         entries.add(ModBlocks.BLOCK_OF_SAPPHIRE);
 
-                        entries.add(ModBlocks.DEEPSLATE_NEPHRITE_ORE);
                         entries.add(ModBlocks.NEPHRITE_ORE);
-                        entries.add(ModBlocks.BLOCK_OF_JADE);
+                        entries.add(ModBlocks.BLOCK_OF_JADEITE);
+                        entries.add(ModBlocks.JADEITE_ORE);
 
                         entries.add(ModBlocks.PLATINUM_ORE);
                         entries.add(ModBlocks.DEEPSLATE_PLATINUM_ORE);

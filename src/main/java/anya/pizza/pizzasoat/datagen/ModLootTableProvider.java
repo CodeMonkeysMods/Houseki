@@ -36,7 +36,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.ALUMINUM_TRAPDOOR);
         addDrop(ModBlocks.ALUMINUM_DOOR, doorDrops(ModBlocks.ALUMINUM_DOOR));
         addDrop(ModBlocks.BLOCK_OF_SAPPHIRE);
-        addDrop(ModBlocks.BLOCK_OF_JADE);
+        addDrop(ModBlocks.BLOCK_OF_JADEITE);
         addDrop(ModBlocks.BLOCK_OF_PLATINUM);
         addDrop(ModBlocks.LIMESTONE);
         addDrop(ModBlocks.POLISHED_LIMESTONE);
@@ -78,8 +78,6 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
         addDrop(ModBlocks.SCHEELITE_ORE, AverageOreDrops(ModBlocks.SCHEELITE_ORE, ModItems.SCHEELITE));
 
-        //addDrop(ModBlocks.TRONA_ORE, AverageOreDrops(ModBlocks.TRONA_ORE, ModItems.TRONA));
-
         addDropWithSilkTouch(ModBlocks.ALUMINUM_GLASS);
         addDropWithSilkTouch(ModBlocks.ALUMINUM_GLASS_PANE);
 
@@ -87,7 +85,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.DEEPSLATE_SAPPHIRE_ORE, SingleItemOreDrops(ModBlocks.DEEPSLATE_SAPPHIRE_ORE, ModItems.SAPPHIRE));
 
         addDrop(ModBlocks.NEPHRITE_ORE, LightOreDrops(ModBlocks.NEPHRITE_ORE, ModItems.NEPHRITE));
-        addDrop(ModBlocks.DEEPSLATE_NEPHRITE_ORE, LightOreDrops(ModBlocks.DEEPSLATE_NEPHRITE_ORE, ModItems.NEPHRITE));
+        addDrop(ModBlocks.JADEITE_ORE, LightOreDrops(ModBlocks.JADEITE_ORE, ModItems.JADEITE));
 
         addDrop(ModBlocks.PLATINUM_ORE, SingleItemOreDrops(ModBlocks.PLATINUM_ORE, ModItems.PLATINUM));
         addDrop(ModBlocks.DEEPSLATE_PLATINUM_ORE, SingleItemOreDrops(ModBlocks.DEEPSLATE_PLATINUM_ORE, ModItems.PLATINUM));

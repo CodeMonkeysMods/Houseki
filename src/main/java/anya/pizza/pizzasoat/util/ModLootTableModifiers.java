@@ -283,6 +283,11 @@ public class ModLootTableModifiers {
                                 .apply(new EnchantWithLevelsLootFunction.Builder(UniformLootNumberProvider.create(20.0F, 39.0F)))
                                 .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f))))
 
+                        .with(ItemEntry.builder(ModItems.NEPHRITE_HELMET).weight(5)
+                                .apply(SetDamageLootFunction.builder(UniformLootNumberProvider.create(0.8f, 1.0f)))
+                                .apply(new EnchantWithLevelsLootFunction.Builder(UniformLootNumberProvider.create(20.0F, 39.0F)))
+                                .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f))))
+
                         .with(ItemEntry.builder(ModItems.PLATINUM).weight(5)
                                 .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 2.0f))))
 
@@ -305,6 +310,9 @@ public class ModLootTableModifiers {
                                 .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 3.0f))))
 
                         .with(ItemEntry.builder(ModItems.NEPHRITE).weight(1)
+                                .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 2.0f))))
+
+                        .with(ItemEntry.builder(ModItems.JADEITE).weight(1)
                                 .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 2.0f))))
 
                         .with(ItemEntry.builder(ModItems.SULFUR).weight(1)
@@ -424,6 +432,9 @@ public class ModLootTableModifiers {
                         .with(ItemEntry.builder(ModItems.PLATINUM).weight(5)
                                 .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 2.0f))))
 
+                        .with(ItemEntry.builder(ModItems.JADEITE).weight(5)
+                                .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 2.0f))))
+
                         .with(ItemEntry.builder(ModItems.SAPPHIRE_PICKAXE).weight(3)
                                 .apply(new EnchantWithLevelsLootFunction.Builder(UniformLootNumberProvider.create(20.0F, 39.0F)))
                                 .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f))))
@@ -464,6 +475,9 @@ public class ModLootTableModifiers {
                                 .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f))))
 
                         .with(ItemEntry.builder(ModItems.PLATINUM_HORSE_ARMOR).weight(1)
+                                .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f))))
+
+                        .with(ItemEntry.builder(ModItems.NEPHRITE_HORSE_ARMOR).weight(1)
                                 .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f))))
 
                         .with(ItemEntry.builder(ModItems.STEEL).weight(1)
@@ -892,6 +906,9 @@ public class ModLootTableModifiers {
                                 .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 3.0f))))
 
                         .with(ItemEntry.builder(ModItems.SCHEELITE).weight(10)
+                                .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 3.0f))))
+
+                        .with(ItemEntry.builder(ModItems.JADEITE).weight(10)
                                 .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 3.0f))))
 
                         .with(ItemEntry.builder(ModItems.CRUSHED_BAUXITE).weight(10)

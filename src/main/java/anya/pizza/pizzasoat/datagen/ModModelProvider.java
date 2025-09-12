@@ -24,7 +24,6 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BAUXITE_RAINBOW_PYRITE_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLOCK_OF_RAINBOW_PYRITE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SCHEELITE_ORE);
-        //blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.TRONA_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLOCK_OF_TUNGSTEN);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BAUXITE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ALUMINUM_GLASS);
@@ -34,9 +33,9 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLOCK_OF_SAPPHIRE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SAPPHIRE_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_SAPPHIRE_ORE);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_NEPHRITE_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.NEPHRITE_ORE);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLOCK_OF_JADE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.JADEITE_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLOCK_OF_JADEITE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLOCK_OF_PLATINUM);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_PLATINUM_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PLATINUM_ORE);
@@ -92,16 +91,12 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.PINKU_SHARD, Models.GENERATED);
         itemModelGenerator.register(ModItems.WOLFRAMITE, Models.GENERATED);
         itemModelGenerator.register(ModItems.SCHEELITE, Models.GENERATED);
-        //itemModelGenerator.register(ModItems.TRONA, Models.GENERATED);
-        //itemModelGenerator.register(ModItems.SODIUM_CARBONATE, Models.GENERATED);
-        //itemModelGenerator.register(ModItems.PURE_TUNGSTEN, Models.GENERATED);
         itemModelGenerator.register(ModItems.TUNGSTEN, Models.GENERATED);
         itemModelGenerator.register(ModItems.CRUSHED_BAUXITE, Models.GENERATED);
         itemModelGenerator.register(ModItems.ALUMINUM, Models.GENERATED);
         itemModelGenerator.register(ModItems.SAPPHIRE, Models.GENERATED);
         itemModelGenerator.register(ModItems.NEPHRITE, Models.GENERATED);
         itemModelGenerator.register(ModItems.JADEITE, Models.GENERATED);
-        itemModelGenerator.register(ModItems.JADE, Models.GENERATED);
         itemModelGenerator.register(ModItems.PLATINUM, Models.GENERATED);
         itemModelGenerator.register(ModItems.SULFUR, Models.GENERATED);
         itemModelGenerator.register(ModItems.CRUDE_IRON, Models.GENERATED);
@@ -147,11 +142,16 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.SAPPHIRE_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.SAPPHIRE_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ModItems.SAPPHIRE_HOE, Models.HANDHELD);
-        itemModelGenerator.register(ModItems.JADE_PICKAXE, Models.HANDHELD);
-        itemModelGenerator.register(ModItems.JADE_AXE, Models.HANDHELD);
-        itemModelGenerator.register(ModItems.JADE_SHOVEL, Models.HANDHELD);
-        itemModelGenerator.register(ModItems.JADE_SWORD, Models.HANDHELD);
-        itemModelGenerator.register(ModItems.JADE_HOE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.NEPHRITE_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.NEPHRITE_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.NEPHRITE_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.NEPHRITE_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.NEPHRITE_HOE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.JADEITE_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.JADEITE_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.JADEITE_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.JADEITE_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.JADEITE_HOE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.PLATINUM_PICKAXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.PLATINUM_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.PLATINUM_SHOVEL, Models.HANDHELD);
@@ -192,10 +192,14 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.SAPPHIRE_CHESTPLATE));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.SAPPHIRE_LEGGINGS));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.SAPPHIRE_BOOTS));
-        itemModelGenerator.registerArmor(((ArmorItem) ModItems.JADE_HELMET));
-        itemModelGenerator.registerArmor(((ArmorItem) ModItems.JADE_CHESTPLATE));
-        itemModelGenerator.registerArmor(((ArmorItem) ModItems.JADE_LEGGINGS));
-        itemModelGenerator.registerArmor(((ArmorItem) ModItems.JADE_BOOTS));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.NEPHRITE_HELMET));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.NEPHRITE_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.NEPHRITE_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.NEPHRITE_BOOTS));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.JADEITE_HELMET));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.JADEITE_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.JADEITE_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.JADEITE_BOOTS));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.PLATINUM_HELMET));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.PLATINUM_CHESTPLATE));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.PLATINUM_LEGGINGS));
@@ -217,6 +221,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.PLATINUM_HORSE_ARMOR, Models.GENERATED);
         itemModelGenerator.register(ModItems.STEEL_HORSE_ARMOR, Models.GENERATED);
         itemModelGenerator.register(ModItems.CAST_STEEL_HORSE_ARMOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.NEPHRITE_HORSE_ARMOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.JADEITE_HORSE_ARMOR, Models.GENERATED);
 
 
         itemModelGenerator.register(

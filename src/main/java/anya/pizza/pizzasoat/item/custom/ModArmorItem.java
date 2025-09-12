@@ -21,8 +21,10 @@ public class ModArmorItem extends ArmorItem {
             (new ImmutableMap.Builder<RegistryEntry<ArmorMaterial>, List<StatusEffectInstance>>())
                     .put(ModArmorMaterials.RAINBOW_MATERIAL, List.of(new StatusEffectInstance(
                             StatusEffects.LUCK, 20, 1, false, false, true)))
-                    .put(ModArmorMaterials.JADE_MATERIAL, List.of(new StatusEffectInstance(
+                    .put(ModArmorMaterials.NEPHRITE_MATERIAL, List.of(new StatusEffectInstance(
                             StatusEffects.REGENERATION, 20, 0, false, false, true)))
+                    .put(ModArmorMaterials.JADEITE_MATERIAL, List.of(new StatusEffectInstance(
+                            StatusEffects.REGENERATION, 20, 1, false, false, true)))
                     .put(ModArmorMaterials.SAPPHIRE_MATERIAL, List.of(new StatusEffectInstance(
                             StatusEffects.RESISTANCE, 20, 4, false, false, true)))
                     .put(ModArmorMaterials.TUNGSTEN_MATERIAL, List.of(new StatusEffectInstance(

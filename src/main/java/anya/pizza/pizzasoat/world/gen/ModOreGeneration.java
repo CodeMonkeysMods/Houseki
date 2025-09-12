@@ -34,20 +34,22 @@ public class ModOreGeneration {
         BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(),
                 GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.SAPPHIRE_ORE_PLACED_KEY);
 
-        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.COLD_OCEAN, BiomeKeys.DEEP_COLD_OCEAN, BiomeKeys.FROZEN_OCEAN,
-                        BiomeKeys.FROZEN_PEAKS, BiomeKeys.FROZEN_RIVER, BiomeKeys.DEEP_FROZEN_OCEAN, BiomeKeys.ICE_SPIKES, BiomeKeys.JAGGED_PEAKS,
-                        BiomeKeys.SNOWY_BEACH, BiomeKeys.SNOWY_PLAINS, BiomeKeys.SNOWY_SLOPES, BiomeKeys.SNOWY_TAIGA),
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.BEACH, BiomeKeys.COLD_OCEAN, BiomeKeys.DEEP_COLD_OCEAN, BiomeKeys.FROZEN_OCEAN,
+                        BiomeKeys.FROZEN_RIVER, BiomeKeys.DEEP_FROZEN_OCEAN, BiomeKeys.SNOWY_BEACH, BiomeKeys.ICE_SPIKES, BiomeKeys.JAGGED_PEAKS, BiomeKeys.DEEP_OCEAN, BiomeKeys.DEEP_LUKEWARM_OCEAN,
+                        BiomeKeys.DRIPSTONE_CAVES, BiomeKeys.SNOWY_PLAINS, BiomeKeys.LUKEWARM_OCEAN, BiomeKeys.MANGROVE_SWAMP, BiomeKeys.OCEAN, BiomeKeys.RIVER, BiomeKeys.STONY_SHORE, BiomeKeys.STONY_PEAKS,
+                        BiomeKeys.SWAMP, BiomeKeys.WARM_OCEAN, BiomeKeys.LUSH_CAVES, BiomeKeys.SNOWY_SLOPES, BiomeKeys.SNOWY_TAIGA),
                 GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.NEPHRITE_ORE_PLACED_KEY);
 
-        //BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.TRONA_ORE_PLACED_KEY);
+        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(),
+                GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.JADEITE_ORE_PLACED_KEY);
 
         BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(),
                 GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.PLATINUM_ORE_PLACED_KEY);
 
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.BEACH, BiomeKeys.COLD_OCEAN, BiomeKeys.DEEP_COLD_OCEAN, BiomeKeys.FROZEN_OCEAN,
-                        BiomeKeys.FROZEN_RIVER, BiomeKeys.DEEP_FROZEN_OCEAN, BiomeKeys.SNOWY_BEACH, BiomeKeys.DEEP_OCEAN, BiomeKeys.DEEP_LUKEWARM_OCEAN,
-                        BiomeKeys.DRIPSTONE_CAVES, BiomeKeys.LUKEWARM_OCEAN, BiomeKeys.MANGROVE_SWAMP, BiomeKeys.OCEAN, BiomeKeys.RIVER, BiomeKeys.STONY_SHORE, BiomeKeys.STONY_PEAKS,
-                        BiomeKeys.SWAMP, BiomeKeys.WARM_OCEAN, BiomeKeys.LUSH_CAVES),
+                        BiomeKeys.FROZEN_RIVER, BiomeKeys.DEEP_FROZEN_OCEAN, BiomeKeys.SNOWY_BEACH, BiomeKeys.ICE_SPIKES, BiomeKeys.JAGGED_PEAKS, BiomeKeys.DEEP_OCEAN, BiomeKeys.DEEP_LUKEWARM_OCEAN,
+                        BiomeKeys.DRIPSTONE_CAVES, BiomeKeys.SNOWY_PLAINS, BiomeKeys.LUKEWARM_OCEAN, BiomeKeys.MANGROVE_SWAMP, BiomeKeys.OCEAN, BiomeKeys.RIVER, BiomeKeys.STONY_SHORE, BiomeKeys.STONY_PEAKS,
+                        BiomeKeys.SWAMP, BiomeKeys.WARM_OCEAN, BiomeKeys.LUSH_CAVES, BiomeKeys.SNOWY_SLOPES, BiomeKeys.SNOWY_TAIGA),
                 GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.ORE_LIMESTONE_PLACED_KEY);
 
         BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(),

@@ -3,7 +3,6 @@ package anya.pizza.pizzasoat.block;
 import anya.pizza.pizzasoat.PizzasOAT;
 import anya.pizza.pizzasoat.block.custom.CrusherBlock;
 import net.minecraft.block.*;
-import net.minecraft.block.enums.NoteBlockInstrument;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -48,7 +47,7 @@ public class ModBlocks {
     public static final Block BLOCK_OF_SAPPHIRE = registerBlock("block_of_sapphire",
             new Block(AbstractBlock.Settings.copy(Blocks.NETHERITE_BLOCK).requiresTool().strength(45, 500)));
 
-    public static final Block BLOCK_OF_JADE = registerBlock("block_of_jade",
+    public static final Block BLOCK_OF_JADEITE = registerBlock("block_of_jadeite",
             new Block(AbstractBlock.Settings.copy(Blocks.DIAMOND_BLOCK).requiresTool()));
 
     public static final Block BLOCK_OF_PLATINUM = registerBlock("block_of_platinum",
@@ -96,7 +95,7 @@ public class ModBlocks {
             new Block(AbstractBlock.Settings.copy(Blocks.IRON_ORE).sounds(BlockSoundGroup.NETHERITE).strength(15, 9).luminance(s -> 1).requiresTool())); //10 Moh Scale
 
     public static final Block RAINBOW_PYRITE_ORE = registerBlock("rainbow_pyrite_ore",
-            new ExperienceDroppingBlock(UniformIntProvider.create(3, 7), AbstractBlock.Settings.copy(Blocks.STONE).strength(4.8f, 7.2f).requiresTool())); //6 Moh Scale
+            new ExperienceDroppingBlock(UniformIntProvider.create(3, 7), AbstractBlock.Settings.copy(Blocks.STONE).strength(4, 7).requiresTool())); //6 Moh Scale
 
     public static final Block SANDSTONE_RAINBOW_PYRITE_ORE = registerBlock("sandstone_rainbow_pyrite_ore",
             new ExperienceDroppingBlock(UniformIntProvider.create(3, 7), AbstractBlock.Settings.copy(Blocks.SANDSTONE).strength(4.8f, 7.2f).requiresTool()));
@@ -110,9 +109,6 @@ public class ModBlocks {
     public static final Block SCHEELITE_ORE = registerBlock("scheelite_ore",
             new ExperienceDroppingBlock(UniformIntProvider.create(2, 5), AbstractBlock.Settings.copy(Blocks.NETHERRACK).strength(3, 4).requiresTool())); //4.5 Moh Scale
 
-    //public static final Block TRONA_ORE = registerBlock("trona_ore",
-    //        new ExperienceDroppingBlock(UniformIntProvider.create(2, 5), AbstractBlock.Settings.copy(Blocks.STONE).strength(2, 3).requiresTool())); //2.5 Moh Scale
-
     public static final Block DEEPSLATE_SAPPHIRE_ORE = registerBlock("deepslate_sapphire_ore",
             new ExperienceDroppingBlock(UniformIntProvider.create(5, 8), AbstractBlock.Settings.copy(Blocks.DEEPSLATE).strength(10, 8).requiresTool()));
 
@@ -120,10 +116,10 @@ public class ModBlocks {
             new ExperienceDroppingBlock(UniformIntProvider.create(5, 8), AbstractBlock.Settings.copy(Blocks.STONE).strength(9, 7).requiresTool())); //9 Moh Scale
 
     public static final Block NEPHRITE_ORE = registerBlock("nephrite_ore",
-            new ExperienceDroppingBlock(UniformIntProvider.create(2, 5), AbstractBlock.Settings.copy(Blocks.STONE).strength(4, 6).requiresTool())); //6.5 Moh Scale
+            new ExperienceDroppingBlock(UniformIntProvider.create(2, 5), AbstractBlock.Settings.copy(Blocks.STONE).strength(4.5f, 6.5f).requiresTool())); //6.5 Moh Scale
 
-    public static final Block DEEPSLATE_NEPHRITE_ORE = registerBlock("deepslate_nephrite_ore",
-            new ExperienceDroppingBlock(UniformIntProvider.create(2, 5), AbstractBlock.Settings.copy(Blocks.DEEPSLATE).strength(4.5f, 6.5f).requiresTool()));
+    public static final Block JADEITE_ORE = registerBlock("jadeite_ore",
+            new ExperienceDroppingBlock(UniformIntProvider.create(2, 5), AbstractBlock.Settings.copy(Blocks.STONE).strength(5, 7).requiresTool())); //7 Moh Scale
 
     public static final Block PLATINUM_ORE = registerBlock("platinum_ore",
             new ExperienceDroppingBlock(UniformIntProvider.create(2, 5), AbstractBlock.Settings.copy(Blocks.STONE).strength(3, 4).requiresTool())); //4.5 Moh Scale

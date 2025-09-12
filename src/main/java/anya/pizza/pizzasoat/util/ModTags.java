@@ -28,8 +28,10 @@ public class ModTags {
         public static final TagKey<Block> INCORRECT_FOR_ALUMINUM_TOOL = createTag("incorrect_for_aluminum_tool");
         public static final TagKey<Block> NEEDS_SAPPHIRE_TOOL = createTag("needs_sapphire_tool");
         public static final TagKey<Block> INCORRECT_FOR_SAPPHIRE_TOOL = createTag("incorrect_for_sapphire_tool");
-        public static final TagKey<Block> NEEDS_JADE_TOOL = createTag("needs_jade_tool");
-        public static final TagKey<Block> INCORRECT_FOR_JADE_TOOL = createTag("incorrect_for_jade_tool");
+        public static final TagKey<Block> NEEDS_NEPHRITE_TOOL = createTag("needs_nephrite_tool");
+        public static final TagKey<Block> INCORRECT_FOR_NEPHRITE_TOOL = createTag("incorrect_for_nephrite_tool");
+        public static final TagKey<Block> NEEDS_JADEITE_TOOL = createTag("needs_jadeite_tool");
+        public static final TagKey<Block> INCORRECT_FOR_JADEITE_TOOL = createTag("incorrect_for_jadeite_tool");
         public static final TagKey<Block> NEEDS_PLATINUM_TOOL = createTag("needs_platinum_tool");
         public static final TagKey<Block> INCORRECT_FOR_PLATINUM_TOOL = createTag("incorrect_for_platinum_tool");
         public static final TagKey<Block> NEEDS_STEEL_TOOL = createTag("needs_steel_tool");

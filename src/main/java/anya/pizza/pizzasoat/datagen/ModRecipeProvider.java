@@ -32,12 +32,10 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         List<ItemConvertible> RAINBOW_PYRITE_SMELTABLES = List.of(ModBlocks.RAINBOW_PYRITE_ORE, ModBlocks.SANDSTONE_RAINBOW_PYRITE_ORE, ModBlocks.BAUXITE_RAINBOW_PYRITE_ORE);
         List<ItemConvertible> ALUMINUM_SMELTABLES = List.of(ModItems.CRUSHED_BAUXITE);
         List<ItemConvertible> SCHEELITE_SMELTABLES = List.of(ModBlocks.SCHEELITE_ORE);
-        //List<ItemConvertible> SODIUM_CARBONATE_SMELTABLES = List.of(ModItems.TRONA);
-        //List<ItemConvertible> TRONA_SMELTABLES = List.of(ModBlocks.TRONA_ORE);
-        //List<ItemConvertible> TUNGSTEN_SMELTABLES = List.of(ModItems.PURE_TUNGSTEN);
         List<ItemConvertible> WOLFRAMITE_SMELTABLES = List.of(ModBlocks.WOLFRAMITE_ORE);
         List<ItemConvertible> SAPPHIRE_SMELTABLES = List.of(ModBlocks.SAPPHIRE_ORE, ModBlocks.DEEPSLATE_SAPPHIRE_ORE);
-        List<ItemConvertible> NEPHRITE_SMELTABLES = List.of(ModBlocks.NEPHRITE_ORE, ModBlocks.DEEPSLATE_NEPHRITE_ORE);
+        List<ItemConvertible> NEPHRITE_SMELTABLES = List.of(ModBlocks.NEPHRITE_ORE);
+        List<ItemConvertible> JADEITE_SMELTABLES = List.of(ModBlocks.JADEITE_ORE);
         List<ItemConvertible> PLATINUM_SMELTABLES = List.of(ModBlocks.PLATINUM_ORE, ModBlocks.DEEPSLATE_PLATINUM_ORE);
         List<ItemConvertible> SULFUR_SMELTABLES = List.of(ModBlocks.SULFUR_ORE, ModBlocks.BLACKSTONE_SULFUR_ORE);
         List<ItemConvertible> CRUDE_IRON_SMELTABLES = List.of(Items.IRON_INGOT);
@@ -51,7 +49,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.TUNGSTEN, RecipeCategory.DECORATIONS, ModBlocks.BLOCK_OF_TUNGSTEN);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.ALUMINUM, RecipeCategory.DECORATIONS, ModBlocks.BLOCK_OF_ALUMINUM);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.SAPPHIRE, RecipeCategory.DECORATIONS, ModBlocks.BLOCK_OF_SAPPHIRE);
-        offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.JADE, RecipeCategory.DECORATIONS, ModBlocks.BLOCK_OF_JADE);
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.JADEITE, RecipeCategory.DECORATIONS, ModBlocks.BLOCK_OF_JADEITE);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.PLATINUM, RecipeCategory.DECORATIONS, ModBlocks.BLOCK_OF_PLATINUM);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.SULFUR, RecipeCategory.DECORATIONS, ModBlocks.BLOCK_OF_SULFUR);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.STEEL, RecipeCategory.DECORATIONS, ModBlocks.BLOCK_OF_STEEL);
@@ -67,15 +65,14 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 0.5f, 200, "rainbow_pyrite");
         offerSmelting(exporter, SCHEELITE_SMELTABLES, RecipeCategory.MISC, ModItems.SCHEELITE,
                 0.5f, 200, "scheelite");
-        //offerSmelting(exporter, SODIUM_CARBONATE_SMELTABLES, RecipeCategory.MISC, ModItems.SODIUM_CARBONATE, 0.5f, 200, "sodium_carbonate");
-        //offerSmelting(exporter, TRONA_SMELTABLES, RecipeCategory.MISC, ModItems.TRONA, 0.5f, 200, "trona");
-        //offerSmelting(exporter, TUNGSTEN_SMELTABLES, RecipeCategory.MISC, ModItems.TUNGSTEN, 0.5f, 200, "tungsten");
         offerSmelting(exporter, WOLFRAMITE_SMELTABLES, RecipeCategory.MISC, ModItems.WOLFRAMITE,
                 0.5f, 200, "wolframite");
         offerSmelting(exporter, SAPPHIRE_SMELTABLES, RecipeCategory.MISC, ModItems.SAPPHIRE,
                 0.5f, 250, "sapphire");
         offerSmelting(exporter, NEPHRITE_SMELTABLES, RecipeCategory.MISC, ModItems.NEPHRITE,
                 0.5f, 200, "nephrite");
+        offerSmelting(exporter, JADEITE_SMELTABLES, RecipeCategory.MISC, ModItems.JADEITE,
+                0.5f, 250, "jadeite");
         offerSmelting(exporter, PLATINUM_SMELTABLES, RecipeCategory.MISC, ModItems.PLATINUM,
                 0.5f, 200, "platinum");
         offerSmelting(exporter, SULFUR_SMELTABLES, RecipeCategory.MISC, ModItems.SULFUR,
@@ -91,15 +88,14 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 0.5f, 100, "rainbow_pyrite");
         offerBlasting(exporter, SCHEELITE_SMELTABLES, RecipeCategory.MISC, ModItems.SCHEELITE,
                 0.5f, 100, "scheelite");
-        //offerBlasting(exporter, SODIUM_CARBONATE_SMELTABLES, RecipeCategory.MISC, ModItems.SODIUM_CARBONATE, 0.5f, 100, "sodium_carbonate");
-        //offerBlasting(exporter, TRONA_SMELTABLES, RecipeCategory.MISC, ModItems.TRONA, 0.5f, 100, "trona");
-        //offerBlasting(exporter, TUNGSTEN_SMELTABLES, RecipeCategory.MISC, ModItems.TUNGSTEN, 0.5f, 100, "tungsten");
         offerBlasting(exporter, WOLFRAMITE_SMELTABLES, RecipeCategory.MISC, ModItems.WOLFRAMITE,
                 0.5f, 100, "wolframite");
         offerBlasting(exporter, SAPPHIRE_SMELTABLES, RecipeCategory.MISC, ModItems.SAPPHIRE,
                 0.5f, 150, "sapphire");
         offerBlasting(exporter, NEPHRITE_SMELTABLES, RecipeCategory.MISC, ModItems.NEPHRITE,
                 0.5f, 100, "nephrite");
+        offerBlasting(exporter, JADEITE_SMELTABLES, RecipeCategory.MISC, ModItems.JADEITE,
+                0.5f, 150, "jadeite");
         offerBlasting(exporter, PLATINUM_SMELTABLES, RecipeCategory.MISC, ModItems.PLATINUM,
                 0.5f, 100, "platinum");
         offerBlasting(exporter, SULFUR_SMELTABLES, RecipeCategory.MISC, ModItems.SULFUR,
@@ -218,11 +214,16 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         ModGenRecipes.offerShovelRecipe(exporter, ModItems.SAPPHIRE_SHOVEL, ModItems.SAPPHIRE);
         ModGenRecipes.offerSwordRecipe(exporter, ModItems.SAPPHIRE_SWORD, ModItems.SAPPHIRE);
         ModGenRecipes.offerHoeRecipe(exporter, ModItems.SAPPHIRE_HOE, ModItems.SAPPHIRE);
-        ModGenRecipes.offerPickaxeRecipe(exporter, ModItems.JADE_PICKAXE, ModItems.JADE);
-        ModGenRecipes.offerAxeRecipe(exporter, ModItems.JADE_AXE, ModItems.JADE);
-        ModGenRecipes.offerShovelRecipe(exporter, ModItems.JADE_SHOVEL, ModItems.JADE);
-        ModGenRecipes.offerSwordRecipe(exporter, ModItems.JADE_SWORD, ModItems.JADE);
-        ModGenRecipes.offerHoeRecipe(exporter, ModItems.JADE_HOE, ModItems.JADE);
+        ModGenRecipes.offerPickaxeRecipe(exporter, ModItems.NEPHRITE_PICKAXE, ModItems.NEPHRITE);
+        ModGenRecipes.offerAxeRecipe(exporter, ModItems.NEPHRITE_AXE, ModItems.NEPHRITE);
+        ModGenRecipes.offerShovelRecipe(exporter, ModItems.NEPHRITE_SHOVEL, ModItems.NEPHRITE);
+        ModGenRecipes.offerSwordRecipe(exporter, ModItems.NEPHRITE_SWORD, ModItems.NEPHRITE);
+        ModGenRecipes.offerHoeRecipe(exporter, ModItems.NEPHRITE_HOE, ModItems.NEPHRITE);
+        ModGenRecipes.offerPickaxeRecipe(exporter, ModItems.JADEITE_PICKAXE, ModItems.JADEITE);
+        ModGenRecipes.offerAxeRecipe(exporter, ModItems.JADEITE_AXE, ModItems.JADEITE);
+        ModGenRecipes.offerShovelRecipe(exporter, ModItems.JADEITE_SHOVEL, ModItems.JADEITE);
+        ModGenRecipes.offerSwordRecipe(exporter, ModItems.JADEITE_SWORD, ModItems.JADEITE);
+        ModGenRecipes.offerHoeRecipe(exporter, ModItems.JADEITE_HOE, ModItems.JADEITE);
         ModGenRecipes.offerPickaxeRecipe(exporter, ModItems.PLATINUM_PICKAXE, ModItems.PLATINUM);
         ModGenRecipes.offerAxeRecipe(exporter, ModItems.PLATINUM_AXE, ModItems.PLATINUM);
         ModGenRecipes.offerShovelRecipe(exporter, ModItems.PLATINUM_SHOVEL, ModItems.PLATINUM);
@@ -285,10 +286,14 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         ModGenRecipes.offerChestplateRecipe(exporter, ModItems.SAPPHIRE_CHESTPLATE, ModItems.SAPPHIRE);
         ModGenRecipes.offerLeggingsRecipe(exporter, ModItems.SAPPHIRE_LEGGINGS, ModItems.SAPPHIRE);
         ModGenRecipes.offerBootsRecipe(exporter, ModItems.SAPPHIRE_BOOTS, ModItems.SAPPHIRE);
-        ModGenRecipes.offerHelmetRecipe(exporter, ModItems.JADE_HELMET, ModItems.JADE);
-        ModGenRecipes.offerChestplateRecipe(exporter, ModItems.JADE_CHESTPLATE, ModItems.JADE);
-        ModGenRecipes.offerLeggingsRecipe(exporter, ModItems.JADE_LEGGINGS, ModItems.JADE);
-        ModGenRecipes.offerBootsRecipe(exporter, ModItems.JADE_BOOTS, ModItems.JADE);
+        ModGenRecipes.offerHelmetRecipe(exporter, ModItems.NEPHRITE_HELMET, ModItems.NEPHRITE);
+        ModGenRecipes.offerChestplateRecipe(exporter, ModItems.NEPHRITE_CHESTPLATE, ModItems.NEPHRITE);
+        ModGenRecipes.offerLeggingsRecipe(exporter, ModItems.NEPHRITE_LEGGINGS, ModItems.NEPHRITE);
+        ModGenRecipes.offerBootsRecipe(exporter, ModItems.NEPHRITE_BOOTS, ModItems.NEPHRITE);
+        ModGenRecipes.offerHelmetRecipe(exporter, ModItems.JADEITE_HELMET, ModItems.JADEITE);
+        ModGenRecipes.offerChestplateRecipe(exporter, ModItems.JADEITE_CHESTPLATE, ModItems.JADEITE);
+        ModGenRecipes.offerLeggingsRecipe(exporter, ModItems.JADEITE_LEGGINGS, ModItems.JADEITE);
+        ModGenRecipes.offerBootsRecipe(exporter, ModItems.JADEITE_BOOTS, ModItems.JADEITE);
         ModGenRecipes.offerHelmetRecipe(exporter, ModItems.PLATINUM_HELMET, ModItems.PLATINUM);
         ModGenRecipes.offerChestplateRecipe(exporter, ModItems.PLATINUM_CHESTPLATE, ModItems.PLATINUM);
         ModGenRecipes.offerLeggingsRecipe(exporter, ModItems.PLATINUM_LEGGINGS, ModItems.PLATINUM);
