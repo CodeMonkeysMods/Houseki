@@ -68,6 +68,8 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.BLOCK_OF_STEEL);
         addDrop(ModBlocks.BLOCK_OF_CAST_STEEL);
         addDrop(ModBlocks.BAUXITE);
+        addDrop(ModBlocks.PLATINUM_ORE);
+        addDrop(ModBlocks.DEEPSLATE_PLATINUM_ORE);
 
         //Block drops other stuff.
         addDrop(ModBlocks.WOLFRAMITE_ORE, LightOreDrops(ModBlocks.WOLFRAMITE_ORE, ModItems.WOLFRAMITE));
@@ -86,9 +88,6 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
         addDrop(ModBlocks.NEPHRITE_ORE, LightOreDrops(ModBlocks.NEPHRITE_ORE, ModItems.NEPHRITE));
         addDrop(ModBlocks.JADEITE_ORE, LightOreDrops(ModBlocks.JADEITE_ORE, ModItems.JADEITE));
-
-        addDrop(ModBlocks.PLATINUM_ORE, SingleItemOreDrops(ModBlocks.PLATINUM_ORE, ModItems.PLATINUM));
-        addDrop(ModBlocks.DEEPSLATE_PLATINUM_ORE, SingleItemOreDrops(ModBlocks.DEEPSLATE_PLATINUM_ORE, ModItems.PLATINUM));
 
         addDrop(ModBlocks.SULFUR_ORE, AverageOreDrops(ModBlocks.SULFUR_ORE, ModItems.SULFUR));
         addDrop(ModBlocks.BLACKSTONE_SULFUR_ORE, AverageOreDrops(ModBlocks.BLACKSTONE_SULFUR_ORE, ModItems.SULFUR));

@@ -98,6 +98,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.NEPHRITE, Models.GENERATED);
         itemModelGenerator.register(ModItems.JADEITE, Models.GENERATED);
         itemModelGenerator.register(ModItems.PLATINUM, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PLATINUM_NUGGET, Models.GENERATED);
         itemModelGenerator.register(ModItems.SULFUR, Models.GENERATED);
         itemModelGenerator.register(ModItems.CRUDE_IRON, Models.GENERATED);
         itemModelGenerator.register(ModItems.STEEL, Models.GENERATED);

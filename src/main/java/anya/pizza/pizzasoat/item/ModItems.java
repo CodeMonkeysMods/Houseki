@@ -24,6 +24,7 @@ public class ModItems {
     public static final Item NEPHRITE = registerItem("nephrite", new Item(new Item.Settings()));
     public static final Item JADEITE = registerItem("jadeite", new Item(new Item.Settings()));
     public static final Item PLATINUM = registerItem("platinum", new Item(new Item.Settings()));
+    public static final Item PLATINUM_NUGGET = registerItem("platinum_nugget", new Item(new Item.Settings()));
     public static final Item SULFUR = registerItem("sulfur", new Item(new Item.Settings()));
     public static final Item CRUDE_IRON = registerItem("crude_iron", new Item(new Item.Settings()));
     public static final Item STEEL = registerItem("steel", new Item(new Item.Settings()));
@@ -297,6 +298,7 @@ public class ModItems {
         entries.add(ALUMINUM);
         entries.add(SAPPHIRE);
         entries.add(PLATINUM);
+        entries.add(PLATINUM_NUGGET);
         entries.add(NEPHRITE);
         entries.add(JADEITE);
         entries.add(SULFUR);

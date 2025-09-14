@@ -75,7 +75,7 @@ public class ModPlacedFeatures {
                         HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.getTop())));
 
         register(context, PLATINUM_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.PLATINUM_ORE_KEY),
-                ModOrePlacement.modifiersWithCount(30,
+                ModOrePlacement.modifiersWithCount(20,
                         HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.getTop())));
 
         register(context, SULFUR_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.SULFUR_ORE_KEY),

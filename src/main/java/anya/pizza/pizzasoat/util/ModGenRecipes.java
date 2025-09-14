@@ -35,6 +35,7 @@ public class ModGenRecipes {
                 .offerTo(exporter, getItemPath(result) + "_smithing");
     }
 
+
     //Tool Recipes
     public static void offerPickaxeRecipe(RecipeExporter exporter, ItemConvertible output, ItemConvertible input) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, output, 1)

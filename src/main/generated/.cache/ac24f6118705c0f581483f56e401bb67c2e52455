@@ -1,4 +1,4 @@
-// 1.21.1	2025-09-12T08:40:42.7336729	Pizza's Ores And Things/Model Definitions
+// 1.21.1	2025-09-13T20:13:35.2238092	Pizza's Ores And Things/Model Definitions
 9ca66029386a5e68144504c6c3c0f234f795f733 assets\pizzasoat\models\item\aluminum_boots_iron_trim.json
 8fb709c046870b1d84b61111299cc54285b03529 assets\pizzasoat\models\item\steel_boots_amethyst_trim.json
 612adb42f6df7c2bc37adec635eb9af2f0fa142a assets\pizzasoat\models\item\jadeite_boots_iron_trim.json
@@ -185,8 +185,8 @@ ca2ee350653cc45edb7179c3353194d66016d187 assets\pizzasoat\models\item\blackstone
 532497a4729c1ab906f1e2b4e2889c5df5670010 assets\pizzasoat\models\item\tungsten_boots_netherite_trim.json
 c30d3e4be8781ce5eb909e15bb5042584f6c00c9 assets\pizzasoat\models\item\jadeite_boots_amethyst_trim.json
 99cb5036ed10e3352b7cb893d9812a45b7ea5446 assets\pizzasoat\models\item\sapphire_chestplate.json
-ee3d66448645e15b31e5bc00d61fa9fbaa3c8cf3 assets\pizzasoat\models\item\steel_leggings_amethyst_trim.json
 5fedd56f02778a36445d954667daa416607ffb2d assets\pizzasoat\models\item\rainbow_pyrite_pickaxe.json
+ee3d66448645e15b31e5bc00d61fa9fbaa3c8cf3 assets\pizzasoat\models\item\steel_leggings_amethyst_trim.json
 10d3485979a0e12137f6459b5d177c0c9e726906 assets\pizzasoat\models\item\steel_helmet_amethyst_trim.json
 e1d3bf28672afa3338157a21a289d3f8f3ea1335 assets\pizzasoat\models\item\tungsten_chestplate_gold_trim.json
 d90f2e2e00282fb331eb1cf56d7916124c7ada0d assets\pizzasoat\models\item\tungsten_leggings_netherite_trim.json
@@ -341,6 +341,7 @@ e9ff765fc0e364a56fd202b0707f303526d00ce8 assets\pizzasoat\models\item\scheelite.
 a47d09506fb8014dbe442cc97f883a945c805686 assets\pizzasoat\models\item\platinum_chestplate_emerald_trim.json
 d08108e26427b5d5304c115b2ce661a8e19df34b assets\pizzasoat\models\item\simple_drill_head.json
 bb050f7b678b253ad1db2227c6b9810458809598 assets\pizzasoat\models\item\jadeite_leggings_amethyst_trim.json
+1670bcfd1450b71f4a28aa10d14b5045f109ad16 assets\pizzasoat\models\item\platinum_nugget.json
 e7b765257ae1eba458e769c8ef5b6b042b639423 assets\pizzasoat\models\item\nephrite_leggings_diamond_trim.json
 f32f9e37fba3843cf12911f1c9e543da4552dfce assets\pizzasoat\models\item\rainbow_pyrite_chestplate_diamond_trim.json
 380823e2562b49dae58b5b86b5db331592f88562 assets\pizzasoat\models\item\polished_slate_stairs.json

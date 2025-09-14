@@ -429,7 +429,7 @@ public class ModLootTableModifiers {
                         .with(ItemEntry.builder(ModItems.NEPHRITE).weight(10)
                                 .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(2.0f, 4.0f))))
 
-                        .with(ItemEntry.builder(ModItems.PLATINUM).weight(5)
+                        .with(ItemEntry.builder(ModItems.PLATINUM_NUGGET).weight(5)
                                 .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 2.0f))))
 
                         .with(ItemEntry.builder(ModItems.JADEITE).weight(5)
@@ -570,7 +570,7 @@ public class ModLootTableModifiers {
                         .with(ItemEntry.builder(ModItems.TUNGSTEN).weight(5)
                                 .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 2.0f))))
 
-                        .with(ItemEntry.builder(ModItems.PLATINUM).weight(5)
+                        .with(ItemEntry.builder(ModItems.PLATINUM_NUGGET).weight(5)
                                 .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 2.0f))));
 
                 tableBuilder.pool(poolBuilder.build());
@@ -621,7 +621,7 @@ public class ModLootTableModifiers {
             if (TRIAL_REWARD_OMINOUS_COMMON_ID.equals(key.getValue())) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .with(ItemEntry.builder(ModItems.PLATINUM).weight(2)
+                        .with(ItemEntry.builder(ModItems.PLATINUM_NUGGET).weight(2)
                                 .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 3.0f))))
 
                         .with(ItemEntry.builder(ModItems.TUNGSTEN).weight(2)
