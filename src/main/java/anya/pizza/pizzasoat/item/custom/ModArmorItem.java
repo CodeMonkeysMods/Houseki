@@ -18,27 +18,17 @@ import org.jetbrains.annotations.Nullable;
 import java.util.List;
 import java.util.Map;
 
-
 public class ModArmorItem extends Item {
     private static final Map<ArmorMaterial, List<StatusEffectInstance>> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, List<StatusEffectInstance>>())
-                    .put(ModArmorMaterials.RAINBOW_MATERIAL, List.of(new StatusEffectInstance(
-                            StatusEffects.LUCK, 20, 1, false, false, true)))
-                    .put(ModArmorMaterials.NEPHRITE_MATERIAL, List.of(new StatusEffectInstance(
-                            StatusEffects.REGENERATION, 20, 0, false, false, true)))
-                    .put(ModArmorMaterials.JADEITE_MATERIAL, List.of(new StatusEffectInstance(
-                            StatusEffects.REGENERATION, 20, 1, false, false, true)))
-                    .put(ModArmorMaterials.SAPPHIRE_MATERIAL, List.of(new StatusEffectInstance(
-                            StatusEffects.RESISTANCE, 20, 4, false, false, true)))
-                    .put(ModArmorMaterials.TUNGSTEN_MATERIAL, List.of(new StatusEffectInstance(
-                            StatusEffects.FIRE_RESISTANCE, 20, 4, false, false, true)))
-                    .put(ModArmorMaterials.CAST_STEEL_MATERIAL, List.of(new StatusEffectInstance(
-                            StatusEffects.STRENGTH, 20, 1, false, false, true)))
-                    .put(ModArmorMaterials.PLATINUM_MATERIAL, List.of(new StatusEffectInstance(
-                            StatusEffects.ABSORPTION, 20, 1, false, false, true)))
+                    .put(ModArmorMaterials.RAINBOW_MATERIAL, List.of(new StatusEffectInstance(StatusEffects.LUCK, 20, 1, false, false, true)))
+                    .put(ModArmorMaterials.NEPHRITE_MATERIAL, List.of(new StatusEffectInstance(StatusEffects.REGENERATION, 20, 0, false, false, true)))
+                    .put(ModArmorMaterials.JADEITE_MATERIAL, List.of(new StatusEffectInstance(StatusEffects.REGENERATION, 20, 1, false, false, true)))
+                    .put(ModArmorMaterials.SAPPHIRE_MATERIAL, List.of(new StatusEffectInstance(StatusEffects.RESISTANCE, 20, 4, false, false, true)))
+                    .put(ModArmorMaterials.TUNGSTEN_MATERIAL, List.of(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 20, 4, false, false, true)))
+                    .put(ModArmorMaterials.CAST_STEEL_MATERIAL, List.of(new StatusEffectInstance(StatusEffects.STRENGTH, 20, 1, false, false, true)))
+                    .put(ModArmorMaterials.PLATINUM_MATERIAL, List.of(new StatusEffectInstance(StatusEffects.ABSORPTION, 20, 1, false, false, true)))
                     .build();
-
-
 
     public ModArmorItem(Settings settings) {
         super(settings);
@@ -53,7 +43,6 @@ public class ModArmorItem extends Item {
                 }
             }
         }
-
         super.inventoryTick(stack, world, entity, slot);
     }
 

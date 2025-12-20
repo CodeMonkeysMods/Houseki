@@ -49,54 +49,36 @@ public class ModConfiguredFeatures {
         RuleTest limestoneReplaceables = new BlockMatchRuleTest(ModBlocks.LIMESTONE);
         RuleTest slateReplaceables = new BlockMatchRuleTest(ModBlocks.SLATE);
 
-        List<OreFeatureConfig.Target> endPinkuOres =
-                List.of(OreFeatureConfig.createTarget(endReplaceables, ModBlocks.PINKU_ORE.getDefaultState()));
+        List<OreFeatureConfig.Target> endPinkuOres = List.of(OreFeatureConfig.createTarget(endReplaceables, ModBlocks.PINKU_ORE.getDefaultState()));
 
-        List<OreFeatureConfig.Target> overworldRainbowPyriteOres =
-                List.of(OreFeatureConfig.createTarget(coalOreReplaceables, ModBlocks.RAINBOW_PYRITE_ORE.getDefaultState()));
+        List<OreFeatureConfig.Target> overworldRainbowPyriteOres = List.of(OreFeatureConfig.createTarget(coalOreReplaceables, ModBlocks.RAINBOW_PYRITE_ORE.getDefaultState()));
+        List<OreFeatureConfig.Target> overworldSandstoneRainbowPyriteOres = List.of(OreFeatureConfig.createTarget(sandstoneReplaceables, ModBlocks.SANDSTONE_RAINBOW_PYRITE_ORE.getDefaultState()));
+        List<OreFeatureConfig.Target> overworldBauxiteRainbowPyriteOres = List.of(OreFeatureConfig.createTarget(bauxiteReplaceables, ModBlocks.BAUXITE_RAINBOW_PYRITE_ORE.getDefaultState()));
 
-        List<OreFeatureConfig.Target> overworldSandstoneRainbowPyriteOres =
-                List.of(OreFeatureConfig.createTarget(sandstoneReplaceables, ModBlocks.SANDSTONE_RAINBOW_PYRITE_ORE.getDefaultState()));
+        List<OreFeatureConfig.Target> overworldWolframiteOres = List.of(OreFeatureConfig.createTarget(graniteReplaceables, ModBlocks.WOLFRAMITE_ORE.getDefaultState()));
 
-        List<OreFeatureConfig.Target> overworldBauxiteRainbowPyriteOres =
-                List.of(OreFeatureConfig.createTarget(bauxiteReplaceables, ModBlocks.BAUXITE_RAINBOW_PYRITE_ORE.getDefaultState()));
+        List<OreFeatureConfig.Target> netherScheeliteOres = List.of(OreFeatureConfig.createTarget(netherReplaceables, ModBlocks.SCHEELITE_ORE.getDefaultState()));
 
-        List<OreFeatureConfig.Target> overworldWolframiteOres =
-                List.of(OreFeatureConfig.createTarget(graniteReplaceables, ModBlocks.WOLFRAMITE_ORE.getDefaultState()));
+        List<OreFeatureConfig.Target> overworldBauxiteOre = List.of(OreFeatureConfig.createTarget(stoneReplaceables, ModBlocks.BAUXITE.getDefaultState()));
 
-        List<OreFeatureConfig.Target> netherScheeliteOres =
-                List.of(OreFeatureConfig.createTarget(netherReplaceables, ModBlocks.SCHEELITE_ORE.getDefaultState()));
-
-        List<OreFeatureConfig.Target> overworldBauxiteOre =
-                List.of(OreFeatureConfig.createTarget(stoneReplaceables, ModBlocks.BAUXITE.getDefaultState()));
-
-        List<OreFeatureConfig.Target> overworldSapphireOres =
-                List.of(OreFeatureConfig.createTarget(stoneReplaceables, ModBlocks.SAPPHIRE_ORE.getDefaultState()),
+        List<OreFeatureConfig.Target> overworldSapphireOres = List.of(OreFeatureConfig.createTarget(stoneReplaceables, ModBlocks.SAPPHIRE_ORE.getDefaultState()),
                         OreFeatureConfig.createTarget(deepslateReplaceables, ModBlocks.DEEPSLATE_SAPPHIRE_ORE.getDefaultState()));
 
-        List<OreFeatureConfig.Target> overworldNephriteOres =
-                List.of(OreFeatureConfig.createTarget(limestoneReplaceables, ModBlocks.NEPHRITE_ORE.getDefaultState()));
+        List<OreFeatureConfig.Target> overworldNephriteOres = List.of(OreFeatureConfig.createTarget(limestoneReplaceables, ModBlocks.NEPHRITE_ORE.getDefaultState()));
 
-        List<OreFeatureConfig.Target> overworldJadeiteOres =
-                List.of(OreFeatureConfig.createTarget(slateReplaceables, ModBlocks.JADEITE_ORE.getDefaultState()));
+        List<OreFeatureConfig.Target> overworldJadeiteOres = List.of(OreFeatureConfig.createTarget(slateReplaceables, ModBlocks.JADEITE_ORE.getDefaultState()));
 
-        List<OreFeatureConfig.Target> overworldPlatinumOres =
-                List.of(OreFeatureConfig.createTarget(copperReplaceables, ModBlocks.PLATINUM_ORE.getDefaultState()),
+        List<OreFeatureConfig.Target> overworldPlatinumOres = List.of(OreFeatureConfig.createTarget(copperReplaceables, ModBlocks.PLATINUM_ORE.getDefaultState()),
                         OreFeatureConfig.createTarget(deepCopperReplaceables, ModBlocks.DEEPSLATE_PLATINUM_ORE.getDefaultState()));
 
-        List<OreFeatureConfig.Target> netherSulfurOres =
-                List.of(OreFeatureConfig.createTarget(netherReplaceables,ModBlocks.SULFUR_ORE.getDefaultState()));
-
-        List<OreFeatureConfig.Target> blackstoneSulfurOres =
-                List.of(OreFeatureConfig.createTarget(blackstoneReplaceables,ModBlocks.BLACKSTONE_SULFUR_ORE.getDefaultState()));
+        List<OreFeatureConfig.Target> netherSulfurOres = List.of(OreFeatureConfig.createTarget(netherReplaceables,ModBlocks.SULFUR_ORE.getDefaultState()));
+        List<OreFeatureConfig.Target> blackstoneSulfurOres = List.of(OreFeatureConfig.createTarget(blackstoneReplaceables,ModBlocks.BLACKSTONE_SULFUR_ORE.getDefaultState()));
 
 
-        List<OreFeatureConfig.Target> overworldLimestoneOre =
-                List.of(OreFeatureConfig.createTarget(stoneReplaceables,ModBlocks.LIMESTONE.getDefaultState()),
+        List<OreFeatureConfig.Target> overworldLimestoneOre = List.of(OreFeatureConfig.createTarget(stoneReplaceables,ModBlocks.LIMESTONE.getDefaultState()),
                         OreFeatureConfig.createTarget(deepslateReplaceables,ModBlocks.LIMESTONE.getDefaultState()));
 
-        List<OreFeatureConfig.Target> overworldSlateOre =
-                List.of(OreFeatureConfig.createTarget(stoneReplaceables,ModBlocks.SLATE.getDefaultState()),
+        List<OreFeatureConfig.Target> overworldSlateOre = List.of(OreFeatureConfig.createTarget(stoneReplaceables,ModBlocks.SLATE.getDefaultState()),
                         OreFeatureConfig.createTarget(deepslateReplaceables,ModBlocks.SLATE.getDefaultState()));
 
 
@@ -122,8 +104,7 @@ public class ModConfiguredFeatures {
         return RegistryKey.of(RegistryKeys.CONFIGURED_FEATURE, Identifier.of(PizzasOAT.MOD_ID, name));
     }
 
-    private static <FC extends FeatureConfig, F extends Feature<FC>> void register(Registerable<ConfiguredFeature<?, ?>> context,
-                                                                                   RegistryKey<ConfiguredFeature<?, ?>> key, F feature, FC configuration) {
+    private static <FC extends FeatureConfig, F extends Feature<FC>> void register(Registerable<ConfiguredFeature<?, ?>> context, RegistryKey<ConfiguredFeature<?, ?>> key, F feature, FC configuration) {
         context.register(key, new ConfiguredFeature<>(feature, configuration));
     }
 }

@@ -13,7 +13,6 @@ import net.minecraft.util.Util;
 
 import java.util.EnumMap;
 
-
 public class ModArmorMaterials {
     static RegistryKey<? extends Registry<EquipmentAsset>> REGISTRY_KEY = RegistryKey.ofRegistry(Identifier.ofVanilla("equipment_asset"));
     public static final RegistryKey<EquipmentAsset> PINKU_KEY = RegistryKey.of(REGISTRY_KEY, Identifier.of(PizzasOAT.MOD_ID, "pinku"));

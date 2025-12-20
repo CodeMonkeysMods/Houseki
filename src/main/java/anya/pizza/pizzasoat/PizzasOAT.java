@@ -41,7 +41,6 @@ public class PizzasOAT implements ModInitializer {
 			builder.add(ModBlocks.BLOCK_OF_SULFUR, 16000);
 		});
 
-
 		PlayerBlockBreakEvents.BEFORE.register(new EDUsageEvent());
 		PlayerBlockBreakEvents.BEFORE.register(new ADUsageEvent());
 		PlayerBlockBreakEvents.BEFORE.register(new PDUsageEvent());

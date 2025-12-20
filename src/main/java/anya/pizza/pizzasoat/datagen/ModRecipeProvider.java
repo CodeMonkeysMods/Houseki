@@ -58,55 +58,31 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
 
                 //Smelting Recipes
-                offerSmelting(ALUMINUM_SMELTABLES, RecipeCategory.MISC, ModItems.ALUMINUM,
-                        0.5f, 200, "aluminum");
-                offerSmelting(PINKU_SMELTABLES, RecipeCategory.MISC, ModItems.PINKU_SHARD,
-                        0.5f, 250, "pinku");
-                offerSmelting(RAINBOW_PYRITE_SMELTABLES, RecipeCategory.MISC, ModItems.RAINBOW_PYRITE,
-                        0.5f, 200, "rainbow_pyrite");
-                offerSmelting(SCHEELITE_SMELTABLES, RecipeCategory.MISC, ModItems.SCHEELITE,
-                        0.5f, 200, "scheelite");
-                offerSmelting(WOLFRAMITE_SMELTABLES, RecipeCategory.MISC, ModItems.WOLFRAMITE,
-                        0.5f, 200, "wolframite");
-                offerSmelting(SAPPHIRE_SMELTABLES, RecipeCategory.MISC, ModItems.SAPPHIRE,
-                        0.5f, 250, "sapphire");
-                offerSmelting(NEPHRITE_SMELTABLES, RecipeCategory.MISC, ModItems.NEPHRITE,
-                        0.5f, 200, "nephrite");
-                offerSmelting(JADEITE_SMELTABLES, RecipeCategory.MISC, ModItems.JADEITE,
-                        0.5f, 250, "jadeite");
-                offerSmelting(PLATINUM_SMELTABLES, RecipeCategory.MISC, ModItems.PLATINUM,
-                        0.5f, 200, "platinum");
-                offerSmelting(SULFUR_SMELTABLES, RecipeCategory.MISC, ModItems.SULFUR,
-                        0.5f, 200, "sulfur");
-
+                offerSmelting(ALUMINUM_SMELTABLES, RecipeCategory.MISC, ModItems.ALUMINUM, 0.5f, 200, "aluminum");
+                offerSmelting(PINKU_SMELTABLES, RecipeCategory.MISC, ModItems.PINKU_SHARD, 0.5f, 250, "pinku");
+                offerSmelting(RAINBOW_PYRITE_SMELTABLES, RecipeCategory.MISC, ModItems.RAINBOW_PYRITE, 0.5f, 200, "rainbow_pyrite");
+                offerSmelting(SCHEELITE_SMELTABLES, RecipeCategory.MISC, ModItems.SCHEELITE, 0.5f, 200, "scheelite");
+                offerSmelting(WOLFRAMITE_SMELTABLES, RecipeCategory.MISC, ModItems.WOLFRAMITE, 0.5f, 200, "wolframite");
+                offerSmelting(SAPPHIRE_SMELTABLES, RecipeCategory.MISC, ModItems.SAPPHIRE, 0.5f, 250, "sapphire");
+                offerSmelting(NEPHRITE_SMELTABLES, RecipeCategory.MISC, ModItems.NEPHRITE, 0.5f, 200, "nephrite");
+                offerSmelting(JADEITE_SMELTABLES, RecipeCategory.MISC, ModItems.JADEITE, 0.5f, 250, "jadeite");
+                offerSmelting(PLATINUM_SMELTABLES, RecipeCategory.MISC, ModItems.PLATINUM, 0.5f, 200, "platinum");
+                offerSmelting(SULFUR_SMELTABLES, RecipeCategory.MISC, ModItems.SULFUR, 0.5f, 200, "sulfur");
 
                 //Blasting Recipes
-                offerBlasting(ALUMINUM_SMELTABLES, RecipeCategory.MISC, ModItems.ALUMINUM,
-                        0.5f, 100, "aluminum");
-                offerBlasting(PINKU_SMELTABLES, RecipeCategory.MISC, ModItems.PINKU_SHARD,
-                        0.5f, 150, "pinku");
-                offerBlasting(RAINBOW_PYRITE_SMELTABLES, RecipeCategory.MISC, ModItems.RAINBOW_PYRITE,
-                        0.5f, 100, "rainbow_pyrite");
-                offerBlasting(SCHEELITE_SMELTABLES, RecipeCategory.MISC, ModItems.SCHEELITE,
-                        0.5f, 100, "scheelite");
-                offerBlasting(WOLFRAMITE_SMELTABLES, RecipeCategory.MISC, ModItems.WOLFRAMITE,
-                        0.5f, 100, "wolframite");
-                offerBlasting(SAPPHIRE_SMELTABLES, RecipeCategory.MISC, ModItems.SAPPHIRE,
-                        0.5f, 150, "sapphire");
-                offerBlasting(NEPHRITE_SMELTABLES, RecipeCategory.MISC, ModItems.NEPHRITE,
-                        0.5f, 100, "nephrite");
-                offerBlasting(JADEITE_SMELTABLES, RecipeCategory.MISC, ModItems.JADEITE,
-                        0.5f, 150, "jadeite");
-                offerBlasting(PLATINUM_SMELTABLES, RecipeCategory.MISC, ModItems.PLATINUM,
-                        0.5f, 100, "platinum");
-                offerBlasting(SULFUR_SMELTABLES, RecipeCategory.MISC, ModItems.SULFUR,
-                        0.5f, 100, "sulfur");
-                offerBlasting(CRUDE_IRON_SMELTABLES, RecipeCategory.MISC, ModItems.CRUDE_IRON,
-                        0.5f, 100, "crude_iron");
-                offerBlasting(STEEL_SMELTABLES, RecipeCategory.MISC, ModItems.STEEL,
-                        0.5f, 120, "steel");
-                offerBlasting(CAST_STEEL_SMELTABLES, RecipeCategory.MISC, ModItems.CAST_STEEL,
-                        0.5f, 120, "cast_steel");
+                offerBlasting(ALUMINUM_SMELTABLES, RecipeCategory.MISC, ModItems.ALUMINUM, 0.5f, 100, "aluminum");
+                offerBlasting(PINKU_SMELTABLES, RecipeCategory.MISC, ModItems.PINKU_SHARD, 0.5f, 150, "pinku");
+                offerBlasting(RAINBOW_PYRITE_SMELTABLES, RecipeCategory.MISC, ModItems.RAINBOW_PYRITE, 0.5f, 100, "rainbow_pyrite");
+                offerBlasting(SCHEELITE_SMELTABLES, RecipeCategory.MISC, ModItems.SCHEELITE, 0.5f, 100, "scheelite");
+                offerBlasting(WOLFRAMITE_SMELTABLES, RecipeCategory.MISC, ModItems.WOLFRAMITE, 0.5f, 100, "wolframite");
+                offerBlasting(SAPPHIRE_SMELTABLES, RecipeCategory.MISC, ModItems.SAPPHIRE, 0.5f, 150, "sapphire");
+                offerBlasting(NEPHRITE_SMELTABLES, RecipeCategory.MISC, ModItems.NEPHRITE, 0.5f, 100, "nephrite");
+                offerBlasting(JADEITE_SMELTABLES, RecipeCategory.MISC, ModItems.JADEITE, 0.5f, 150, "jadeite");
+                offerBlasting(PLATINUM_SMELTABLES, RecipeCategory.MISC, ModItems.PLATINUM, 0.5f, 100, "platinum");
+                offerBlasting(SULFUR_SMELTABLES, RecipeCategory.MISC, ModItems.SULFUR, 0.5f, 100, "sulfur");
+                offerBlasting(CRUDE_IRON_SMELTABLES, RecipeCategory.MISC, ModItems.CRUDE_IRON, 0.5f, 100, "crude_iron");
+                offerBlasting(STEEL_SMELTABLES, RecipeCategory.MISC, ModItems.STEEL, 0.5f, 120, "steel");
+                offerBlasting(CAST_STEEL_SMELTABLES, RecipeCategory.MISC, ModItems.CAST_STEEL, 0.5f, 120, "cast_steel");
 
                 //Stonecutting Recipes
                 offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHISELED_LIMESTONE, ModBlocks.LIMESTONE, 1);
@@ -173,232 +149,86 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 createDoorRecipe(ModBlocks.ALUMINUM_DOOR, Ingredient.ofItem((ModItems.ALUMINUM)));
                 createTrapdoorRecipe(ModBlocks.ALUMINUM_TRAPDOOR, Ingredient.ofItem((ModItems.ALUMINUM)));
 
-               /* //Smithing Recipes
-                ModGenRecipes.offerPinkuUpgradeRecipe(exporter, Items.NETHERITE_PICKAXE, RecipeCategory.TOOLS, ModItems.PINKU_PICKAXE);
-                ModGenRecipes.offerPinkuUpgradeRecipe(exporter, Items.NETHERITE_AXE, RecipeCategory.COMBAT, ModItems.PINKU_AXE);
-                ModGenRecipes.offerPinkuUpgradeRecipe(exporter, Items.NETHERITE_SHOVEL, RecipeCategory.TOOLS, ModItems.PINKU_SHOVEL);
-                ModGenRecipes.offerPinkuUpgradeRecipe(exporter, Items.NETHERITE_SWORD, RecipeCategory.COMBAT, ModItems.PINKU_SWORD);
-                ModGenRecipes.offerPinkuUpgradeRecipe(exporter, Items.NETHERITE_HOE, RecipeCategory.TOOLS, ModItems.PINKU_HOE);
-                ModGenRecipes.offerPinkuUpgradeRecipe(exporter, Items.NETHERITE_HELMET, RecipeCategory.COMBAT, ModItems.PINKU_HELMET);
-                ModGenRecipes.offerPinkuUpgradeRecipe(exporter, Items.NETHERITE_CHESTPLATE, RecipeCategory.COMBAT, ModItems.PINKU_CHESTPLATE);
-                ModGenRecipes.offerPinkuUpgradeRecipe(exporter, Items.NETHERITE_LEGGINGS, RecipeCategory.COMBAT, ModItems.PINKU_LEGGINGS);
-                ModGenRecipes.offerPinkuUpgradeRecipe(exporter, Items.NETHERITE_BOOTS, RecipeCategory.COMBAT, ModItems.PINKU_BOOTS);
-                ModGenRecipes.offerDrillUpgradeRecipe(exporter, ModItems.SIMPLE_DRILL_HEAD, RecipeCategory.TOOLS, ModItems.ENHANCED_DRILL_HEAD);
-                ModGenRecipes.offerDrillUpgradeRecipe(exporter, ModItems.SIMPLE_TUNGSTEN_DRILL, RecipeCategory.TOOLS, ModItems.ENHANCED_TUNGSTEN_DRILL);
-                ModGenRecipes.offerDrillUpgradeRecipe(exporter, ModItems.ENHANCED_DRILL_HEAD, RecipeCategory.TOOLS, ModItems.ADVANCED_DRILL_HEAD);
-                ModGenRecipes.offerDrillUpgradeRecipe(exporter, ModItems.ENHANCED_TUNGSTEN_DRILL, RecipeCategory.TOOLS, ModItems.ADVANCED_TUNGSTEN_DRILL);
-                ModGenRecipes.offerDrillUpgradeRecipe(exporter, ModItems.ADVANCED_DRILL_HEAD, RecipeCategory.TOOLS, ModItems.PREMIUM_DRILL_HEAD);
-                ModGenRecipes.offerDrillUpgradeRecipe(exporter, ModItems.ADVANCED_TUNGSTEN_DRILL, RecipeCategory.TOOLS, ModItems.PREMIUM_TUNGSTEN_DRILL);
-                ModGenRecipes.offerDrillUpgradeRecipe(exporter, ModItems.SIMPLE_DIAMOND_DRILL, RecipeCategory.TOOLS, ModItems.ENHANCED_DIAMOND_DRILL);
-                ModGenRecipes.offerDrillUpgradeRecipe(exporter, ModItems.ENHANCED_DIAMOND_DRILL, RecipeCategory.TOOLS, ModItems.ADVANCED_DIAMOND_DRILL);
-                ModGenRecipes.offerDrillUpgradeRecipe(exporter, ModItems.ADVANCED_DIAMOND_DRILL, RecipeCategory.TOOLS, ModItems.PREMIUM_DIAMOND_DRILL);
-
-                //Tool Recipes
-                ModGenRecipes.offerPickaxeRecipe(exporter, ModItems.RAINBOW_PYRITE_PICKAXE, ModItems.RAINBOW_PYRITE);
-                ModGenRecipes.offerAxeRecipe(exporter, ModItems.RAINBOW_PYRITE_AXE, ModItems.RAINBOW_PYRITE);
-                ModGenRecipes.offerShovelRecipe(exporter, ModItems.RAINBOW_PYRITE_SHOVEL, ModItems.RAINBOW_PYRITE);
-                ModGenRecipes.offerSwordRecipe(exporter, ModItems.RAINBOW_PYRITE_SWORD, ModItems.RAINBOW_PYRITE);
-                ModGenRecipes.offerHoeRecipe(exporter, ModItems.RAINBOW_PYRITE_HOE, ModItems.RAINBOW_PYRITE);
-                ModGenRecipes.offerPickaxeRecipe(exporter, ModItems.TUNGSTEN_PICKAXE, ModItems.TUNGSTEN);
-                ModGenRecipes.offerAxeRecipe(exporter, ModItems.TUNGSTEN_AXE, ModItems.TUNGSTEN);
-                ModGenRecipes.offerShovelRecipe(exporter, ModItems.TUNGSTEN_SHOVEL, ModItems.TUNGSTEN);
-                ModGenRecipes.offerSwordRecipe(exporter, ModItems.TUNGSTEN_SWORD, ModItems.TUNGSTEN);
-                ModGenRecipes.offerHoeRecipe(exporter, ModItems.TUNGSTEN_HOE, ModItems.TUNGSTEN);
-                ModGenRecipes.offerPickaxeRecipe(exporter, ModItems.ALUMINUM_PICKAXE, ModItems.ALUMINUM);
-                ModGenRecipes.offerAxeRecipe(exporter, ModItems.ALUMINUM_AXE, ModItems.ALUMINUM);
-                ModGenRecipes.offerShovelRecipe(exporter, ModItems.ALUMINUM_SHOVEL, ModItems.ALUMINUM);
-                ModGenRecipes.offerSwordRecipe(exporter, ModItems.ALUMINUM_SWORD, ModItems.ALUMINUM);
-                ModGenRecipes.offerHoeRecipe(exporter, ModItems.ALUMINUM_HOE, ModItems.ALUMINUM);
-                ModGenRecipes.offerPickaxeRecipe(exporter, ModItems.SAPPHIRE_PICKAXE, ModItems.SAPPHIRE);
-                ModGenRecipes.offerAxeRecipe(exporter, ModItems.SAPPHIRE_AXE, ModItems.SAPPHIRE);
-                ModGenRecipes.offerShovelRecipe(exporter, ModItems.SAPPHIRE_SHOVEL, ModItems.SAPPHIRE);
-                ModGenRecipes.offerSwordRecipe(exporter, ModItems.SAPPHIRE_SWORD, ModItems.SAPPHIRE);
-                ModGenRecipes.offerHoeRecipe(exporter, ModItems.SAPPHIRE_HOE, ModItems.SAPPHIRE);
-                ModGenRecipes.offerPickaxeRecipe(exporter, ModItems.NEPHRITE_PICKAXE, ModItems.NEPHRITE);
-                ModGenRecipes.offerAxeRecipe(exporter, ModItems.NEPHRITE_AXE, ModItems.NEPHRITE);
-                ModGenRecipes.offerShovelRecipe(exporter, ModItems.NEPHRITE_SHOVEL, ModItems.NEPHRITE);
-                ModGenRecipes.offerSwordRecipe(exporter, ModItems.NEPHRITE_SWORD, ModItems.NEPHRITE);
-                ModGenRecipes.offerHoeRecipe(exporter, ModItems.NEPHRITE_HOE, ModItems.NEPHRITE);
-                ModGenRecipes.offerPickaxeRecipe(exporter, ModItems.JADEITE_PICKAXE, ModItems.JADEITE);
-                ModGenRecipes.offerAxeRecipe(exporter, ModItems.JADEITE_AXE, ModItems.JADEITE);
-                ModGenRecipes.offerShovelRecipe(exporter, ModItems.JADEITE_SHOVEL, ModItems.JADEITE);
-                ModGenRecipes.offerSwordRecipe(exporter, ModItems.JADEITE_SWORD, ModItems.JADEITE);
-                ModGenRecipes.offerHoeRecipe(exporter, ModItems.JADEITE_HOE, ModItems.JADEITE);
-                ModGenRecipes.offerPickaxeRecipe(exporter, ModItems.PLATINUM_PICKAXE, ModItems.PLATINUM);
-                ModGenRecipes.offerAxeRecipe(exporter, ModItems.PLATINUM_AXE, ModItems.PLATINUM);
-                ModGenRecipes.offerShovelRecipe(exporter, ModItems.PLATINUM_SHOVEL, ModItems.PLATINUM);
-                ModGenRecipes.offerSwordRecipe(exporter, ModItems.PLATINUM_SWORD, ModItems.PLATINUM);
-                ModGenRecipes.offerHoeRecipe(exporter, ModItems.PLATINUM_HOE, ModItems.PLATINUM);
-                ModGenRecipes.offerPickaxeRecipe(exporter, ModItems.STEEL_PICKAXE, ModItems.STEEL);
-                ModGenRecipes.offerAxeRecipe(exporter, ModItems.STEEL_AXE, ModItems.STEEL);
-                ModGenRecipes.offerShovelRecipe(exporter, ModItems.STEEL_SHOVEL, ModItems.STEEL);
-                ModGenRecipes.offerSwordRecipe(exporter, ModItems.STEEL_SWORD, ModItems.STEEL);
-                ModGenRecipes.offerHoeRecipe(exporter, ModItems.STEEL_HOE, ModItems.STEEL);
-                ModGenRecipes.offerPickaxeRecipe(exporter, ModItems.CAST_STEEL_PICKAXE, ModItems.CAST_STEEL);
-                ModGenRecipes.offerAxeRecipe(exporter, ModItems.CAST_STEEL_AXE, ModItems.CAST_STEEL);
-                ModGenRecipes.offerShovelRecipe(exporter, ModItems.CAST_STEEL_SHOVEL, ModItems.CAST_STEEL);
-                ModGenRecipes.offerSwordRecipe(exporter, ModItems.CAST_STEEL_SWORD, ModItems.CAST_STEEL);
-                ModGenRecipes.offerHoeRecipe(exporter, ModItems.CAST_STEEL_HOE, ModItems.CAST_STEEL);
-*/
+               //Drills
                 createShapeless(RecipeCategory.TOOLS, ModItems.SIMPLE_TUNGSTEN_DRILL, 1)
-                        .input(ModItems.TUNGSTEN_DRILL_BIT)
-                        .input(ModItems.SIMPLE_DRILL_HEAD)
-                        .criterion(hasItem(ModItems.TUNGSTEN_DRILL_BIT), conditionsFromItem(ModItems.TUNGSTEN_DRILL_BIT))
-                        .criterion(hasItem(ModItems.SIMPLE_DRILL_HEAD), conditionsFromItem(ModItems.SIMPLE_DRILL_HEAD))
-                        .offerTo(exporter);
+                        .input(ModItems.TUNGSTEN_DRILL_BIT).input(ModItems.SIMPLE_DRILL_HEAD).criterion(hasItem(ModItems.TUNGSTEN_DRILL_BIT), conditionsFromItem(ModItems.TUNGSTEN_DRILL_BIT))
+                        .criterion(hasItem(ModItems.SIMPLE_DRILL_HEAD), conditionsFromItem(ModItems.SIMPLE_DRILL_HEAD)).offerTo(exporter);
 
                 createShapeless(RecipeCategory.TOOLS, ModItems.ENHANCED_TUNGSTEN_DRILL, 1)
-                        .input(ModItems.TUNGSTEN_DRILL_BIT)
-                        .input(ModItems.ENHANCED_DRILL_HEAD)
-                        .criterion(hasItem(ModItems.TUNGSTEN_DRILL_BIT), conditionsFromItem(ModItems.TUNGSTEN_DRILL_BIT))
-                        .criterion(hasItem(ModItems.ENHANCED_DRILL_HEAD), conditionsFromItem(ModItems.ENHANCED_DRILL_HEAD))
-                        .offerTo(exporter);
+                        .input(ModItems.TUNGSTEN_DRILL_BIT).input(ModItems.ENHANCED_DRILL_HEAD).criterion(hasItem(ModItems.TUNGSTEN_DRILL_BIT), conditionsFromItem(ModItems.TUNGSTEN_DRILL_BIT))
+                        .criterion(hasItem(ModItems.ENHANCED_DRILL_HEAD), conditionsFromItem(ModItems.ENHANCED_DRILL_HEAD)).offerTo(exporter);
 
                 createShapeless(RecipeCategory.TOOLS, ModItems.ADVANCED_TUNGSTEN_DRILL, 1)
-                        .input(ModItems.TUNGSTEN_DRILL_BIT)
-                        .input(ModItems.ADVANCED_DRILL_HEAD)
-                        .criterion(hasItem(ModItems.TUNGSTEN_DRILL_BIT), conditionsFromItem(ModItems.TUNGSTEN_DRILL_BIT))
-                        .criterion(hasItem(ModItems.ADVANCED_DRILL_HEAD), conditionsFromItem(ModItems.ADVANCED_DRILL_HEAD))
-                        .offerTo(exporter);
+                        .input(ModItems.TUNGSTEN_DRILL_BIT).input(ModItems.ADVANCED_DRILL_HEAD).criterion(hasItem(ModItems.TUNGSTEN_DRILL_BIT), conditionsFromItem(ModItems.TUNGSTEN_DRILL_BIT))
+                        .criterion(hasItem(ModItems.ADVANCED_DRILL_HEAD), conditionsFromItem(ModItems.ADVANCED_DRILL_HEAD)).offerTo(exporter);
 
                 createShapeless(RecipeCategory.TOOLS, ModItems.PREMIUM_TUNGSTEN_DRILL, 1)
-                        .input(ModItems.TUNGSTEN_DRILL_BIT)
-                        .input(ModItems.PREMIUM_DRILL_HEAD)
-                        .criterion(hasItem(ModItems.TUNGSTEN_DRILL_BIT), conditionsFromItem(ModItems.TUNGSTEN_DRILL_BIT))
-                        .criterion(hasItem(ModItems.PREMIUM_DRILL_HEAD), conditionsFromItem(ModItems.PREMIUM_DRILL_HEAD))
-                        .offerTo(exporter);
-
-
-              /*  //Armor Recipes
-                ModGenRecipes.offerHelmetRecipe(exporter, ModItems.RAINBOW_PYRITE_HELMET, ModItems.RAINBOW_PYRITE);
-                ModGenRecipes.offerChestplateRecipe(exporter, ModItems.RAINBOW_PYRITE_CHESTPLATE, ModItems.RAINBOW_PYRITE);
-                ModGenRecipes.offerLeggingsRecipe(exporter, ModItems.RAINBOW_PYRITE_LEGGINGS, ModItems.RAINBOW_PYRITE);
-                ModGenRecipes.offerBootsRecipe(exporter, ModItems.RAINBOW_PYRITE_BOOTS, ModItems.RAINBOW_PYRITE);
-                ModGenRecipes.offerHelmetRecipe(exporter, ModItems.TUNGSTEN_HELMET, ModItems.TUNGSTEN);
-                ModGenRecipes.offerChestplateRecipe(exporter, ModItems.TUNGSTEN_CHESTPLATE, ModItems.TUNGSTEN);
-                ModGenRecipes.offerLeggingsRecipe(exporter, ModItems.TUNGSTEN_LEGGINGS, ModItems.TUNGSTEN);
-                ModGenRecipes.offerBootsRecipe(exporter, ModItems.TUNGSTEN_BOOTS, ModItems.TUNGSTEN);
-                ModGenRecipes.offerHelmetRecipe(exporter, ModItems.ALUMINUM_HELMET, ModItems.ALUMINUM);
-                ModGenRecipes.offerChestplateRecipe(exporter, ModItems.ALUMINUM_CHESTPLATE, ModItems.ALUMINUM);
-                ModGenRecipes.offerLeggingsRecipe(exporter, ModItems.ALUMINUM_LEGGINGS, ModItems.ALUMINUM);
-                ModGenRecipes.offerBootsRecipe(exporter, ModItems.ALUMINUM_BOOTS, ModItems.ALUMINUM);
-                ModGenRecipes.offerHelmetRecipe(exporter, ModItems.SAPPHIRE_HELMET, ModItems.SAPPHIRE);
-                ModGenRecipes.offerChestplateRecipe(exporter, ModItems.SAPPHIRE_CHESTPLATE, ModItems.SAPPHIRE);
-                ModGenRecipes.offerLeggingsRecipe(exporter, ModItems.SAPPHIRE_LEGGINGS, ModItems.SAPPHIRE);
-                ModGenRecipes.offerBootsRecipe(exporter, ModItems.SAPPHIRE_BOOTS, ModItems.SAPPHIRE);
-                ModGenRecipes.offerHelmetRecipe(exporter, ModItems.NEPHRITE_HELMET, ModItems.NEPHRITE);
-                ModGenRecipes.offerChestplateRecipe(exporter, ModItems.NEPHRITE_CHESTPLATE, ModItems.NEPHRITE);
-                ModGenRecipes.offerLeggingsRecipe(exporter, ModItems.NEPHRITE_LEGGINGS, ModItems.NEPHRITE);
-                ModGenRecipes.offerBootsRecipe(exporter, ModItems.NEPHRITE_BOOTS, ModItems.NEPHRITE);
-                ModGenRecipes.offerHelmetRecipe(exporter, ModItems.JADEITE_HELMET, ModItems.JADEITE);
-                ModGenRecipes.offerChestplateRecipe(exporter, ModItems.JADEITE_CHESTPLATE, ModItems.JADEITE);
-                ModGenRecipes.offerLeggingsRecipe(exporter, ModItems.JADEITE_LEGGINGS, ModItems.JADEITE);
-                ModGenRecipes.offerBootsRecipe(exporter, ModItems.JADEITE_BOOTS, ModItems.JADEITE);
-                ModGenRecipes.offerHelmetRecipe(exporter, ModItems.PLATINUM_HELMET, ModItems.PLATINUM);
-                ModGenRecipes.offerChestplateRecipe(exporter, ModItems.PLATINUM_CHESTPLATE, ModItems.PLATINUM);
-                ModGenRecipes.offerLeggingsRecipe(exporter, ModItems.PLATINUM_LEGGINGS, ModItems.PLATINUM);
-                ModGenRecipes.offerBootsRecipe(exporter, ModItems.PLATINUM_BOOTS, ModItems.PLATINUM);
-                ModGenRecipes.offerHelmetRecipe(exporter, ModItems.STEEL_HELMET, ModItems.STEEL);
-                ModGenRecipes.offerChestplateRecipe(exporter, ModItems.STEEL_CHESTPLATE, ModItems.STEEL);
-                ModGenRecipes.offerLeggingsRecipe(exporter, ModItems.STEEL_LEGGINGS, ModItems.STEEL);
-                ModGenRecipes.offerBootsRecipe(exporter, ModItems.STEEL_BOOTS, ModItems.STEEL);
-                ModGenRecipes.offerHelmetRecipe(exporter, ModItems.CAST_STEEL_HELMET, ModItems.CAST_STEEL);
-                ModGenRecipes.offerChestplateRecipe(exporter, ModItems.CAST_STEEL_CHESTPLATE, ModItems.CAST_STEEL);
-                ModGenRecipes.offerLeggingsRecipe(exporter, ModItems.CAST_STEEL_LEGGINGS, ModItems.CAST_STEEL);
-                ModGenRecipes.offerBootsRecipe(exporter, ModItems.CAST_STEEL_BOOTS, ModItems.CAST_STEEL);
-
-*/
+                        .input(ModItems.TUNGSTEN_DRILL_BIT).input(ModItems.PREMIUM_DRILL_HEAD).criterion(hasItem(ModItems.TUNGSTEN_DRILL_BIT), conditionsFromItem(ModItems.TUNGSTEN_DRILL_BIT))
+                        .criterion(hasItem(ModItems.PREMIUM_DRILL_HEAD), conditionsFromItem(ModItems.PREMIUM_DRILL_HEAD)).offerTo(exporter);
 
                 //Random
                 createShaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ALUMINUM_GLASS,1)
                         .pattern("###")
                         .pattern("#X#")
                         .pattern("###")
-                        .input('#', ModItems.ALUMINUM)
-                        .input('X', Items.GLASS)
-                        .criterion(hasItem(ModItems.ALUMINUM), conditionsFromItem(ModItems.ALUMINUM))
-                        .criterion(hasItem(Items.GLASS), conditionsFromItem(Items.GLASS))
-                        .offerTo(exporter);
+                        .input('#', ModItems.ALUMINUM).input('X', Items.GLASS).criterion(hasItem(ModItems.ALUMINUM), conditionsFromItem(ModItems.ALUMINUM))
+                        .criterion(hasItem(Items.GLASS), conditionsFromItem(Items.GLASS)).offerTo(exporter);
 
                 createShaped(RecipeCategory.MISC, ModItems.PINKU,1)
                         .pattern(" # ")
                         .pattern("#X#")
                         .pattern(" # ")
-                        .input('#', ModItems.PINKU_SHARD)
-                        .input('X', Items.AMETHYST_SHARD)
-                        .criterion(hasItem(ModItems.PINKU_SHARD), conditionsFromItem(ModItems.PINKU_SHARD))
-                        .criterion(hasItem(Items.AMETHYST_SHARD), conditionsFromItem(Items.AMETHYST_SHARD))
+                        .input('#', ModItems.PINKU_SHARD).input('X', Items.AMETHYST_SHARD)
+                        .criterion(hasItem(ModItems.PINKU_SHARD), conditionsFromItem(ModItems.PINKU_SHARD)).criterion(hasItem(Items.AMETHYST_SHARD), conditionsFromItem(Items.AMETHYST_SHARD))
                         .offerTo(exporter, RegistryKey.of(RegistryKeys.RECIPE, Identifier.of("pinku_from_pinku_shards")));
 
                 createShaped(RecipeCategory.MISC, Blocks.TNT,1)
                         .pattern("X#X")
                         .pattern("#X#")
                         .pattern("X#X")
-                        .input('#', Items.SAND)
-                        .input('X', ModItems.SULFUR)
-                        .criterion(hasItem(ModItems.SULFUR), conditionsFromItem(ModItems.SULFUR))
-                        .criterion(hasItem(Items.SAND), conditionsFromItem(Items.SAND))
-                        .offerTo(exporter);
+                        .input('#', Items.SAND).input('X', ModItems.SULFUR)
+                        .criterion(hasItem(ModItems.SULFUR), conditionsFromItem(ModItems.SULFUR)).criterion(hasItem(Items.SAND), conditionsFromItem(Items.SAND)).offerTo(exporter);
 
                 createShaped(RecipeCategory.MISC, Items.TORCH, 4)
                         .pattern("X")
                         .pattern("#")
-                        .input('X', ModItems.SULFUR)
-                        .input('#', Items.STICK)
-                        .criterion(hasItem(ModItems.SULFUR), conditionsFromItem(ModItems.SULFUR))
-                        .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
-                        .offerTo(exporter);
+                        .input('X', ModItems.SULFUR).input('#', Items.STICK)
+                        .criterion(hasItem(ModItems.SULFUR), conditionsFromItem(ModItems.SULFUR)).criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK)).offerTo(exporter);
 
                 createShaped(RecipeCategory.MISC, ModBlocks.CRUSHER, 1)
                         .pattern("###")
                         .pattern("X X")
                         .pattern("###")
-                        .input('#', ModItems.CAST_STEEL)
-                        .input('X', Items.IRON_INGOT)
-                        .criterion(hasItem(ModItems.CAST_STEEL), conditionsFromItem(ModItems.CAST_STEEL))
-                        .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
-                        .offerTo(exporter);
+                        .input('#', ModItems.CAST_STEEL).input('X', Items.IRON_INGOT)
+                        .criterion(hasItem(ModItems.CAST_STEEL), conditionsFromItem(ModItems.CAST_STEEL)).criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT)).offerTo(exporter);
 
                 createShaped(RecipeCategory.MISC, ModItems.TUNGSTEN_DRILL_BIT, 1)
                         .pattern("   ")
                         .pattern(" # ")
                         .pattern("#X#")
-                        .input('#', ModItems.TUNGSTEN)
-                        .input('X', ModBlocks.BLOCK_OF_TUNGSTEN)
-                        .criterion(hasItem(ModItems.TUNGSTEN), conditionsFromItem(ModItems.TUNGSTEN))
-                        .criterion(hasItem(ModBlocks.BLOCK_OF_TUNGSTEN), conditionsFromItem(ModBlocks.BLOCK_OF_TUNGSTEN))
-                        .offerTo(exporter);
+                        .input('#', ModItems.TUNGSTEN).input('X', ModBlocks.BLOCK_OF_TUNGSTEN)
+                        .criterion(hasItem(ModItems.TUNGSTEN), conditionsFromItem(ModItems.TUNGSTEN)).criterion(hasItem(ModBlocks.BLOCK_OF_TUNGSTEN), conditionsFromItem(ModBlocks.BLOCK_OF_TUNGSTEN)).offerTo(exporter);
 
                 createShaped(RecipeCategory.MISC, ModItems.SIMPLE_DRILL_HEAD, 1)
                         .pattern(" X ")
                         .pattern("#R#")
                         .pattern("###")
-                        .input('X', ModItems.CAST_STEEL)
-                        .input('#', ModBlocks.BLOCK_OF_CAST_STEEL)
-                        .input('R', Items.REDSTONE)
-                        .criterion(hasItem(ModItems.CAST_STEEL), conditionsFromItem(ModItems.CAST_STEEL))
-                        .criterion(hasItem(ModBlocks.BLOCK_OF_CAST_STEEL), conditionsFromItem(ModBlocks.BLOCK_OF_CAST_STEEL))
-                        .criterion(hasItem(Items.REDSTONE), conditionsFromItem(Items.REDSTONE))
-                        .offerTo(exporter);
+                        .input('X', ModItems.CAST_STEEL).input('#', ModBlocks.BLOCK_OF_CAST_STEEL).input('R', Items.REDSTONE).criterion(hasItem(ModItems.CAST_STEEL), conditionsFromItem(ModItems.CAST_STEEL))
+                        .criterion(hasItem(ModBlocks.BLOCK_OF_CAST_STEEL), conditionsFromItem(ModBlocks.BLOCK_OF_CAST_STEEL)).criterion(hasItem(Items.REDSTONE), conditionsFromItem(Items.REDSTONE)).offerTo(exporter);
 
                 createShaped(RecipeCategory.MISC, ModItems.DIAMOND_DRILL_BIT, 1)
                         .pattern("   ")
                         .pattern(" # ")
                         .pattern("###")
-                        .input('#', Blocks.DIAMOND_BLOCK)
-                        .criterion(hasItem(Blocks.DIAMOND_BLOCK), conditionsFromItem(Blocks.DIAMOND_BLOCK))
-                        .offerTo(exporter);
+                        .input('#', Blocks.DIAMOND_BLOCK).criterion(hasItem(Blocks.DIAMOND_BLOCK), conditionsFromItem(Blocks.DIAMOND_BLOCK)).offerTo(exporter);
 
+                //Smithing Template Dupe Recipe
                 createShaped(RecipeCategory.MISC, ModItems.DRILL_UPGRADE_SMITHING_TEMPLATE, 2)
                         .pattern("#X#")
                         .pattern("#U#")
                         .pattern("###")
-                        .input('#', ModItems.CAST_STEEL)
-                        .input('X', ModBlocks.BLOCK_OF_CAST_STEEL)
-                        .input('U', ModItems.DRILL_UPGRADE_SMITHING_TEMPLATE)
-                        .criterion(hasItem(ModItems.CAST_STEEL), conditionsFromItem(ModItems.CAST_STEEL))
-                        .criterion(hasItem(ModBlocks.BLOCK_OF_CAST_STEEL), conditionsFromItem(ModBlocks.BLOCK_OF_CAST_STEEL))
-                        .criterion(hasItem(ModItems.DRILL_UPGRADE_SMITHING_TEMPLATE), conditionsFromItem(ModItems.DRILL_UPGRADE_SMITHING_TEMPLATE))
+                        .input('#', ModItems.CAST_STEEL).input('X', ModBlocks.BLOCK_OF_CAST_STEEL).input('U', ModItems.DRILL_UPGRADE_SMITHING_TEMPLATE)
+                        .criterion(hasItem(ModItems.CAST_STEEL), conditionsFromItem(ModItems.CAST_STEEL)).criterion(hasItem(ModBlocks.BLOCK_OF_CAST_STEEL), conditionsFromItem(ModBlocks.BLOCK_OF_CAST_STEEL)).criterion(hasItem(ModItems.DRILL_UPGRADE_SMITHING_TEMPLATE), conditionsFromItem(ModItems.DRILL_UPGRADE_SMITHING_TEMPLATE))
                         .offerTo(exporter);
             }
         };

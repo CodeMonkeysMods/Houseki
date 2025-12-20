@@ -34,8 +34,7 @@ public class ModBlocks {
             properties -> new Block(properties.mapColor(MapColor.LIGHT_BLUE_GRAY).instrument(NoteBlockInstrument.IRON_XYLOPHONE).requiresTool().strength(40, 1000).sounds(BlockSoundGroup.METAL)));
 
     public static final Block BLOCK_OF_ALUMINUM = registerBlock("block_of_aluminum",
-            properties -> new Block(properties.mapColor(MapColor.WHITE).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
-                    .requiresTool().strength(30, 500).sounds(BlockSoundGroup.METAL)));
+            properties -> new Block(properties.mapColor(MapColor.WHITE).instrument(NoteBlockInstrument.IRON_XYLOPHONE).requiresTool().strength(30, 500).sounds(BlockSoundGroup.METAL)));
 
     public static final Block ALUMINUM_GLASS = registerBlock("aluminum_glass",
             properties -> new TransparentBlock(properties.instrument(NoteBlockInstrument.HAT).strength(2, 1000).sounds(BlockSoundGroup.GLASS)
@@ -103,12 +102,12 @@ public class ModBlocks {
     //Adds Ore
     public static final Block PINKU_ORE = registerBlock("pinku_ore",
             properties -> new Block(properties
-                    .mapColor(MapColor.STONE_GRAY).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().sounds(BlockSoundGroup.NETHERITE).strength(15, 9).luminance(s -> 1))); //10 Moh Scale
-
+                    .mapColor(MapColor.STONE_GRAY).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().sounds(BlockSoundGroup.NETHERITE).strength(15, 9).luminance(s -> 1)));
+                        //10 Moh Scale
     public static final Block RAINBOW_PYRITE_ORE = registerBlock("rainbow_pyrite_ore",
             properties -> new ExperienceDroppingBlock(UniformIntProvider.create(3, 7), properties
-                    .mapColor(MapColor.STONE_GRAY).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(4, 7))); //6 Moh Scale
-
+                    .mapColor(MapColor.STONE_GRAY).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(4, 7)));
+                        //6 Moh Scale
     public static final Block SANDSTONE_RAINBOW_PYRITE_ORE = registerBlock("sandstone_rainbow_pyrite_ore",
             properties -> new ExperienceDroppingBlock(UniformIntProvider.create(3, 7), properties
                     .mapColor(MapColor.PALE_YELLOW).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(4.8F, 7.2F)));
@@ -119,40 +118,40 @@ public class ModBlocks {
 
     public static final Block WOLFRAMITE_ORE = registerBlock("wolframite_ore",
             properties -> new ExperienceDroppingBlock(UniformIntProvider.create(2, 5), properties
-                    .mapColor(MapColor.DIRT_BROWN).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(3, 4))); //4.5 Moh Scale
-
+                    .mapColor(MapColor.DIRT_BROWN).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(3, 4)));
+                        //4.5 Moh Scale
     public static final Block SCHEELITE_ORE = registerBlock("scheelite_ore",
             properties -> new ExperienceDroppingBlock(UniformIntProvider.create(2, 5), properties
-                    .mapColor(MapColor.DARK_RED).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(3, 4).sounds(BlockSoundGroup.NETHERRACK))); //4.5 Moh Scale
-
+                    .mapColor(MapColor.DARK_RED).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(3, 4).sounds(BlockSoundGroup.NETHERRACK)));
+                        //4.5 Moh Scale
     public static final Block DEEPSLATE_SAPPHIRE_ORE = registerBlock("deepslate_sapphire_ore",
             properties -> new ExperienceDroppingBlock(UniformIntProvider.create(5, 8), properties
                     .mapColor(MapColor.DEEPSLATE_GRAY).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(10, 8).sounds(BlockSoundGroup.DEEPSLATE)));
 
     public static final Block SAPPHIRE_ORE = registerBlock("sapphire_ore",
             properties -> new ExperienceDroppingBlock(UniformIntProvider.create(5, 8), properties
-                    .mapColor(MapColor.STONE_GRAY).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(9, 7))); //9 Moh Scale
-
+                    .mapColor(MapColor.STONE_GRAY).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(9, 7)));
+                        //9 Moh Scale
     public static final Block NEPHRITE_ORE = registerBlock("nephrite_ore",
             properties -> new ExperienceDroppingBlock(UniformIntProvider.create(2, 5), properties
-                    .mapColor(MapColor.STONE_GRAY).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(4.5F, 6.5F))); //6.5 Moh Scale
-
+                    .mapColor(MapColor.STONE_GRAY).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(4.5F, 6.5F)));
+                        //6.5 Moh Scale
     public static final Block JADEITE_ORE = registerBlock("jadeite_ore",
             properties -> new ExperienceDroppingBlock(UniformIntProvider.create(2, 5), properties
-                    .mapColor(MapColor.STONE_GRAY).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(5, 7))); //7 Moh Scale
-
+                    .mapColor(MapColor.STONE_GRAY).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(5, 7)));
+                        //7 Moh Scale
     public static final Block PLATINUM_ORE = registerBlock("platinum_ore",
             properties -> new ExperienceDroppingBlock(UniformIntProvider.create(2, 5), properties
-                    .mapColor(MapColor.STONE_GRAY).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(3, 4))); //4.5 Moh Scale
-
+                    .mapColor(MapColor.STONE_GRAY).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(3, 4)));
+                        //4.5 Moh Scale
     public static final Block DEEPSLATE_PLATINUM_ORE = registerBlock("deepslate_platinum_ore",
             properties -> new ExperienceDroppingBlock(UniformIntProvider.create(2, 5), properties
                     .mapColor(MapColor.DEEPSLATE_GRAY).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(3, 4).sounds(BlockSoundGroup.DEEPSLATE)));
 
     public static final Block SULFUR_ORE = registerBlock("sulfur_ore",
             properties -> new ExperienceDroppingBlock(UniformIntProvider.create(2, 5), properties
-                    .mapColor(MapColor.DARK_RED).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(1, 2).sounds(BlockSoundGroup.NETHERRACK))); //Moh scale 1.5
-
+                    .mapColor(MapColor.DARK_RED).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(1, 2).sounds(BlockSoundGroup.NETHERRACK)));
+                        //Moh scale 1.5
     public static final Block BLACKSTONE_SULFUR_ORE = registerBlock("blackstone_sulfur_ore",
             properties -> new ExperienceDroppingBlock(UniformIntProvider.create(2, 5), properties
                     .mapColor(MapColor.BLACK).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(1.5F, 2.5F)));

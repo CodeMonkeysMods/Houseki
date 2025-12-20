@@ -15,7 +15,7 @@ import java.util.List;
 import java.util.function.Consumer;
 
 public class DrillTemplateItem extends SmithingTemplateItem {
-    private static final Formatting DESCRIPTION_FORMATTING = Formatting.RED;
+    private static final Formatting DESCRIPTION_FORMATTING = Formatting.DARK_AQUA;
     private static final Formatting TITLE_FORMATTING = Formatting.BLUE;
     private static final Text DRILL_UPGRADE_TEXT = Text.translatable(Util.createTranslationKey("upgrade", Identifier.of(PizzasOAT.MOD_ID,"drill_upgrade"))).formatted(TITLE_FORMATTING);
     private static final Text DRILL_UPGRADE_APPLIES_TO_TEXT = Text.translatable(Util.createTranslationKey("item", Identifier.of(PizzasOAT.MOD_ID, "smithing_template.drill_upgrade.applies_to"))).formatted(DESCRIPTION_FORMATTING);

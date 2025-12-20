@@ -17,7 +17,6 @@ import net.minecraft.world.World;
 public record CrusherRecipe(Ingredient inputItem, ItemStack output, int crushingTime) implements Recipe<CrusherRecipeInput> {
     public static final int DEFAULT_CRUSHING_TIME = 200;
 
-
     public DefaultedList<Ingredient> getIngredients() {
         DefaultedList<Ingredient> list = DefaultedList.of();
         list.add(this.inputItem);
@@ -38,7 +37,7 @@ public record CrusherRecipe(Ingredient inputItem, ItemStack output, int crushing
         return output.copy();
     }
 
-    public ItemStack getResult(RegistryWrapper.WrapperLookup registriesLookup) {
+    public ItemStack getResult(RegistryWrapper.WrapperLookup ignoredRegistriesLookup) {
         return output;
     }
 
@@ -61,7 +60,6 @@ public record CrusherRecipe(Ingredient inputItem, ItemStack output, int crushing
     public RecipeBookCategory getRecipeBookCategory() {
         return RecipeBookCategories.CRAFTING_MISC;
     }
-
 
     public static class Serializer implements RecipeSerializer<CrusherRecipe> {
         public static final MapCodec<CrusherRecipe> CODEC = RecordCodecBuilder.mapCodec(inst -> inst.group(

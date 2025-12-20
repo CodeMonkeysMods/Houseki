@@ -39,52 +39,37 @@ public class ModPlacedFeatures {
         var configuredFeatureRegistryEntryLookup = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
 
         register(context, PINKU_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.PINKU_ORE_KEY),
-                ModOrePlacement.modifiersWithCount(3, //Veins per Chunk
-                        HeightRangePlacementModifier.uniform(YOffset.fixed(0), YOffset.getTop())));
+                ModOrePlacement.modifiersWithCount(3, /*Veins per Chunk*/HeightRangePlacementModifier.uniform(YOffset.fixed(0), YOffset.getTop())));
 
         register(context, RAINBOW_PYRITE_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.RAINBOW_PYRITE_ORE_KEY),
-                ModOrePlacement.modifiersWithCount(30,
-                        HeightRangePlacementModifier.uniform(YOffset.fixed(10), YOffset.getTop())));
-
+                ModOrePlacement.modifiersWithCount(30, HeightRangePlacementModifier.uniform(YOffset.fixed(10), YOffset.getTop())));
         register(context, SANDSTONE_RAINBOW_PYRITE_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.SANDSTONE_RAINBOW_PYRITE_ORE_KEY),
-                ModOrePlacement.modifiersWithCount(5,
-                        HeightRangePlacementModifier.uniform(YOffset.fixed(10), YOffset.getTop())));
-
+                ModOrePlacement.modifiersWithCount(5, HeightRangePlacementModifier.uniform(YOffset.fixed(10), YOffset.getTop())));
         register(context, BAUXITE_RAINBOW_PYRITE_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.BAUXITE_RAINBOW_PYRITE_ORE_KEY),
-                ModOrePlacement.modifiersWithCount(30,
-                        HeightRangePlacementModifier.uniform(YOffset.fixed(10), YOffset.getTop())));
+                ModOrePlacement.modifiersWithCount(30, HeightRangePlacementModifier.uniform(YOffset.fixed(10), YOffset.getTop())));
 
         register(context, WOLFRAMITE_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.WOLFRAMITE_ORE_KEY),
-                ModOrePlacement.modifiersWithCount(4,
-                        HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.getTop())));
+                ModOrePlacement.modifiersWithCount(4, HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.getTop())));
 
         register(context, SCHEELITE_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.SCHEELITE_ORE_KEY),
-                ModOrePlacement.modifiersWithCount(6,
-                        HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.fixed(64))));
+                ModOrePlacement.modifiersWithCount(6, HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.fixed(64))));
 
         register(context, SAPPHIRE_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.SAPPHIRE_ORE_KEY),
-                ModOrePlacement.modifiersWithCount(5,
-                        HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.fixed(30))));
+                ModOrePlacement.modifiersWithCount(5, HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.fixed(30))));
 
         register(context, NEPHRITE_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.NEPHRITE_ORE_KEY),
-                ModOrePlacement.modifiersWithCount(30,
-                        HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.getTop())));
+                ModOrePlacement.modifiersWithCount(30, HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.getTop())));
 
         register(context, JADEITE_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.JADEITE_ORE_KEY),
-                ModOrePlacement.modifiersWithCount(30,
-                        HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.getTop())));
+                ModOrePlacement.modifiersWithCount(30, HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.getTop())));
 
         register(context, PLATINUM_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.PLATINUM_ORE_KEY),
-                ModOrePlacement.modifiersWithCount(20,
-                        HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.getTop())));
+                ModOrePlacement.modifiersWithCount(20, HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.getTop())));
 
         register(context, SULFUR_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.SULFUR_ORE_KEY),
-                ModOrePlacement.modifiersWithCount(3,
-                        HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.getTop())));
-
+                ModOrePlacement.modifiersWithCount(3, HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.getTop())));
         register(context, BLACKSTONE_SULFUR_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.BLACKSTONE_SULFUR_ORE_KEY),
-                ModOrePlacement.modifiersWithCount(8,
-                        HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.getTop())));
+                ModOrePlacement.modifiersWithCount(8, HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.getTop())));
 
 
         register(context, ORE_LIMESTONE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.ORE_LIMESTONE_KEY),
@@ -105,8 +90,7 @@ public class ModPlacedFeatures {
     }
 
     private static <FC extends FeatureConfig, F extends Feature<FC>> void register(Registerable<PlacedFeature> context, RegistryKey<PlacedFeature> key,
-                                                                                   RegistryEntry<ConfiguredFeature<?, ?>> configuration,
-                                                                                   PlacementModifier... modifiers) {
+                                                                                   RegistryEntry<ConfiguredFeature<?, ?>> configuration, PlacementModifier... modifiers) {
         register(context, key, configuration, List.of(modifiers));
     }
 }

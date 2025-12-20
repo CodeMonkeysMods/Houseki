@@ -29,7 +29,6 @@ public class EnhancedDrillItem extends Item {
                     }
                 }
             }
-
             if (blockHit.getSide() == Direction.NORTH || blockHit.getSide() == Direction.SOUTH) {
                 for (int x = -range; x <= range; x++) {
                     for (int y = -range; y <= range; y++) {
@@ -37,7 +36,6 @@ public class EnhancedDrillItem extends Item {
                     }
                 }
             }
-
             if (blockHit.getSide() == Direction.EAST || blockHit.getSide() == Direction.WEST) {
                 for (int x = -range; x <= range; x++) {
                     for (int y = -range; y <= range; y++) {
@@ -46,7 +44,6 @@ public class EnhancedDrillItem extends Item {
                 }
             }
         }
-
         return positions;
     }
 }

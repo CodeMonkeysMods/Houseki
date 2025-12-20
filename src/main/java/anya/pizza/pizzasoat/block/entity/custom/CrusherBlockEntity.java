@@ -47,7 +47,7 @@ public class CrusherBlockEntity extends BlockEntity implements ExtendedScreenHan
     private int maxProgress = CrusherRecipe.DEFAULT_CRUSHING_TIME;
     private int fuelTime = 0;
     private int maxFuelTime = 0;
-    private int lastValidFuelTime = 0;
+    private final int lastValidFuelTime = 0;
     private boolean isCrafting = false;
     private ItemStack lastInput = ItemStack.EMPTY; //Cache input to detect changes
 
@@ -138,7 +138,7 @@ public class CrusherBlockEntity extends BlockEntity implements ExtendedScreenHan
         if (world.isClient()) return;
 
         boolean dirty = false;
-        ItemStack input = inventory.get(INPUT_SLOT);
+        ItemStack input = inventory.getFirst();
 
         if(!ItemStack.areItemsAndComponentsEqual(input, lastInput)) {
             lastInput = input.copy();
@@ -200,7 +200,7 @@ public class CrusherBlockEntity extends BlockEntity implements ExtendedScreenHan
         Optional<RecipeEntry<CrusherRecipe>> recipe = getCurrentRecipe();
         if (recipe.isEmpty()) return;
 
-        inventory.get(INPUT_SLOT).decrement(1);
+        inventory.getFirst().decrement(1);
         ItemStack outputSlot = inventory.get(OUTPUT_SLOT);
         ItemStack result = recipe.get().value().output().copy();
         if (outputSlot.isEmpty()) {
@@ -212,7 +212,7 @@ public class CrusherBlockEntity extends BlockEntity implements ExtendedScreenHan
 
     private Optional<RecipeEntry<CrusherRecipe>> getCurrentRecipe() {
         return ((ServerWorld) this.getWorld()).getRecipeManager()
-                .getFirstMatch(ModRecipes.CRUSHER_TYPE, new CrusherRecipeInput(inventory.get(INPUT_SLOT)), this.getWorld());
+                .getFirstMatch(ModRecipes.CRUSHER_TYPE, new CrusherRecipeInput(inventory.getFirst()), this.getWorld());
 
     }
 

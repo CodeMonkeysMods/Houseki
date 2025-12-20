@@ -9,12 +9,9 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 public class CrusherScreen extends HandledScreen<CrusherScreenHandler> {
-    private static final Identifier GUI_TEXTURE =
-            Identifier.of(PizzasOAT.MOD_ID, "textures/gui/crusher/crusher_gui.png");
-    private static final Identifier ARROW_TEXTURE =
-            Identifier.of(PizzasOAT.MOD_ID, "textures/gui/crusher/crush_progress.png");
-    private static final Identifier CRUSHING_TEXTURE =
-            Identifier.of(PizzasOAT.MOD_ID, "textures/gui/crusher/crushing_progress.png");
+    private static final Identifier GUI_TEXTURE = Identifier.of(PizzasOAT.MOD_ID, "textures/gui/crusher/crusher_gui.png");
+    private static final Identifier ARROW_TEXTURE = Identifier.of(PizzasOAT.MOD_ID, "textures/gui/crusher/crush_progress.png");
+    private static final Identifier CRUSHING_TEXTURE = Identifier.of(PizzasOAT.MOD_ID, "textures/gui/crusher/crushing_progress.png");
 
     public CrusherScreen(CrusherScreenHandler handler, PlayerInventory inventory, Text title) {
         super(handler, inventory, title);
@@ -33,12 +30,11 @@ public class CrusherScreen extends HandledScreen<CrusherScreenHandler> {
     @Override
     protected void drawBackground(DrawContext context, float delta, int mouseX, int mouseY) {
         int x = (width - backgroundWidth) / 2;
-        int y = (height - backgroundHeight) / 2; //- 10;
+        int y = (height - backgroundHeight) / 2;
 
         context.drawTexture(RenderPipelines.GUI_TEXTURED, GUI_TEXTURE, x, y, 0, 0, 176, 176, 256, 256);
         renderProgressArrow(context, x, y);
         renderProgressCrushing(context, x, y);
-
     }
 
     private void renderProgressArrow(DrawContext context, int x, int y) {
@@ -55,7 +51,6 @@ public class CrusherScreen extends HandledScreen<CrusherScreenHandler> {
                     20 - progress, 6, progress, 6, 20);
         }
     }
-
 
     @Override
     public void render(DrawContext context, int mouseX, int mouseY, float delta) {

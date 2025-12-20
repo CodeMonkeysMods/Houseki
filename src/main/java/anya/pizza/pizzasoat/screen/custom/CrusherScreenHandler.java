@@ -25,14 +25,12 @@ public class CrusherScreenHandler extends ScreenHandler {
         this(syncId, inventory, inventory.player.getEntityWorld().getBlockEntity(pos), new ArrayPropertyDelegate(5));
     }
 
-    public CrusherScreenHandler(int syncId, PlayerInventory playerInventory,
-                                BlockEntity blockEntity, PropertyDelegate arrayPropertyDelegate) {
+    public CrusherScreenHandler(int syncId, PlayerInventory playerInventory, BlockEntity blockEntity, PropertyDelegate arrayPropertyDelegate) {
         super(ModScreenHandlers.CRUSHER_SCREEN_HANDLER, syncId);
         checkSize((Inventory) blockEntity, 3);
         this.inventory = (Inventory) blockEntity;
         this.propertyDelegate = arrayPropertyDelegate;
         this.blockEntity = (CrusherBlockEntity) blockEntity;
-
         this.addSlot(new Slot(inventory, 0, 35, -5));
         this.addSlot(new Slot(inventory, 1, 13, 41));
         this.addSlot(new Slot(inventory, 2, 116, 30) {
@@ -44,7 +42,6 @@ public class CrusherScreenHandler extends ScreenHandler {
 
         addPlayerInventory(playerInventory);
         addPlayerHotbar(playerInventory);
-
         addProperties(arrayPropertyDelegate);
     }
 
@@ -75,11 +72,9 @@ public class CrusherScreenHandler extends ScreenHandler {
     public ItemStack quickMove(PlayerEntity player, int invSlot) {
         ItemStack movedStack = ItemStack.EMPTY;
         Slot slot = this.slots.get(invSlot);
-
         if (slot != null && slot.hasStack()) {
             ItemStack originalStack = slot.getStack();
             movedStack = originalStack.copy();
-
             if (invSlot < inventory.size()) {
                 if (!insertItem(originalStack,
                         inventory.size(),
@@ -97,7 +92,6 @@ public class CrusherScreenHandler extends ScreenHandler {
                     boolean hasCrusherRecipe = serverWorld.getRecipeManager()
                             .getFirstMatch(ModRecipes.CRUSHER_TYPE, recipeInput, serverWorld)
                             .isPresent();
-
                     if (hasCrusherRecipe) {
                         if (!insertItem(originalStack, 0, 1, false)) {
                             return ItemStack.EMPTY;
@@ -109,14 +103,12 @@ public class CrusherScreenHandler extends ScreenHandler {
                     return ItemStack.EMPTY;
                 }
             }
-
             if (originalStack.isEmpty()) {
                 slot.setStack(ItemStack.EMPTY);
             } else {
                 slot.markDirty();
             }
         }
-
         return movedStack;
     }
 
