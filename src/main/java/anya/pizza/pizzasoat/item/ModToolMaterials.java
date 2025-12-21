@@ -22,6 +22,5 @@ public class ModToolMaterials {
     public static ToolMaterial PLATINUM = new ToolMaterial(ModTags.Blocks.INCORRECT_FOR_PLATINUM_TOOL, 3000, 9, 4.5f, 15, ModTags.Items.PLATINUM_REPAIR);
     public static ToolMaterial STEEL = new ToolMaterial(ModTags.Blocks.INCORRECT_FOR_STEEL_TOOL, 2500, 8.5f, 4, 15, ModTags.Items.STEEL_REPAIR);
     public static ToolMaterial CAST_STEEL = new ToolMaterial(ModTags.Blocks.INCORRECT_FOR_CAST_STEEL_TOOL, 3000, 9, 4.5f, 15, ModTags.Items.CAST_STEEL_REPAIR);
-
 }
 
