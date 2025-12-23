@@ -52,6 +52,8 @@ public class ModTags {
         public static final TagKey<Item> DRILL_BITS = createTag("drill_bits");
         public static final TagKey<Item> SMITHING_TEMPLATES = createTag("smithing_templates");
 
+        public static final TagKey<Item> ARMOR = createTag("armor");
+
         private static TagKey<Item> createTag(String name) {
             return TagKey.of(RegistryKeys.ITEM, Identifier.of(PizzasOAT.MOD_ID, name));
         }
