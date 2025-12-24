@@ -211,5 +211,16 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.CAST_STEEL_HORSE_ARMOR, Models.GENERATED);
         itemModelGenerator.register(ModItems.NEPHRITE_HORSE_ARMOR, Models.GENERATED);
         itemModelGenerator.register(ModItems.JADEITE_HORSE_ARMOR, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.PINKU_NAUTILUS_ARMOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RAINBOW_PYRITE_NAUTILUS_ARMOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.TUNGSTEN_NAUTILUS_ARMOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ALUMINUM_NAUTILUS_ARMOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SAPPHIRE_NAUTILUS_ARMOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PLATINUM_NAUTILUS_ARMOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.STEEL_NAUTILUS_ARMOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CAST_STEEL_NAUTILUS_ARMOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.NEPHRITE_NAUTILUS_ARMOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.JADEITE_NAUTILUS_ARMOR, Models.GENERATED);
     }
 }

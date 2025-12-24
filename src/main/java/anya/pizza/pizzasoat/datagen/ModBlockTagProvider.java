@@ -159,5 +159,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .addTag(BlockTags.PICKAXE_MINEABLE)
                 .addOptionalTag(BlockTags.SHOVEL_MINEABLE)
                 .addOptionalTag(BlockTags.AXE_MINEABLE);
+
+        valueLookupBuilder(ModTags.Blocks.ENHANCED_DRILL_MINEABLE)
+                .addTag(BlockTags.PICKAXE_MINEABLE)
+                .addOptionalTag(BlockTags.SHOVEL_MINEABLE);
     }
 }

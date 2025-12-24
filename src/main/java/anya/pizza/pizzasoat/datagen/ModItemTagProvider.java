@@ -199,6 +199,28 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.STEEL_HELMET)
                 .add(ModItems.CAST_STEEL_HELMET);
 
+        valueLookupBuilder(ModTags.Items.MOB_ARMORS)
+                .add(ModItems.PINKU_HORSE_ARMOR)
+                .add(ModItems.RAINBOW_PYRITE_HORSE_ARMOR)
+                .add(ModItems.TUNGSTEN_HORSE_ARMOR)
+                .add(ModItems.ALUMINUM_HORSE_ARMOR)
+                .add(ModItems.SAPPHIRE_HORSE_ARMOR)
+                .add(ModItems.NEPHRITE_HORSE_ARMOR)
+                .add(ModItems.JADEITE_HORSE_ARMOR)
+                .add(ModItems.PLATINUM_HORSE_ARMOR)
+                .add(ModItems.STEEL_HORSE_ARMOR)
+                .add(ModItems.CAST_STEEL_HORSE_ARMOR)
+                .add(ModItems.PINKU_NAUTILUS_ARMOR)
+                .add(ModItems.RAINBOW_PYRITE_NAUTILUS_ARMOR)
+                .add(ModItems.TUNGSTEN_NAUTILUS_ARMOR)
+                .add(ModItems.ALUMINUM_NAUTILUS_ARMOR)
+                .add(ModItems.SAPPHIRE_NAUTILUS_ARMOR)
+                .add(ModItems.NEPHRITE_NAUTILUS_ARMOR)
+                .add(ModItems.JADEITE_NAUTILUS_ARMOR)
+                .add(ModItems.PLATINUM_NAUTILUS_ARMOR)
+                .add(ModItems.STEEL_NAUTILUS_ARMOR)
+                .add(ModItems.CAST_STEEL_NAUTILUS_ARMOR);
+
         valueLookupBuilder(ModTags.Items.PINKU_REPAIR)
                 .add(ModItems.PINKU);
         valueLookupBuilder(ModTags.Items.RAINBOW_REPAIR)

@@ -19,6 +19,11 @@
       {
         "texture": "pizzasoat:nephrite"
       }
+    ],
+    "nautilus_body": [
+      {
+        "texture": "pizzasoat:nephrite"
+      }
     ]
   }
 }

@@ -180,6 +180,18 @@ public class ModItems {
     public static final Item NEPHRITE_HORSE_ARMOR = registerItem("nephrite_horse_armor", setting -> new Item(setting.horseArmor(ModArmorMaterials.NEPHRITE_MATERIAL).maxCount(1)));
     public static final Item JADEITE_HORSE_ARMOR = registerItem("jadeite_horse_armor", setting -> new Item(setting.horseArmor(ModArmorMaterials.JADEITE_MATERIAL).maxCount(1)));
 
+    //Nautilus Armor
+    public static final Item PINKU_NAUTILUS_ARMOR = registerItem("pinku_nautilus_armor", setting -> new Item(setting.nautilusArmor(ModArmorMaterials.PINKU_MATERIAL).maxCount(1)));
+    public static final Item RAINBOW_PYRITE_NAUTILUS_ARMOR = registerItem("rainbow_pyrite_nautilus_armor", setting -> new Item(setting.nautilusArmor(ModArmorMaterials.RAINBOW_MATERIAL).maxCount(1)));
+    public static final Item TUNGSTEN_NAUTILUS_ARMOR = registerItem("tungsten_nautilus_armor", setting -> new Item(setting.nautilusArmor(ModArmorMaterials.TUNGSTEN_MATERIAL).maxCount(1).fireproof()));
+    public static final Item ALUMINUM_NAUTILUS_ARMOR = registerItem("aluminum_nautilus_armor", setting -> new Item(setting.nautilusArmor(ModArmorMaterials.ALUMINUM_MATERIAL).maxCount(1)));
+    public static final Item SAPPHIRE_NAUTILUS_ARMOR = registerItem("sapphire_nautilus_armor", setting -> new Item(setting.nautilusArmor(ModArmorMaterials.SAPPHIRE_MATERIAL).maxCount(1)));
+    public static final Item PLATINUM_NAUTILUS_ARMOR = registerItem("platinum_nautilus_armor", setting -> new Item(setting.nautilusArmor(ModArmorMaterials.PLATINUM_MATERIAL).maxCount(1)));
+    public static final Item STEEL_NAUTILUS_ARMOR = registerItem("steel_nautilus_armor", setting -> new Item(setting.nautilusArmor(ModArmorMaterials.STEEL_MATERIAL).maxCount(1)));
+    public static final Item CAST_STEEL_NAUTILUS_ARMOR = registerItem("cast_steel_nautilus_armor", setting -> new Item(setting.nautilusArmor(ModArmorMaterials.CAST_STEEL_MATERIAL).maxCount(1)));
+    public static final Item NEPHRITE_NAUTILUS_ARMOR = registerItem("nephrite_nautilus_armor", setting -> new Item(setting.nautilusArmor(ModArmorMaterials.NEPHRITE_MATERIAL).maxCount(1)));
+    public static final Item JADEITE_NAUTILUS_ARMOR = registerItem("jadeite_nautilus_armor", setting -> new Item(setting.nautilusArmor(ModArmorMaterials.JADEITE_MATERIAL).maxCount(1)));
+
 
     private static Item registerItem(String name, Function<Item.Settings, Item> function) {
         return Registry.register(Registries.ITEM, Identifier.of(PizzasOAT.MOD_ID, name),

@@ -1,1 +1,3 @@
-Nautilus Armor
+fix Modrecipes
+Fix datagen for smithing templates in other vers
+at smithing recipe for pinku nautilus

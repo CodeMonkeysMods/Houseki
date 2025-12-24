@@ -18,10 +18,11 @@ public class ModLootTableModifiers {
     private static final Identifier ABANDONED_MINESHAFT_ID = Identifier.of("minecraft", "chests/abandoned_mineshaft");
     private static final Identifier ANCIENT_CITY_ID = Identifier.of("minecraft", "chests/ancient_city");
     private static final Identifier BASTION_TREASURE_ID = Identifier.of("minecraft", "chests/bastion_treasure");
-    private static final Identifier BURIED_TREASURE_ID = Identifier.of("minecraft", "chest/buried_treasure");
+    private static final Identifier BURIED_TREASURE_ID = Identifier.of("minecraft", "chests/buried_treasure");
     private static final Identifier DESERT_PYRAMID_ID = Identifier.of("minecraft", "chests/desert/pyramid");
     private static final Identifier END_CITY_TREASURE_ID = Identifier.of("minecraft", "chests/end_city_treasure");
     private static final Identifier JUNGLE_TEMPLE_ID = Identifier.of("minecraft", "chests/jungle_temple");
+    private static final Identifier OCEAN_RUINS_ID = Identifier.of("minecraft", "chests/underwater_run_big");
     private static final Identifier PILLAGER_OUTPOST_ID = Identifier.of("minecraft", "chests/pillager_outpost");
     private static final Identifier SHIPWRECK_TREASURE_ID = Identifier.of("minecraft", "chests/shipwreck_treasure");
     private static final Identifier STRONGHOLD_CORRIDOR_ID = Identifier.of("minecraft", "chests/stronghold_corridor");
@@ -256,6 +257,14 @@ public class ModLootTableModifiers {
                                 .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f))))
                         .with(ItemEntry.builder(ModItems.ALUMINUM_SWORD).weight(3)
                                 .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f))))
+                        .with(ItemEntry.builder(ModItems.RAINBOW_PYRITE_NAUTILUS_ARMOR).weight(3)
+                                .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f))))
+                        .with(ItemEntry.builder(ModItems.ALUMINUM_NAUTILUS_ARMOR).weight(3)
+                                .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f))))
+                        .with(ItemEntry.builder(ModItems.TUNGSTEN_NAUTILUS_ARMOR).weight(2)
+                                .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f))))
+                        .with(ItemEntry.builder(ModItems.SAPPHIRE_NAUTILUS_ARMOR).weight(1)
+                                .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f))))
                         .with(ItemEntry.builder(ModItems.PINKU_SHARD).weight(1)
                                 .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f))));
                 tableBuilder.pool(poolBuilder.build());
@@ -382,6 +391,24 @@ public class ModLootTableModifiers {
                 tableBuilder.pool(poolBuilder.build());
             }
 
+            if (OCEAN_RUINS_ID.equals(key.getValue())) {
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(UniformLootNumberProvider.create(1f, 2f))
+                        .with(ItemEntry.builder(ModItems.RAINBOW_PYRITE_NAUTILUS_ARMOR).weight(3)
+                                .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f))))
+                        .with(ItemEntry.builder(ModItems.STEEL_NAUTILUS_ARMOR).weight(3)
+                                .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f))))
+                        .with(ItemEntry.builder(ModItems.ALUMINUM_NAUTILUS_ARMOR).weight(3)
+                                .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f))))
+                        .with(ItemEntry.builder(ModItems.CAST_STEEL_NAUTILUS_ARMOR).weight(2)
+                                .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f))))
+                        .with(ItemEntry.builder(ModItems.TUNGSTEN_NAUTILUS_ARMOR).weight(2)
+                                .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f))))
+                        .with(ItemEntry.builder(ModItems.SAPPHIRE_NAUTILUS_ARMOR).weight(1)
+                                .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f))));
+                tableBuilder.pool(poolBuilder.build());
+            }
+
             if (PILLAGER_OUTPOST_ID.equals(key.getValue())) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(UniformLootNumberProvider.create(1f, 3f))
@@ -416,7 +443,15 @@ public class ModLootTableModifiers {
                         .with(ItemEntry.builder(ModItems.TUNGSTEN).weight(5)
                                 .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 2.0f))))
                         .with(ItemEntry.builder(ModItems.PLATINUM_NUGGET).weight(5)
-                                .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 2.0f))));
+                                .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 2.0f))))
+                        .with(ItemEntry.builder(ModItems.RAINBOW_PYRITE_NAUTILUS_ARMOR).weight(3)
+                                .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f))))
+                        .with(ItemEntry.builder(ModItems.NEPHRITE_NAUTILUS_ARMOR).weight(3)
+                                .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f))))
+                        .with(ItemEntry.builder(ModItems.TUNGSTEN_NAUTILUS_ARMOR).weight(2)
+                                .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f))))
+                        .with(ItemEntry.builder(ModItems.JADEITE_NAUTILUS_ARMOR).weight(1)
+                                .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f))));
                 tableBuilder.pool(poolBuilder.build());
             }
 

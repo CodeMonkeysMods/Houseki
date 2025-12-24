@@ -19,6 +19,11 @@
       {
         "texture": "pizzasoat:jadeite"
       }
+    ],
+    "nautilus_body": [
+      {
+        "texture": "pizzasoat:jadeite"
+      }
     ]
   }
 }

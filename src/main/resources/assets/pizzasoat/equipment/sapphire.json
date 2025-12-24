@@ -19,6 +19,11 @@
       {
         "texture": "pizzasoat:sapphire"
       }
+    ],
+    "nautilus_body": [
+      {
+        "texture": "pizzasoat:sapphire"
+      }
     ]
   }
 }

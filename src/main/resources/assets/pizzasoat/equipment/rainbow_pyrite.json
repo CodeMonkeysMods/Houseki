@@ -19,6 +19,11 @@
       {
         "texture": "pizzasoat:rainbow_pyrite"
       }
+    ],
+    "nautilus_body": [
+      {
+        "texture": "pizzasoat:rainbow_pyrite"
+      }
     ]
   }
 }
