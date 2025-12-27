@@ -22,7 +22,7 @@ public class ModLootTableModifiers {
     private static final Identifier BASTION_TREASURE_ID =
             Identifier.of("minecraft", "chests/bastion_treasure");
     private static final Identifier BURIED_TREASURE_ID =
-            Identifier.of("minecraft", "chest/buried_treasure");
+            Identifier.of("minecraft", "chests/buried_treasure");
     private static final Identifier DESERT_PYRAMID_ID =
             Identifier.of("minecraft", "chests/desert/pyramid");
     private static final Identifier END_CITY_TREASURE_ID =

@@ -30,12 +30,12 @@ public class ModBlocks {
     public static final Block BLOCK_OF_RAINBOW_PYRITE = registerBlock("block_of_rainbow_pyrite",
             properties -> new Block(properties.mapColor(MapColor.LIGHT_BLUE).instrument(NoteBlockInstrument.IRON_XYLOPHONE).requiresTool().strength(5, 6).sounds(BlockSoundGroup.METAL)));
 
-    public static final Block BLOCK_OF_TUNGSTEN = registerBlock("block_of_tungsten",
-            properties -> new Block(properties.mapColor(MapColor.LIGHT_BLUE_GRAY).instrument(NoteBlockInstrument.IRON_XYLOPHONE).requiresTool().strength(40, 1000).sounds(BlockSoundGroup.METAL)));
+    public static final Block BLOCK_OF_TUNGSTEN_B = registerBlock("block_of_tungsten_b",
+            properties -> new Block(properties.mapColor(MapColor.LIGHT_BLUE_GRAY).instrument(NoteBlockInstrument.IRON_XYLOPHONE).requiresTool().strength(10, 1000).sounds(BlockSoundGroup.METAL)));
 
     public static final Block BLOCK_OF_ALUMINUM = registerBlock("block_of_aluminum",
             properties -> new Block(properties.mapColor(MapColor.WHITE).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
-                    .requiresTool().strength(30, 500).sounds(BlockSoundGroup.METAL)));
+                    .requiresTool().strength(8, 500).sounds(BlockSoundGroup.METAL)));
 
     public static final Block ALUMINUM_GLASS = registerBlock("aluminum_glass",
             properties -> new TransparentBlock(properties.instrument(NoteBlockInstrument.HAT).strength(2, 1000).sounds(BlockSoundGroup.GLASS)
@@ -55,7 +55,7 @@ public class ModBlocks {
             });
 
     public static final Block BLOCK_OF_SAPPHIRE = registerBlock("block_of_sapphire",
-            properties -> new Block(properties.mapColor(MapColor.BLUE).requiresTool().strength(45, 500).sounds(BlockSoundGroup.NETHERITE)));
+            properties -> new Block(properties.mapColor(MapColor.BLUE).requiresTool().strength(9, 500).sounds(BlockSoundGroup.NETHERITE)));
 
     public static final Block BLOCK_OF_JADEITE = registerBlock("block_of_jadeite",
             properties -> new Block(properties.mapColor(MapColor.PALE_GREEN).requiresTool().strength(5, 6).sounds(BlockSoundGroup.METAL)));
@@ -93,7 +93,7 @@ public class ModBlocks {
     public static final Block BLOCK_OF_STEEL = registerBlock("block_of_steel",
             properties -> new Block(properties.mapColor(MapColor.LIGHT_BLUE_GRAY).instrument(NoteBlockInstrument.IRON_XYLOPHONE).requiresTool().strength(4.5F, 5.5F).sounds(BlockSoundGroup.METAL)));
 
-    public static final Block BLOCK_OF_CAST_STEEL = registerBlock("block_of_cast_steel",
+    public static final Block BLOCK_OF_CAST_STEEL_B = registerBlock("block_of_cast_steel_b",
             properties -> new Block(properties.mapColor(MapColor.LIGHT_BLUE_GRAY).instrument(NoteBlockInstrument.IRON_XYLOPHONE).requiresTool().strength(5.5F, 6.5F).sounds(BlockSoundGroup.METAL)));
 
     public static final Block BAUXITE = registerBlock("bauxite",
