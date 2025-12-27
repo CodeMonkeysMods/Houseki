@@ -71,14 +71,14 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 //Block Reversing Recipes
                 offerReversibleCompactingRecipes(RecipeCategory.BUILDING_BLOCKS, ModItems.PINKU, RecipeCategory.DECORATIONS, ModBlocks.BLOCK_OF_PINKU);
                 offerReversibleCompactingRecipes(RecipeCategory.BUILDING_BLOCKS, ModItems.RAINBOW_PYRITE, RecipeCategory.DECORATIONS, ModBlocks.BLOCK_OF_RAINBOW_PYRITE);
-                offerReversibleCompactingRecipes(RecipeCategory.BUILDING_BLOCKS, ModItems.TUNGSTEN, RecipeCategory.DECORATIONS, ModBlocks.BLOCK_OF_TUNGSTEN);
+                offerReversibleCompactingRecipes(RecipeCategory.BUILDING_BLOCKS, ModItems.TUNGSTEN, RecipeCategory.DECORATIONS, ModBlocks.BLOCK_OF_TUNGSTEN_B);
                 offerReversibleCompactingRecipes(RecipeCategory.BUILDING_BLOCKS, ModItems.ALUMINUM, RecipeCategory.DECORATIONS, ModBlocks.BLOCK_OF_ALUMINUM);
                 offerReversibleCompactingRecipes(RecipeCategory.BUILDING_BLOCKS, ModItems.SAPPHIRE, RecipeCategory.DECORATIONS, ModBlocks.BLOCK_OF_SAPPHIRE);
                 offerReversibleCompactingRecipes(RecipeCategory.BUILDING_BLOCKS, ModItems.JADEITE, RecipeCategory.DECORATIONS, ModBlocks.BLOCK_OF_JADEITE);
                 offerReversibleCompactingRecipes(RecipeCategory.BUILDING_BLOCKS, ModItems.PLATINUM, RecipeCategory.DECORATIONS, ModBlocks.BLOCK_OF_PLATINUM);
                 offerReversibleCompactingRecipes(RecipeCategory.BUILDING_BLOCKS, ModItems.SULFUR, RecipeCategory.DECORATIONS, ModBlocks.BLOCK_OF_SULFUR);
                 offerReversibleCompactingRecipes(RecipeCategory.BUILDING_BLOCKS, ModItems.STEEL, RecipeCategory.DECORATIONS, ModBlocks.BLOCK_OF_STEEL);
-                offerReversibleCompactingRecipes(RecipeCategory.BUILDING_BLOCKS, ModItems.CAST_STEEL, RecipeCategory.DECORATIONS, ModBlocks.BLOCK_OF_CAST_STEEL);
+                offerReversibleCompactingRecipes(RecipeCategory.BUILDING_BLOCKS, ModItems.CAST_STEEL, RecipeCategory.DECORATIONS, ModBlocks.BLOCK_OF_CAST_STEEL_B);
 
 
                 //Smelting Recipes
@@ -255,16 +255,16 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 offerWallRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_SLATE_WALL, ModBlocks.POLISHED_SLATE);
 
                 //Stair Recipes
-                createStairsRecipe(ModBlocks.LIMESTONE_STAIRS, Ingredient.ofItem(ModBlocks.LIMESTONE));
-                createStairsRecipe(ModBlocks.LIMESTONE_BRICK_STAIRS, Ingredient.ofItem(ModBlocks.LIMESTONE_BRICKS));
-                createStairsRecipe(ModBlocks.POLISHED_LIMESTONE_STAIRS, Ingredient.ofItem(ModBlocks.POLISHED_LIMESTONE));
-                createStairsRecipe(ModBlocks.SLATE_STAIRS, Ingredient.ofItem(ModBlocks.SLATE));
-                createStairsRecipe(ModBlocks.SLATE_TILE_STAIRS, Ingredient.ofItem(ModBlocks.SLATE_TILES));
-                createStairsRecipe(ModBlocks.POLISHED_SLATE_STAIRS, Ingredient.ofItem(ModBlocks.POLISHED_SLATE));
+                createStairsRecipe(ModBlocks.LIMESTONE_STAIRS, Ingredient.ofItem(ModBlocks.LIMESTONE)).criterion(hasItem(ModBlocks.LIMESTONE), conditionsFromItem(ModBlocks.LIMESTONE)).offerTo(exporter);
+                createStairsRecipe(ModBlocks.LIMESTONE_BRICK_STAIRS, Ingredient.ofItem(ModBlocks.LIMESTONE_BRICKS)).criterion(hasItem(ModBlocks.LIMESTONE_BRICKS), conditionsFromItem(ModBlocks.LIMESTONE_BRICKS)).offerTo(exporter);
+                createStairsRecipe(ModBlocks.POLISHED_LIMESTONE_STAIRS, Ingredient.ofItem(ModBlocks.POLISHED_LIMESTONE)).criterion(hasItem(ModBlocks.POLISHED_LIMESTONE), conditionsFromItem(ModBlocks.POLISHED_LIMESTONE)).offerTo(exporter);;
+                createStairsRecipe(ModBlocks.SLATE_STAIRS, Ingredient.ofItem(ModBlocks.SLATE)).criterion(hasItem(ModBlocks.SLATE), conditionsFromItem(ModBlocks.SLATE)).offerTo(exporter);
+                createStairsRecipe(ModBlocks.SLATE_TILE_STAIRS, Ingredient.ofItem(ModBlocks.SLATE_TILES)).criterion(hasItem(ModBlocks.SLATE_TILES), conditionsFromItem(ModBlocks.SLATE_TILES)).offerTo(exporter);
+                createStairsRecipe(ModBlocks.POLISHED_SLATE_STAIRS, Ingredient.ofItem(ModBlocks.POLISHED_SLATE)).criterion(hasItem(ModBlocks.POLISHED_SLATE), conditionsFromItem(ModBlocks.POLISHED_SLATE)).offerTo(exporter);
 
                 //Door Recipes
-                createDoorRecipe(ModBlocks.ALUMINUM_DOOR, Ingredient.ofItem(ModItems.ALUMINUM));
-                createTrapdoorRecipe(ModBlocks.ALUMINUM_TRAPDOOR, Ingredient.ofItem(ModItems.ALUMINUM));
+                createDoorRecipe(ModBlocks.ALUMINUM_DOOR, Ingredient.ofItem(ModItems.ALUMINUM)).criterion(hasItem(ModItems.ALUMINUM), conditionsFromItem(ModItems.ALUMINUM)).offerTo(exporter);
+                createTrapdoorRecipe(ModBlocks.ALUMINUM_TRAPDOOR, Ingredient.ofItem(ModItems.ALUMINUM)).criterion(hasItem(ModItems.ALUMINUM), conditionsFromItem(ModItems.ALUMINUM)).offerTo(exporter);
 
                //Drills
                 createShapeless(RecipeCategory.TOOLS, ModItems.SIMPLE_TUNGSTEN_DRILL, 1)
@@ -323,15 +323,15 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .pattern("   ")
                         .pattern(" # ")
                         .pattern("#X#")
-                        .input('#', ModItems.TUNGSTEN).input('X', ModBlocks.BLOCK_OF_TUNGSTEN)
-                        .criterion(hasItem(ModItems.TUNGSTEN), conditionsFromItem(ModItems.TUNGSTEN)).criterion(hasItem(ModBlocks.BLOCK_OF_TUNGSTEN), conditionsFromItem(ModBlocks.BLOCK_OF_TUNGSTEN)).offerTo(exporter);
+                        .input('#', ModItems.TUNGSTEN).input('X', ModBlocks.BLOCK_OF_TUNGSTEN_B)
+                        .criterion(hasItem(ModItems.TUNGSTEN), conditionsFromItem(ModItems.TUNGSTEN)).criterion(hasItem(ModBlocks.BLOCK_OF_TUNGSTEN_B), conditionsFromItem(ModBlocks.BLOCK_OF_TUNGSTEN_B)).offerTo(exporter);
 
                 createShaped(RecipeCategory.MISC, ModItems.SIMPLE_DRILL_HEAD, 1)
                         .pattern(" X ")
                         .pattern("#R#")
                         .pattern("###")
-                        .input('X', ModItems.CAST_STEEL).input('#', ModBlocks.BLOCK_OF_CAST_STEEL).input('R', Items.REDSTONE).criterion(hasItem(ModItems.CAST_STEEL), conditionsFromItem(ModItems.CAST_STEEL))
-                        .criterion(hasItem(ModBlocks.BLOCK_OF_CAST_STEEL), conditionsFromItem(ModBlocks.BLOCK_OF_CAST_STEEL)).criterion(hasItem(Items.REDSTONE), conditionsFromItem(Items.REDSTONE)).offerTo(exporter);
+                        .input('X', ModItems.CAST_STEEL).input('#', ModBlocks.BLOCK_OF_CAST_STEEL_B).input('R', Items.REDSTONE).criterion(hasItem(ModItems.CAST_STEEL), conditionsFromItem(ModItems.CAST_STEEL))
+                        .criterion(hasItem(ModBlocks.BLOCK_OF_CAST_STEEL_B), conditionsFromItem(ModBlocks.BLOCK_OF_CAST_STEEL_B)).criterion(hasItem(Items.REDSTONE), conditionsFromItem(Items.REDSTONE)).offerTo(exporter);
 
                 createShaped(RecipeCategory.MISC, ModItems.DIAMOND_DRILL_BIT, 1)
                         .pattern("   ")
@@ -344,8 +344,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .pattern("#X#")
                         .pattern("#U#")
                         .pattern("###")
-                        .input('#', ModItems.CAST_STEEL).input('X', ModBlocks.BLOCK_OF_CAST_STEEL).input('U', ModItems.DRILL_UPGRADE_SMITHING_TEMPLATE)
-                        .criterion(hasItem(ModItems.CAST_STEEL), conditionsFromItem(ModItems.CAST_STEEL)).criterion(hasItem(ModBlocks.BLOCK_OF_CAST_STEEL), conditionsFromItem(ModBlocks.BLOCK_OF_CAST_STEEL)).criterion(hasItem(ModItems.DRILL_UPGRADE_SMITHING_TEMPLATE), conditionsFromItem(ModItems.DRILL_UPGRADE_SMITHING_TEMPLATE))
+                        .input('#', ModItems.CAST_STEEL).input('X', ModBlocks.BLOCK_OF_CAST_STEEL_B).input('U', ModItems.DRILL_UPGRADE_SMITHING_TEMPLATE)
+                        .criterion(hasItem(ModItems.CAST_STEEL), conditionsFromItem(ModItems.CAST_STEEL)).criterion(hasItem(ModBlocks.BLOCK_OF_CAST_STEEL_B), conditionsFromItem(ModBlocks.BLOCK_OF_CAST_STEEL_B)).criterion(hasItem(ModItems.DRILL_UPGRADE_SMITHING_TEMPLATE), conditionsFromItem(ModItems.DRILL_UPGRADE_SMITHING_TEMPLATE))
                         .offerTo(exporter);
             }
         };

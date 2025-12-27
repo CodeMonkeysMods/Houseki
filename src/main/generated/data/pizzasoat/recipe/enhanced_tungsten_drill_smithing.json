@@ -1,6 +1,6 @@
 {
   "type": "minecraft:smithing_transform",
-  "addition": "pizzasoat:block_of_cast_steel_item",
+  "addition": "pizzasoat:block_of_cast_steel",
   "base": "pizzasoat:simple_tungsten_drill",
   "result": {
     "id": "pizzasoat:enhanced_tungsten_drill"

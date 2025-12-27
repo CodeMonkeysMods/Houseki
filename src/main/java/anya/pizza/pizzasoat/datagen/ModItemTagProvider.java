@@ -1,6 +1,5 @@
 package anya.pizza.pizzasoat.datagen;
 
-import anya.pizza.pizzasoat.block.ModBlocks;
 import anya.pizza.pizzasoat.item.ModItems;
 import anya.pizza.pizzasoat.util.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -8,6 +7,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.item.Items;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.ItemTags;
+import org.jspecify.annotations.NonNull;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -17,7 +17,7 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
     }
 
     @Override
-    protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
+    protected void configure(RegistryWrapper.@NonNull WrapperLookup wrapperLookup) {
         valueLookupBuilder(ItemTags.BEACON_PAYMENT_ITEMS)
                 .add(ModItems.PINKU)
                 .add(ModItems.TUNGSTEN)

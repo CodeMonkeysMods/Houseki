@@ -25,17 +25,13 @@ public class ModGenRecipes {
 
     //Smithing Templates
     public static void offerPinkuUpgradeRecipe(RecipeExporter exporter, Item input, RecipeCategory category, Item result) {
-        SmithingTransformRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.PINKU_UPGRADE_SMITHING_TEMPLATE),
-                        Ingredient.ofItems(input), Ingredient.ofItems(ModItems.PINKU), category, result)
-                        .criterion("has_pinku", conditionsFromItemPredicates())
-                        .offerTo(exporter, getItemPath(result) + "_smithing");
+        SmithingTransformRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.PINKU_UPGRADE_SMITHING_TEMPLATE), Ingredient.ofItems(input), Ingredient.ofItems(ModItems.PINKU), category, result)
+                        .criterion("has_pinku", conditionsFromItemPredicates()).offerTo(exporter, getItemPath(result) + "_smithing");
    }
 
     public static void offerDrillUpgradeRecipe(RecipeExporter exporter, Item input, RecipeCategory category, Item result) {
-        SmithingTransformRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.DRILL_UPGRADE_SMITHING_TEMPLATE),
-                        Ingredient.ofItems(input), Ingredient.ofItems(ModItems.BLOCK_OF_CAST_STEEL_ITEM), category, result)
-                        .criterion("has_block_of_cast_steel", conditionsFromItemPredicates())
-                        .offerTo(exporter, getItemPath(result) + "_smithing");
+        SmithingTransformRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.DRILL_UPGRADE_SMITHING_TEMPLATE), Ingredient.ofItems(input), Ingredient.ofItems(ModItems.BLOCK_OF_CAST_STEEL), category, result)
+                .criterion("has_block_of_cast_steel", conditionsFromItemPredicates()).offerTo(exporter, getItemPath(result) + "_smithing");
     }
 
 

@@ -1,6 +1,6 @@
 {
   "type": "minecraft:smithing_transform",
-  "addition": "pizzasoat:block_of_cast_steel_item",
+  "addition": "pizzasoat:block_of_cast_steel",
   "base": "pizzasoat:enhanced_drill_head",
   "result": {
     "id": "pizzasoat:advanced_drill_head"

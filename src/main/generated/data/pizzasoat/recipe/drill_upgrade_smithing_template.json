@@ -4,7 +4,7 @@
   "key": {
     "#": "pizzasoat:cast_steel",
     "U": "pizzasoat:drill_upgrade_smithing_template",
-    "X": "pizzasoat:block_of_cast_steel_item"
+    "X": "pizzasoat:block_of_cast_steel"
   },
   "pattern": [
     "#X#",
