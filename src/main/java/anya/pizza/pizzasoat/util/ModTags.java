@@ -40,7 +40,6 @@ public class ModTags {
         public static final TagKey<Block> INCORRECT_FOR_CAST_STEEL_TOOL = createTag("incorrect_for_cast_steel_tool");
 
         public static final TagKey<Block> PREMIUM_DRILL_MINEABLE = createTag("premium_mineable");
-        public static final TagKey<Block> ADVANCED_DRILL_MINEABLE = createTag("advanced_mineable");
         public static final TagKey<Block> ENHANCED_DRILL_MINEABLE = createTag("enhanced_mineable");
 
 

@@ -1,5 +1,6 @@
 package anya.pizza.pizzasoat.datagen;
 
+import anya.pizza.pizzasoat.block.ModBlocks;
 import anya.pizza.pizzasoat.item.ModItems;
 import anya.pizza.pizzasoat.util.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;

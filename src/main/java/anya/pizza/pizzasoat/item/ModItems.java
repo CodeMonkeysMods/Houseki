@@ -41,7 +41,9 @@ public class ModItems {
     public static final Item ADVANCED_DRILL_HEAD = registerItem("advanced_drill_head", Item::new);
     public static final Item PREMIUM_DRILL_HEAD = registerItem("premium_drill_head", Item::new);
     public static final Item DIAMOND_DRILL_BIT = registerItem("diamond_drill_bit", Item::new);
+
     public static final Item BLOCK_OF_TUNGSTEN_ITEM = registerItem("block_of_tungsten_item", setting -> new BlockItem(ModBlocks.BLOCK_OF_TUNGSTEN, setting.fireproof())); //makes the item fireproof when dropped
+    public static final Item BLOCK_OF_CAST_STEEL_ITEM = registerItem("block_of_cast_steel_item", setting -> new BlockItem(ModBlocks.BLOCK_OF_CAST_STEEL, setting)); //For Smithing Templates Crafting
 
     public static final Item PINKU_UPGRADE_SMITHING_TEMPLATE = registerItem("pinku_upgrade_smithing_template", PinkuTemplateItem::createPinkuUpgrade);
     public static final Item DRILL_UPGRADE_SMITHING_TEMPLATE = registerItem("drill_upgrade_smithing_template", DrillTemplateItem::createDrillUpgrade);
@@ -191,6 +193,7 @@ public class ModItems {
     public static final Item CAST_STEEL_NAUTILUS_ARMOR = registerItem("cast_steel_nautilus_armor", setting -> new Item(setting.nautilusArmor(ModArmorMaterials.CAST_STEEL_MATERIAL).maxCount(1)));
     public static final Item NEPHRITE_NAUTILUS_ARMOR = registerItem("nephrite_nautilus_armor", setting -> new Item(setting.nautilusArmor(ModArmorMaterials.NEPHRITE_MATERIAL).maxCount(1)));
     public static final Item JADEITE_NAUTILUS_ARMOR = registerItem("jadeite_nautilus_armor", setting -> new Item(setting.nautilusArmor(ModArmorMaterials.JADEITE_MATERIAL).maxCount(1)));
+
 
 
     private static Item registerItem(String name, Function<Item.Settings, Item> function) {

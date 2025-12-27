@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_block_of_cast_steel": {
+    "has_block_of_cast_steel_item": {
       "conditions": {
         "items": [
           {
-            "items": "pizzasoat:block_of_cast_steel"
+            "items": "pizzasoat:block_of_cast_steel_item"
           }
         ]
       },
@@ -42,7 +42,7 @@
     [
       "has_the_recipe",
       "has_cast_steel",
-      "has_block_of_cast_steel",
+      "has_block_of_cast_steel_item",
       "has_drill_upgrade_smithing_template"
     ]
   ],
