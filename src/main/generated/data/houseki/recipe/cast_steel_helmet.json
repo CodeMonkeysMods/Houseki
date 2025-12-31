@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "houseki:cast_steel"
+    }
+  },
+  "pattern": [
+    "###",
+    "# #",
+    "   "
+  ],
+  "result": {
+    "count": 1,
+    "id": "houseki:cast_steel_helmet"
+  }
+}

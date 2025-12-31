@@ -1,0 +1,10 @@
+{
+  "type": "houseki:crushing",
+  "ingredient": {
+    "item": "minecraft:copper_ingot"
+  },
+  "result": {
+    "id": "houseki:platinum_nugget"
+  },
+  "crushingTime": 250
+}

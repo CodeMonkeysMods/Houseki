@@ -1,0 +1,10 @@
+{
+  "type": "houseki:crushing",
+  "ingredient": {
+    "item": "houseki:platinum_ore"
+  },
+  "result": {
+    "id": "houseki:platinum"
+  },
+  "crushingTime": 250
+}

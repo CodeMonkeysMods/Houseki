@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    {
+      "item": "houseki:diamond_drill_bit"
+    },
+    {
+      "item": "houseki:simple_drill_head"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "houseki:simple_diamond_drill"
+  }
+}

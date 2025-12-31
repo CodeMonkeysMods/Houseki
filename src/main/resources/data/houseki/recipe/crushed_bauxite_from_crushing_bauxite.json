@@ -1,0 +1,10 @@
+{
+  "type": "houseki:crushing",
+  "ingredient": {
+    "item": "houseki:bauxite"
+  },
+  "result": {
+    "id": "houseki:crushed_bauxite"
+  },
+  "crushingTime": 250
+}

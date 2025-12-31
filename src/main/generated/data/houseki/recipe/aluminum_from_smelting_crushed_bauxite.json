@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.5,
+  "group": "aluminum",
+  "ingredient": {
+    "item": "houseki:crushed_bauxite"
+  },
+  "result": {
+    "id": "houseki:aluminum"
+  }
+}
