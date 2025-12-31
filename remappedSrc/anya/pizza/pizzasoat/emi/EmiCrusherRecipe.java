@@ -1,6 +1,6 @@
-package anya.pizza.pizzasoat.compat.emi;
+package anya.pizza.houseki.compat.emi;
 
-import anya.pizza.pizzasoat.recipe.CrusherRecipe;
+import anya.pizza.houseki.recipe.CrusherRecipe;
 import dev.emi.emi.api.recipe.EmiRecipe;
 import dev.emi.emi.api.recipe.EmiRecipeCategory;
 import dev.emi.emi.api.render.EmiTexture;
