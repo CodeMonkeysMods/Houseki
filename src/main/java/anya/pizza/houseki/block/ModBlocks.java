@@ -92,7 +92,7 @@ public class ModBlocks {
 
     //Adds Ore
     public static final Block PINKU_ORE = registerBlock("pinku_ore",
-            new Block(AbstractBlock.Settings.copy(Blocks.IRON_ORE).sounds(BlockSoundGroup.NETHERITE).strength(15, 9).luminance(s -> 1).requiresTool())); //10 Moh Scale
+            new Block(AbstractBlock.Settings.copy(Blocks.IRON_ORE).mapColor(MapColor.PALE_YELLOW).sounds(BlockSoundGroup.NETHERITE).strength(15, 9).luminance(s -> 1).requiresTool())); //10 Moh Scale
 
     public static final Block RAINBOW_PYRITE_ORE = registerBlock("rainbow_pyrite_ore",
             new ExperienceDroppingBlock(UniformIntProvider.create(3, 7), AbstractBlock.Settings.copy(Blocks.STONE).strength(4, 7).requiresTool())); //6 Moh Scale
