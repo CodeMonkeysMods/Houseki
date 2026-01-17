@@ -1,4 +1,4 @@
-// 1.21.3	2026-01-09T21:37:26.7578053	Houseki/Model Definitions
+// 1.21.3	2026-01-17T18:00:10.8256524	Houseki/Model Definitions
 392a72e3d0ca4e0d98a19ea2e261c59505efcb55 assets\houseki\models\item\platinum_chestplate_emerald_trim.json
 e0b63a612e1cb382c70a88b85fadf33548668399 assets\houseki\models\item\steel_helmet_copper_trim.json
 96e2ae44c472ecfbc3a35b772c28a86be0a7cc7c assets\houseki\models\item\sapphire_chestplate_quartz_trim.json
@@ -700,8 +700,8 @@ a50d27e6ea87409649b0b04e0462c8b434372bc6 assets\houseki\models\item\cast_steel_p
 e2faac3e2448575c96bce220ed26244fe75d0ac5 assets\houseki\models\block\crusher.json
 0a478ae5d3fcf06d8fb5d751ccdffcfe4c20188e assets\houseki\models\item\jadeite_boots.json
 62f5c86f2d17885e762cde5d233cc5380034436e assets\houseki\models\item\sapphire_chestplate_gold_trim.json
-b83425200e782b12b5ca7c4e61804e0ddfe14fec assets\houseki\models\item\wolframite_ore.json
 22a6161dd9820ec0645d8804bb088fc1060a2b83 assets\houseki\models\item\cast_steel_chestplate_copper_trim.json
+b83425200e782b12b5ca7c4e61804e0ddfe14fec assets\houseki\models\item\wolframite_ore.json
 fa02bd20c67e16beea33ae3ae0e2cee268f27199 assets\houseki\models\block\slate_tile_slab_top.json
 07e496c21517b447a9f49d1ff5fc881ed256a85c assets\houseki\models\item\tungsten_boots_copper_trim.json
 22977f0e740fa75769a3da4eeb121e5fc509aa9c assets\houseki\models\item\sapphire_leggings_quartz_trim.json
