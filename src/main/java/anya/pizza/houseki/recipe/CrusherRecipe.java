@@ -20,6 +20,19 @@ import net.minecraft.world.World;
 public record CrusherRecipe(Ingredient inputItem, ItemStack output, int crushingTime, Optional<ItemStack> auxiliaryOutput) implements Recipe<CrusherRecipeInput> {
     public static final int DEFAULT_CRUSHING_TIME = 200;
 
+    public CrusherRecipe {
+        if (auxiliaryOutput == null) {
+            auxiliaryOutput = Optional.empty();
+        }
+    }
+
+    // 2. Secondary Constructor (For DataGen/Old Recipes)
+    // This allows you to call: new CrusherRecipe(input, output, time)
+    // It will automatically fill the Optional with empty.
+    public CrusherRecipe(Ingredient inputItem, ItemStack output, int crushingTime) {
+        this(inputItem, output, crushingTime, Optional.empty());
+    }
+
     @Override
     public DefaultedList<Ingredient> getIngredients() {
         DefaultedList<Ingredient> list = DefaultedList.of();
@@ -83,8 +96,8 @@ public record CrusherRecipe(Ingredient inputItem, ItemStack output, int crushing
                 Ingredient.PACKET_CODEC, CrusherRecipe::inputItem,
                 ItemStack.PACKET_CODEC, CrusherRecipe::output,
                 PacketCodecs.INTEGER, CrusherRecipe::crushingTime,
-                // Optional auxiliary output is now the 4th parameter
-                PacketCodecs.optional(ItemStack.PACKET_CODEC), CrusherRecipe::auxiliaryOutput,
+                // Change this line to use OPTIONAL_PACKET_CODEC
+                PacketCodecs.optional(ItemStack.OPTIONAL_PACKET_CODEC), CrusherRecipe::auxiliaryOutput, 
                 CrusherRecipe::new);
 
         @Override
