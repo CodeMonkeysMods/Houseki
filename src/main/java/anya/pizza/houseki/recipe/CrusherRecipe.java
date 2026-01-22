@@ -64,11 +64,6 @@ public record CrusherRecipe(Ingredient inputItem, ItemStack output, int crushing
         return output;
     }
 
-    // 2. Getter for the secondary slot
-    public Optional<ItemStack> getAuxiliaryOutput() {
-        return auxiliaryOutput;
-    }
-
     @Override
     public RecipeSerializer<?> getSerializer() {
         return ModRecipes.CRUSHER_SERIALIZER;

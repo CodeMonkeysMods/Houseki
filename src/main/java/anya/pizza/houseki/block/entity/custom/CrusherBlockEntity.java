@@ -39,7 +39,7 @@ public class CrusherBlockEntity extends BlockEntity implements ExtendedScreenHan
     private static final int INPUT_SLOT = 0;
     private static final int FUEL_SLOT = 1;
     private static final int OUTPUT_SLOT = 2;
-    private static final int AUXILARY_OUTPUT_SLOT = 3;
+    private static final int AUXILIARY_OUTPUT_SLOT = 3;
 
     protected final PropertyDelegate propertyDelegate;
     private int progress = 0;
@@ -186,9 +186,9 @@ public class CrusherBlockEntity extends BlockEntity implements ExtendedScreenHan
 
         CrusherRecipe crusherRecipe = recipe.get().value();
         ItemStack output = crusherRecipe.getResult(null);
-        ItemStack auxiliary = crusherRecipe.getAuxiliaryOutput().orElse(ItemStack.EMPTY);
+        ItemStack auxiliary = crusherRecipe.auxiliaryOutput().orElse(ItemStack.EMPTY);
 
-        return canInsertIntoSlot(OUTPUT_SLOT, output) && canInsertIntoSlot(AUXILARY_OUTPUT_SLOT, auxiliary);
+        return canInsertIntoSlot(OUTPUT_SLOT, output) && canInsertIntoSlot(AUXILIARY_OUTPUT_SLOT, auxiliary);
     }
 
     private boolean canInsertIntoSlot(int slot, ItemStack stack) {
@@ -206,11 +206,11 @@ public class CrusherBlockEntity extends BlockEntity implements ExtendedScreenHan
         CrusherRecipe crusherRecipe = recipe.get().value();
 
         // Handle Main Output
-        insertOrIncrement(OUTPUT_SLOT, crusherRecipe.output().copy());
+        insertOrIncrement(OUTPUT_SLOT, crusherRecipe.getResult(null).copy());
         
         // Handle Auxiliary Output
-        crusherRecipe.getAuxiliaryOutput().ifPresent(stack -> {
-            insertOrIncrement(AUXILARY_OUTPUT_SLOT, stack.copy());
+        crusherRecipe.auxiliaryOutput().ifPresent(stack -> {
+            insertOrIncrement(AUXILIARY_OUTPUT_SLOT, stack.copy());
         });
 
         inventory.get(INPUT_SLOT).decrement(1);
@@ -233,7 +233,7 @@ public class CrusherBlockEntity extends BlockEntity implements ExtendedScreenHan
 
     @Override
     public int[] getAvailableSlots(Direction side) {
-        return side == Direction.DOWN ? new int[]{OUTPUT_SLOT} : new int[]{INPUT_SLOT, FUEL_SLOT};
+        return side == Direction.DOWN ? new int[]{OUTPUT_SLOT, AUXILIARY_OUTPUT_SLOT} : new int[]{INPUT_SLOT, FUEL_SLOT};
     }
 
     @Override
@@ -246,7 +246,7 @@ public class CrusherBlockEntity extends BlockEntity implements ExtendedScreenHan
 
     @Override
     public boolean canExtract(int slot, ItemStack stack, Direction side) {
-        return slot == OUTPUT_SLOT || slot == AUXILARY_OUTPUT_SLOT;
+        return slot == OUTPUT_SLOT || slot == AUXILIARY_OUTPUT_SLOT;
     }
 
     @Nullable

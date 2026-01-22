@@ -26,7 +26,7 @@ public class CrusherScreenHandler extends ScreenHandler {
 
     public CrusherScreenHandler(int syncId, PlayerInventory playerInventory, BlockEntity blockEntity, PropertyDelegate arrayPropertyDelegate) {
         super(ModScreenHandlers.CRUSHER_SCREEN_HANDLER, syncId);
-        checkSize((Inventory) blockEntity, 3);
+        checkSize((Inventory) blockEntity, 4);
         this.inventory = (Inventory) blockEntity;
         this.propertyDelegate = arrayPropertyDelegate;
         this.blockEntity = (CrusherBlockEntity) blockEntity;
