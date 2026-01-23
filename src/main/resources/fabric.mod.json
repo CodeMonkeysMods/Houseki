@@ -1,11 +1,14 @@
 {
 	"schemaVersion": 1,
 	"id": "houseki",
-	"version": "1.1.0-1.21.1",
+	"version": "$version",
 	"name": "Houseki",
 	"description": "A mod adding new ores and things that try to keep to their real-life counterparts.",
 	"authors": [
 		"AnyaPizza"
+	],
+	"contributors": [
+		"TheCodeMonkey"
 	],
 	"contact": {
 		"issues": "https://github.com/AnyaPizza/Houseki/issues",
@@ -34,7 +37,7 @@
 	"mixins": [
 	],
 	"depends": {
-		"fabricloader": ">=0.16.5",
+		"fabricloader": ">=0.18.4",
 		"minecraft": "~1.21.1",
 		"java": ">=21",
 		"fabric-api": "*"
@@ -42,5 +45,14 @@
 	"suggests": {
 		"emi": ">=1.1.22+1.21.1",
 		"rei": ">=16.0.799"
+	},
+	"custom": {
+		"modmenu": {
+			"links": {
+				"modmenu.modrinth": "https://modrinth.com/user/AnyaPizza",
+				"modmenu.wiki": "https://modrinth.com/mod/houseki"
+			},
+			"update_checker": true
+		}
 	}
 }
