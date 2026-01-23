@@ -39,11 +39,6 @@ public record CrusherRecipe(Ingredient inputItem, ItemStack output, int crushing
         this(inputItem, output, crushingTime, Optional.empty());
     }
 
-    /**
-     * Gets the recipe's ingredient list.
-     *
-     * @return a DefaultedList containing the single input ingredient for this recipe
-     */
     @Override
     public DefaultedList<Ingredient> getIngredients() {
         DefaultedList<Ingredient> list = DefaultedList.of();
@@ -85,7 +80,6 @@ public record CrusherRecipe(Ingredient inputItem, ItemStack output, int crushing
         return ModRecipes.CRUSHER_TYPE;
     }
 
-
     public static class Serializer implements RecipeSerializer<CrusherRecipe> {
         public static final MapCodec<CrusherRecipe> CODEC = RecordCodecBuilder.mapCodec(inst -> inst.group(
             Ingredient.DISALLOW_EMPTY_CODEC.fieldOf("ingredient").forGetter(CrusherRecipe::inputItem),
@@ -102,15 +96,9 @@ public record CrusherRecipe(Ingredient inputItem, ItemStack output, int crushing
                 Ingredient.PACKET_CODEC, CrusherRecipe::inputItem,
                 ItemStack.PACKET_CODEC, CrusherRecipe::output,
                 PacketCodecs.INTEGER, CrusherRecipe::crushingTime,
-                // Change this line to use OPTIONAL_PACKET_CODEC
                 PacketCodecs.optional(ItemStack.OPTIONAL_PACKET_CODEC), CrusherRecipe::auxiliaryOutput, 
                 CrusherRecipe::new);
 
-        /**
-         * Returns the map-based codec for serializing and deserializing CrusherRecipe instances.
-         *
-         * @return the MapCodec that encodes and decodes CrusherRecipe objects
-         */
         @Override
         public MapCodec<CrusherRecipe> codec() {
             return CODEC;

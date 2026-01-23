@@ -2,6 +2,7 @@ package anya.pizza.houseki.util;
 
 import anya.pizza.houseki.block.ModBlocks;
 import anya.pizza.houseki.item.ModItems;
+import anya.pizza.houseki.recipe.CrusherRecipe;
 import net.minecraft.data.server.recipe.CraftingRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
@@ -28,7 +29,6 @@ public class ModGenRecipes {
                 .criterion("has_block_of_cast_steel", conditionsFromItem(ModBlocks.BLOCK_OF_CAST_STEEL))
                 .offerTo(exporter, getItemPath(result) + "_smithing");
     }
-
 
     //Tool Recipes
     public static void offerPickaxeRecipe(RecipeExporter exporter, ItemConvertible output, ItemConvertible input) {

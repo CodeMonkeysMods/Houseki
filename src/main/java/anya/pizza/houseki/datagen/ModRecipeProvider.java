@@ -2,6 +2,7 @@ package anya.pizza.houseki.datagen;
 
 import anya.pizza.houseki.block.ModBlocks;
 import anya.pizza.houseki.item.ModItems;
+import anya.pizza.houseki.recipe.CrusherRecipe;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.block.Blocks;
@@ -9,12 +10,15 @@ import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.ItemConvertible;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
+import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.util.Identifier;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.concurrent.CompletableFuture;
 
 import static anya.pizza.houseki.util.ModGenRecipes.*;
@@ -311,7 +315,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerLeggingsRecipe(exporter, ModItems.CAST_STEEL_LEGGINGS, ModItems.CAST_STEEL);
         offerBootsRecipe(exporter, ModItems.CAST_STEEL_BOOTS, ModItems.CAST_STEEL);
 
-
+        //new CrusherRecipe(Ingredient.ofItems(ModBlocks.BAUXITE), new ItemStack(ModItems.CRUSHED_BAUXITE), 250);
 
         //Random
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ALUMINUM_GLASS,1)

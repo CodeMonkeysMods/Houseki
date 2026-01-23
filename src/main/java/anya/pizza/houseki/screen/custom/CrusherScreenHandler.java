@@ -38,15 +38,15 @@ public class CrusherScreenHandler extends ScreenHandler {
         this.inventory = (Inventory) blockEntity;
         this.propertyDelegate = arrayPropertyDelegate;
         this.blockEntity = (CrusherBlockEntity) blockEntity;
-        this.addSlot(new Slot(inventory, 0, 35, -5));
-        this.addSlot(new Slot(inventory, 1, 13, 41));
-        this.addSlot(new Slot(inventory, 2, 116, 30) {
+        this.addSlot(new Slot(inventory, 0, 35, -5)); //Input Slot
+        this.addSlot(new Slot(inventory, 1, 13, 41)); //Fuel Slot
+        this.addSlot(new Slot(inventory, 2, 115, 30) { //Output Slot
             @Override
             public boolean canInsert(ItemStack stack) {
-                return false; //Makes output slot read-only
+                return false;
             }
         });
-        this.addSlot(new Slot(inventory, 3, 130, 30) {
+        this.addSlot(new Slot(inventory, 3, 137, 30) { //Auxiliary Slot
             @Override
             public boolean canInsert(ItemStack stack) {
                 return false; //Makes output slot read-only
