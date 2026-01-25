@@ -1,0 +1,15 @@
+{
+  "type": "houseki:crushing",
+  "auxiliary_result": {
+    "count": 1,
+    "id": "minecraft:quartz"
+  },
+  "crushingTime": 250,
+  "ingredient": {
+    "item": "houseki:deepslate_platinum_ore"
+  },
+  "result": {
+    "count": 1,
+    "id": "houseki:platinum"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "houseki:crushing",
+  "auxiliary_result": {
+    "count": 1,
+    "id": "minecraft:quartz"
+  },
+  "crushingTime": 100,
+  "ingredient": {
+    "item": "minecraft:cobblestone"
+  },
+  "result": {
+    "count": 1,
+    "id": "minecraft:gravel"
+  }
+}

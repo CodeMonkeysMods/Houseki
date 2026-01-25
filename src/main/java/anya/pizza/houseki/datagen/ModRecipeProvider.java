@@ -1,6 +1,7 @@
 package anya.pizza.houseki.datagen;
 
 import anya.pizza.houseki.block.ModBlocks;
+import anya.pizza.houseki.datagen.recipebuilder.CrusherRecipeBuilder;
 import anya.pizza.houseki.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
@@ -9,7 +10,9 @@ import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.ItemConvertible;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
+import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.util.Identifier;
@@ -40,6 +43,33 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         List<ItemConvertible> STEEL_SMELTABLES = List.of(ModItems.CRUDE_IRON);
         List<ItemConvertible> CAST_STEEL_SMELTABLES = List.of(ModItems.STEEL);
 
+        //Crushing recipes with auxiliary output
+        CrusherRecipeBuilder.create(Ingredient.ofItems(ModBlocks.BAUXITE), new ItemStack(ModItems.CRUSHED_BAUXITE), 250)
+                .auxiliary(new ItemStack(Items.CLAY)).offerTo(exporter, String.valueOf(Identifier.of("houseki", "bauxite_crushing")));
+
+        CrusherRecipeBuilder.create(Ingredient.ofItems(Items.SANDSTONE), new ItemStack(Items.SAND), 100)
+                .auxiliary(new ItemStack(Items.CALCITE)).offerTo(exporter, String.valueOf(Identifier.of("houseki", "sandstone_crushing")));
+
+        CrusherRecipeBuilder.create(Ingredient.ofItems(ModItems.WOLFRAMITE), new ItemStack(ModItems.TUNGSTEN), 250)
+                .auxiliary(new ItemStack(Items.QUARTZ)).offerTo(exporter, String.valueOf(Identifier.of("houseki", "wolframite_crushing")));
+
+        // Crushing recipes WITHOUT an auxiliary output (it will default to Optional.empty())
+        CrusherRecipeBuilder.create(Ingredient.ofItems(Items.COBBLESTONE), new ItemStack(Items.GRAVEL), 100)
+                .offerTo(exporter, String.valueOf(Identifier.of("houseki", "cobblestone_crushing")));
+
+        CrusherRecipeBuilder.create(Ingredient.ofItems(Items.STONE), new ItemStack(Items.GRAVEL), 100)
+                .offerTo(exporter, String.valueOf(Identifier.of("houseki", "stone_crushing")));
+
+        CrusherRecipeBuilder.create(Ingredient.ofItems(ModBlocks.PLATINUM_ORE), new ItemStack(ModItems.PLATINUM), 250)
+                .offerTo(exporter, String.valueOf(Identifier.of("houseki", "platinum_ore_crushing")));
+        CrusherRecipeBuilder.create(Ingredient.ofItems(ModBlocks.DEEPSLATE_PLATINUM_ORE), new ItemStack(ModItems.PLATINUM), 250)
+                .offerTo(exporter, String.valueOf(Identifier.of("houseki", "deepslate_platinum_ore_crushing")));
+
+        CrusherRecipeBuilder.create(Ingredient.ofItems(Items.COPPER_INGOT), new ItemStack(ModItems.PLATINUM_NUGGET), 250)
+                .offerTo(exporter, String.valueOf(Identifier.of("houseki", "copper_ingot_crushing")));
+
+        CrusherRecipeBuilder.create(Ingredient.ofItems(ModItems.SCHEELITE), new ItemStack(ModItems.TUNGSTEN), 250)
+                .offerTo(exporter, String.valueOf(Identifier.of("houseki", "scheelite_crushing")));
 
         //Block Reversing Recipes
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.PINKU, RecipeCategory.DECORATIONS, ModBlocks.BLOCK_OF_PINKU);
@@ -397,6 +427,13 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input(ModItems.PLATINUM)
                 .criterion(hasItem(ModItems.PLATINUM), conditionsFromItem(ModItems.PLATINUM))
                 .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.PLATINUM, 1)
+                .pattern("###")
+                .pattern("###")
+                .pattern("###")
+                .input('#', ModItems.PLATINUM_NUGGET).criterion(hasItem(ModItems.PLATINUM_NUGGET), conditionsFromItem(ModItems.PLATINUM_NUGGET)).offerTo(exporter, String.valueOf(Identifier.of("houseki", "platinum_from_platinum_nuggets")));
+
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.DRILL_UPGRADE_SMITHING_TEMPLATE, 2)
                 .pattern("#X#")
