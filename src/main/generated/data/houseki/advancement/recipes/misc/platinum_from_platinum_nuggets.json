@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_bauxite_rainbow_pyrite_ore": {
+    "has_platinum_nugget": {
       "conditions": {
         "items": [
           {
-            "items": "houseki:bauxite_rainbow_pyrite_ore"
+            "items": "houseki:platinum_nugget"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "houseki:rainbow_pyrite_from_blasting_bauxite_rainbow_pyrite_ore"
+        "recipe": "houseki:platinum_from_platinum_nuggets"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_bauxite_rainbow_pyrite_ore"
+      "has_platinum_nugget"
     ]
   ],
   "rewards": {
     "recipes": [
-      "houseki:rainbow_pyrite_from_blasting_bauxite_rainbow_pyrite_ore"
+      "houseki:platinum_from_platinum_nuggets"
     ]
   }
 }

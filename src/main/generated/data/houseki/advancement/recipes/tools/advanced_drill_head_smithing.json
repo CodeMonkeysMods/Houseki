@@ -6,7 +6,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:advanced_drill_head_smithing"
+        "recipe": "houseki:advanced_drill_head_smithing"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -19,7 +19,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:advanced_drill_head_smithing"
+      "houseki:advanced_drill_head_smithing"
     ]
   }
 }

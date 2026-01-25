@@ -6,7 +6,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:pinku_axe_smithing"
+        "recipe": "houseki:pinku_axe_smithing"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -19,7 +19,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:pinku_axe_smithing"
+      "houseki:pinku_axe_smithing"
     ]
   }
 }
