@@ -7,7 +7,6 @@ import com.mojang.serialization.Codec;
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
 import net.minecraft.network.RegistryByteBuf;
 import net.minecraft.network.codec.PacketCodec;
 import net.minecraft.network.codec.PacketCodecs;
@@ -37,7 +36,7 @@ public record CrusherRecipe(Ingredient inputItem, ItemStack output, int crushing
      * @param crushingTime the time required to perform the crushing, in ticks
      */
     public CrusherRecipe(Ingredient inputItem, ItemStack output, int crushingTime) {
-        this(inputItem, output, crushingTime, Optional.empty(), 1);
+        this(inputItem, output, crushingTime, Optional.empty(), DEFAULT_AUXILIARY_CHANCE);
     }
 
     /**

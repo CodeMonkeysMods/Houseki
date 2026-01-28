@@ -231,7 +231,7 @@ public class CrusherBlockEntity extends BlockEntity implements ExtendedScreenHan
         CrusherRecipe crusherRecipe = recipe.get().value();
 
         // Handle Main Output
-        insertOrIncrement(OUTPUT_SLOT, crusherRecipe.getResult(null).copy(), 1);
+        insertOrIncrement(OUTPUT_SLOT, crusherRecipe.getResult(null).copy(), 1.0);
 
         // Handle Auxiliary Output
         crusherRecipe.auxiliaryOutput().ifPresent(stack -> {
