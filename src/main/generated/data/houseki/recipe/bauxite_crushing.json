@@ -4,7 +4,8 @@
     "count": 1,
     "id": "minecraft:clay"
   },
-  "crushingTime": 250,
+  "auxiliary_chance": 0.5,
+  "crushingTime": 20,
   "ingredient": "houseki:bauxite",
   "result": {
     "count": 1,
