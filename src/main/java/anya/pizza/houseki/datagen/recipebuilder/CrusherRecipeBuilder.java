@@ -23,7 +23,7 @@ public class CrusherRecipeBuilder implements CraftingRecipeJsonBuilder {
     private final ItemStack output;
     private final int crushingTime;
     private Optional<ItemStack> auxiliaryOutput = Optional.empty();
-    private int auxiliaryChance = 1;
+    private double auxiliaryChance = 1;
     private final Map<String, AdvancementCriterion<?>> criteria = new LinkedHashMap<>();
     @Nullable
     private String group;
@@ -55,7 +55,7 @@ public class CrusherRecipeBuilder implements CraftingRecipeJsonBuilder {
      * @param chance the chance value used to determine auxiliary output occurrence
      * @return this builder instance
      */
-    public CrusherRecipeBuilder chance(int chance) {
+    public CrusherRecipeBuilder chance(double chance) {
         this.auxiliaryChance = chance;
         return this;
     }

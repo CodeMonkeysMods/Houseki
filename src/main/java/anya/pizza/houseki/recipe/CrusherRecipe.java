@@ -46,9 +46,8 @@ public record CrusherRecipe(Ingredient inputItem, ItemStack output, int crushing
      * @return a DefaultedList of two Ingredients: first the recipe's input item, then an Ingredient of iron ingots
      */
     public DefaultedList<Ingredient> getIngredients() {
-        DefaultedList<Ingredient> list = DefaultedList.ofSize(2);
+        DefaultedList<Ingredient> list = DefaultedList.ofSize(1);
         list.add(this.inputItem);
-        list.add(Ingredient.ofItems(Items.IRON_INGOT));
         return list;
     }
 

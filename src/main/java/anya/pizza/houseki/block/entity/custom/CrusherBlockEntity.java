@@ -235,8 +235,6 @@ public class CrusherBlockEntity extends BlockEntity implements ExtendedScreenHan
 
         // Handle Auxiliary Output
         crusherRecipe.auxiliaryOutput().ifPresent(stack -> {
-            System.out.println("HERE");
-            System.out.println(crusherRecipe.auxiliaryChance());
             insertOrIncrement(AUXILIARY_OUTPUT_SLOT, stack.copy(), crusherRecipe.auxiliaryChance());
         });
 
@@ -255,10 +253,6 @@ public class CrusherBlockEntity extends BlockEntity implements ExtendedScreenHan
          * @param chance a probability in the range [0, 1] that the insertion will occur
          */
     private void insertOrIncrement(int slot, ItemStack result, double chance) {
-        double internalChance = Math.random();
-
-        System.out.println(internalChance);
-        System.out.println(chance);
         if (result.isEmpty() || Math.random() > chance) return;
         ItemStack slotStack = inventory.get(slot);
         if (slotStack.isEmpty()) {
