@@ -228,11 +228,13 @@ public class CrusherBlockEntity extends BlockEntity implements ExtendedScreenHan
         CrusherRecipe crusherRecipe = recipe.get().value();
 
         // Handle Main Output
-        insertOrIncrement(OUTPUT_SLOT, crusherRecipe.getResult(null).copy());
+        insertOrIncrement(OUTPUT_SLOT, crusherRecipe.getResult(null).copy(), 1);
 
         // Handle Auxiliary Output
         crusherRecipe.auxiliaryOutput().ifPresent(stack -> {
-            insertOrIncrement(AUXILIARY_OUTPUT_SLOT, stack.copy());
+            System.out.println("HERE");
+            System.out.println(crusherRecipe.auxiliaryChance());
+            insertOrIncrement(AUXILIARY_OUTPUT_SLOT, stack.copy(), crusherRecipe.auxiliaryChance());
         });
 
         inventory.get(INPUT_SLOT).decrement(1);
@@ -246,9 +248,14 @@ public class CrusherBlockEntity extends BlockEntity implements ExtendedScreenHan
      *
      * @param slot   the index of the target inventory slot
      * @param result the ItemStack to insert or merge into the slot
+     * @param chance the 0-1 value chance of an item being put into the result slot.
      */
-    private void insertOrIncrement(int slot, ItemStack result) {
-        if (result.isEmpty()) return;
+    private void insertOrIncrement(int slot, ItemStack result, double chance) {
+        double internalChance = Math.random();
+
+        System.out.println(internalChance);
+        System.out.println(chance);
+        if (result.isEmpty() || Math.random() > chance) return;
         ItemStack slotStack = inventory.get(slot);
         if (slotStack.isEmpty()) {
             inventory.set(slot, result);
