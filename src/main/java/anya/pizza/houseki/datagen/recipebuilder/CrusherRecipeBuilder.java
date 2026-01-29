@@ -21,13 +21,14 @@ import org.jetbrains.annotations.Nullable;
 import java.util.*;
 
 public abstract class CrusherRecipeBuilder implements CraftingRecipeJsonBuilder {
-    private final Ingredient input;
-    private final ItemStack output;
-    private final int crushingTime;
+    public final Ingredient input;
+    public final ItemStack output;
+    public final int crushingTime;
     private static Optional<ItemStack> auxiliaryOutput = Optional.empty();
+    private static double auxiliaryChance = 1;
     final Map<String, AdvancementCriterion<?>> criteria = new LinkedHashMap<>();
     @Nullable
-    private String group;
+    public String group;
 
     public CrusherRecipeBuilder(Ingredient input, ItemStack output, int crushingTime) {
         this.input = input;
@@ -45,8 +46,8 @@ public abstract class CrusherRecipeBuilder implements CraftingRecipeJsonBuilder 
                         .criteriaMerger(AdvancementRequirements.CriterionMerger.OR);
                 this.criteria.forEach(advancement::criterion);
 
-                // Create an instance of your recipe record
-                CrusherRecipe recipe = new CrusherRecipe(input, output, crushingTime, auxiliaryOutput);
+        // Create an instance of your recipe record
+        CrusherRecipe recipe = new CrusherRecipe(input, output, crushingTime, auxiliaryOutput, auxiliaryChance);
 
                 // Export it using the built-in exporter
                 exporter.accept(recipeKey, recipe, null);
@@ -57,6 +58,11 @@ public abstract class CrusherRecipeBuilder implements CraftingRecipeJsonBuilder 
 
     public CrusherRecipeBuilder auxiliary(ItemStack stack) {
         auxiliaryOutput = Optional.of(stack);
+        return this;
+    }
+
+    public CrusherRecipeBuilder chance(double chance) {
+        auxiliaryChance = chance;
         return this;
     }
 
