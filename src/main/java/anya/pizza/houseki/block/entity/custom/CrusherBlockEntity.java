@@ -268,25 +268,11 @@ public class CrusherBlockEntity extends BlockEntity implements ExtendedScreenHan
 
     }
 
-    /**
-     * Provide the indices of inventory slots that are accessible from the specified side.
-     *
-     * @param side the block face from which access is attempted
-     * @return an array of slot indices; for {@link Direction#DOWN} returns {OUTPUT_SLOT, AUXILIARY_OUTPUT_SLOT}, otherwise returns {INPUT_SLOT, FUEL_SLOT}
-     */
     @Override
     public int[] getAvailableSlots(Direction side) {
         return side == Direction.DOWN ? new int[]{OUTPUT_SLOT, AUXILIARY_OUTPUT_SLOT} : new int[]{INPUT_SLOT, FUEL_SLOT};
     }
 
-    /**
-     * Determines whether the given ItemStack may be inserted into the specified inventory slot from the provided side.
-     *
-     * @param slot  the target inventory slot index
-     * @param stack the ItemStack to insert
-     * @param side  the side from which insertion is attempted; may be null for non-sided access
-     * @return `true` if insertion is allowed: fuel slot accepts items that provide fuel time, input slot accepts items that match a Crusher recipe; `false` otherwise.
-     */
     @Override
     public boolean canInsert(int slot, ItemStack stack, @Nullable Direction side) {
         if (slot == FUEL_SLOT) return getFuelTime(stack) > 0;
@@ -295,14 +281,6 @@ public class CrusherBlockEntity extends BlockEntity implements ExtendedScreenHan
         return false;
     }
 
-    /**
-     * Determines whether items may be extracted from the given slot from the specified side.
-     *
-     * @param slot the slot index being accessed
-     * @param stack the stack being extracted
-     * @param side the side of the block from which extraction is attempted
-     * @return `true` if the slot is the primary output slot or the auxiliary output slot, `false` otherwise
-     */
     @Override
     public boolean canExtract(int slot, ItemStack stack, Direction side) {
         return slot == OUTPUT_SLOT || slot == AUXILIARY_OUTPUT_SLOT;
